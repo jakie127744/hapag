@@ -17,6 +17,9 @@ export type Recipe = {
 };
 
 // Images are mirrored locally from Wikimedia Commons (see `imageSource` for attribution).
+/** Photographs already mirrored and resized into public/images/recipes. */
+const local = (file: string) => `/images/recipes/${file}`;
+
 const commons = (file: string) =>
   `/images/recipes/${file
     .replace(/\.[^.]+$/, "")
@@ -472,6 +475,7 @@ export const recipes: Recipe[] = [
     slug: "sinantolan", title: "Sinantolan", subtitle: "Bicolano Santol Cooked in Gata",
     description: "Shredded santol cooked down with coconut milk, aromatics, fermented shrimp paste, and chili. It is a tangy, savory Bicolano preparation that can be served as a vegetable dish or accompaniment to rice.",
     category: "BICOL / VEGETABLE", time: "45M", yield: "5 PAX", origin: "BICOL REGION", technique: "FRUIT + GATA",
+    image: local("sinantolan-sinantol-ni-etelya-ginataang-santol-photo.jpg"), imageSource: commonsPage("Sinantolan-sinantol-ni-etelya-ginataang-santol-photo.jpg"),
     ingredients: [
       {name:"Unripe santol flesh, shredded",metric:"500 g",imperial:"1.1 lb"},{name:"Coconut milk",metric:"500 ml",imperial:"2 cups"},
       {name:"Pork belly, minced",metric:"200 g",imperial:"7 oz"},{name:"Bagoong alamang",metric:"45 g",imperial:"3 tbsp"},
@@ -722,6 +726,7 @@ export const recipes: Recipe[] = [
     slug: "beef-kulma", title: "Beef Kulma", subtitle: "Mindanao Beef & Coconut Stew",
     description: "A southern Filipino beef stew influenced by the region's spice traditions, combining tender beef, coconut milk, aromatics, and warm spices into a rich sauce.",
     category: "MINDANAO / STEW", time: "2H 30M", yield: "6 PAX", origin: "ZAMBOANGA / TAUSUG", technique: "SPICED BRAISE",
+    image: local("beef-kulma.jpg"),
     ingredients: [
       {name:"Beef chuck",metric:"1 kg",imperial:"2.2 lb"},{name:"Coconut milk",metric:"600 ml",imperial:"2 1/2 cups"},
       {name:"Tomatoes, diced",metric:"250 g",imperial:"9 oz"},{name:"Potatoes, cubed",metric:"400 g",imperial:"14 oz"},
@@ -790,6 +795,7 @@ export const recipes: Recipe[] = [
     slug: "utan-bisaya", title: "Utan Bisaya", subtitle: "Visayan Mixed Vegetable Soup",
     description: "A light Cebuano-style vegetable soup in which squash, okra, eggplant, beans, and leafy greens are cooked in a simple savory broth. The vegetables remain distinct rather than becoming a puree.",
     category: "VISAYAS / VEGETABLE", time: "35M", yield: "5 PAX", origin: "CEBU / VISAYAS", technique: "STAGED SIMMER",
+    image: local("utan-bisaya.jpg"), imageSource: commonsPage("Utan_Bisaya.jpg"),
     ingredients: [
       {name:"Kalabasa",metric:"300 g",imperial:"10.5 oz"},{name:"Eggplant",metric:"200 g",imperial:"7 oz"},
       {name:"Okra",metric:"150 g",imperial:"5.3 oz"},{name:"String beans",metric:"150 g",imperial:"5.3 oz"},
@@ -853,6 +859,7 @@ export const recipes: Recipe[] = [
     slug: "tocino-kapampangan", title: "Tocino Kapampangan", subtitle: "Pampanga-Style Sweet Cured Pork",
     description: "Thin pork slices cured with sugar, salt, garlic, and traditional coloring ingredients, then pan-cooked until caramelized. It is commonly served as part of a tosilog plate.",
     category: "PAMPANGA / CURED", time: "24H + 25M", yield: "4 PAX", origin: "PAMPANGA", technique: "DRY CURE + CARAMELIZE",
+    image: local("tocino.jpg"), imageSource: commonsPage("Tocino.jpg"),
     ingredients: [
       {name:"Pork shoulder, thinly sliced",metric:"750 g",imperial:"1.65 lb"},{name:"Brown sugar",metric:"120 g",imperial:"1/2 cup"},
       {name:"Salt",metric:"18 g",imperial:"1 tbsp"},{name:"Garlic, minced",metric:"30 g",imperial:"2 tbsp"},
@@ -1020,6 +1027,7 @@ export const recipes: Recipe[] = [
     slug: "adobong-baboy", title: "Adobong Baboy", subtitle: "Pork Adobo",
     description: "Pork belly simmered in soy sauce, vinegar, garlic, bay and peppercorns until tender, then reduced until the sauce turns glossy and clings. The pork renders enough fat to fry itself at the end.",
     category: "MAIN / BRAISE", time: "75M", yield: "4\u20136 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    image: local("adobo-dscf4391.jpg"), imageSource: commonsPage("Adobo_DSCF4391.jpg"),
     ingredients: [
       {name:"Pork belly, 2.5 cm cubes",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
@@ -1056,6 +1064,7 @@ export const recipes: Recipe[] = [
     slug: "adobong-manok", title: "Adobong Manok", subtitle: "Chicken Adobo",
     description: "Chicken braised in vinegar, soy sauce, garlic and peppercorns, then reduced until the sauce glazes the skin. Faster and lighter than the pork version, and more dependent on rendering the skin properly.",
     category: "MAIN / BRAISE", time: "55M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    image: local("adobong-manok-sa-sarsa.jpg"), imageSource: commonsPage("ADOBONG MANOK SA SARSA.jpg"),
     ingredients: [
       {name:"Chicken thighs, bone-in",metric:"1.2 kg",imperial:"2.6 lb"},
       {name:"Soy sauce",metric:"60 ml",imperial:"1/4 cup"},
@@ -1092,6 +1101,7 @@ export const recipes: Recipe[] = [
     slug: "bulalo", title: "Bulalo", subtitle: "Batangas Beef Shank & Marrow Soup",
     description: "Beef shank and marrow bones simmered for hours until the collagen melts into a clear, beefy broth, finished with corn and green vegetables. The marrow is the prize and is eaten straight from the bone.",
     category: "SOUP / BEEF", time: "3H", yield: "6 PAX", origin: "BATANGAS / CAVITE", technique: "MARROW SIMMER",
+    image: local("bulalo.jpg"), imageSource: commonsPage("BULALO.jpg"),
     ingredients: [
       {name:"Beef shank, cross-cut with marrow bone",metric:"1.5 kg",imperial:"3.3 lb"},
       {name:"Water",metric:"3.0 L",imperial:"12 1/2 cups"},
@@ -1128,6 +1138,7 @@ export const recipes: Recipe[] = [
     slug: "bistek-tagalog", title: "Bistek Tagalog", subtitle: "Filipino Beef Steak with Onions",
     description: "Thinly sliced beef marinated in soy sauce and calamansi, seared hard, and served under a heap of onion rings softened in the pan juices. Sour and salty, and built around the onions as much as the beef.",
     category: "MAIN / PAN-FRY", time: "40M", yield: "4 PAX", origin: "TAGALOG REGION", technique: "CITRUS-SOY MARINADE",
+    image: local("bistek-tagalog-dscf3899.jpg"), imageSource: commonsPage("Bistek_Tagalog_DSCF3899.jpg"),
     ingredients: [
       {name:"Beef sirloin, sliced 5 mm thick",metric:"700 g",imperial:"1.5 lb"},
       {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
@@ -1164,6 +1175,7 @@ export const recipes: Recipe[] = [
     slug: "crispy-pata", title: "Crispy Pata", subtitle: "Deep-Fried Pork Knuckle",
     description: "A whole pork leg simmered with aromatics until tender, dried thoroughly, then deep-fried until the skin blisters into glass. Served with a sharp vinegar dip that cuts the fat.",
     category: "PORK / FRIED", time: "2H 30M", yield: "4\u20136 PAX", origin: "MANILA", technique: "BOIL + DEEP FRY",
+    image: local("crispy-pata-pork.jpg"), imageSource: commonsPage("Crispy_Pata_Pork.jpg"),
     ingredients: [
       {name:"Pork leg (pata), whole",metric:"1.5 kg",imperial:"3.3 lb"},
       {name:"Water",metric:"3.0 L",imperial:"12 1/2 cups"},
@@ -1200,6 +1212,7 @@ export const recipes: Recipe[] = [
     slug: "sinigang-na-hipon", title: "Sinigang na Hipon", subtitle: "Shrimp in Sour Tamarind Broth",
     description: "Shrimp poached briefly in a tamarind broth loaded with vegetables. The fastest sinigang there is, and the one most easily ruined by overcooking the shrimp.",
     category: "SOUP / SOUR", time: "35M", yield: "4 PAX", origin: "PHILIPPINES", technique: "TAMARIND BROTH",
+    image: local("the-best-sinigang-cuisine.jpg"), imageSource: commonsPage("The_Best_Sinigang_Cuisine.jpg"),
     ingredients: [
       {name:"Large shrimp, head-on",metric:"700 g",imperial:"1.5 lb"},
       {name:"Water",metric:"1.8 L",imperial:"7 1/2 cups"},
@@ -1388,6 +1401,7 @@ export const recipes: Recipe[] = [
     slug: "monggo-guisado", title: "Monggo Guisado", subtitle: "Sauteed Mung Bean Stew",
     description: "Mung beans boiled soft then finished in a sautee of garlic, onion and tomato with pork and leafy greens. Cheap, filling everyday cooking, traditionally eaten on Fridays.",
     category: "STEW / LEGUME", time: "1H", yield: "6 PAX", origin: "PHILIPPINES", technique: "BOIL + SAUTEE",
+    image: local("monggojf.jpg"), imageSource: commonsPage("Monggojf.JPG"),
     ingredients: [
       {name:"Dried mung beans",metric:"250 g",imperial:"9 oz"},
       {name:"Water",metric:"1.5 L",imperial:"6 1/3 cups"},
@@ -1425,6 +1439,7 @@ export const recipes: Recipe[] = [
     slug: "ginataang-kalabasa-at-sitaw", title: "Ginataang Kalabasa at Sitaw", subtitle: "Squash and Long Beans in Coconut Milk",
     description: "Squash and yardlong beans simmered in coconut milk with shrimp and shrimp paste, until the squash softens enough to thicken the sauce itself.",
     category: "VEGETABLE / GATA", time: "40M", yield: "4\u20136 PAX", origin: "PHILIPPINES", technique: "COCONUT REDUCTION",
+    image: local("ginataang-kalabasa-at-hipon-shrimp-calabaza-green-beans-and-.jpg"), imageSource: commonsPage("Ginataang_kalabasa_at_hipon_(shrimp,_calabaza,_green_beans,_and_eggplant_in_coconut_milk)_-_Philippines.jpg"),
     ingredients: [
       {name:"Squash (kalabasa), cubed",metric:"700 g",imperial:"1.5 lb"},
       {name:"Yardlong beans (sitaw), cut",metric:"250 g",imperial:"9 oz"},
@@ -1462,6 +1477,7 @@ export const recipes: Recipe[] = [
     slug: "gising-gising", title: "Gising-Gising", subtitle: "Spicy Winged Beans in Coconut Milk",
     description: "Chopped winged beans cooked down in coconut milk with pork, shrimp paste and a serious quantity of bird's eye chilli. The name means wake up, and it is meant literally.",
     category: "VEGETABLE / GATA", time: "35M", yield: "4 PAX", origin: "CENTRAL LUZON", technique: "COCONUT REDUCTION",
+    image: local("sigarilyasjf1338.jpg"), imageSource: commonsPage("Sigarilyasjf1338.JPG"),
     ingredients: [
       {name:"Winged beans (sigarilyas), chopped",metric:"500 g",imperial:"1.1 lb"},
       {name:"Pork belly, minced",metric:"250 g",imperial:"9 oz"},
@@ -1498,6 +1514,7 @@ export const recipes: Recipe[] = [
     slug: "pancit-canton", title: "Pancit Canton", subtitle: "Stir-Fried Egg Noodles",
     description: "Wheat-and-egg noodles stir-fried dry with pork, shrimp and vegetables, the noodles finishing by absorbing seasoned stock straight from the pan. The everyday pancit.",
     category: "NOODLES / STIR-FRY", time: "35M", yield: "6 PAX", origin: "PHILIPPINES", technique: "WOK TOSS",
+    image: local("pancit-canton-guisado-2.jpg"), imageSource: commonsPage("Pancit Canton Guisado 2.jpg"),
     ingredients: [
       {name:"Pancit canton noodles",metric:"400 g",imperial:"14 oz"},
       {name:"Pork shoulder, thinly sliced",metric:"250 g",imperial:"9 oz"},
@@ -1537,6 +1554,7 @@ export const recipes: Recipe[] = [
     slug: "pancit-palabok", title: "Pancit Palabok", subtitle: "Rice Noodles in Shrimp Sauce",
     description: "Thin rice noodles under a thick annatto-orange shrimp sauce, finished with smoked fish, crushed pork crackling, egg and shrimp. The sauce is ladled over, never tossed through.",
     category: "NOODLES / SAUCED", time: "50M", yield: "6 PAX", origin: "PHILIPPINES", technique: "SHRIMP SAUCE",
+    image: local("palabok-of-davao.jpg"), imageSource: commonsPage("Palabok of davao.jpg"),
     ingredients: [
       {name:"Rice noodles (bihon)",metric:"400 g",imperial:"14 oz"},
       {name:"Shrimp, peeled, shells reserved",metric:"300 g",imperial:"10.5 oz"},
@@ -1693,6 +1711,7 @@ export const recipes: Recipe[] = [
     slug: "champorado", title: "Champorado", subtitle: "Chocolate Rice Porridge",
     description: "Glutinous rice cooked with tablea chocolate into a thick sweet porridge, served hot with milk and, traditionally, salted dried fish alongside.",
     category: "DESSERT / PORRIDGE", time: "40M", yield: "4 PAX", origin: "PHILIPPINES", technique: "SLOW PORRIDGE",
+    image: local("champorado.jpg"), imageSource: commonsPage("Champorado.jpg"),
     ingredients: [
       {name:"Glutinous rice",metric:"300 g",imperial:"1 1/2 cups"},
       {name:"Water",metric:"1.5 L",imperial:"6 1/3 cups"},
@@ -1758,6 +1777,7 @@ export const recipes: Recipe[] = [
     slug: "turon", title: "Turon", subtitle: "Banana and Jackfruit Spring Roll",
     description: "Saba banana and jackfruit rolled in a spring-roll wrapper, fried, and lacquered in caramelised brown sugar. Crisp outside, molten inside.",
     category: "MERIENDA / FRIED", time: "30M", yield: "8 PCS", origin: "PHILIPPINES", technique: "CARAMEL FRY",
+    image: local("turon-na-saging.jpg"), imageSource: commonsPage("Turon_na_Saging.jpg"),
     ingredients: [
       {name:"Saba bananas, halved lengthwise",metric:"6 pcs",imperial:"6 pcs"},
       {name:"Jackfruit (langka), sliced",metric:"120 g",imperial:"4 oz"},
@@ -1790,6 +1810,7 @@ export const recipes: Recipe[] = [
     slug: "banana-cue", title: "Banana Cue", subtitle: "Caramelised Skewered Saba Banana",
     description: "Whole saba bananas deep-fried and coated in brown sugar that hardens into a glassy shell, then threaded onto bamboo skewers. Sold on every street corner in the afternoon.",
     category: "MERIENDA / FRIED", time: "20M", yield: "6 PCS", origin: "PHILIPPINES", technique: "CARAMEL FRY",
+    image: local("1130banana-cue-street-vendors-02.jpg"), imageSource: commonsPage("1130Banana_cue_Street_vendors_02.jpg"),
     ingredients: [
       {name:"Saba bananas, peeled",metric:"6 pcs",imperial:"6 pcs"},
       {name:"Brown sugar",metric:"200 g",imperial:"7 oz"},
@@ -1850,6 +1871,7 @@ export const recipes: Recipe[] = [
     slug: "maruya", title: "Maruya", subtitle: "Banana Fritters",
     description: "Sliced or fanned saba banana dipped in a light batter and fried crisp, then dusted with sugar. Homelier than turon and quicker to make.",
     category: "MERIENDA / FRIED", time: "25M", yield: "8 PCS", origin: "PHILIPPINES", technique: "BATTER FRY",
+    image: local("maruya-banana-fritters-from-cagayan-de-oro.jpg"), imageSource: commonsPage("Maruya_(banana_fritters)_from_Cagayan_de_Oro.jpg"),
     ingredients: [
       {name:"Saba bananas",metric:"6 pcs",imperial:"6 pcs"},
       {name:"All-purpose flour",metric:"150 g",imperial:"1 1/4 cups"},
@@ -1922,6 +1944,7 @@ export const recipes: Recipe[] = [
     slug: "tokneneng", title: "Tokneneng", subtitle: "Battered Chicken Eggs",
     description: "The larger sibling of kwek-kwek: whole hard-boiled chicken eggs in the same orange annatto batter, fried and served with vinegar.",
     category: "STREET FOOD / FRIED", time: "35M", yield: "8 PCS", origin: "METRO MANILA", technique: "BATTER FRY",
+    image: local("tokneneng-01.jpg"), imageSource: commonsPage("Tokneneng-01.jpg"),
     ingredients: [
       {name:"Chicken eggs",metric:"8 large",imperial:"8 large"},
       {name:"All-purpose flour",metric:"180 g",imperial:"1 1/2 cups"},
@@ -1959,6 +1982,7 @@ export const recipes: Recipe[] = [
     slug: "isaw", title: "Isaw", subtitle: "Grilled Chicken or Pork Intestine",
     description: "Cleaned intestines boiled until tender, threaded onto skewers and grilled over coals with a sweet-savoury basting. The best known of the Filipino grilled-innard skewers.",
     category: "STREET FOOD / GRILL", time: "1H 30M", yield: "12 PCS", origin: "METRO MANILA", technique: "CHARCOAL GRILL",
+    image: local("isaw.jpg"), imageSource: commonsPage("Isaw.jpg"),
     ingredients: [
       {name:"Chicken or pork intestines",metric:"800 g",imperial:"1.8 lb"},
       {name:"Water",metric:"2.0 L",imperial:"8 1/2 cups"},
@@ -2068,6 +2092,7 @@ export const recipes: Recipe[] = [
     slug: "ukoy", title: "Ukoy", subtitle: "Shrimp and Vegetable Fritters",
     description: "Small whole shrimp bound with bean sprouts and julienned squash in a rice-flour batter, fried flat and crisp, and eaten with garlic vinegar.",
     category: "MERIENDA / FRIED", time: "35M", yield: "10 PCS", origin: "PHILIPPINES", technique: "BATTER FRY",
+    image: local("ukoy-shrimp-fritters-from-vigan-philippines.jpg"), imageSource: commonsPage("Ukoy_(shrimp_fritters)_from_Vigan,_Philippines.jpg"),
     ingredients: [
       {name:"Small shrimp, whole",metric:"300 g",imperial:"10.5 oz"},
       {name:"Mung bean sprouts (togue)",metric:"200 g",imperial:"7 oz"},
@@ -2144,6 +2169,7 @@ export const recipes: Recipe[] = [
     slug: "ube-halaya", title: "Ube Halaya", subtitle: "Purple Yam Jam",
     description: "Boiled purple yam mashed and cooked down slowly with coconut milk, condensed milk and butter until it is thick enough to hold the mark of a spoon.",
     category: "DESSERT / CONFECTION", time: "1H 30M", yield: "8 PAX", origin: "PHILIPPINES", technique: "SLOW REDUCTION",
+    image: local("ube-halaya-filipino-dessert.jpg"), imageSource: commonsPage("Ube_halaya,_Filipino_dessert.jpg"),
     ingredients: [
       {name:"Purple yam (ube), peeled",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
@@ -2177,6 +2203,7 @@ export const recipes: Recipe[] = [
     slug: "bibingka", title: "Bibingka", subtitle: "Coconut Rice Cake with Salted Egg",
     description: "A soft rice cake baked on banana leaf with coals above and below, topped with salted egg and cheese and brushed with butter. Christmas morning food.",
     category: "DESSERT / KAKANIN", time: "50M", yield: "8 PAX", origin: "PHILIPPINES", technique: "BANANA-LEAF BAKE",
+    image: local("02545jfplaza-publika-de-baliuag-bulacanfvf-03.jpg"), imageSource: commonsPage("02545jfPlaza_Publika_de_Baliuag_Bulacanfvf_03.jpg"),
     ingredients: [
       {name:"Rice flour",metric:"300 g",imperial:"2 1/2 cups"},
       {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
@@ -2214,6 +2241,7 @@ export const recipes: Recipe[] = [
     slug: "kutsinta", title: "Kutsinta", subtitle: "Steamed Brown Rice Cake",
     description: "A dense, deliberately chewy steamed cake of rice flour and lye water, tinted amber with annatto and eaten under a blanket of grated coconut.",
     category: "DESSERT / KAKANIN", time: "50M", yield: "16 PCS", origin: "PHILIPPINES", technique: "LYE STEAM",
+    image: local("kutsinta.jpg"), imageSource: commonsPage("Kutsinta.jpg"),
     ingredients: [
       {name:"Rice flour",metric:"200 g",imperial:"1 2/3 cups"},
       {name:"All-purpose flour",metric:"60 g",imperial:"1/2 cup"},
@@ -2279,6 +2307,7 @@ export const recipes: Recipe[] = [
     slug: "puto", title: "Puto", subtitle: "Steamed Rice Cakes",
     description: "Small steamed rice cakes, faintly sweet and cloud-light, usually crowned with cheese or salted egg. Eaten as merienda and served alongside dinuguan.",
     category: "DESSERT / KAKANIN", time: "40M", yield: "18 PCS", origin: "PHILIPPINES", technique: "STEAM",
+    image: local("puto.jpg"), imageSource: commonsPage("Puto.jpg"),
     ingredients: [
       {name:"Rice flour",metric:"300 g",imperial:"2 1/2 cups"},
       {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
@@ -2314,6 +2343,7 @@ export const recipes: Recipe[] = [
     slug: "biko", title: "Biko", subtitle: "Sticky Rice Cake with Latik",
     description: "Glutinous rice cooked in coconut milk and brown sugar until dense and chewy, spread flat and finished with latik, the toasted curds left from reducing coconut cream.",
     category: "DESSERT / KAKANIN", time: "1H 15M", yield: "10 PAX", origin: "PHILIPPINES", technique: "COCONUT REDUCTION",
+    image: local("sticky-rice-cake-biko.jpg"), imageSource: commonsPage("Sticky_Rice_Cake_Biko.jpg"),
     ingredients: [
       {name:"Glutinous rice",metric:"500 g",imperial:"2 1/2 cups"},
       {name:"Coconut milk",metric:"800 ml",imperial:"3 1/3 cups"},
@@ -2347,6 +2377,7 @@ export const recipes: Recipe[] = [
     slug: "sapin-sapin", title: "Sapin-Sapin", subtitle: "Layered Glutinous Rice Cake",
     description: "Three coloured layers of sweetened coconut and glutinous rice steamed one on top of another, topped with latik. The name means layers.",
     category: "DESSERT / KAKANIN", time: "1H 30M", yield: "12 PAX", origin: "PHILIPPINES", technique: "LAYERED STEAM",
+    image: local("sapin-sapin.jpg"), imageSource: commonsPage("Sapin-sapin.jpg"),
     ingredients: [
       {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
       {name:"Coconut milk",metric:"800 ml",imperial:"3 1/3 cups"},
@@ -2486,6 +2517,7 @@ export const recipes: Recipe[] = [
     slug: "ginataang-langka", title: "Ginataang Langka", subtitle: "Unripe Jackfruit in Coconut Milk",
     description: "Green jackfruit simmered in coconut milk with shrimp paste and chilli until it turns silky and takes on the sauce. Meaty in texture without any meat.",
     category: "VEGETABLE / GATA", time: "45M", yield: "4\u20136 PAX", origin: "PHILIPPINES", technique: "COCONUT REDUCTION",
+    image: local("ginataang-langka.jpg"), imageSource: commonsPage("Ginataang_Langka.jpg"),
     ingredients: [
       {name:"Unripe jackfruit (langka), cut",metric:"700 g",imperial:"1.5 lb"},
       {name:"Coconut milk",metric:"500 ml",imperial:"2 cups"},
@@ -2522,6 +2554,7 @@ export const recipes: Recipe[] = [
     slug: "dinengdeng", title: "Dinengdeng", subtitle: "Ilocano Vegetable Broth with Bagoong",
     description: "An Ilocano vegetable dish built on bagoong isda rather than oil: a thin fermented-fish broth carrying whatever vegetables are to hand, with grilled fish laid over the top.",
     category: "VEGETABLE / ILOCANO", time: "35M", yield: "4\u20136 PAX", origin: "ILOCOS REGION", technique: "BAGOONG BROTH",
+    image: local("dinengdeng-inabraw-3.jpg"), imageSource: commonsPage("Dinengdeng_Inabraw_3.jpg"),
     ingredients: [
       {name:"Bagoong isda (fermented fish)",metric:"60 ml",imperial:"1/4 cup"},
       {name:"Water",metric:"1.2 L",imperial:"5 cups"},
@@ -2559,6 +2592,7 @@ export const recipes: Recipe[] = [
     slug: "tapa", title: "Tapa", subtitle: "Cured Beef for Tapsilog",
     description: "Thin beef cured in soy, calamansi and garlic, then fried hard. Served with garlic rice and a fried egg, it becomes tapsilog.",
     category: "BREAKFAST / CURED", time: "30M", yield: "4 PAX", origin: "PHILIPPINES", technique: "CURE + FRY",
+    image: local("beef-tapa-with-steamed-rice-and-sliced-tomato-and-cucumber.jpg"), imageSource: commonsPage("Beef_tapa_with_steamed_rice_and_sliced_tomato_and_cucumber.jpg"),
     ingredients: [
       {name:"Beef sirloin, sliced 3 mm thick",metric:"700 g",imperial:"1.5 lb"},
       {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
@@ -2668,6 +2702,7 @@ export const recipes: Recipe[] = [
     slug: "paksiw-na-lechon", title: "Paksiw na Lechon", subtitle: "Roast Pork in Liver Sauce and Vinegar",
     description: "Leftover roast pork simmered down in its own liver sauce with vinegar, bay and sugar until the sauce turns dark and thick. The second life of every lechon.",
     category: "PORK / PAKSIW", time: "1H", yield: "6 PAX", origin: "PHILIPPINES", technique: "VINEGAR BRAISE",
+    image: local("lechon-paksiw-from-mindanao.jpg"), imageSource: commonsPage("Lechon paksiw from Mindanao.jpg"),
     ingredients: [
       {name:"Roast pork (lechon), chopped",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Lechon liver sauce",metric:"300 g",imperial:"10.5 oz"},
@@ -2742,6 +2777,7 @@ export const recipes: Recipe[] = [
     slug: "daing-na-bangus", title: "Daing na Bangus", subtitle: "Vinegar-Marinated Split Milkfish",
     description: "Milkfish split flat, marinated overnight in vinegar, garlic and pepper, then fried until the skin crisps. A breakfast staple.",
     category: "SEAFOOD / CURED", time: "25M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR CURE",
+    image: local("daing-na-bangus.jpg"), imageSource: commonsPage("Daing_na_bangus.jpg"),
     ingredients: [
       {name:"Milkfish (bangus), butterflied",metric:"900 g",imperial:"2 lb"},
       {name:"Cane vinegar",metric:"240 ml",imperial:"1 cup"},
@@ -2893,6 +2929,7 @@ export const recipes: Recipe[] = [
     slug: "pancit-miki", title: "Pancit Miki", subtitle: "Fresh Thick Egg Noodles in Broth",
     description: "Soft fresh miki noodles cooked in a garlicky pork broth until the starch thickens the soup itself. Thicker and homelier than canton.",
     category: "NOODLES / SOUP", time: "35M", yield: "4 PAX", origin: "PHILIPPINES", technique: "BROTH NOODLES",
+    image: local("miki-bihon-july-2025.jpg"), imageSource: commonsPage("Miki Bihon, July 2025.jpg"),
     ingredients: [
       {name:"Miki noodles, fresh",metric:"500 g",imperial:"1.1 lb"},
       {name:"Pork shoulder, thinly sliced",metric:"250 g",imperial:"9 oz"},
@@ -2971,6 +3008,7 @@ export const recipes: Recipe[] = [
     slug: "lumpiang-togue", title: "Lumpiang Togue", subtitle: "Fried Bean Sprout Spring Rolls",
     description: "Bean sprouts, tofu and vegetables rolled in pastry and fried crisp. The cheapest and most everyday of the fried lumpia.",
     category: "MERIENDA / FRIED", time: "45M", yield: "12 PCS", origin: "PHILIPPINES", technique: "STUFF + FRY",
+    image: local("vegetable-lumpia.jpg"), imageSource: commonsPage("Vegetable_Lumpia.jpg"),
     ingredients: [
       {name:"Mung bean sprouts (togue)",metric:"400 g",imperial:"14 oz"},
       {name:"Firm tofu, small dice",metric:"250 g",imperial:"9 oz"},
@@ -3046,6 +3084,7 @@ export const recipes: Recipe[] = [
     slug: "maja-blanca", title: "Maja Blanca", subtitle: "Coconut and Corn Pudding",
     description: "A white coconut pudding set with cornstarch, studded with sweetcorn and finished with latik. Soft enough to wobble, firm enough to slice.",
     category: "DESSERT / PUDDING", time: "40M", yield: "10 PAX", origin: "PHILIPPINES", technique: "STARCH SET",
+    image: local("majablanca.jpg"), imageSource: commonsPage("Majablanca.jpg"),
     ingredients: [
       {name:"Coconut milk",metric:"800 ml",imperial:"3 1/3 cups"},
       {name:"Coconut cream",metric:"300 ml",imperial:"1 1/4 cups"},
@@ -3079,6 +3118,7 @@ export const recipes: Recipe[] = [
     slug: "palitaw", title: "Palitaw", subtitle: "Boiled Rice Cakes in Coconut and Sesame",
     description: "Flat discs of glutinous rice dough dropped into boiling water. They are ready the moment they float, which is what gives them their name.",
     category: "DESSERT / KAKANIN", time: "35M", yield: "16 PCS", origin: "PHILIPPINES", technique: "BOIL",
+    image: local("palitaw-sm.jpg"), imageSource: commonsPage("Palitaw_Sm.jpg"),
     ingredients: [
       {name:"Glutinous rice flour",metric:"300 g",imperial:"2 1/2 cups"},
       {name:"Water",metric:"220 ml",imperial:"1 cup"},
@@ -3111,6 +3151,7 @@ export const recipes: Recipe[] = [
     slug: "espasol", title: "Espasol", subtitle: "Toasted Rice Flour Logs",
     description: "Glutinous rice flour cooked in sweetened coconut milk, rolled in more toasted rice flour and cut into short cylinders. Powdery outside, chewy within.",
     category: "DESSERT / KAKANIN", time: "50M", yield: "16 PCS", origin: "LAGUNA", technique: "TOASTED FLOUR",
+    image: local("espasol-rolls-in-banana-leaves.jpg"), imageSource: commonsPage("Espasol_rolls_in_banana_leaves.JPG"),
     ingredients: [
       {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
       {name:"Coconut milk",metric:"600 ml",imperial:"2 1/2 cups"},
@@ -3177,6 +3218,7 @@ export const recipes: Recipe[] = [
     slug: "kalamay", title: "Kalamay", subtitle: "Sticky Coconut and Muscovado Sweet",
     description: "Ground glutinous rice cooked down with coconut milk and brown sugar into a dense, glossy, intensely sticky paste. Best known from Jagna in Bohol.",
     category: "DESSERT / KAKANIN", time: "1H 30M", yield: "10 PAX", origin: "BOHOL", technique: "SLOW REDUCTION",
+    image: local("boholano-delicacy-kalamay.jpg"), imageSource: commonsPage("Boholano_delicacy_Kalamay.png"),
     ingredients: [
       {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
       {name:"Coconut milk",metric:"1.0 L",imperial:"4 1/4 cups"},
@@ -3209,6 +3251,7 @@ export const recipes: Recipe[] = [
     slug: "nilupak", title: "Nilupak", subtitle: "Pounded Cassava with Coconut and Butter",
     description: "Boiled cassava pounded smooth with coconut milk, butter and sugar, then pressed flat and cut. The name describes the pounding.",
     category: "DESSERT / KAKANIN", time: "1H", yield: "8 PAX", origin: "PHILIPPINES", technique: "POUND + PRESS",
+    image: local("a-variety-of-nilupak.jpg"), imageSource: commonsPage("A_variety_of_Nilupak.jpg"),
     ingredients: [
       {name:"Cassava, peeled",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Coconut milk",metric:"300 ml",imperial:"1 1/4 cups"},
@@ -3243,6 +3286,7 @@ export const recipes: Recipe[] = [
     slug: "binagol", title: "Binagol", subtitle: "Taro Pudding in a Coconut Shell",
     description: "Mashed giant taro cooked with coconut milk, condensed milk and egg yolk, packed into half a coconut shell, wrapped in banana leaf and steamed.",
     category: "DESSERT / KAKANIN", time: "1H 45M", yield: "6 PCS", origin: "LEYTE / EASTERN VISAYAS", technique: "SHELL STEAM",
+    image: local("09979jfchurch-foods-tungkong-mangga-san-jose-del-monte-city-.jpg"), imageSource: commonsPage("09979jfChurch_Foods_Tungkong_Mangga_San_Jose_del_Monte_City_Bulacanfvf_03.JPG"),
     ingredients: [
       {name:"Giant taro (talyan) corm, grated",metric:"800 g",imperial:"1.8 lb"},
       {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
@@ -3342,6 +3386,7 @@ export const recipes: Recipe[] = [
     slug: "pastillas-de-leche", title: "Pastillas de Leche", subtitle: "Milk Candy",
     description: "Milk cooked down with sugar until stiff, rolled into short logs and dusted in sugar. Traditionally made with carabao milk.",
     category: "CONFECTION / MILK", time: "1H", yield: "30 PCS", origin: "SAN MIGUEL, BULACAN", technique: "SLOW REDUCTION",
+    image: local("pastillas-made-from-carabao-s-milk.jpg"), imageSource: commonsPage("Pastillas_made_from_carabao's_milk.jpg"),
     ingredients: [
       {name:"Carabao or full-cream milk",metric:"1.0 L",imperial:"4 1/4 cups"},
       {name:"Sugar",metric:"300 g",imperial:"10.5 oz"},
@@ -3373,6 +3418,7 @@ export const recipes: Recipe[] = [
     slug: "yema", title: "Yema", subtitle: "Egg Yolk Custard Candy",
     description: "Egg yolks cooked down with condensed milk into a thick custard, rolled into balls and wrapped in cellophane. Sometimes coated in hard caramel.",
     category: "CONFECTION / CUSTARD", time: "45M", yield: "24 PCS", origin: "PHILIPPINES", technique: "CUSTARD REDUCTION",
+    image: local("yema-philippines.jpg"), imageSource: commonsPage("Yema_(Philippines).jpg"),
     ingredients: [
       {name:"Egg yolks",metric:"10 pcs",imperial:"10 pcs"},
       {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
@@ -3406,6 +3452,7 @@ export const recipes: Recipe[] = [
     slug: "bukayo", title: "Bukayo", subtitle: "Caramelised Young Coconut Sweet",
     description: "Strips of young coconut simmered in melted muscovado until the sugar turns to chewy caramel and coats every strand.",
     category: "CONFECTION / COCONUT", time: "45M", yield: "20 PCS", origin: "LINGAYEN, PANGASINAN", technique: "SUGAR CARAMEL",
+    image: local("bukayo-sweetened-shredded-coconut-philippines.jpg"), imageSource: commonsPage("Bukayo_(sweetened_shredded_coconut)_-_Philippines.jpg"),
     ingredients: [
       {name:"Young coconut meat, stripped",metric:"500 g",imperial:"1.1 lb"},
       {name:"Muscovado sugar",metric:"300 g",imperial:"10.5 oz"},
@@ -3437,6 +3484,7 @@ export const recipes: Recipe[] = [
     slug: "otap", title: "Otap", subtitle: "Cebuano Puff Pastry Biscuit",
     description: "A flat oval of layered pastry rolled thin, dusted heavily in sugar and baked until it shatters. Cebu's best known pasalubong.",
     category: "PASTRY / BISCUIT", time: "2H", yield: "24 PCS", origin: "CEBU", technique: "LAMINATED PASTRY",
+    image: local("otap.jpg"), imageSource: commonsPage("Otap.PNG"),
     ingredients: [
       {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
       {name:"Shortening",metric:"200 g",imperial:"7 oz"},
@@ -3470,6 +3518,7 @@ export const recipes: Recipe[] = [
     slug: "piaya", title: "Piaya", subtitle: "Muscovado-Filled Flatbread",
     description: "A thin unleavened flatbread stuffed with muscovado, pressed flat, sprinkled with sesame and cooked dry on a griddle until the filling melts and bubbles through.",
     category: "PASTRY / FLATBREAD", time: "1H 30M", yield: "12 PCS", origin: "NEGROS OCCIDENTAL", technique: "GRIDDLE BAKE",
+    image: local("piaya.jpg"), imageSource: commonsPage("Piaya.jpg"),
     ingredients: [
       {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
       {name:"Water",metric:"180 ml",imperial:"3/4 cup"},
@@ -3503,6 +3552,7 @@ export const recipes: Recipe[] = [
     slug: "rosquillos", title: "Rosquillos", subtitle: "Cebuano Ring Cookies",
     description: "Small scalloped ring cookies, crisp and faintly salty-sweet, created in Liloan, Cebu in 1907 and still made there.",
     category: "PASTRY / BISCUIT", time: "1H", yield: "36 PCS", origin: "LILOAN, CEBU", technique: "BAKED COOKIE",
+    image: local("rosquillos.jpg"), imageSource: commonsPage("Rosquillos.jpg"),
     ingredients: [
       {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
       {name:"Butter",metric:"200 g",imperial:"7 oz"},
@@ -3536,6 +3586,7 @@ export const recipes: Recipe[] = [
     slug: "masareal", title: "Masareal", subtitle: "Peanut and Sugar Bars",
     description: "Boiled peanuts ground fine with sugar, dried and cut into rectangular bars. Dense, sweet and faintly sandy, wrapped in plain white paper.",
     category: "CONFECTION / PEANUT", time: "50M", yield: "20 PCS", origin: "MANDAUE, CEBU", technique: "GRIND + PRESS",
+    image: local("masareal-philippines.jpg"), imageSource: commonsPage("Masareal_(Philippines).jpg"),
     ingredients: [
       {name:"Peanuts, roasted and skinned",metric:"500 g",imperial:"1.1 lb"},
       {name:"Sugar",metric:"300 g",imperial:"10.5 oz"},
@@ -3566,6 +3617,7 @@ export const recipes: Recipe[] = [
     slug: "pandesal", title: "Pandesal", subtitle: "Salt Bread Rolls",
     description: "Soft enriched rolls proofed, cut, and rolled in breadcrumbs before baking. The Philippine breakfast bread, bought hot from the panaderia at dawn.",
     category: "BREAD / PANADERIA", time: "3H", yield: "16 PCS", origin: "PHILIPPINES", technique: "ENRICHED DOUGH",
+    image: local("pinoy-pandesal.jpg"), imageSource: commonsPage("Pinoy_Pandesal.jpg"),
     ingredients: [
       {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
       {name:"Sugar",metric:"80 g",imperial:"3 oz"},
@@ -3636,6 +3688,7 @@ export const recipes: Recipe[] = [
     slug: "monay", title: "Monay", subtitle: "Dense Milk Bread Roll",
     description: "A firm, faintly sweet roll with a deep crease down the middle, denser and chewier than pandesal. Keeps far better than the rest of the panaderia shelf.",
     category: "BREAD / PANADERIA", time: "3H", yield: "12 PCS", origin: "PHILIPPINES", technique: "ENRICHED DOUGH",
+    image: local("pan-de-monja-monay-philippines.jpg"), imageSource: commonsPage("Pan_de_monja_(Monay)_Philippines.jpg"),
     ingredients: [
       {name:"All-purpose flour",metric:"500 g",imperial:"4 cups"},
       {name:"Sugar",metric:"60 g",imperial:"2 oz"},
@@ -3670,6 +3723,7 @@ export const recipes: Recipe[] = [
     slug: "pan-de-coco", title: "Pan de Coco", subtitle: "Coconut-Filled Sweet Rolls",
     description: "Soft rolls filled with grated coconut cooked down in brown sugar until dark and sticky. A panaderia staple and a lunchbox standby.",
     category: "BREAD / PANADERIA", time: "3H", yield: "12 PCS", origin: "PHILIPPINES", technique: "FILLED DOUGH",
+    image: local("pan-de-coco2.jpg"), imageSource: commonsPage("Pan_de_coco2.jpg"),
     ingredients: [
       {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
       {name:"Sugar",metric:"80 g",imperial:"3 oz"},
@@ -3706,6 +3760,7 @@ export const recipes: Recipe[] = [
     slug: "spanish-bread", title: "Spanish Bread", subtitle: "Butter and Sugar Rolled Bread",
     description: "A soft roll wrapped around a paste of butter, sugar and breadcrumbs, baked so the filling half melts into the crumb. Nothing about it is Spanish.",
     category: "BREAD / PANADERIA", time: "3H", yield: "16 PCS", origin: "PHILIPPINES", technique: "FILLED DOUGH",
+    image: local("spanish-bread-se-orita-bread-philippines-06.jpg"), imageSource: commonsPage("Spanish bread (Señorita bread) - Philippines 06.jpg"),
     ingredients: [
       {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
       {name:"Sugar",metric:"80 g",imperial:"3 oz"},
@@ -3814,6 +3869,7 @@ export const recipes: Recipe[] = [
     slug: "napoleones", title: "Napoleones", subtitle: "Negros Custard Mille-Feuille",
     description: "Squares of flaky puff pastry layered with thick custard and finished with a white sugar glaze. Silay and Bacolod's signature pasalubong.",
     category: "PASTRY / LAYERED", time: "2H 30M", yield: "12 PCS", origin: "NEGROS OCCIDENTAL", technique: "LAMINATED PASTRY",
+    image: local("napoleones.jpg"), imageSource: commonsPage("Napoleones.jpg"),
     ingredients: [
       {name:"Puff pastry",metric:"500 g",imperial:"1.1 lb"},
       {name:"Milk",metric:"500 ml",imperial:"2 cups"},
@@ -3849,6 +3905,7 @@ export const recipes: Recipe[] = [
     slug: "pinasugbo", title: "Pinasugbo", subtitle: "Caramelised Banana Chips with Sesame",
     description: "Thin lengthwise slices of saba banana fried crisp and turned through caramelised sugar with sesame seeds, then sold in paper cones.",
     category: "MERIENDA / FRIED", time: "40M", yield: "8 PAX", origin: "WESTERN VISAYAS", technique: "CARAMEL FRY",
+    image: local("pinasugbo-mindanao-philippines-01.jpg"), imageSource: commonsPage("Pinasugbo_(Mindanao,_Philippines)_01.jpg"),
     ingredients: [
       {name:"Saba bananas, thinly sliced lengthwise",metric:"8 pcs",imperial:"8 pcs"},
       {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
@@ -3913,6 +3970,7 @@ export const recipes: Recipe[] = [
     slug: "karioka", title: "Karioka", subtitle: "Fried Glutinous Rice Balls in Caramel",
     description: "Balls of glutinous rice and grated coconut deep-fried, then skewered and coated in dark caramel. Known by a different name in nearly every region.",
     category: "MERIENDA / FRIED", time: "45M", yield: "20 PCS", origin: "PHILIPPINES", technique: "FRY + CARAMEL",
+    image: local("cascaron-fried-mochi-balls-12486482804.jpg"), imageSource: commonsPage("Cascaron-_fried_mochi_balls_(12486482804).jpg"),
     ingredients: [
       {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
       {name:"Grated coconut",metric:"200 g",imperial:"7 oz"},
@@ -3947,6 +4005,7 @@ export const recipes: Recipe[] = [
     slug: "cassava-cake", title: "Cassava Cake", subtitle: "Grated Cassava Bake with Custard Top",
     description: "Grated cassava baked with coconut and condensed milk, finished with a custard layer browned under heat. Merienda, not dessert, in practice.",
     category: "DESSERT / CASSAVA", time: "1H 15M", yield: "12 PAX", origin: "PHILIPPINES", technique: "BAKED CUSTARD",
+    image: local("cassava-cake-philippines-2.jpg"), imageSource: commonsPage("Cassava_cake_(Philippines)_2.jpg"),
     ingredients: [
       {name:"Cassava, grated",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
@@ -3984,6 +4043,7 @@ export const recipes: Recipe[] = [
     slug: "buko-pandan", title: "Buko Pandan", subtitle: "Young Coconut and Pandan Dessert",
     description: "Strips of young coconut and pandan-scented jelly folded through sweetened cream. Cold, pale green, and on every party table.",
     category: "DESSERT / COLD", time: "1H", yield: "10 PAX", origin: "PHILIPPINES", technique: "GELATIN SET",
+    image: local("pandan-cake.jpg"), imageSource: commonsPage("Pandan_Cake.jpg"),
     ingredients: [
       {name:"Young coconut meat, stripped",metric:"500 g",imperial:"1.1 lb"},
       {name:"Pandan leaves",metric:"6 leaves",imperial:"6 leaves"},
@@ -4018,6 +4078,7 @@ export const recipes: Recipe[] = [
     slug: "atchara", title: "Atchara", subtitle: "Pickled Green Papaya",
     description: "Grated unripe papaya salted, pressed, and packed into a sweet-sour brine with carrot, ginger and peppercorns. Served beside anything grilled or fried.",
     category: "CONDIMENT / PICKLE", time: "1H", yield: "6 JARS", origin: "PHILIPPINES", technique: "SWEET PICKLE",
+    image: local("achara.jpg"), imageSource: commonsPage("Achara.jpg"),
     ingredients: [
       {name:"Green papaya, grated",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Salt",metric:"30 g",imperial:"2 tbsp"},
