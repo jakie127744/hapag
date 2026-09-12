@@ -241,7 +241,7 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             </div>
           )}
 
-          <AdSlot name="recipeMid" minHeight={250} className="mb-10" />
+          <AdSlot name="recipeMid" className="mb-10" />
 
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-white">Instructions</h2>
@@ -283,7 +283,7 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             </div>
           )}
 
-          <AdSlot name="recipeFoot" minHeight={250} className="mt-12" />
+          <AdSlot name="recipeFoot" className="mt-12" />
         </div>
       </div>
 

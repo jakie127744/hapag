@@ -65,7 +65,7 @@ export function Archive({ recipes, query }: { recipes: Recipe[]; query: string }
           {/* Below the grid. pb-36 on the section keeps the fixed filter bar
               clear of this unit. */}
           <div className="mt-12 max-w-3xl mx-auto">
-            <AdSlot name="homeFoot" minHeight={250} />
+            <AdSlot name="homeFoot" />
           </div>
         </div>
       </section>

@@ -98,7 +98,7 @@ export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recip
           bar at the bottom and from the card action buttons. */}
       <div className="px-6 md:px-12 pb-4">
         <div className="max-w-3xl mx-auto">
-          <AdSlot name="homeMid" minHeight={250} />
+          <AdSlot name="homeMid" />
         </div>
       </div>
 
