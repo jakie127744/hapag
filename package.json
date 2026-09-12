@@ -26,5 +26,7 @@
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7"
-  }
+  },
+  "author": "Molave Labs",
+  "description": "A living culinary archive of Filipino cuisine."
 }

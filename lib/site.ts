@@ -21,6 +21,20 @@ export const SITE_DESCRIPTION =
 
 export const SITE_LOCALE = "en_PH";
 
+/** Who built and publishes the archive. */
+export const PUBLISHER = "Molave Labs";
+export const PUBLISHER_URL = process.env.NEXT_PUBLIC_PUBLISHER_URL || "";
+
+/**
+ * Shown on the contact page and in the privacy policy, both of which AdSense
+ * requires. Set NEXT_PUBLIC_CONTACT_EMAIL before going live; the placeholder
+ * is deliberately obvious so it cannot ship unnoticed.
+ */
+export const CONTACT_EMAIL =
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL || "set-NEXT_PUBLIC_CONTACT_EMAIL@example.com";
+
+export const LAST_UPDATED = "12 September 2026";
+
 export function absoluteUrl(path = "/"): string {
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 }

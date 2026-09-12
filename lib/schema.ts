@@ -1,5 +1,5 @@
 import type { Recipe } from "@/data/recipes";
-import { absoluteUrl, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "./site";
+import { absoluteUrl, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, SITE_URL, PUBLISHER, PUBLISHER_URL } from "./site";
 import { isoDuration, prettyYield, primaryRegion, yieldServings } from "./regions";
 
 /**
@@ -38,8 +38,8 @@ export function recipeSchema(recipe: Recipe) {
       text,
       url: `${url}#step-${i + 1}`,
     })),
-    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
-    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    author: { "@type": "Organization", name: PUBLISHER },
+    publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization` },
     inLanguage: "en",
   };
 
@@ -102,7 +102,8 @@ export function siteSchema(recipeCount: number) {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
-      name: SITE_NAME,
+      name: PUBLISHER,
+      ...(PUBLISHER_URL ? { sameAs: [PUBLISHER_URL] } : {}),
       url: SITE_URL,
       description: SITE_DESCRIPTION,
       logo: { "@type": "ImageObject", url: absoluteUrl("/icons/icon-512.png") },

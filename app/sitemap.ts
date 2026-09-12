@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    ...["/about", "/contact", "/privacy", "/terms"].map((path) => ({
+      url: absoluteUrl(path),
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.4,
+    })),
     ...recipes.map((r) => ({
       url: absoluteUrl(`/recipes/${r.slug}`),
       lastModified: now,

@@ -1,5 +1,7 @@
 # Hapag — Filipino Culinary Lab
 
+Created by **Molave Labs**.
+
 A Filipino-cuisine recipe site built in the "translucent gastronomy" glass aesthetic:
 a dark `#0A0A0A` ground, frosted-glass surfaces, and a zest-green (`#d9f99d`) accent.
 
@@ -69,6 +71,28 @@ yours. `npm run add-images:check` shows what would happen without changing anyth
 
 `images-inbox/README.md` lists every recipe still waiting for a photo, with the exact
 filename to use.
+
+## Before deploying
+
+Set these so canonical URLs, contact details and attribution are correct:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+NEXT_PUBLIC_CONTACT_EMAIL=you@your-domain.com
+NEXT_PUBLIC_PUBLISHER_URL=https://molavelabs.example   # optional
+```
+
+## Advertising
+
+AdSense is wired with publisher `ca-pub-9907028021598445`. `public/ads.txt`,
+`/privacy`, `/terms`, `/about` and `/contact` are in place, which is what AdSense
+review expects, alongside a consent banner that switches Google to
+non-personalised ads when declined.
+
+Note: for visitors in the EEA, the UK or Switzerland, Google requires a **certified
+Consent Management Platform**. The built-in banner meets the plain
+disclosure-and-choice requirement but is not certified; adopt a CMP from Google's
+list before serving European traffic.
 
 ## Sourcing
 

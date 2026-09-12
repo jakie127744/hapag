@@ -1,3 +1,7 @@
+/** AdSense publisher id. Lives here, not in a "use client" module, so the
+ *  server layout can read its value rather than a client reference. */
+export const ADSENSE_CLIENT = "ca-pub-9907028021598445";
+
 /**
  * AdSense ad units.
  *

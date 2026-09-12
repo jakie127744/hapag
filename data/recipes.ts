@@ -2445,6 +2445,7 @@ export const recipes: Recipe[] = [
     slug: "adobong-sitaw", title: "Adobong Sitaw", subtitle: "Yardlong Beans in Adobo Sauce",
     description: "Yardlong beans cooked in the adobo manner with soy, vinegar and garlic, often with a little pork for fat. A quick everyday vegetable dish.",
     category: "VEGETABLE / BRAISE", time: "25M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    image: local("adobong-sitaw.jpg"),
     ingredients: [
       {name:"Yardlong beans (sitaw), cut",metric:"500 g",imperial:"1.1 lb"},
       {name:"Pork belly, small dice",metric:"150 g",imperial:"5 oz"},
@@ -4985,6 +4986,7 @@ export const recipes: Recipe[] = [
     slug: "ampaw", title: "Ampaw", subtitle: "Puffed Rice Cake",
     description: "Dried cooked rice fried until it puffs, then bound with caramel and pressed into bars. Built entirely from leftover rice.",
     category: "MERIENDA / PUFFED", time: "1H", yield: "20 PCS", origin: "VISAYAS", technique: "PUFF + CARAMEL",
+    image: local("ampaw.jpg"),
     ingredients: [
       {name:"Cooked white rice, day-old",metric:"600 g",imperial:"3 cups"},
       {name:"Neutral frying oil",metric:"800 ml",imperial:"3 1/3 cups"},
@@ -5345,6 +5347,7 @@ export const recipes: Recipe[] = [
     slug: "alupi", title: "Alupi", subtitle: "Cassava Cake in Banana Leaf",
     description: "Grated cassava mixed with coconut and sugar, wrapped in banana leaf and steamed into a dense chewy bar. The Western Visayan cassava suman.",
     category: "DESSERT / KAKANIN", time: "1H 15M", yield: "14 PCS", origin: "WESTERN VISAYAS", technique: "BANANA-LEAF STEAM",
+    image: local("alupi.jpg"),
     ingredients: [
       {name:"Cassava, grated",metric:"800 g",imperial:"1.8 lb"},
       {name:"Coconut milk",metric:"300 ml",imperial:"1 1/4 cups"},

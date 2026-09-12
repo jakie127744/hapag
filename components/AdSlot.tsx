@@ -1,15 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { AD_SLOTS, type AdSlotName } from "@/lib/ads";
+import { AD_SLOTS, ADSENSE_CLIENT, type AdSlotName } from "@/lib/ads";
 
-export const ADSENSE_CLIENT = "ca-pub-9907028021598445";
-
-declare global {
-  interface Window {
-    adsbygoogle?: unknown[];
-  }
-}
+export { ADSENSE_CLIENT };
 
 /**
  * A single AdSense unit, configured from lib/ads.ts.
