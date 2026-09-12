@@ -1027,7 +1027,7 @@ export const recipes: Recipe[] = [
     slug: "adobong-baboy", title: "Adobong Baboy", subtitle: "Pork Adobo",
     description: "Pork belly simmered in soy sauce, vinegar, garlic, bay and peppercorns until tender, then reduced until the sauce turns glossy and clings. The pork renders enough fat to fry itself at the end.",
     category: "MAIN / BRAISE", time: "75M", yield: "4\u20136 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
-    image: local("adobo-dscf4391.jpg"), imageSource: commonsPage("Adobo_DSCF4391.jpg"),
+    image: local("adobong-baboy.jpg"),
     ingredients: [
       {name:"Pork belly, 2.5 cm cubes",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
@@ -2481,6 +2481,7 @@ export const recipes: Recipe[] = [
     slug: "adobong-kangkong", title: "Adobong Kangkong", subtitle: "Water Spinach in Adobo Sauce",
     description: "Water spinach wilted quickly in garlic, soy and vinegar. Two minutes of cooking and almost no expense.",
     category: "VEGETABLE / BRAISE", time: "15M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    image: local("adobong-kangkong.jpg"),
     ingredients: [
       {name:"Water spinach (kangkong)",metric:"500 g",imperial:"1.1 lb"},
       {name:"Pork belly, small dice",metric:"120 g",imperial:"4 oz"},
@@ -4812,6 +4813,499 @@ export const recipes: Recipe[] = [
     sources: [
       "https://en.wikipedia.org/wiki/Ginataang_mais",
       "https://www.kawalingpinoy.com/ginataang-bilo-bilo/"
+    ]
+  },
+  {
+    slug: "puto-calasiao", title: "Puto Calasiao", subtitle: "Fermented Bite-Sized Rice Cakes",
+    description: "Tiny soft puto from Pangasinan, made from semi-glutinous rice soaked, ground and left to ferment for days before steaming. Faintly sour under the sweetness.",
+    category: "DESSERT / KAKANIN", time: "3D", yield: "40 PCS", origin: "CALASIAO, PANGASINAN", technique: "FERMENTED STEAM",
+    ingredients: [
+      {name:"Semi-glutinous rice",metric:"500 g",imperial:"2 1/2 cups"},
+      {name:"Water",metric:"700 ml",imperial:"3 cups"},
+      {name:"Sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Banana leaves",metric:"4 sheets",imperial:"4 sheets"}
+    ],
+    instructions: [
+      "Wash the rice and soak it in the water overnight.",
+      "Grind the soaked rice with its water into a smooth slurry, the galapong.",
+      "Stir in the sugar, cover loosely and leave at room temperature for 2 to 3 days. It will bubble and smell faintly sour as it ferments; this is what gives puto Calasiao its character and its lift, since no baking powder is used.",
+      "Stir the fermented batter down and season with the salt.",
+      "Line small moulds with banana leaf and fill each about three quarters.",
+      "Steam over rapidly boiling water for 10 to 12 minutes, with a cloth under the lid so condensation does not pit the tops.",
+      "Cool slightly and turn out. They are eaten warm, several at a time."
+    ],
+    notes: [
+      "The ferment is the recipe. Rushing it gives a flat, plain steamed cake.",
+      "Warmth speeds the fermentation, so a cooler kitchen needs the full three days."
+    ],
+    verification: "verified",
+    history: "Puto Calasiao is named for the town of Calasiao in Pangasinan, where it is made from semi-glutinous rice fermented in earthen jars for at least three days before steaming. The bite-sized shape and the faint sourness distinguish it from the larger, chemically leavened puto sold elsewhere.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Puto_Calasiao",
+      "https://www.angsarap.net/2012/10/10/puto-calasiao/"
+    ]
+  },
+  {
+    slug: "puto-pao", title: "Puto Pao", subtitle: "Steamed Rice Cake with Pork Filling",
+    description: "Puto batter steamed around a core of sweet-savoury pork asado, so it eats like a small siopao with a rice-cake shell.",
+    category: "DESSERT / KAKANIN", time: "1H 30M", yield: "16 PCS", origin: "PHILIPPINES", technique: "FILLED STEAM",
+    ingredients: [
+      {name:"Rice flour",metric:"300 g",imperial:"2 1/2 cups"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Baking powder",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Coconut milk",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Water",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Eggs",metric:"2 large",imperial:"2 large"},
+      {name:"Pork shoulder, small dice",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Oyster sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Brown sugar",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Garlic, minced",metric:"5 cloves",imperial:"5 cloves"},
+      {name:"Salted duck eggs, quartered",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Cheese, cubed",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Cook the pork with the garlic, soy sauce, oyster sauce and brown sugar over medium heat for 20 minutes, until tender and the sauce is thick and clinging. Cool completely.",
+      "Whisk the rice flour, sugar and baking powder together.",
+      "Beat in the coconut milk, water and eggs until smooth. Rest the batter 10 minutes.",
+      "Grease moulds and half-fill each with batter.",
+      "Spoon a little cooled asado into the centre of each, then cover with more batter to three quarters full.",
+      "Top with a piece of salted egg and a cube of cheese.",
+      "Steam for 15 to 18 minutes with a cloth under the lid, until a skewer comes out clean."
+    ],
+    notes: [
+      "Cool the filling fully; a warm filling makes the batter slump around it.",
+      "Fill only to three quarters. Puto pao rises more than plain puto because of the weight it carries."
+    ],
+    verification: "verified",
+    history: "Puto pao marries two Chinese-descended Filipino foods: the steamed rice cake and the asado-filled siopao. It belongs to the modern end of the kakanin range, sold in bakeries and puto stalls rather than made for fiestas.",
+    sources: [
+      "https://www.angsarap.net/2019/09/09/the-endless-varieties-of-kakanin/amp/",
+      "https://www.esquiremag.ph/culture/food-and-drink/the-comprehensive-field-guide-to-kakanin-a1729-20170615-lfrm2"
+    ]
+  },
+  {
+    slug: "patupat", title: "Patupat", subtitle: "Ilocano Rice Cake in Woven Palm",
+    description: "Glutinous rice packed into small woven palm-leaf pouches and boiled in sugarcane syrup until it takes on the colour and sweetness of the syrup.",
+    category: "DESSERT / KAKANIN", time: "2H", yield: "16 PCS", origin: "ILOCOS REGION", technique: "SYRUP BOIL",
+    ingredients: [
+      {name:"Glutinous rice",metric:"600 g",imperial:"3 cups"},
+      {name:"Sugarcane syrup (basi or muscovado)",metric:"400 g",imperial:"14 oz"},
+      {name:"Water",metric:"2.0 L",imperial:"8 1/2 cups"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Young palm or coconut leaves",metric:"16 sheets",imperial:"16 sheets"}
+    ],
+    instructions: [
+      "Soak the glutinous rice for 4 hours, then drain well.",
+      "Weave the young palm leaves into small pouches, or use folded banana leaf tied with twine if palm is unavailable.",
+      "Fill each pouch about two thirds with rice. The rice swells considerably and a full pouch will burst.",
+      "Boil the pouches in plain water for 45 minutes, until the rice is nearly cooked.",
+      "Meanwhile dissolve the sugarcane syrup in fresh water with the salt and bring to a simmer.",
+      "Transfer the pouches into the syrup and simmer for a further 30 to 45 minutes, until the rice is fully tender and stained brown by the syrup.",
+      "Lift out and drain. Eat warm or cool, unwrapping the pouch at the table."
+    ],
+    notes: [
+      "Underfill the pouches. Glutinous rice roughly doubles and will split a tight weave.",
+      "Boiling in syrup rather than water is what colours and sweetens patupat through, instead of only on the surface."
+    ],
+    verification: "verified",
+    history: "Patupat is the Ilocano and Pangasinense rice cake, distinguished by its triangular or diamond woven pouch and by being finished in sugarcane syrup. It belongs to the suman family, and is sold along the roadsides of the Ilocos region.",
+    sources: [
+      "https://www.angsarap.net/2019/09/09/the-endless-varieties-of-kakanin/amp/",
+      "https://www.rappler.com/life-and-style/food-drinks/guide-pangasinan-sweet-treats/"
+    ]
+  },
+  {
+    slug: "sinukmani", title: "Sinukmani", subtitle: "Southern Tagalog Sticky Rice Cake",
+    description: "The Southern Tagalog name and form of biko: glutinous rice cooked down in coconut milk and muscovado, topped with thick coconut caramel.",
+    category: "DESSERT / KAKANIN", time: "1H 20M", yield: "10 PAX", origin: "QUEZON / LAGUNA", technique: "COCONUT REDUCTION",
+    ingredients: [
+      {name:"Glutinous rice",metric:"500 g",imperial:"2 1/2 cups"},
+      {name:"Coconut milk",metric:"900 ml",imperial:"3 3/4 cups"},
+      {name:"Coconut cream",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Muscovado sugar",metric:"350 g",imperial:"12 oz"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Water",metric:"250 ml",imperial:"1 cup"},
+      {name:"Banana leaves",metric:"3 sheets",imperial:"3 sheets"}
+    ],
+    instructions: [
+      "Soak the glutinous rice for 2 hours and drain.",
+      "Cook the rice with the water and half the coconut milk over low heat for 20 minutes, until tender and dry.",
+      "Meanwhile reduce the coconut cream over medium heat for 20 minutes, stirring, until the oil separates and the curds brown. Strain and keep both.",
+      "Simmer the remaining coconut milk with the muscovado and salt for 10 minutes into a thick syrup.",
+      "Stir the cooked rice into the syrup and cook, stirring constantly, for 15 to 20 minutes until dense and glossy and pulling from the pan.",
+      "Press into a banana-leaf-lined tray brushed with the reserved coconut oil.",
+      "Spread the thick caramel over the top, scatter the curds, and cool before cutting."
+    ],
+    notes: [
+      "Muscovado rather than refined sugar is what gives sinukmani its darker, more mineral flavour.",
+      "Stir without stopping in the final stage; this is where it catches and scorches."
+    ],
+    verification: "verified",
+    history: "Sinukmani is what biko is called across much of Southern Tagalog, particularly Quezon and Laguna. The dish is the same idea, glutinous rice cooked down in sweetened coconut milk, and the difference is largely one of name and of how thick the latik topping is laid on.",
+    sources: [
+      "https://www.esquiremag.ph/culture/food-and-drink/the-comprehensive-field-guide-to-kakanin-a1729-20170615-lfrm2",
+      "https://www.angsarap.net/2019/09/09/the-endless-varieties-of-kakanin/amp/"
+    ]
+  },
+  {
+    slug: "suman-sa-ibos", title: "Suman sa Ibos", subtitle: "Rice Cake in Woven Palm Leaf",
+    description: "Glutinous rice cooked in coconut milk and packed into ibos, pouches woven from young coconut palm, then boiled. Eaten with sugar or ripe mango.",
+    category: "DESSERT / KAKANIN", time: "2H", yield: "14 PCS", origin: "PHILIPPINES", technique: "PALM-LEAF BOIL",
+    ingredients: [
+      {name:"Glutinous rice",metric:"600 g",imperial:"3 cups"},
+      {name:"Coconut milk",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Salt",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Sugar",metric:"60 g",imperial:"2 oz"},
+      {name:"Young coconut palm leaves",metric:"14 sheets",imperial:"14 sheets"},
+      {name:"Water",metric:"2.0 L",imperial:"8 1/2 cups"}
+    ],
+    instructions: [
+      "Soak the glutinous rice for 3 hours and drain.",
+      "Mix the drained rice with the coconut milk, salt and sugar and leave to stand 20 minutes so the grains absorb some of the milk.",
+      "Weave the young palm fronds into tubular pouches, the ibos, leaving one end open.",
+      "Fill each pouch about two thirds, then fold and tuck the open end closed.",
+      "Stand the pouches upright in a deep pot and cover completely with water.",
+      "Boil steadily for 1 1/2 hours, topping up with boiling water so they stay submerged.",
+      "Lift out, drain and cool slightly. Serve warm with sugar, coconut jam or ripe mango."
+    ],
+    notes: [
+      "Keep them submerged the whole time. Any pouch above the water cooks unevenly and stays hard.",
+      "Two thirds full is the limit; the rice swells and a tight pouch bursts in the pot."
+    ],
+    verification: "verified",
+    history: "Suman sa ibos takes its name from the ibos, a pouch woven from young coconut palm, and is among the oldest forms of Filipino rice cookery. The weave is regional, and the same rice wrapped in banana leaf instead becomes a different named suman.",
+    sources: [
+      "https://www.esquiremag.ph/culture/food-and-drink/the-comprehensive-field-guide-to-kakanin-a1729-20170615-lfrm2",
+      "https://www.angsarap.net/2019/09/09/the-endless-varieties-of-kakanin/amp/"
+    ]
+  },
+  {
+    slug: "ampaw", title: "Ampaw", subtitle: "Puffed Rice Cake",
+    description: "Dried cooked rice fried until it puffs, then bound with caramel and pressed into bars. Built entirely from leftover rice.",
+    category: "MERIENDA / PUFFED", time: "1H", yield: "20 PCS", origin: "VISAYAS", technique: "PUFF + CARAMEL",
+    ingredients: [
+      {name:"Cooked white rice, day-old",metric:"600 g",imperial:"3 cups"},
+      {name:"Neutral frying oil",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"80 ml",imperial:"1/3 cup"},
+      {name:"Butter",metric:"30 g",imperial:"1 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Spread the day-old rice thinly on trays and dry it in the sun for a day, or in a very low oven for 2 to 3 hours, until the grains are hard and separate.",
+      "Heat the oil to 190\u00b0C (375\u00b0F). It must be hot or the rice will absorb oil instead of puffing.",
+      "Fry the dried rice in small handfuls. It puffs within seconds; lift it out immediately with a fine skimmer and drain.",
+      "Boil the brown sugar, water and salt for 5 to 7 minutes until the syrup thickens and threads from the spoon.",
+      "Stir in the butter, then fold in the puffed rice quickly and thoroughly.",
+      "Tip into a greased tray and press flat with a greased spatula while still warm.",
+      "Score into bars while warm, cool completely, then break apart."
+    ],
+    notes: [
+      "The rice must be thoroughly dry before frying. Any moisture and it will not puff.",
+      "Work fast once the syrup and rice meet; the mixture sets within a minute."
+    ],
+    verification: "verified",
+    history: "Ampaw, also written ampao, is a puffed rice cake from the Visayas built on sun-dried leftover rice, fried and bound with syrup. It belongs to a thrifty tradition of turning surplus cooked rice into a sweet rather than discarding it.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ampaw",
+      "https://www.aboutfilipinofood.com/filipino-snacks/"
+    ]
+  },
+  {
+    slug: "cornick", title: "Cornick", subtitle: "Fried Corn Nuts",
+    description: "Glutinous corn kernels soaked, dried and deep-fried until they split and crunch. Salted while hot and eaten by the handful.",
+    category: "MERIENDA / FRIED", time: "24H + 25M", yield: "8 PAX", origin: "PHILIPPINES", technique: "SOAK + DEEP FRY",
+    ingredients: [
+      {name:"Dried glutinous corn kernels",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Water",metric:"2.0 L",imperial:"8 1/2 cups"},
+      {name:"Salt",metric:"20 g",imperial:"4 tsp"},
+      {name:"Neutral frying oil",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"}
+    ],
+    instructions: [
+      "Soak the dried corn kernels in the water with half the salt for 12 to 24 hours, until swollen and softened through.",
+      "Drain thoroughly and spread on cloth to dry for 2 to 3 hours. Wet kernels will spit violently in hot oil.",
+      "Heat the oil to 180\u00b0C (355\u00b0F).",
+      "Fry the kernels in batches for 6 to 9 minutes, until they stop bubbling, split open and turn golden.",
+      "Lift out with a skimmer and drain on paper.",
+      "Fry the minced garlic separately until pale gold and toss it through.",
+      "Season with the remaining salt while still hot, then cool completely before storing airtight."
+    ],
+    notes: [
+      "Soak and then dry. Skipping either step gives kernels that stay hard or that spit dangerously.",
+      "They crisp as they cool, so judge doneness by colour and the bubbling slowing, not by bite."
+    ],
+    verification: "verified",
+    history: "Cornick is made from lagkitan, a glutinous corn variety, soaked and deep-fried whole. It is sold in bags at bus terminals and markets across the country, and pairs with beer as pulutan as readily as with an afternoon.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Cornick_(food)",
+      "https://www.aboutfilipinofood.com/chichacorn/"
+    ]
+  },
+  {
+    slug: "chichacorn", title: "Chichacorn", subtitle: "Ilocos Half-Popped Corn",
+    description: "The Ilocano version of cornick, fried so the kernels partly burst, giving a lighter, flakier crunch. Usually heavy with garlic.",
+    category: "MERIENDA / FRIED", time: "24H + 30M", yield: "8 PAX", origin: "ILOCOS NORTE", technique: "SOAK + DEEP FRY",
+    ingredients: [
+      {name:"Dried glutinous corn kernels",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Water",metric:"2.0 L",imperial:"8 1/2 cups"},
+      {name:"Salt",metric:"20 g",imperial:"4 tsp"},
+      {name:"Baking soda",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Neutral frying oil",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Garlic, minced",metric:"10 cloves",imperial:"10 cloves"}
+    ],
+    instructions: [
+      "Soak the corn overnight in the water with the salt and baking soda. The soda softens the hull so the kernel can burst rather than merely harden.",
+      "Boil the soaked corn for 20 minutes, then drain and rinse well.",
+      "Spread on cloth and dry for 3 to 4 hours, until the surface is dry to the touch.",
+      "Heat the oil to 185\u00b0C (365\u00b0F).",
+      "Fry in batches for 5 to 8 minutes. The kernels will split and partly open out, which is the difference from plain cornick.",
+      "Drain, then toss with garlic fried separately until golden.",
+      "Salt while hot and cool completely before bagging."
+    ],
+    notes: [
+      "The baking soda soak is what lets the kernels open. Without it you get cornick, not chichacorn.",
+      "Dry them properly before frying; residual water stops the kernels bursting."
+    ],
+    verification: "verified",
+    history: "Chichacorn is a portmanteau of chicharron and corn, coined in the Ilocos region for a cornick allowed to partly pop in the fryer. It is one of the standard pasalubong of Ilocos Norte, sold alongside bagnet and Ilocos empanada.",
+    sources: [
+      "https://www.aboutfilipinofood.com/chichacorn/",
+      "https://en.wikipedia.org/wiki/Cornick_(food)"
+    ]
+  },
+  {
+    slug: "banana-chips", title: "Banana Chips", subtitle: "Crisp Fried Saba Slices",
+    description: "Saba sliced thin and fried until it snaps, then lightly sweetened. Firm cooking bananas only; dessert bananas turn to mush.",
+    category: "MERIENDA / FRIED", time: "40M", yield: "6 PAX", origin: "PHILIPPINES", technique: "DEEP FRY",
+    ingredients: [
+      {name:"Saba or cardava bananas, firm",metric:"8 pcs",imperial:"8 pcs"},
+      {name:"Neutral frying oil",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Sugar",metric:"120 g",imperial:"4 oz"},
+      {name:"Water",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Calamansi juice",metric:"30 ml",imperial:"2 tbsp"}
+    ],
+    instructions: [
+      "Choose bananas that are still firm and barely yellow. Ripe fruit has too much sugar and will burn before it crisps.",
+      "Peel and slice very thin, about 2 mm, on a mandoline if you have one.",
+      "Drop the slices into water sharpened with the calamansi juice as you go, which stops them browning.",
+      "Drain and pat completely dry.",
+      "Heat the oil to 165\u00b0C (330\u00b0F) and fry in small batches for 3 to 4 minutes, until pale gold and rigid.",
+      "Boil the sugar and water into a light syrup, toss the drained chips through it briefly, and return them to the hot oil for 30 seconds to set the glaze.",
+      "Drain on a rack, salt lightly and cool completely before storing airtight."
+    ],
+    notes: [
+      "Thin and even slicing decides everything; thick slices stay leathery in the middle.",
+      "Fry in small batches. A crowded pan drops the oil temperature and the chips absorb it."
+    ],
+    verification: "verified",
+    history: "Philippine banana chips are made predominantly from saba and cardava, the starchy cooking cultivars, rather than from sweet dessert bananas. They are among the country's most widely exported snack foods.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Banana_chips",
+      "https://www.aboutfilipinofood.com/filipino-snacks/"
+    ]
+  },
+  {
+    slug: "pastillas-de-ube", title: "Pastillas de Ube", subtitle: "Purple Yam Milk Candy",
+    description: "Ube halaya worked with condensed and powdered milk into a soft candy dough, rolled into logs and coated in sugar.",
+    category: "CONFECTION / MILK", time: "40M", yield: "30 PCS", origin: "PHILIPPINES", technique: "NO-COOK CANDY",
+    ingredients: [
+      {name:"Ube halaya",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Condensed milk",metric:"200 g",imperial:"7 oz"},
+      {name:"Powdered milk",metric:"250 g",imperial:"9 oz"},
+      {name:"Butter, softened",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Caster sugar for coating",metric:"150 g",imperial:"5 oz"}
+    ],
+    instructions: [
+      "Beat the ube halaya with the condensed milk, butter and salt until completely smooth.",
+      "Add the powdered milk a third at a time, working it in until the mixture stiffens into a soft dough that no longer sticks to the bowl.",
+      "If it stays tacky, add more powdered milk a spoonful at a time rather than flour, which would dull the flavour.",
+      "Chill for 20 minutes so it firms enough to handle.",
+      "Pinch off pieces and roll each into a short log about the thickness of a finger.",
+      "Roll every piece in caster sugar until evenly coated.",
+      "Wrap individually in cellophane with twisted ends, or in cut papel de hapon."
+    ],
+    notes: [
+      "Powdered milk is what sets pastillas, not heat; this version is never cooked.",
+      "Chill before rolling or the dough smears rather than shaping cleanly."
+    ],
+    verification: "verified",
+    history: "Pastillas de ube is one of many flavoured descendants of pastillas de leche, the carabao-milk candy of San Miguel, Bulacan. Langka, macapuno, peanut and cheese versions are made the same way, with the flavouring worked into the milk dough.",
+    sources: [
+      "https://www.kawalingpinoy.com/pastillas-de-ube/",
+      "https://www.recipesbynora.com/ube-pastillas-recipe/"
+    ]
+  },
+  {
+    slug: "ube-langka-candy", title: "Ube Langka", subtitle: "Purple Yam and Jackfruit Candy",
+    description: "Purple yam and ripe jackfruit cooked down together with milk into a soft chewy candy, somewhere between pastillas and yema.",
+    category: "CONFECTION / MILK", time: "50M", yield: "28 PCS", origin: "PHILIPPINES", technique: "SLOW REDUCTION",
+    ingredients: [
+      {name:"Ube halaya",metric:"250 g",imperial:"9 oz"},
+      {name:"Jackfruit (langka), finely chopped",metric:"200 g",imperial:"7 oz"},
+      {name:"Condensed milk",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Powdered milk",metric:"150 g",imperial:"5 oz"},
+      {name:"Butter",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Caster sugar for coating",metric:"120 g",imperial:"4 oz"}
+    ],
+    instructions: [
+      "Drain the jackfruit well and chop it very finely; large pieces stop the candy holding together.",
+      "Cook the ube halaya, jackfruit, condensed milk, butter and salt over low heat, stirring constantly, for 20 to 25 minutes.",
+      "The mixture is ready when it thickens and pulls cleanly from the base of the pan.",
+      "Take off the heat and beat in the powdered milk until a stiff dough forms.",
+      "Cool until it can be handled comfortably.",
+      "Roll into short logs or balls.",
+      "Coat in caster sugar and wrap individually."
+    ],
+    notes: [
+      "Drain the jackfruit thoroughly. Its syrup will keep the candy loose no matter how long you cook it.",
+      "Stir without stopping; milk and sugar at this ratio scorch quickly."
+    ],
+    verification: "verified",
+    history: "Ube langka pairs the two flavours that dominate Filipino confectionery, purple yam and jackfruit. Its texture places it with pastillas de leche and yema, all of them built by reducing milk and sugar to a soft, sliceable candy.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ube_Langka_(candy)",
+      "https://thequirinokitchen.com/pastillas-de-ube-purple-yam-milk-candy/"
+    ]
+  },
+  {
+    slug: "minatamis-na-saging", title: "Minatamis na Saging", subtitle: "Saba Bananas in Muscovado Syrup",
+    description: "Saba simmered in dark muscovado syrup until glossy and tender. Eaten on its own, spooned over ice, or folded into halo-halo.",
+    category: "DESSERT / SYRUP", time: "30M", yield: "6 PAX", origin: "PHILIPPINES", technique: "SYRUP POACH",
+    ingredients: [
+      {name:"Saba bananas, thickly sliced",metric:"8 pcs",imperial:"8 pcs"},
+      {name:"Muscovado sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Water",metric:"500 ml",imperial:"2 cups"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Peel the saba and cut into thick diagonal slices. Use fruit that is ripe but still firm.",
+      "Dissolve the muscovado in the water with the pandan leaf and salt and bring to a boil.",
+      "Simmer the syrup alone for 8 minutes, until it thickens slightly and darkens.",
+      "Lower in the banana slices in a single layer.",
+      "Simmer gently for 12 to 15 minutes, turning once, until the fruit is tender and translucent at the edges and has taken on the syrup's colour. Do not stir or they break apart.",
+      "Stir in the vanilla and remove the pandan leaf.",
+      "Cool in the syrup. It keeps refrigerated for several days and improves overnight."
+    ],
+    notes: [
+      "Muscovado is what makes this taste of anything; refined sugar gives a flat, one-note syrup.",
+      "Move the pan rather than the bananas. Stirring turns them to mush."
+    ],
+    verification: "verified",
+    history: "Minatamis na saging is one of the simplest Filipino sweets and one of the most useful, serving as a dessert in its own right and as a standard component of halo-halo and ginataan. Saba, the cooking banana, holds together in syrup where a dessert banana collapses.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Minatamis_na_saging",
+      "https://panlasangpinoy.com/minatamis-na-saging-recipe/"
+    ]
+  },
+  {
+    slug: "burong-mangga", title: "Burong Mangga", subtitle: "Salted and Sweetened Green Mango",
+    description: "Unripe mango salted until it firms and gives up its water, then held in a cooled sweet brine. Sour, salty and crunchy at once.",
+    category: "CONDIMENT / PICKLE", time: "3D", yield: "4 JARS", origin: "PHILIPPINES", technique: "SALT CURE",
+    ingredients: [
+      {name:"Green mangoes, firm and unripe",metric:"1.5 kg",imperial:"3.3 lb"},
+      {name:"Coarse salt",metric:"150 g",imperial:"5 oz"},
+      {name:"Sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Water",metric:"700 ml",imperial:"3 cups"},
+      {name:"Salt for brine",metric:"20 g",imperial:"4 tsp"}
+    ],
+    instructions: [
+      "Peel the green mangoes and cut the flesh into thick strips or leave them in halves.",
+      "Layer the mango with the coarse salt in a bowl, cover, and leave for 24 hours. The salt draws out water and firms the flesh.",
+      "Drain off the liquid and rinse the mango briefly to remove the surface salt.",
+      "Boil the water with the sugar and the brine salt until dissolved, then cool completely. Pouring hot syrup over the fruit would cook it soft.",
+      "Pack the mango into sterilised jars.",
+      "Pour the cooled syrup over so the fruit is fully submerged.",
+      "Seal and refrigerate for at least 2 days before eating. It keeps for several weeks."
+    ],
+    notes: [
+      "The syrup must be cold before it meets the fruit. Warm syrup ruins the crunch the salting created.",
+      "Use genuinely unripe mango; anything turning yellow will go soft in the brine."
+    ],
+    verification: "verified",
+    history: "Burong mangga is made by salting green mango and then holding it in a boiled and cooled sugar brine. It is eaten as a side with fried and grilled food, in the same role as atchara, and is a common way of using the heavy green-mango season.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Burong_mangga",
+      "https://www.philstar.com/lifestyle/food-and-leisure/2025/03/16/2425901/chefs-share-ways-enjoy-indian-mangoes-plus-burong-mangga-recipe"
+    ]
+  },
+  {
+    slug: "buko-salad", title: "Buko Salad", subtitle: "Young Coconut Fruit Salad",
+    description: "Strips of young coconut folded through sweetened cream with fruit cocktail, jelly and palm nuts. Chilled hard and served at every fiesta.",
+    category: "DESSERT / COLD", time: "40M", yield: "10 PAX", origin: "PHILIPPINES", technique: "CHILLED ASSEMBLY",
+    ingredients: [
+      {name:"Young coconut meat, stripped",metric:"600 g",imperial:"1.3 lb"},
+      {name:"All-purpose cream",metric:"500 ml",imperial:"2 cups"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Fruit cocktail, drained",metric:"400 g",imperial:"14 oz"},
+      {name:"Nata de coco, drained",metric:"200 g",imperial:"7 oz"},
+      {name:"Kaong (palm nuts), drained",metric:"200 g",imperial:"7 oz"},
+      {name:"Jackfruit (langka), sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Cheese, cubed",metric:"100 g",imperial:"3.5 oz"}
+    ],
+    instructions: [
+      "Drain every tinned component thoroughly, then leave them in a sieve for 15 minutes more. Residual syrup is the single most common reason buko salad turns watery.",
+      "Strip the young coconut into ribbons and pat dry.",
+      "Whisk the cream with the condensed milk until slightly thickened but still pourable.",
+      "Fold in the coconut, fruit cocktail, nata de coco, kaong and jackfruit.",
+      "Fold in the cheese cubes last, so they keep their shape.",
+      "Cover and chill for at least 4 hours, and preferably overnight.",
+      "Stir once before serving and taste; it may want a little more condensed milk once cold."
+    ],
+    notes: [
+      "Drain, then drain again. Everything else follows from that.",
+      "It is better on the second day, once the coconut has taken on the cream."
+    ],
+    verification: "verified",
+    history: "Buko salad is among the most ubiquitous Filipino party desserts, built on young coconut with whatever tinned and preserved fruit is at hand. The cheese cubes, which surprise people unfamiliar with the dish, are standard, part of the same sweet-and-salty habit as bibingka and ensaymada.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Buko_salad",
+      "https://en.wikipedia.org/wiki/Buko_pandan_cake"
+    ]
+  },
+  {
+    slug: "yema-cake", title: "Yema Cake", subtitle: "Chiffon Cake with Custard Frosting",
+    description: "A light chiffon sponge blanketed in thick yema custard and dusted with grated cheese. The candy turned into a cake.",
+    category: "DESSERT / CAKE", time: "1H 30M", yield: "10 PAX", origin: "PHILIPPINES", technique: "CHIFFON + CUSTARD",
+    ingredients: [
+      {name:"Cake flour",metric:"200 g",imperial:"1 2/3 cups"},
+      {name:"Sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Eggs, separated",metric:"6 large",imperial:"6 large"},
+      {name:"Neutral oil",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Milk",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Cream of tartar",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Egg yolks for frosting",metric:"6 pcs",imperial:"6 pcs"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Butter",metric:"60 g",imperial:"2 oz"},
+      {name:"Cheese, grated",metric:"100 g",imperial:"3.5 oz"}
+    ],
+    instructions: [
+      "Whisk the yolks with the oil, milk and half the sugar, then fold in the flour, baking powder and salt.",
+      "Beat the whites with the cream of tartar and remaining sugar to firm, glossy peaks.",
+      "Fold the meringue into the batter in three additions and pour into an ungreased tube or lined round tin.",
+      "Bake at 165\u00b0C (330\u00b0F) for 35 to 40 minutes, until springy. Cool upside down so the chiffon does not collapse.",
+      "For the frosting, whisk the 6 yolks with the condensed milk, strain, and cook over the lowest heat, stirring constantly, for 15 to 20 minutes until thick enough to hold a ridge.",
+      "Beat in the butter and cool to room temperature.",
+      "Split the cake, fill and cover with the yema, then press grated cheese over the top and sides."
+    ],
+    notes: [
+      "Cool the chiffon inverted. Right side up it sinks under its own weight.",
+      "The yema frosting must be cooked on genuinely low heat, or the yolks scramble and the texture is lost."
+    ],
+    verification: "verified",
+    history: "Yema cake takes the egg-yolk candy of the same name and turns it into a frosting for chiffon sponge. It is strongly associated with Laguna and Quezon bakeries, and the grated cheese over the sweet custard follows the same salty-sweet logic as ensaymada.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Yema_(candy)",
+      "https://en.wikipedia.org/wiki/Ube_cake"
     ]
   },
 ];

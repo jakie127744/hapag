@@ -3,7 +3,7 @@
 A Filipino-cuisine recipe site built in the "translucent gastronomy" glass aesthetic:
 a dark `#0A0A0A` ground, frosted-glass surfaces, and a zest-green (`#d9f99d`) accent.
 
-130 regional recipes — Luzon classics, Ilocano, Kapampangan, Bicolano, Visayan and
+166 regional recipes — Luzon classics, Ilocano, Kapampangan, Bicolano, Visayan and
 Mindanaoan dishes — each with metric/imperial ingredients, numbered method, and lab notes.
 
 ## Features
@@ -17,7 +17,7 @@ Mindanaoan dishes — each with metric/imperial ingredients, numbered method, an
 
 ## Stack
 
-Next.js 15 (App Router, static export of all 130 recipe pages) · React 19 · Tailwind CSS v4 · lucide-react.
+Next.js 15 (App Router, static export of all 166 recipe pages) · React 19 · Tailwind CSS v4 · lucide-react.
 
 ## Running locally
 
@@ -36,7 +36,7 @@ npm run build && npm start   # production
 
 | Path | Purpose |
 | --- | --- |
-| `data/recipes.ts` | All 130 recipes — the single source of truth. |
+| `data/recipes.ts` | All 166 recipes — the single source of truth. |
 | `lib/regions.ts` | Region classification, time and yield formatting. |
 | `lib/store.tsx` | Client store for favorites, grocery list and units. |
 | `components/` | Home, Archive, cards, recipe detail, grocery drawer. |
@@ -50,7 +50,7 @@ resized for the web. Each recipe page links back to its source file via the "Pho
 Wikimedia Commons" link — check the individual file page for its licence and attribution
 requirements before reusing an image elsewhere.
 
-43 of the 130 recipes have no photograph yet; those cards render an "image pending"
+79 of the 166 recipes have no photograph yet; those cards render an "image pending"
 placeholder rather than borrowing a picture of a similar-looking dish.
 
 ## Adding your own photographs
