@@ -1,6 +1,6 @@
 import type { Recipe } from "@/data/recipes";
 import type { Unit } from "@/lib/store";
-import { prettyTime, prettyYield, regionOf } from "@/lib/regions";
+import { prettyTime, prettyYield, primaryRegion } from "@/lib/regions";
 
 /**
  * Print-only rendering of a recipe as a two-sided postcard.
@@ -11,7 +11,7 @@ import { prettyTime, prettyYield, regionOf } from "@/lib/regions";
  * Hidden on screen; `@media print` in globals.css sizes it to a 5x7in card.
  */
 export function RecipePostcard({ recipe, unit }: { recipe: Recipe; unit: Unit }) {
-  const region = regionOf(recipe);
+  const region = primaryRegion(recipe);
   const province = provinceOf(recipe.origin, region);
 
   return (

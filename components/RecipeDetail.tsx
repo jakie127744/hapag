@@ -8,9 +8,10 @@ import {
 } from "lucide-react";
 import type { Recipe } from "@/data/recipes";
 import { useStore } from "@/lib/store";
-import { prettyTime, prettyYield, regionOf } from "@/lib/regions";
+import { prettyTime, prettyYield, primaryRegion } from "@/lib/regions";
 import { RecipeImage } from "./RecipeImage";
 import { RecipePostcard } from "./RecipePostcard";
+import { AdSlot } from "./AdSlot";
 
 export function RecipeDetail({ recipe }: { recipe: Recipe }) {
   const { isFavorite, toggleFavorite, inGrocery, toggleGrocery, unit, setUnit, setDrawerOpen } =
@@ -58,7 +59,7 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             <Pill icon={<Clock className="w-4 h-4 text-zest" />}>{prettyTime(recipe.time)}</Pill>
             <Pill icon={<Users className="w-4 h-4 text-zest" />}>{prettyYield(recipe.yield)}</Pill>
             <Pill icon={<ChefHat className="w-4 h-4 text-zest" />}>{recipe.technique}</Pill>
-            <Pill icon={<MapPin className="w-4 h-4 text-zest" />}>{regionOf(recipe)}</Pill>
+            <Pill icon={<MapPin className="w-4 h-4 text-zest" />}>{primaryRegion(recipe)}</Pill>
 
             <button
               onClick={() => toggleFavorite(recipe.slug)}
@@ -240,6 +241,8 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             </div>
           )}
 
+          <AdSlot name="recipeMid" minHeight={250} className="mb-10" />
+
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-white">Instructions</h2>
             <button
@@ -279,6 +282,8 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
               </div>
             </div>
           )}
+
+          <AdSlot name="recipeFoot" minHeight={250} className="mt-12" />
         </div>
       </div>
 

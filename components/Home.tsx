@@ -5,6 +5,7 @@ import { Search } from "lucide-react";
 import type { Recipe } from "@/data/recipes";
 import { FeaturedCard } from "./RecipeCard";
 import { Archive } from "./Archive";
+import { AdSlot } from "./AdSlot";
 
 export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recipe[] }) {
   const [query, setQuery] = useState("");
@@ -18,10 +19,12 @@ export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recip
           <img
             src="/images/recipes/philippine-sisig.jpg"
             alt="A Filipino feast"
-            className="w-full h-full object-cover"
+            className="hero-img w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#0A0A0A]" />
+          <div className="hero-glow" />
+          <div className="hero-sheen" />
         </div>
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
@@ -68,7 +71,7 @@ export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recip
             className="rise mt-8 text-sm text-white/45 hover:text-white transition-colors"
             style={{ animationDelay: "320ms" }}
           >
-            Browse the archive ↓
+            <span className="hero-scroll inline-block">Browse the archive ↓</span>
           </a>
         </div>
       </section>
@@ -90,6 +93,14 @@ export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recip
           </div>
         </div>
       </section>
+
+      {/* Section break between featured and archive: away from the fixed filter
+          bar at the bottom and from the card action buttons. */}
+      <div className="px-6 md:px-12 pb-4">
+        <div className="max-w-3xl mx-auto">
+          <AdSlot name="homeMid" minHeight={250} />
+        </div>
+      </div>
 
       <Archive recipes={recipes} query={query} />
     </main>

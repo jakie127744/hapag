@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Clock, Plus, Check, Heart, ArrowRight } from "lucide-react";
 import type { Recipe } from "@/data/recipes";
 import { useStore } from "@/lib/store";
-import { prettyTime, regionOf } from "@/lib/regions";
+import { prettyTime, primaryRegion } from "@/lib/regions";
 import { RecipeImage } from "./RecipeImage";
 
 export function FeaturedCard({ recipe }: { recipe: Recipe }) {
@@ -18,7 +18,7 @@ export function FeaturedCard({ recipe }: { recipe: Recipe }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
         <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-semibold tracking-widest uppercase glass-dark text-white/90">
-          {regionOf(recipe)}
+          {primaryRegion(recipe)}
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-6">
           <div className="flex items-center gap-2 text-white/60 text-xs mb-2">
@@ -55,7 +55,7 @@ export function ArchiveCard({ recipe, index = 0 }: { recipe: Recipe; index?: num
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
           <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold tracking-widest uppercase glass-dark text-white/90">
-            {regionOf(recipe)}
+            {primaryRegion(recipe)}
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-4">
             <div className="flex items-center gap-1.5 text-white/55 text-[11px] mb-1.5">

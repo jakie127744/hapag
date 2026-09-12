@@ -5,6 +5,9 @@ import { StoreProvider } from "@/lib/store";
 import { TopBar } from "@/components/TopBar";
 import { GroceryDrawer } from "@/components/GroceryDrawer";
 import { InstallPrompt } from "@/components/InstallPrompt";
+import { GrocerySheet } from "@/components/GrocerySheet";
+import Script from "next/script";
+import { ADSENSE_CLIENT } from "@/components/AdSlot";
 import { recipes } from "@/data/recipes";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -40,11 +43,21 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+      </head>
       <body className="bg-[#0A0A0A] text-white">
+        <Script
+          async
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+        />
         <StoreProvider>
           <TopBar />
           {children}
           <GroceryDrawer />
+          <GrocerySheet />
           <InstallPrompt />
         </StoreProvider>
       </body>

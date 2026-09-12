@@ -182,6 +182,9 @@ export function isShoppable(name: string): boolean {
 type Aisle = "Meat & Seafood" | "Produce" | "Pantry & Sauces" | "Spices & Dry" | "Other";
 
 const AISLE_RULES: [RegExp, Aisle][] = [
+  // Condiments first: "fish sauce" and "shrimp paste" are pantry items, and
+  // would otherwise be caught by the seafood rule below on "fish"/"shrimp".
+  [/sauce|paste|vinegar|oil|stock|broth|bagoong|patis|toyo|ketchup|syrup|jam/, "Pantry & Sauces"],
   [/pork|beef|chicken|oxtail|tripe|liver|jowl|shank|belly|shoulder|bacon|ham|blood|isaw|offal/, "Meat & Seafood"],
   [/shrimp|fish|squid|bangus|tanigue|pagi|crab|clam|mussel|tuna|milkfish/, "Meat & Seafood"],
   [/onion|garlic|ginger|tomato|eggplant|bean|spinach|kangkong|cabbage|radish|papaya|chili|chilies|lemongrass|leaf|leaves|banana|potato|carrot|cucumber|okra|squash|taro|gabi|coconut meat|jackfruit|langka|malunggay|pechay|bok choy|scallion|leek|calamansi|lime|lemon|sitaw|ampalaya|mango|santol|turmeric root/, "Produce"],

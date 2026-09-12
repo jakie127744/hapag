@@ -1,32 +1,53 @@
 import type { Recipe } from "@/data/recipes";
 
-export const REGIONS = [
-  "All",
-  "Classics",
-  "Luzon",
-  "Ilocos",
-  "Pampanga",
-  "Bicol",
-  "Visayas",
-  "Mindanao",
-  "Dessert",
-  "Favorites",
-] as const;
+/** The filter bar: the three island groups, plus a type and a personal list. */
+export const REGIONS = ["All", "Luzon", "Visayas", "Mindanao", "Dessert", "Favorites"] as const;
 
 export type Region = (typeof REGIONS)[number];
 
-export function regionOf(recipe: Recipe): string {
+const LUZON =
+  /LUZON|TAGALOG|ILOCOS|PANGASINAN|PAMPANGA|BICOL|BATANGAS|CAVITE|QUEZON|LAGUNA|MANILA|MARIKINA|CALOOCAN|MALABON|BULACAN|NUEVA ECIJA|CAGAYAN|TUGUEGARAO|LUCBAN|LINGAYEN|SAN MIGUEL|TARLAC|ZAMBALES|RIZAL|BATAAN/;
+
+const VISAYAS =
+  /VISAYAS|CEBU|ILOILO|LEYTE|SAMAR|BACOLOD|NEGROS|PANAY|BOHOL|LILOAN|MANDAUE|JAGNA|SILAY|AKLAN|CAPIZ|ANTIQUE|GUIMARAS|SIQUIJOR|BILIRAN/;
+
+const MINDANAO =
+  /MINDANAO|SULU|TAUSUG|ZAMBOANGA|MARANAO|MAGUINDANAO|LANAO|DAVAO|BASILAN|TAWI-TAWI|COTABATO|SURIGAO|BUKIDNON/;
+
+const DESSERT = /DESSERT|KAKANIN|CONFECTION|PASTRY/;
+
+/**
+ * Every island group a dish belongs to, plus "Dessert" when it is one.
+ *
+ * A dish recorded simply as "PHILIPPINES" is eaten nationwide and is returned
+ * for no island group at all. Tagging those to all three would put adobo and
+ * sinigang under Visayas and Mindanao and drown the genuinely regional dishes;
+ * they remain reachable under "All" and through search.
+ */
+export function regionsOf(recipe: Recipe): string[] {
   const o = recipe.origin.toUpperCase();
   const c = recipe.category.toUpperCase();
-  if (c.startsWith("DESSERT") || c.includes("KAKANIN")) return "Dessert";
-  if (o.includes("ILOCOS")) return "Ilocos";
-  if (o.includes("BICOL")) return "Bicol";
-  if (o.includes("PAMPANGA")) return "Pampanga";
-  if (/VISAYAS|CEBU|ILOILO|LEYTE|SAMAR|BACOLOD|NEGROS|PANAY/.test(o)) return "Visayas";
-  if (/MINDANAO|SULU|TAUSUG|ZAMBOANGA|MARANAO|MAGUINDANAO|LANAO|DAVAO/.test(o)) return "Mindanao";
-  if (/LUZON|TAGALOG/.test(o)) return "Luzon";
-  // Dishes recorded simply as "PHILIPPINES" are eaten nationwide.
-  return "Classics";
+  const out: string[] = [];
+
+  const luzon = LUZON.test(o);
+  const visayas = VISAYAS.test(o);
+  const mindanao = MINDANAO.test(o);
+
+  if (luzon) out.push("Luzon");
+  if (visayas) out.push("Visayas");
+  if (mindanao) out.push("Mindanao");
+
+  if (DESSERT.test(c)) out.push("Dessert");
+  return out;
+}
+
+/** The single label shown on a card. Island group where known, else nationwide. */
+export function primaryRegion(recipe: Recipe): string {
+  const o = recipe.origin.toUpperCase();
+  if (VISAYAS.test(o)) return "Visayas";
+  if (MINDANAO.test(o)) return "Mindanao";
+  if (LUZON.test(o)) return "Luzon";
+  return "Philippines";
 }
 
 /**

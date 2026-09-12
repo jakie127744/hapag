@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { X, ShoppingBasket, Trash2, ChevronDown } from "lucide-react";
+import { X, ShoppingBasket, Trash2, ChevronDown, Printer, Copy, Check } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { consolidate, type SourcedIngredient } from "@/lib/pantry";
 
@@ -11,6 +11,7 @@ export function GroceryDrawer() {
     removeGrocery, clearGrocery, unit, setUnit,
   } = useStore();
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   const groups = useMemo(() => {
     const items: SourcedIngredient[] = grocery.flatMap((entry) =>
@@ -22,6 +23,37 @@ export function GroceryDrawer() {
   const allKeys = groups.flatMap((g) => g.lines.map((l) => l.key));
   const done = allKeys.filter((k) => checked.includes(k)).length;
   const pct = allKeys.length ? Math.round((done / allKeys.length) * 100) : 0;
+
+  function printSheet() {
+    // Scope the print run to the shopping list so a recipe postcard is not printed too.
+    document.body.classList.add("printing-grocery");
+    const cleanup = () => document.body.classList.remove("printing-grocery");
+    window.addEventListener("afterprint", cleanup, { once: true });
+    window.print();
+    // Safari does not always fire afterprint.
+    window.setTimeout(cleanup, 3000);
+  }
+
+  function asText() {
+    const lines: string[] = ["GROCERY LIST", ""];
+    for (const g of groups) {
+      lines.push(g.aisle.toUpperCase());
+      for (const l of g.lines) lines.push(`  [ ] ${l.label} - ${l.buyLabel}`);
+      lines.push("");
+    }
+    lines.push("From: " + grocery.map((e) => e.title).join(", "));
+    return lines.join(String.fromCharCode(10));
+  }
+
+  async function copyText() {
+    try {
+      await navigator.clipboard.writeText(asText());
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* clipboard blocked - the print option still works */
+    }
+  }
 
   return (
     <>
@@ -202,10 +234,27 @@ export function GroceryDrawer() {
           </div>
 
           {grocery.length > 0 && (
-            <div className="p-6 border-t border-white/10">
+            <div className="p-5 border-t border-white/10 space-y-2">
+              <div className="flex gap-2">
+                <button
+                  onClick={printSheet}
+                  className="flex-1 bg-zest text-black font-semibold rounded-full py-3 text-sm flex items-center justify-center gap-2"
+                >
+                  <Printer className="w-4 h-4" />
+                  Print / Save PDF
+                </button>
+                <button
+                  onClick={copyText}
+                  aria-label="Copy list as text"
+                  className="glass-dark rounded-full px-4 text-white/80 hover:text-white transition-colors flex items-center gap-2 text-sm"
+                >
+                  {copied ? <Check className="w-4 h-4 text-zest" /> : <Copy className="w-4 h-4" />}
+                  {copied ? "Copied" : "Copy"}
+                </button>
+              </div>
               <button
                 onClick={clearGrocery}
-                className="glass-dark w-full rounded-full py-3 text-sm text-white/80 hover:text-white transition-colors"
+                className="w-full rounded-full py-2.5 text-sm text-white/45 hover:text-white/80 transition-colors"
               >
                 Clear list
               </button>

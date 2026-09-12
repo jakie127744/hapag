@@ -3,9 +3,10 @@
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 import type { Recipe } from "@/data/recipes";
-import { REGIONS, regionOf } from "@/lib/regions";
+import { REGIONS, regionsOf } from "@/lib/regions";
 import { useStore } from "@/lib/store";
 import { ArchiveCard } from "./RecipeCard";
+import { AdSlot } from "./AdSlot";
 
 export function Archive({ recipes, query }: { recipes: Recipe[]; query: string }) {
   const [region, setRegion] = useState<string>("All");
@@ -15,7 +16,7 @@ export function Archive({ recipes, query }: { recipes: Recipe[]; query: string }
     const q = query.trim().toLowerCase();
     return recipes.filter((r) => {
       if (region === "Favorites" && !favorites.includes(r.slug)) return false;
-      if (region !== "All" && region !== "Favorites" && regionOf(r) !== region) return false;
+      if (region !== "All" && region !== "Favorites" && !regionsOf(r).includes(region)) return false;
       if (!q) return true;
       return (
         r.title.toLowerCase().includes(q) ||
@@ -60,6 +61,12 @@ export function Archive({ recipes, query }: { recipes: Recipe[]; query: string }
               ))}
             </div>
           )}
+
+          {/* Below the grid. pb-36 on the section keeps the fixed filter bar
+              clear of this unit. */}
+          <div className="mt-12 max-w-3xl mx-auto">
+            <AdSlot name="homeFoot" minHeight={250} />
+          </div>
         </div>
       </section>
 
