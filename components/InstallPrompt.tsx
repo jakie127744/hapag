@@ -22,9 +22,22 @@ export function InstallPrompt() {
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {
-        /* offline support is a bonus; the site works without it */
-      });
+      if (process.env.NODE_ENV === "production") {
+        navigator.serviceWorker.register("/sw.js").catch(() => {
+          /* offline support is a bonus; the site works without it */
+        });
+      } else {
+        // In development the build output is rebuilt constantly, so a cached
+        // worker serves stale chunks and breaks the page. Tear it down.
+        navigator.serviceWorker.getRegistrations().then((regs) => {
+          regs.forEach((r) => r.unregister());
+        });
+        if (typeof caches !== "undefined") {
+          caches.keys().then((keys) => {
+            keys.filter((k) => k.startsWith("hapag-")).forEach((k) => caches.delete(k));
+          });
+        }
+      }
     }
 
     let dismissed = false;
