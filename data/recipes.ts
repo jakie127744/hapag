@@ -1196,6 +1196,1852 @@ export const recipes: Recipe[] = [
       "https://panlasangpinoy.com/crispy-pata-pulutan-recipe/"
     ]
   },
+  {
+    slug: "sinigang-na-hipon", title: "Sinigang na Hipon", subtitle: "Shrimp in Sour Tamarind Broth",
+    description: "Shrimp poached briefly in a tamarind broth loaded with vegetables. The fastest sinigang there is, and the one most easily ruined by overcooking the shrimp.",
+    category: "SOUP / SOUR", time: "35M", yield: "4 PAX", origin: "PHILIPPINES", technique: "TAMARIND BROTH",
+    ingredients: [
+      {name:"Large shrimp, head-on",metric:"700 g",imperial:"1.5 lb"},
+      {name:"Water",metric:"1.8 L",imperial:"7 1/2 cups"},
+      {name:"Tomatoes, quartered",metric:"250 g",imperial:"9 oz"},
+      {name:"Yellow onion, quartered",metric:"150 g",imperial:"5 oz"},
+      {name:"Tamarind pulp",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Daikon radish, sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Okra",metric:"120 g",imperial:"4 oz"},
+      {name:"String beans, cut",metric:"120 g",imperial:"4 oz"},
+      {name:"Water spinach (kangkong)",metric:"120 g",imperial:"4 oz"},
+      {name:"Fish sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Long green chilies",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Bring the water, onion and tomatoes to a boil in a large pot. Simmer for 8 minutes, pressing the tomatoes against the side of the pot to release them.",
+      "Mash the tamarind pulp with a cup of the hot broth, strain through a sieve, and stir the sour liquid back into the pot. Discard the fibres.",
+      "Add the daikon and simmer for 8 minutes until it can be pierced but still holds shape.",
+      "Season with the fish sauce and add the chilies. Taste now and correct the sourness before the shrimp go in \u2014 once they are in, you have no time.",
+      "Add the okra and string beans and cook for 3 minutes.",
+      "Add the shrimp and cook for 2 to 3 minutes only, until they turn opaque and curl. Kill the heat.",
+      "Drop in the kangkong, cover, and let it wilt in the residual heat for 1 minute. Serve at once."
+    ],
+    notes: [
+      "Head-on shrimp make a far better broth; the flavour is in the heads.",
+      "Shrimp continue cooking in the hot broth at the table, so pull the pot from the heat while they look barely done."
+    ],
+    verification: "verified",
+    history: "Sinigang is defined by sourness rather than by any one souring agent. Tamarind is the most common, but green mango, guava, kamias, calamansi and batwan all do the work regionally, and the choice is often simply what is in season nearby.",
+    sources: [
+      "https://panlasangpinoy.com/filipino-food-sour-shrimp-soup-sinigang-na-hipon-recipe/",
+      "https://www.foxyfolksy.com/sinigang-na-hipon-shrimp-in-sour-soup/"
+    ]
+  },
+  {
+    slug: "sinigang-na-isda", title: "Sinigang na Isda", subtitle: "Milkfish in Sour Tamarind Broth",
+    description: "Whole milkfish simmered in tamarind broth with okra, string beans and kangkong. Quicker than the pork version and far more delicate: the fish must go in late and be left alone.",
+    category: "SOUP / SOUR", time: "35M", yield: "4 PAX", origin: "PHILIPPINES", technique: "TAMARIND BROTH",
+    ingredients: [
+      {name:"Milkfish (bangus), cut into steaks",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Water",metric:"1.8 L",imperial:"7 1/2 cups"},
+      {name:"Tomatoes, quartered",metric:"250 g",imperial:"9 oz"},
+      {name:"Yellow onion, quartered",metric:"150 g",imperial:"5 oz"},
+      {name:"Tamarind pulp",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Daikon radish, sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Okra",metric:"120 g",imperial:"4 oz"},
+      {name:"String beans, cut",metric:"120 g",imperial:"4 oz"},
+      {name:"Water spinach (kangkong)",metric:"120 g",imperial:"4 oz"},
+      {name:"Fish sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Long green chilies",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Bring the water, onion and tomatoes to a boil. Simmer for 8 minutes.",
+      "Mash the tamarind pulp with a cup of the hot broth, strain, and return the sour liquid to the pot.",
+      "Add the daikon and simmer for 8 minutes, then the okra and string beans for 3 minutes more.",
+      "Season with the fish sauce and add the chilies. Get the sourness right at this point.",
+      "Lower the fish steaks into the barely simmering broth. Cook for 6 to 8 minutes without stirring; agitating the pot will break the fish apart.",
+      "Turn off the heat, add the kangkong, cover, and let it wilt for 5 minutes in the residual heat so the leaves stay green.",
+      "Lift the fish out carefully with a slotted spoon and ladle the broth around it."
+    ],
+    notes: [
+      "Do not stir once the fish is in. Move the pot, not the contents.",
+      "Bangus is the classic choice, but any firm whole fish works; oily fish gives a heavier broth."
+    ],
+    verification: "verified",
+    history: "Sinigang na isda is the older, more everyday form of the dish in coastal communities, where fish was at hand and pork was not. The souring agent shifts with the region and the season.",
+    sources: [
+      "https://panlasangpinoy.com/sinigang-na-bangus-recipe/",
+      "https://www.recipesbynora.com/sinigang-na-bangus-recipe/"
+    ]
+  },
+  {
+    slug: "sinigang-na-baka", title: "Sinigang na Baka", subtitle: "Beef Short Ribs in Sour Tamarind Broth",
+    description: "Beef short ribs simmered until tender in a clear tamarind broth with radish, okra and kangkong. The longest-cooking sinigang, and the richest.",
+    category: "SOUP / SOUR", time: "2H 30M", yield: "6 PAX", origin: "PHILIPPINES", technique: "TAMARIND BROTH",
+    ingredients: [
+      {name:"Beef short ribs",metric:"1.2 kg",imperial:"2.6 lb"},
+      {name:"Water",metric:"2.5 L",imperial:"10 1/2 cups"},
+      {name:"Tomatoes, quartered",metric:"250 g",imperial:"9 oz"},
+      {name:"Yellow onion, quartered",metric:"180 g",imperial:"6 oz"},
+      {name:"Tamarind pulp",metric:"120 g",imperial:"4.2 oz"},
+      {name:"Daikon radish, sliced",metric:"200 g",imperial:"7 oz"},
+      {name:"Okra",metric:"120 g",imperial:"4 oz"},
+      {name:"String beans, cut",metric:"150 g",imperial:"5 oz"},
+      {name:"Eggplant, sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Water spinach (kangkong)",metric:"150 g",imperial:"5 oz"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Long green chilies",metric:"2 pcs",imperial:"2 pcs"}
+    ],
+    instructions: [
+      "Cover the ribs with cold water, bring to a boil, boil 5 minutes, then drain and rinse the meat and the pot. This keeps the broth clear.",
+      "Return the ribs to the pot with the measured water, onion and tomatoes. Simmer gently, partly covered, for 1 1/2 to 2 hours until the meat is tender.",
+      "Mash the tamarind pulp with a cup of hot broth, strain, and stir the sour liquid into the pot.",
+      "Add the daikon and simmer for 8 minutes, then the eggplant for 4 minutes.",
+      "Season with the fish sauce, add the chilies, and adjust the sourness. Beef takes more tamarind than pork or fish.",
+      "Add the okra and string beans and cook 3 minutes.",
+      "Turn off the heat, add the kangkong, cover and let it wilt for 1 minute. Serve very hot."
+    ],
+    notes: [
+      "Short ribs give more body than lean cuts; the collagen is what makes the broth feel full.",
+      "A pressure cooker cuts step 2 to about 30 minutes without hurting the result."
+    ],
+    verification: "verified",
+    history: "Beef sinigang is a comparatively modern and urban variant. The technique is the same across every version: build a savoury base, sour it late, and add vegetables in order of how long they take.",
+    sources: [
+      "https://panlasangpinoy.com/beef-ribs-sinigang/",
+      "https://www.angsarap.net/2010/11/13/sinigang-na-baka-beef-sinigang/"
+    ]
+  },
+  {
+    slug: "nilagang-baboy", title: "Nilagang Baboy", subtitle: "Boiled Pork and Vegetable Soup",
+    description: "Pork simmered plainly with peppercorns and onion until tender, then finished with potato, cabbage and pechay. Deliberately unseasoned at the pot; the seasoning happens in the dipping sauce.",
+    category: "SOUP / PORK", time: "1H 45M", yield: "6 PAX", origin: "PHILIPPINES", technique: "PLAIN SIMMER",
+    ingredients: [
+      {name:"Pork belly or ribs, cubed",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Water",metric:"2.5 L",imperial:"10 1/2 cups"},
+      {name:"Yellow onion, quartered",metric:"180 g",imperial:"6 oz"},
+      {name:"Black peppercorns",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Potatoes, halved",metric:"400 g",imperial:"14 oz"},
+      {name:"Saba banana, halved",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Cabbage, wedged",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Bok choy",metric:"200 g",imperial:"7 oz"},
+      {name:"String beans, cut",metric:"150 g",imperial:"5 oz"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Cover the pork with cold water, bring to a boil and boil for 5 minutes. Drain, rinse the meat and wash out the pot.",
+      "Return the pork with the measured water, onion and peppercorns. Simmer gently for 1 to 1 1/4 hours until tender, skimming as needed.",
+      "Season with the fish sauce. Keep it restrained; nilaga is meant to taste of pork and not much else.",
+      "Add the potatoes and saba and simmer for 12 minutes until a knife slides in easily.",
+      "Add the string beans and cook 3 minutes, then the cabbage for 3 minutes.",
+      "Add the bok choy last and cook for 1 minute, until just wilted.",
+      "Serve with small dishes of fish sauce and crushed chilli for each person to season their own bowl."
+    ],
+    notes: [
+      "The blanch-and-rinse in step 1 is what separates a clean nilaga from a cloudy one.",
+      "Saba banana is traditional and adds a faint sweetness that balances the plain broth."
+    ],
+    verification: "verified",
+    history: "Nilaga simply means boiled. It is the plainest register of Filipino home cooking, built on the idea that a good pot of meat and vegetables needs little more than salt, and that seasoning is the eater's job at the table.",
+    sources: [
+      "https://panlasangpinoy.com/nilagang-baboy/",
+      "https://www.kawalingpinoy.com/nilagang-baboy/"
+    ]
+  },
+  {
+    slug: "nilagang-baka", title: "Nilagang Baka", subtitle: "Boiled Beef and Vegetable Soup",
+    description: "Beef simmered until it gives, with corn, saba, cabbage and beans. The beef version of nilaga, longer and sweeter than the pork.",
+    category: "SOUP / BEEF", time: "2H 30M", yield: "6 PAX", origin: "PHILIPPINES", technique: "PLAIN SIMMER",
+    ingredients: [
+      {name:"Beef brisket or shank, cubed",metric:"1.2 kg",imperial:"2.6 lb"},
+      {name:"Water",metric:"3.0 L",imperial:"12 1/2 cups"},
+      {name:"Yellow onion, quartered",metric:"180 g",imperial:"6 oz"},
+      {name:"Black peppercorns",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Sweet corn, cut into rounds",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Potatoes, halved",metric:"400 g",imperial:"14 oz"},
+      {name:"Saba banana, halved",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Cabbage, wedged",metric:"300 g",imperial:"10.5 oz"},
+      {name:"String beans, cut",metric:"150 g",imperial:"5 oz"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Blanch the beef in boiling water for 5 minutes, then drain and rinse both meat and pot.",
+      "Simmer the beef with the measured water, onion and peppercorns for 1 3/4 to 2 1/4 hours, until a fork goes in without resistance.",
+      "Season with fish sauce and taste for salt.",
+      "Add the corn and simmer 10 minutes.",
+      "Add the potatoes and saba and cook 12 minutes.",
+      "Add the string beans for 3 minutes, then the cabbage for a final 3 minutes.",
+      "Serve in deep bowls with fish sauce and calamansi on the side."
+    ],
+    notes: [
+      "Brisket and shank both work; leaner cuts go dry long before they go tender.",
+      "Skim the surface during the first half hour and the broth stays clean."
+    ],
+    verification: "verified",
+    history: "Nilagang baka belongs to the same plain-boiled family as nilagang baboy and bulalo, all of them variations on simmering a tough cut long enough that the broth becomes the point of the dish.",
+    sources: [
+      "https://panlasangpinoy.com/nilagang-baka-recipe/",
+      "https://en.wikipedia.org/wiki/Nilaga"
+    ]
+  },
+  {
+    slug: "monggo-guisado", title: "Monggo Guisado", subtitle: "Sauteed Mung Bean Stew",
+    description: "Mung beans boiled soft then finished in a sautee of garlic, onion and tomato with pork and leafy greens. Cheap, filling everyday cooking, traditionally eaten on Fridays.",
+    category: "STEW / LEGUME", time: "1H", yield: "6 PAX", origin: "PHILIPPINES", technique: "BOIL + SAUTEE",
+    ingredients: [
+      {name:"Dried mung beans",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"1.5 L",imperial:"6 1/3 cups"},
+      {name:"Pork belly, small dice",metric:"250 g",imperial:"9 oz"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, diced",metric:"150 g",imperial:"5 oz"},
+      {name:"Tomatoes, diced",metric:"200 g",imperial:"7 oz"},
+      {name:"Fish sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Moringa leaves (malunggay)",metric:"80 g",imperial:"3 oz"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Rinse the mung beans and boil them in the water for 35 to 45 minutes, until the skins split and the beans collapse when pressed. Keep the cooking liquid.",
+      "In a separate pan, render the pork in the oil over medium heat until browned and its fat has run.",
+      "Add the garlic and cook 45 seconds, then the onion until translucent, then the tomatoes. Cook the tomatoes down for 4 to 5 minutes until they break into a paste.",
+      "Tip the beans and their liquid into the pan. Simmer for 10 minutes so the flavours meet.",
+      "Season with the fish sauce and pepper. Mash some of the beans against the side of the pot to thicken the stew.",
+      "Stir in the moringa leaves and cook for 1 minute only, until they darken.",
+      "Serve over rice, with fried fish alongside if you have it."
+    ],
+    notes: [
+      "Mashing part of the beans is what gives the stew body; skip it and you get soup.",
+      "Spinach stands in for moringa, though it is milder and wilts faster."
+    ],
+    verification: "verified",
+    history: "Ginisang monggo is closely tied to Friday abstinence in a largely Catholic country, which is why it is so often cooked with fish rather than pork, or with no meat at all.",
+    sources: [
+      "https://panlasangpinoy.com/ginisang-monggo-with-kalabasa/",
+      "https://cinnamonsnail.com/vegan-ginisang-munggo/"
+    ]
+  },
+  {
+    slug: "ginataang-kalabasa-at-sitaw", title: "Ginataang Kalabasa at Sitaw", subtitle: "Squash and Long Beans in Coconut Milk",
+    description: "Squash and yardlong beans simmered in coconut milk with shrimp and shrimp paste, until the squash softens enough to thicken the sauce itself.",
+    category: "VEGETABLE / GATA", time: "40M", yield: "4\u20136 PAX", origin: "PHILIPPINES", technique: "COCONUT REDUCTION",
+    ingredients: [
+      {name:"Squash (kalabasa), cubed",metric:"700 g",imperial:"1.5 lb"},
+      {name:"Yardlong beans (sitaw), cut",metric:"250 g",imperial:"9 oz"},
+      {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Shrimp, peeled",metric:"250 g",imperial:"9 oz"},
+      {name:"Garlic, minced",metric:"5 cloves",imperial:"5 cloves"},
+      {name:"Yellow onion, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Ginger, julienned",metric:"20 g",imperial:"0.7 oz"},
+      {name:"Shrimp paste (bagoong alamang)",metric:"30 g",imperial:"2 tbsp"},
+      {name:"Long green chilies",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Neutral oil",metric:"20 ml",imperial:"4 tsp"}
+    ],
+    instructions: [
+      "Heat the oil in a wide pan. Cook the garlic, onion and ginger over medium heat for 3 minutes until soft and fragrant.",
+      "Add the shrimp paste and fry for 1 minute; this takes the raw edge off it.",
+      "Pour in the coconut milk and bring to a gentle simmer. Do not let it boil hard or it will split.",
+      "Add the squash and simmer for 12 to 15 minutes, until a knife enters easily but the cubes still hold.",
+      "Add the yardlong beans and chilies and cook for 5 minutes.",
+      "Add the shrimp and the coconut cream and cook for 3 minutes more, until the shrimp are just opaque and the sauce has thickened.",
+      "Taste and adjust with more bagoong rather than salt. Serve with rice."
+    ],
+    notes: [
+      "Let some squash cubes break down; they thicken the sauce better than any starch.",
+      "Bagoong varies enormously in saltiness, so season with it gradually and taste as you go."
+    ],
+    verification: "verified",
+    history: "Ginataan names the whole family of Filipino dishes cooked in coconut milk, savoury and sweet alike. Squash with yardlong beans is among the most common vegetable versions, and shifts with whatever is in the garden.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ginataang_kalabasa",
+      "https://theodehlicious.com/ginataang-kalabasa-with-malunggay/"
+    ]
+  },
+  {
+    slug: "gising-gising", title: "Gising-Gising", subtitle: "Spicy Winged Beans in Coconut Milk",
+    description: "Chopped winged beans cooked down in coconut milk with pork, shrimp paste and a serious quantity of bird's eye chilli. The name means wake up, and it is meant literally.",
+    category: "VEGETABLE / GATA", time: "35M", yield: "4 PAX", origin: "CENTRAL LUZON", technique: "COCONUT REDUCTION",
+    ingredients: [
+      {name:"Winged beans (sigarilyas), chopped",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Pork belly, minced",metric:"250 g",imperial:"9 oz"},
+      {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Coconut cream",metric:"150 ml",imperial:"2/3 cup"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, minced",metric:"120 g",imperial:"4 oz"},
+      {name:"Shrimp paste (bagoong alamang)",metric:"30 g",imperial:"2 tbsp"},
+      {name:"Bird\u2019s eye chilies, minced",metric:"8 pcs",imperial:"8 pcs"},
+      {name:"Neutral oil",metric:"20 ml",imperial:"4 tsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Render the minced pork in the oil over medium-high heat until browned and crisp at the edges.",
+      "Add the garlic and onion and cook for 3 minutes until soft.",
+      "Add the shrimp paste and chilies and fry for 1 minute.",
+      "Pour in the coconut milk and simmer gently for 8 minutes to reduce slightly.",
+      "Add the chopped winged beans and cook for 6 to 8 minutes, until tender but still green and squeaky.",
+      "Stir in the coconut cream and simmer 3 minutes more, until the sauce clings to the beans.",
+      "Season with pepper, taste, and serve with plenty of rice."
+    ],
+    notes: [
+      "Chop the winged beans finely and evenly; large pieces cook unevenly and stay fibrous.",
+      "The heat is the point of the dish, but the coconut cream is what keeps it drinkable."
+    ],
+    verification: "verified",
+    history: "Gising-gising, also called ginataang sigarilyas, is associated with Central Luzon, particularly Pampanga and Nueva Ecija. Where winged beans are scarce it is commonly made with chopped green beans instead.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Gising-gising",
+      "https://en.wikipedia.org/wiki/Ginataan"
+    ]
+  },
+  {
+    slug: "pancit-canton", title: "Pancit Canton", subtitle: "Stir-Fried Egg Noodles",
+    description: "Wheat-and-egg noodles stir-fried dry with pork, shrimp and vegetables, the noodles finishing by absorbing seasoned stock straight from the pan. The everyday pancit.",
+    category: "NOODLES / STIR-FRY", time: "35M", yield: "6 PAX", origin: "PHILIPPINES", technique: "WOK TOSS",
+    ingredients: [
+      {name:"Pancit canton noodles",metric:"400 g",imperial:"14 oz"},
+      {name:"Pork shoulder, thinly sliced",metric:"250 g",imperial:"9 oz"},
+      {name:"Shrimp, peeled",metric:"200 g",imperial:"7 oz"},
+      {name:"Chicken stock",metric:"700 ml",imperial:"3 cups"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Carrot, julienned",metric:"120 g",imperial:"4 oz"},
+      {name:"Cabbage, shredded",metric:"250 g",imperial:"9 oz"},
+      {name:"Snow peas",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Oyster sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Calamansi",metric:"4 pcs",imperial:"4 pcs"}
+    ],
+    instructions: [
+      "Heat the oil in a wide wok over high heat. Brown the pork in a single layer, then push it aside.",
+      "Add the garlic and onion and cook 1 minute. Add the shrimp and cook until just pink, then remove pork and shrimp both to a plate.",
+      "Add the carrot and cook 2 minutes, then the cabbage and snow peas for 2 minutes. Remove to the same plate; vegetables left in will overcook while the noodles absorb.",
+      "Pour the stock, soy sauce and oyster sauce into the wok and bring to a boil.",
+      "Add the noodles and toss constantly for 4 to 6 minutes, until they have drunk nearly all the liquid and are tender but still springy.",
+      "Return the meat, shrimp and vegetables and toss through for 1 minute.",
+      "Serve with calamansi halves; the citrus is squeezed over at the table, not during cooking."
+    ],
+    notes: [
+      "Do not pre-boil the noodles. They are meant to cook in the seasoned stock, which is where their flavour comes from.",
+      "Cook the vegetables separately and return them at the end, or they will go grey and limp."
+    ],
+    verification: "verified",
+    history: "Pancit came with Chinese traders, and the word derives from a Hokkien phrase meaning something conveniently cooked. Canton refers to the flour-and-egg noodle rather than to Canton itself. Serving it on birthdays for long life is a Chinese custom that stayed.",
+    sources: [
+      "https://panlasangpinoy.com/filipino-pancit/",
+      "https://www.thechoppingblock.com/blog/pancit-a-classic-filipino-dish-with-endless-variations"
+    ]
+  },
+  {
+    slug: "pancit-palabok", title: "Pancit Palabok", subtitle: "Rice Noodles in Shrimp Sauce",
+    description: "Thin rice noodles under a thick annatto-orange shrimp sauce, finished with smoked fish, crushed pork crackling, egg and shrimp. The sauce is ladled over, never tossed through.",
+    category: "NOODLES / SAUCED", time: "50M", yield: "6 PAX", origin: "PHILIPPINES", technique: "SHRIMP SAUCE",
+    ingredients: [
+      {name:"Rice noodles (bihon)",metric:"400 g",imperial:"14 oz"},
+      {name:"Shrimp, peeled, shells reserved",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Water",metric:"1.2 L",imperial:"5 cups"},
+      {name:"Annatto seeds",metric:"15 g",imperial:"1 tbsp"},
+      {name:"Cornstarch",metric:"60 g",imperial:"1/2 cup"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Pork belly, cooked and sliced",metric:"200 g",imperial:"7 oz"},
+      {name:"Smoked fish (tinapa), flaked",metric:"150 g",imperial:"5 oz"},
+      {name:"Pork crackling, crushed",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Eggs",metric:"4 large",imperial:"4 large"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Calamansi",metric:"6 pcs",imperial:"6 pcs"}
+    ],
+    instructions: [
+      "Simmer the shrimp shells in the water for 15 minutes, then strain. This shrimp stock is the whole basis of the sauce.",
+      "Steep the annatto seeds in 60 ml of hot water for 10 minutes, then strain and keep the orange liquid.",
+      "Soak the rice noodles in warm water for 10 minutes until pliable, then drain.",
+      "Hard-boil the eggs, peel and slice. Fry the garlic in the oil until golden and reserve it with its oil.",
+      "Bring the shrimp stock and annatto liquid to a simmer, season with fish sauce, then whisk in the cornstarch slaked in a little cold water. Cook 3 to 4 minutes until it thickens to a pourable gravy.",
+      "Blanch the noodles in boiling water for 1 to 2 minutes, drain well, and spread them on a platter.",
+      "Ladle the sauce over the noodles and top with shrimp, pork, tinapa, crackling, egg and fried garlic. Serve with calamansi."
+    ],
+    notes: [
+      "Palabok is assembled, not tossed. Everything sits in layers and is mixed by the eater.",
+      "The sauce thickens further as it cools, so keep it slightly looser than you want it."
+    ],
+    verification: "verified",
+    history: "Palabok and pancit Malabon are close relatives and often confused. Palabok uses thin bihon with the sauce ladled on top; Malabon uses thick rice noodles with the sauce mixed all the way through and crab fat in the sauce.",
+    sources: [
+      "https://panlasangpinoy.com/asian-filipino-food-noodles-pansit-pancit-palabok-recipe/",
+      "https://www.hungryhuy.com/pancit-palabok/"
+    ]
+  },
+  {
+    slug: "pancit-malabon", title: "Pancit Malabon", subtitle: "Thick Rice Noodles in Crab-Fat Sauce",
+    description: "Thick rice noodles coated through with an orange shrimp and crab-fat sauce, piled with squid, shrimp, oysters and smoked fish. Richer and more maritime than palabok.",
+    category: "NOODLES / SAUCED", time: "55M", yield: "6 PAX", origin: "MALABON", technique: "SHRIMP SAUCE",
+    ingredients: [
+      {name:"Thick rice noodles",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Shrimp, peeled, shells reserved",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Squid, cleaned and sliced",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"1.2 L",imperial:"5 cups"},
+      {name:"Crab fat (aligue)",metric:"80 g",imperial:"3 oz"},
+      {name:"Annatto seeds",metric:"15 g",imperial:"1 tbsp"},
+      {name:"Cornstarch",metric:"50 g",imperial:"1/3 cup"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Garlic, minced",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Smoked fish (tinapa), flaked",metric:"150 g",imperial:"5 oz"},
+      {name:"Pork crackling, crushed",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Eggs",metric:"4 large",imperial:"4 large"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Calamansi",metric:"6 pcs",imperial:"6 pcs"}
+    ],
+    instructions: [
+      "Simmer the shrimp shells in the water for 15 minutes and strain to make a shrimp stock.",
+      "Steep the annatto in a little hot water for 10 minutes and strain.",
+      "Fry the garlic in the oil until golden; reserve garlic and oil separately. Hard-boil and slice the eggs.",
+      "Poach the shrimp and squid briefly in the stock, 2 minutes for the shrimp and 1 minute for the squid, then lift them out. Squid turns to rubber the moment it overcooks.",
+      "Bring the stock and annatto liquid to a simmer with the crab fat and fish sauce. Whisk in the slaked cornstarch and cook 4 minutes until thick.",
+      "Soak the thick noodles in warm water for 15 minutes, then blanch for 2 to 3 minutes and drain thoroughly.",
+      "Toss the noodles through the sauce until every strand is coated, then top with the seafood, tinapa, crackling, egg and fried garlic."
+    ],
+    notes: [
+      "The defining difference from palabok: here the sauce is mixed through, not poured on top.",
+      "Crab fat is what makes it Malabon. Without it the dish is palabok with fat noodles."
+    ],
+    verification: "verified",
+    history: "Pancit Malabon is named for the fishing city of Malabon in Metro Manila, and its seafood-heavy character comes straight from that. It is a classic party and pasalubong dish, usually sold in wide bilao trays lined with banana leaf.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Pancit_Malabon",
+      "https://panlasangpinoy.com/pancit-malabon-recipe/"
+    ]
+  },
+  {
+    slug: "arroz-caldo", title: "Arroz Caldo", subtitle: "Chicken and Ginger Rice Porridge",
+    description: "Rice cooked down with chicken and a great deal of ginger into a thick savoury porridge, finished with toasted garlic, scallion and calamansi. Sickbed food and rainy-day food.",
+    category: "PORRIDGE / CHICKEN", time: "1H", yield: "6 PAX", origin: "PHILIPPINES", technique: "SLOW PORRIDGE",
+    ingredients: [
+      {name:"Glutinous rice",metric:"200 g",imperial:"1 cup"},
+      {name:"Jasmine rice",metric:"100 g",imperial:"1/2 cup"},
+      {name:"Chicken thighs, bone-in",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Chicken stock",metric:"2.0 L",imperial:"8 1/2 cups"},
+      {name:"Ginger, julienned",metric:"60 g",imperial:"2 oz"},
+      {name:"Garlic, minced",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Yellow onion, minced",metric:"120 g",imperial:"4 oz"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Safflower (kasubha)",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Eggs",metric:"4 large",imperial:"4 large"},
+      {name:"Scallions, sliced",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Calamansi",metric:"6 pcs",imperial:"6 pcs"}
+    ],
+    instructions: [
+      "Fry half the garlic in the oil over medium heat until evenly golden, then lift it out onto paper. Watch it closely; it turns bitter within seconds of going too far.",
+      "In the same pot cook the remaining garlic, onion and ginger for 3 minutes.",
+      "Add the chicken and brown lightly on all sides, then season with the fish sauce.",
+      "Add both rices and stir for 1 minute to coat in the fat.",
+      "Pour in the stock and the safflower. Simmer uncovered for 35 to 45 minutes, stirring often, until the rice has broken down and the porridge falls thickly from the spoon.",
+      "Hard-boil the eggs, peel and halve them.",
+      "Serve topped with egg, scallion and the reserved toasted garlic, with calamansi and extra fish sauce on the side."
+    ],
+    notes: [
+      "Stir often near the end. Arroz caldo catches on the bottom of the pot easily once it thickens.",
+      "It thickens a great deal as it cools, so keep it looser than seems right and hold back some stock."
+    ],
+    verification: "verified",
+    history: "Arroz caldo is the Filipino reading of Chinese congee, brought by Chinese immigrants and given a Spanish name meaning rice broth. Ginger and safflower are the local additions; the savoury rice porridge itself is not.",
+    sources: [
+      "https://www.kawalingpinoy.com/arroz-caldo/",
+      "https://en.wikipedia.org/wiki/Lugaw"
+    ]
+  },
+  {
+    slug: "goto", title: "Goto", subtitle: "Tripe and Rice Porridge",
+    description: "The tripe version of arroz caldo: rice porridge built on long-simmered beef tripe, finished with toasted garlic, scallion, crackling and a hard squeeze of calamansi.",
+    category: "PORRIDGE / BEEF", time: "2H 30M", yield: "6 PAX", origin: "PHILIPPINES", technique: "SLOW PORRIDGE",
+    ingredients: [
+      {name:"Beef tripe",metric:"700 g",imperial:"1.5 lb"},
+      {name:"Glutinous rice",metric:"250 g",imperial:"1 1/4 cups"},
+      {name:"Beef stock",metric:"2.5 L",imperial:"10 1/2 cups"},
+      {name:"Ginger, julienned",metric:"60 g",imperial:"2 oz"},
+      {name:"Garlic, minced",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Yellow onion, minced",metric:"120 g",imperial:"4 oz"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Safflower (kasubha)",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Scallions, sliced",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Pork crackling, crushed",metric:"80 g",imperial:"3 oz"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Calamansi",metric:"6 pcs",imperial:"6 pcs"}
+    ],
+    instructions: [
+      "Scrub the tripe well, then simmer it in fresh water for 1 1/2 to 2 hours, until it is soft enough to cut with the side of a spoon. Drain and slice into strips.",
+      "Fry half the garlic in the oil until golden and reserve for the top.",
+      "Cook the remaining garlic, onion and ginger in the same pot for 3 minutes.",
+      "Add the sliced tripe and the fish sauce and stir for 2 minutes.",
+      "Add the rice, stir to coat, then pour in the stock with the safflower.",
+      "Simmer uncovered for 35 to 45 minutes, stirring frequently, until thick and porridge-like.",
+      "Serve topped with scallion, crackling and toasted garlic, with calamansi alongside."
+    ],
+    notes: [
+      "Undercooked tripe is unpleasant and cannot be rescued later. Give step 1 the full time it needs.",
+      "Goto is traditionally eaten with a tokwa't baboy side, and the vinegar cuts the richness well."
+    ],
+    verification: "verified",
+    history: "Goto belongs to the same family as arroz caldo and lugaw, distinguished by its tripe. The name is thought to come from the Hokkien for beef innards, another trace of the Chinese origins of Filipino rice porridge.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Goto_(food)",
+      "https://en.wikipedia.org/wiki/Lugaw"
+    ]
+  },
+  {
+    slug: "champorado", title: "Champorado", subtitle: "Chocolate Rice Porridge",
+    description: "Glutinous rice cooked with tablea chocolate into a thick sweet porridge, served hot with milk and, traditionally, salted dried fish alongside.",
+    category: "DESSERT / PORRIDGE", time: "40M", yield: "4 PAX", origin: "PHILIPPINES", technique: "SLOW PORRIDGE",
+    ingredients: [
+      {name:"Glutinous rice",metric:"300 g",imperial:"1 1/2 cups"},
+      {name:"Water",metric:"1.5 L",imperial:"6 1/3 cups"},
+      {name:"Tablea (pure cacao tablets)",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Brown sugar",metric:"120 g",imperial:"4.2 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Evaporated milk",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Dried salted fish (tuyo)",metric:"100 g",imperial:"3.5 oz"}
+    ],
+    instructions: [
+      "Rinse the glutinous rice until the water runs nearly clear.",
+      "Bring the water to a boil, add the rice, and simmer over low heat for 20 minutes, stirring often so it does not catch.",
+      "Dissolve the tablea in a ladle of the hot rice liquid, mashing it against the side of a bowl, then stir it back into the pot.",
+      "Simmer for 10 to 15 minutes more, stirring, until the rice is fully swollen and the porridge coats a spoon thickly.",
+      "Stir in the sugar and salt. The salt is not optional; it is what stops the chocolate tasting flat.",
+      "Fry the dried fish separately until crisp.",
+      "Serve hot in bowls with evaporated milk poured over, and the salted fish on the side."
+    ],
+    notes: [
+      "Tablea is unsweetened pure cacao. Using sweetened cocoa powder instead will make the dish cloying.",
+      "The pairing with salted fish sounds unlikely and is exactly right; treat it as salt against sweet."
+    ],
+    verification: "verified",
+    history: "Champorado descends from the Mexican champurrado, a chocolate drink thickened with corn masa, which reached the islands on the galleon trade. The Filipino version swapped masa for glutinous rice, a substitution that owes more to Chinese rice-porridge habits than to Mexico.",
+    sources: [
+      "https://www.kawalingpinoy.com/champorado/",
+      "https://en.wikipedia.org/wiki/Lugaw"
+    ]
+  },
+  {
+    slug: "sinangag", title: "Sinangag", subtitle: "Garlic Fried Rice",
+    description: "Day-old rice fried hard with a great deal of garlic until the grains separate and crisp at the edges. The base of every silog breakfast in the country.",
+    category: "RICE / FRIED", time: "15M", yield: "4 PAX", origin: "PHILIPPINES", technique: "HIGH-HEAT FRY",
+    ingredients: [
+      {name:"Day-old cooked rice",metric:"800 g",imperial:"4 cups"},
+      {name:"Garlic, minced",metric:"12 cloves",imperial:"12 cloves"},
+      {name:"Neutral oil",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Salt",metric:"1 1/2 tsp",imperial:"1 1/2 tsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Scallions, sliced",metric:"30 g",imperial:"1 oz"}
+    ],
+    instructions: [
+      "Break the cold rice apart with your hands until no clumps remain. This is the difference between fried rice and steamed rice in a pan.",
+      "Heat the oil over medium heat. Add half the garlic and fry slowly until pale gold, then lift it out and drain it on paper for the garnish.",
+      "Raise the heat to high and add the remaining garlic, cooking for 20 seconds only.",
+      "Add the rice and spread it in a single layer. Leave it undisturbed for 1 minute to let the underside catch.",
+      "Toss, spread again, and repeat for 4 to 5 minutes until the grains are separate and some have crisped.",
+      "Season with salt and pepper, tossing to distribute evenly.",
+      "Top with the reserved toasted garlic and scallion, and serve with a fried egg and any cured meat."
+    ],
+    notes: [
+      "Freshly cooked rice will steam and clump. Day-old refrigerated rice is not a shortcut, it is the recipe.",
+      "Toasting half the garlic separately gives you both the flavour in the oil and the crunch on top."
+    ],
+    verification: "verified",
+    history: "Sinangag is one half of the silog breakfast, the other being a fried egg and a cured meat. The naming pattern was coined at a Marikina tapsihan in the 1980s and has since produced an open-ended family of dishes, from tapsilog to spamsilog.",
+    sources: [
+      "https://www.thekitchn.com/sinangag-recipe-23158381",
+      "https://norecipes.com/filipino-garlic-rice-sinangag/"
+    ]
+  },
+  {
+    slug: "turon", title: "Turon", subtitle: "Banana and Jackfruit Spring Roll",
+    description: "Saba banana and jackfruit rolled in a spring-roll wrapper, fried, and lacquered in caramelised brown sugar. Crisp outside, molten inside.",
+    category: "MERIENDA / FRIED", time: "30M", yield: "8 PCS", origin: "PHILIPPINES", technique: "CARAMEL FRY",
+    ingredients: [
+      {name:"Saba bananas, halved lengthwise",metric:"6 pcs",imperial:"6 pcs"},
+      {name:"Jackfruit (langka), sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Spring roll wrappers",metric:"8 sheets",imperial:"8 sheets"},
+      {name:"Brown sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Neutral frying oil",metric:"500 ml",imperial:"2 cups"},
+      {name:"Water",metric:"15 ml",imperial:"1 tbsp"}
+    ],
+    instructions: [
+      "Peel the saba and halve them lengthwise. Very ripe bananas will collapse; use ones that are firm and just yellow.",
+      "Roll each banana half in brown sugar until coated.",
+      "Lay a wrapper flat, place a sugared banana half and a few strips of jackfruit near one edge, fold in the sides and roll tightly. Seal the edge with a smear of water.",
+      "Heat the oil to 170\u00b0C (340\u00b0F) in a deep pan.",
+      "Fry the rolls seam-side down for 2 to 3 minutes a side, until the wrapper is blistered and golden.",
+      "Sprinkle the remaining brown sugar directly into the hot oil around the rolls. It will melt and catch on the wrappers as a brittle glaze.",
+      "Lift out onto a rack, not paper, so the caramel sets hard rather than sticking. Eat within the hour."
+    ],
+    notes: [
+      "Drain on a wire rack. On paper towel the caramel welds the turon to the sheet.",
+      "The sugar in the oil will darken fast once it melts. Have the rolls ready to come out."
+    ],
+    verification: "verified",
+    history: "Turon is among the most common merienda and street foods in the Philippines. The saba banana at its centre is a cooking cultivar that holds its shape under heat, which is why it, rather than a dessert banana, appears in nearly every Filipino banana dish.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Turon_(food)",
+      "https://panlasangpinoy.com/turon/"
+    ]
+  },
+  {
+    slug: "banana-cue", title: "Banana Cue", subtitle: "Caramelised Skewered Saba Banana",
+    description: "Whole saba bananas deep-fried and coated in brown sugar that hardens into a glassy shell, then threaded onto bamboo skewers. Sold on every street corner in the afternoon.",
+    category: "MERIENDA / FRIED", time: "20M", yield: "6 PCS", origin: "PHILIPPINES", technique: "CARAMEL FRY",
+    ingredients: [
+      {name:"Saba bananas, peeled",metric:"6 pcs",imperial:"6 pcs"},
+      {name:"Brown sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Neutral frying oil",metric:"500 ml",imperial:"2 cups"},
+      {name:"Bamboo skewers",metric:"6 pcs",imperial:"6 pcs"}
+    ],
+    instructions: [
+      "Peel the saba and leave them whole. They should be ripe enough to be sweet but still firm to the squeeze.",
+      "Heat the oil in a deep pan to 170\u00b0C (340\u00b0F).",
+      "Fry the bananas for 3 to 4 minutes, turning, until they are golden and have softened through.",
+      "Scatter the brown sugar directly into the oil around the bananas.",
+      "As the sugar melts, roll the bananas through it constantly so each one takes on an even coat. Work quickly; melted sugar goes from amber to burnt in seconds.",
+      "Lift the bananas onto a greased tray or a wire rack and let the caramel set hard, about 3 minutes.",
+      "Thread two per bamboo skewer and serve warm."
+    ],
+    notes: [
+      "Do not crowd the pan. The oil temperature drops and the sugar seizes instead of melting cleanly.",
+      "Caramel at this temperature causes serious burns. Roll the bananas with tongs, never with your hands."
+    ],
+    verification: "verified",
+    history: "Banana cue is one of the best-selling street foods in the country, sold from afternoon carts alongside camote cue and maruya. The name pairs the banana with the barbecue skewer it is served on rather than with any grilling.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Banana_cue",
+      "https://www.foxyfolksy.com/banana-cue/"
+    ]
+  },
+  {
+    slug: "kamote-cue", title: "Kamote Cue", subtitle: "Caramelised Skewered Sweet Potato",
+    description: "Thick slices of sweet potato fried and coated in caramelising brown sugar, then skewered. The root-vegetable twin of banana cue, and slightly less sweet.",
+    category: "MERIENDA / FRIED", time: "25M", yield: "6 PCS", origin: "PHILIPPINES", technique: "CARAMEL FRY",
+    ingredients: [
+      {name:"Sweet potato (kamote), thick sliced",metric:"700 g",imperial:"1.5 lb"},
+      {name:"Brown sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Neutral frying oil",metric:"500 ml",imperial:"2 cups"},
+      {name:"Bamboo skewers",metric:"6 pcs",imperial:"6 pcs"}
+    ],
+    instructions: [
+      "Peel the sweet potato and cut into rounds about 2 cm thick. Even thickness matters more here than with banana, since the interior has to cook through.",
+      "Heat the oil to 165\u00b0C (330\u00b0F), a touch lower than for banana cue so the inside cooks before the outside colours.",
+      "Fry the slices for 5 to 7 minutes, until a skewer passes through without resistance.",
+      "Scatter the brown sugar into the oil around the slices.",
+      "Once the sugar melts, turn the pieces through it until evenly lacquered.",
+      "Lift onto a greased tray and let the coating set for 3 minutes.",
+      "Skewer two or three pieces per stick and serve warm."
+    ],
+    notes: [
+      "Undercooked kamote stays chalky at the centre and no amount of caramel hides it.",
+      "Purple-fleshed varieties work and look striking, but are drier and need the lower oil temperature."
+    ],
+    verification: "verified",
+    history: "Camote cue is made the same way as banana cue and sold from the same carts. Both belong to the afternoon merienda habit, the mid-afternoon snack that sits between lunch and a late Filipino dinner.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Camote_cue",
+      "https://www.busogsarap.com/2010/02/toffee-sweet-potato-kamote-que.html"
+    ]
+  },
+  {
+    slug: "maruya", title: "Maruya", subtitle: "Banana Fritters",
+    description: "Sliced or fanned saba banana dipped in a light batter and fried crisp, then dusted with sugar. Homelier than turon and quicker to make.",
+    category: "MERIENDA / FRIED", time: "25M", yield: "8 PCS", origin: "PHILIPPINES", technique: "BATTER FRY",
+    ingredients: [
+      {name:"Saba bananas",metric:"6 pcs",imperial:"6 pcs"},
+      {name:"All-purpose flour",metric:"150 g",imperial:"1 1/4 cups"},
+      {name:"Rice flour",metric:"50 g",imperial:"1/3 cup"},
+      {name:"Sugar",metric:"60 g",imperial:"2 oz"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Evaporated milk",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Neutral frying oil",metric:"500 ml",imperial:"2 cups"}
+    ],
+    instructions: [
+      "Whisk the flours, sugar, baking powder and salt together.",
+      "Beat in the milk and egg until the batter is smooth and just thick enough to coat a spoon. Rest it for 10 minutes.",
+      "Peel the saba. Either slice them into rounds, or slice lengthwise almost through and press flat into a fan.",
+      "Heat the oil to 170\u00b0C (340\u00b0F).",
+      "Dip each piece in batter, letting the excess run off, and lower it into the oil.",
+      "Fry for 2 to 3 minutes a side until deep golden and crisp.",
+      "Drain on a rack and dust with sugar while still hot."
+    ],
+    notes: [
+      "Rice flour in the batter is what keeps the crust crisp rather than bready.",
+      "Fanning the banana gives more surface area and a better ratio of crust to fruit."
+    ],
+    verification: "verified",
+    history: "Maruya is a staple of Filipino street-food and home merienda culture, made wherever saba bananas are cheap, which is nearly everywhere. Regional versions differ mainly in whether the banana is sliced, mashed or fanned.",
+    sources: [
+      "https://www.recipesbynora.com/filipino-banana-fritters-maruya/",
+      "https://www.bitesized.ph/food-almanac-pinoy-street-food/"
+    ]
+  },
+  {
+    slug: "kwek-kwek", title: "Kwek-Kwek", subtitle: "Battered Quail Eggs",
+    description: "Hard-boiled quail eggs in a bright orange annatto batter, deep-fried and eaten hot from the cart with a sharp vinegar dip.",
+    category: "STREET FOOD / FRIED", time: "35M", yield: "20 PCS", origin: "METRO MANILA", technique: "BATTER FRY",
+    ingredients: [
+      {name:"Quail eggs",metric:"20 pcs",imperial:"20 pcs"},
+      {name:"All-purpose flour",metric:"150 g",imperial:"1 1/4 cups"},
+      {name:"Cornstarch",metric:"50 g",imperial:"1/3 cup"},
+      {name:"Annatto powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Baking powder",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Water",metric:"180 ml",imperial:"3/4 cup"},
+      {name:"Neutral frying oil",metric:"500 ml",imperial:"2 cups"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Red onion, minced",metric:"60 g",imperial:"2 oz"},
+      {name:"Bird\u2019s eye chilies, minced",metric:"3 pcs",imperial:"3 pcs"}
+    ],
+    instructions: [
+      "Boil the quail eggs for 4 minutes, cool them in iced water, and peel carefully. They tear easily.",
+      "Toss the peeled eggs in a spoonful of the flour so the batter has something to grip.",
+      "Whisk the remaining flour, cornstarch, annatto powder, baking powder and salt with the water into a batter about the thickness of pancake batter.",
+      "Heat the oil to 175\u00b0C (350\u00b0F).",
+      "Dip each egg in batter and lower it straight into the oil. Fry 5 or 6 at a time for 2 to 3 minutes, until the coating is set and crisp.",
+      "Drain on a rack.",
+      "Stir the vinegar, onion and chilies together and serve alongside, on skewers, while hot."
+    ],
+    notes: [
+      "Dusting the eggs with flour first is the difference between a coated egg and batter that slides off in the oil.",
+      "Annatto is there for the colour more than the flavour; without it the dish is not recognisably kwek-kwek."
+    ],
+    verification: "verified",
+    history: "Kwek-kwek is one of the defining Manila street foods. A widely repeated origin story credits a Cubao balut vendor who, having dropped her stock, peeled what survived, rolled it in flour and fried it. The chicken-egg version is tokneneng.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Tokneneng",
+      "https://www.esquiremag.ph/culture/food-and-drink/filipino-street-food-a1729-20170526-lfrm"
+    ]
+  },
+  {
+    slug: "tokneneng", title: "Tokneneng", subtitle: "Battered Chicken Eggs",
+    description: "The larger sibling of kwek-kwek: whole hard-boiled chicken eggs in the same orange annatto batter, fried and served with vinegar.",
+    category: "STREET FOOD / FRIED", time: "35M", yield: "8 PCS", origin: "METRO MANILA", technique: "BATTER FRY",
+    ingredients: [
+      {name:"Chicken eggs",metric:"8 large",imperial:"8 large"},
+      {name:"All-purpose flour",metric:"180 g",imperial:"1 1/2 cups"},
+      {name:"Cornstarch",metric:"60 g",imperial:"1/2 cup"},
+      {name:"Annatto powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Baking powder",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Water",metric:"220 ml",imperial:"1 cup"},
+      {name:"Neutral frying oil",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Red onion, minced",metric:"60 g",imperial:"2 oz"},
+      {name:"Bird\u2019s eye chilies, minced",metric:"3 pcs",imperial:"3 pcs"}
+    ],
+    instructions: [
+      "Hard-boil the eggs for 9 minutes, cool in iced water and peel.",
+      "Dust the peeled eggs lightly with flour.",
+      "Whisk the remaining dry ingredients with the water into a batter slightly thicker than for kwek-kwek, since the eggs are heavier.",
+      "Heat the oil to 175\u00b0C (350\u00b0F).",
+      "Coat each egg well and lower it into the oil, frying 3 at a time for 3 to 4 minutes until the shell of batter is firm and crisp.",
+      "Drain on a rack.",
+      "Serve hot with the vinegar, onion and chilli dip."
+    ],
+    notes: [
+      "A thicker batter is needed than for quail eggs, or it will slide off the larger, heavier egg.",
+      "Halve them to serve; the yolk against the sour dip is the whole point."
+    ],
+    verification: "verified",
+    history: "Tokneneng is prepared exactly as kwek-kwek but with chicken eggs. The name is said to derive from a 1978 Pinoy Komiks series, Batute, one of many street-food names that came out of popular culture rather than the kitchen.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Tokneneng",
+      "https://www.bitesized.ph/food-almanac-pinoy-street-food/"
+    ]
+  },
+  {
+    slug: "isaw", title: "Isaw", subtitle: "Grilled Chicken or Pork Intestine",
+    description: "Cleaned intestines boiled until tender, threaded onto skewers and grilled over coals with a sweet-savoury basting. The best known of the Filipino grilled-innard skewers.",
+    category: "STREET FOOD / GRILL", time: "1H 30M", yield: "12 PCS", origin: "METRO MANILA", technique: "CHARCOAL GRILL",
+    ingredients: [
+      {name:"Chicken or pork intestines",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Water",metric:"2.0 L",imperial:"8 1/2 cups"},
+      {name:"Salt",metric:"30 g",imperial:"2 tbsp"},
+      {name:"Yellow onion, quartered",metric:"120 g",imperial:"4 oz"},
+      {name:"Bay leaves",metric:"3 leaves",imperial:"3 leaves"},
+      {name:"Banana ketchup",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Soy sauce",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Brown sugar",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Bamboo skewers",metric:"12 pcs",imperial:"12 pcs"}
+    ],
+    instructions: [
+      "Turn the intestines inside out and wash them repeatedly under running water, rubbing with salt, until the water runs clear and there is no smell. This step cannot be rushed and determines whether the dish is edible.",
+      "Simmer them in fresh water with the onion, bay and a little salt for 45 to 60 minutes, until tender.",
+      "Drain, cool, and thread onto skewers in a concertina fold.",
+      "Whisk the banana ketchup, soy sauce, sugar and garlic into a basting sauce.",
+      "Grill over medium coals for 6 to 8 minutes, turning and basting repeatedly, until the edges char.",
+      "Give them a final baste in the last minute so the glaze stays glossy.",
+      "Serve hot with cane vinegar for dipping."
+    ],
+    notes: [
+      "The cleaning in step 1 is the entire recipe. Anything less and the skewers will taste of what the intestine carried.",
+      "Boil before grilling, always; grilling raw intestine leaves it tough and unsafe."
+    ],
+    verification: "verified",
+    history: "Isaw belongs to a family of grilled offal skewers that also includes tenga, atay, balun-balunan and betamax. The trade is usually traced to the 1970s, when meat prices pushed vendors toward the cuts that butchers discarded.",
+    sources: [
+      "https://www.esquiremag.ph/culture/food-and-drink/filipino-street-food-a1729-20170526-lfrm",
+      "https://www.laquatsa.com/filipino-street-food-guide/"
+    ]
+  },
+  {
+    slug: "betamax", title: "Betamax", subtitle: "Grilled Chicken Blood Cubes",
+    description: "Chicken blood set firm, cut into squares and grilled on skewers. The name comes from the resemblance to a Betamax cassette.",
+    category: "STREET FOOD / GRILL", time: "1H", yield: "12 PCS", origin: "METRO MANILA", technique: "CHARCOAL GRILL",
+    ingredients: [
+      {name:"Fresh chicken blood",metric:"1.0 L",imperial:"4 1/4 cups"},
+      {name:"Salt",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Banana ketchup",metric:"100 ml",imperial:"scant 1/2 cup"},
+      {name:"Soy sauce",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Brown sugar",metric:"30 g",imperial:"1 oz"},
+      {name:"Garlic, minced",metric:"5 cloves",imperial:"5 cloves"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Bird\u2019s eye chilies, minced",metric:"3 pcs",imperial:"3 pcs"},
+      {name:"Bamboo skewers",metric:"12 pcs",imperial:"12 pcs"}
+    ],
+    instructions: [
+      "Stir the salt into the fresh blood and pour it into a shallow tray to a depth of about 2 cm.",
+      "Steam the tray gently for 20 to 25 minutes, until the blood has set solid and no longer wobbles at the centre.",
+      "Cool completely, then turn out and cut into squares roughly 3 cm across.",
+      "Thread three or four squares onto each skewer.",
+      "Whisk the ketchup, soy sauce, sugar and garlic into a basting sauce.",
+      "Grill over medium coals for 4 to 6 minutes, turning and basting, until the outside firms and chars lightly.",
+      "Serve with vinegar sharpened with chilli."
+    ],
+    notes: [
+      "Set the blood gently. Boiled hard it turns spongy and weeps.",
+      "The cubes are fragile until fully cold, so cut them only after they have set completely."
+    ],
+    verification: "verified",
+    history: "Betamax is named for its shape, a squat rectangle that reminded vendors of the videocassette. It sits on the same carts as isaw and the other grilled innards, and the naming habit, describing the food by what it looks like, runs right through Filipino street food.",
+    sources: [
+      "https://www.esquiremag.ph/culture/food-and-drink/filipino-street-food-a1729-20170526-lfrm",
+      "https://www.bitesized.ph/food-almanac-pinoy-street-food/"
+    ]
+  },
+  {
+    slug: "kikiam", title: "Kikiam", subtitle: "Fried Fish and Pork Rolls",
+    description: "Seasoned minced fish and pork rolled into fingers, steamed and then deep-fried, sold by the stick with a sweet or vinegar dip.",
+    category: "STREET FOOD / FRIED", time: "1H", yield: "16 PCS", origin: "METRO MANILA", technique: "STEAM + FRY",
+    ingredients: [
+      {name:"White fish fillet, minced",metric:"400 g",imperial:"14 oz"},
+      {name:"Pork belly, minced",metric:"200 g",imperial:"7 oz"},
+      {name:"Carrot, finely minced",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Scallions, sliced",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Garlic, minced",metric:"5 cloves",imperial:"5 cloves"},
+      {name:"Cornstarch",metric:"60 g",imperial:"1/2 cup"},
+      {name:"Oyster sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Soy sauce",metric:"20 ml",imperial:"4 tsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Bean curd sheets",metric:"6 sheets",imperial:"6 sheets"},
+      {name:"Neutral frying oil",metric:"500 ml",imperial:"2 cups"}
+    ],
+    instructions: [
+      "Mix the minced fish, pork, carrot, scallion and garlic with the cornstarch, oyster sauce, soy sauce and pepper until the mixture turns sticky and holds together.",
+      "Soften the bean curd sheets briefly in warm water and pat dry.",
+      "Spoon the filling along one edge and roll into tight fingers about 2 cm thick, sealing the edge with a little water.",
+      "Steam the rolls for 20 minutes, then cool them completely. Skipping the cooling makes them fall apart in the oil.",
+      "Heat the oil to 175\u00b0C (350\u00b0F).",
+      "Fry the rolls for 3 to 4 minutes until golden and blistered.",
+      "Cut into lengths, skewer, and serve with sweet chilli sauce or spiced vinegar."
+    ],
+    notes: [
+      "Chilling the steamed rolls before frying firms them enough to survive the oil.",
+      "The mixture should feel tacky. If it is loose, add cornstarch a spoon at a time."
+    ],
+    verification: "verified",
+    history: "Kikiam takes its name from the Hokkien que-kiam, a rolled minced-meat dish brought by Chinese migrants. The street version diverged sharply from its ancestor, leaning on cheap processed fish rather than the original meat.",
+    sources: [
+      "https://www.esquiremag.ph/culture/food-and-drink/filipino-street-food-a1729-20170526-lfrm",
+      "https://www.laquatsa.com/filipino-street-food-guide/"
+    ]
+  },
+  {
+    slug: "ukoy", title: "Ukoy", subtitle: "Shrimp and Vegetable Fritters",
+    description: "Small whole shrimp bound with bean sprouts and julienned squash in a rice-flour batter, fried flat and crisp, and eaten with garlic vinegar.",
+    category: "MERIENDA / FRIED", time: "35M", yield: "10 PCS", origin: "PHILIPPINES", technique: "BATTER FRY",
+    ingredients: [
+      {name:"Small shrimp, whole",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Mung bean sprouts (togue)",metric:"200 g",imperial:"7 oz"},
+      {name:"Squash (kalabasa), julienned",metric:"150 g",imperial:"5 oz"},
+      {name:"Rice flour",metric:"150 g",imperial:"1 1/4 cups"},
+      {name:"All-purpose flour",metric:"80 g",imperial:"2/3 cup"},
+      {name:"Cornstarch",metric:"40 g",imperial:"1/3 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Water",metric:"240 ml",imperial:"1 cup"},
+      {name:"Salt",metric:"1 1/2 tsp",imperial:"1 1/2 tsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Neutral frying oil",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Garlic, minced",metric:"4 cloves",imperial:"4 cloves"}
+    ],
+    instructions: [
+      "Whisk the rice flour, flour, cornstarch, salt and pepper with the egg and water into a thin batter. It should be looser than pancake batter.",
+      "Fold in the bean sprouts and julienned squash until coated.",
+      "Heat the oil to 175\u00b0C (350\u00b0F) in a wide pan.",
+      "Ladle a portion of the vegetable mixture onto a saucer, lay two or three whole shrimp on top, and slide the whole thing into the oil.",
+      "Fry for 2 to 3 minutes a side, until deep golden and rigid.",
+      "Drain on a rack so the underside stays crisp.",
+      "Serve with vinegar sharpened with minced garlic."
+    ],
+    notes: [
+      "Rice flour is what makes ukoy shatter rather than bend. An all-wheat batter goes soft within minutes.",
+      "Small shrimp are used whole, shell and head on, and the shells crisp into the fritter."
+    ],
+    verification: "verified",
+    history: "Ukoy is eaten across the country as merienda and as a side dish, with the vegetable component shifting to whatever is at hand: squash in some places, sweet potato or papaya in others, but nearly always bean sprouts.",
+    sources: [
+      "https://panlasangpinoy.com/ukoy-shrimp-fritters-recipe/",
+      "https://www.foxyfolksy.com/ukoy-recipe-filipino-shrimp-fritters/"
+    ]
+  },
+  {
+    slug: "dynamite-lumpia", title: "Dynamite Lumpia", subtitle: "Cheese-Stuffed Chili Rolls",
+    description: "Long green chilies seeded, stuffed with cheese and seasoned pork, wrapped in spring-roll pastry and fried. Named for the shape and for the heat.",
+    category: "STREET FOOD / FRIED", time: "45M", yield: "10 PCS", origin: "PHILIPPINES", technique: "STUFF + FRY",
+    ingredients: [
+      {name:"Long green chilies (siling haba)",metric:"10 pcs",imperial:"10 pcs"},
+      {name:"Pork belly, minced",metric:"250 g",imperial:"9 oz"},
+      {name:"Cheddar cheese, cut into sticks",metric:"200 g",imperial:"7 oz"},
+      {name:"Garlic, minced",metric:"4 cloves",imperial:"4 cloves"},
+      {name:"Yellow onion, minced",metric:"80 g",imperial:"3 oz"},
+      {name:"Carrot, finely minced",metric:"60 g",imperial:"2 oz"},
+      {name:"Soy sauce",metric:"20 ml",imperial:"4 tsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Spring roll wrappers",metric:"10 sheets",imperial:"10 sheets"},
+      {name:"Neutral frying oil",metric:"500 ml",imperial:"2 cups"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Slit each chilli lengthwise from stem to tip without cutting it in two. Scrape out the seeds and white pith with a small spoon, which removes most of the heat.",
+      "Cook the minced pork with the garlic, onion and carrot over medium heat until browned and dry, about 8 minutes. Season with the soy sauce and pepper and cool completely.",
+      "Fill each chilli with the pork mixture and a stick of cheddar, then press the slit closed.",
+      "Lay a wrapper flat, place the chilli along one edge with the stem protruding, fold in one side and roll tightly. Seal with water.",
+      "Heat the oil to 175\u00b0C (350\u00b0F).",
+      "Fry seam-side down for 3 to 4 minutes, turning, until golden. Do not over-fry, or the cheese will burst the wrapper.",
+      "Drain on a rack and serve hot with sweet chilli sauce or banana ketchup."
+    ],
+    notes: [
+      "Leaving the stem sticking out of the wrapper is what gives the roll its fuse and makes it easy to hold.",
+      "Seal the wrapper properly. Escaping cheese in hot oil makes a mess and a fire risk."
+    ],
+    verification: "verified",
+    history: "Dinamita is named for its resemblance to a stick of dynamite, the chilli stem standing in for the fuse, and for the heat of the pepper itself. It is a modern addition to Filipino snack cooking, popular as pulutan with beer.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Dinamita",
+      "https://www.kawalingpinoy.com/dynamite-lumpia/"
+    ]
+  },
+  {
+    slug: "ube-halaya", title: "Ube Halaya", subtitle: "Purple Yam Jam",
+    description: "Boiled purple yam mashed and cooked down slowly with coconut milk, condensed milk and butter until it is thick enough to hold the mark of a spoon.",
+    category: "DESSERT / CONFECTION", time: "1H 30M", yield: "8 PAX", origin: "PHILIPPINES", technique: "SLOW REDUCTION",
+    ingredients: [
+      {name:"Purple yam (ube), peeled",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Evaporated milk",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Butter",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Sugar",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"}
+    ],
+    instructions: [
+      "Boil the peeled ube in water for 30 to 40 minutes, until a knife slides through easily. Drain thoroughly.",
+      "Mash or grate the ube while warm until completely smooth. Any lumps left now will still be there at the end.",
+      "Melt the butter in a heavy pan over low heat and add the mashed ube.",
+      "Stir in the coconut milk, condensed milk, evaporated milk, sugar and salt.",
+      "Cook over low heat, stirring almost constantly, for 35 to 45 minutes. This is the whole dish: the mixture must reduce slowly without catching.",
+      "It is done when the mass pulls away cleanly from the sides of the pan and a spoon drawn through leaves a trail that holds.",
+      "Spread into a buttered dish, smooth the top, and cool completely before serving. It firms further as it chills."
+    ],
+    notes: [
+      "Low heat and constant stirring. Ube halaya scorches easily and a burnt note runs through the whole batch.",
+      "It thickens noticeably on cooling, so stop while it is slightly looser than you want."
+    ],
+    verification: "verified",
+    history: "Ube halaya is both a dessert in its own right and a component of others, most visibly as the purple layer in halo-halo. The purple yam it is made from is distinct from the orange sweet potato and from taro, though all three are conflated in translation.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ube_halaya",
+      "https://www.yummy.ph/lessons/baking/how-to-use-ube-in-kakanin-recipes-a00249-20211106-lfrm"
+    ]
+  },
+  {
+    slug: "bibingka", title: "Bibingka", subtitle: "Coconut Rice Cake with Salted Egg",
+    description: "A soft rice cake baked on banana leaf with coals above and below, topped with salted egg and cheese and brushed with butter. Christmas morning food.",
+    category: "DESSERT / KAKANIN", time: "50M", yield: "8 PAX", origin: "PHILIPPINES", technique: "BANANA-LEAF BAKE",
+    ingredients: [
+      {name:"Rice flour",metric:"300 g",imperial:"2 1/2 cups"},
+      {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Baking powder",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Eggs",metric:"3 large",imperial:"3 large"},
+      {name:"Butter, melted",metric:"80 g",imperial:"3 oz"},
+      {name:"Salted duck eggs, sliced",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Cheese, grated",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Banana leaves",metric:"4 sheets",imperial:"4 sheets"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Grated coconut",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Soften the banana leaves over a flame until pliable, wipe them clean, and line round moulds or a cake tin with them.",
+      "Whisk the rice flour, sugar, baking powder and salt together.",
+      "Beat the eggs with the coconut milk, then fold into the dry ingredients until smooth. Do not overwork it.",
+      "Pour into the lined moulds to about two thirds full.",
+      "Bake at 190\u00b0C (375\u00b0F) for 20 minutes, until set but still pale.",
+      "Lay slices of salted egg and grated cheese on top and return to the oven for 8 to 10 minutes, until the top browns.",
+      "Brush generously with melted butter and scatter with grated coconut. Serve warm, still in the leaf."
+    ],
+    notes: [
+      "The banana leaf is not decoration; it perfumes the cake and is the reason bibingka does not taste like plain rice cake.",
+      "Traditionally baked in a clay pan with coals above and below, which is what gives the browned top a home oven approximates with a hot final blast."
+    ],
+    verification: "verified",
+    history: "Bibingka is bound up with Simbang Gabi, the series of dawn Masses in the nine days before Christmas, and is sold outside churches alongside puto bumbong. Its sweet-salty balance, sugar against salted duck egg and cheese, is characteristic of Filipino sweets.",
+    sources: [
+      "https://www.yummy.ph/news-trends/kinds-of-kakanin-20160217-lfrm",
+      "https://www.simpol.ph/filipino-rice-cakes-that-nourish-the-soul/"
+    ]
+  },
+  {
+    slug: "kutsinta", title: "Kutsinta", subtitle: "Steamed Brown Rice Cake",
+    description: "A dense, deliberately chewy steamed cake of rice flour and lye water, tinted amber with annatto and eaten under a blanket of grated coconut.",
+    category: "DESSERT / KAKANIN", time: "50M", yield: "16 PCS", origin: "PHILIPPINES", technique: "LYE STEAM",
+    ingredients: [
+      {name:"Rice flour",metric:"200 g",imperial:"1 2/3 cups"},
+      {name:"All-purpose flour",metric:"60 g",imperial:"1/2 cup"},
+      {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Lye water (lihiya)",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Annatto powder",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Grated coconut",metric:"150 g",imperial:"5 oz"}
+    ],
+    instructions: [
+      "Dissolve the brown sugar in the water, stirring until no grains remain.",
+      "Whisk in the rice flour and all-purpose flour until completely smooth, then strain the batter to catch any lumps.",
+      "Stir in the annatto powder and then the lye water. The batter will darken slightly.",
+      "Grease small moulds and fill each about three quarters full.",
+      "Steam over rapidly boiling water for 30 to 35 minutes. Wrap the steamer lid in a cloth so condensation does not drip onto the cakes and pit their surface.",
+      "They are done when a toothpick comes out clean and the texture is springy and translucent rather than cakey.",
+      "Cool completely in the moulds before turning out. Serve with grated coconut."
+    ],
+    notes: [
+      "Lye water is what produces the chew and the translucency. Without it you get a soft cake, not kutsinta.",
+      "Use it sparingly and exactly as measured; too much gives a soapy, bitter taste."
+    ],
+    verification: "verified",
+    history: "Kutsinta belongs to the broad family of kakanin, the rice-based delicacies eaten as merienda across the Philippines. Its jelly-like chew, which comes from lye, sets it apart from the softer steamed cakes like puto.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Kutsinta",
+      "https://www.yummy.ph/news-trends/kinds-of-kakanin-20160217-lfrm"
+    ]
+  },
+  {
+    slug: "pichi-pichi", title: "Pichi-Pichi", subtitle: "Steamed Cassava Cake",
+    description: "Grated cassava steamed with sugar and lye into a translucent, springy cake, then rolled in grated coconut or cheese. Pandan gives it its scent.",
+    category: "DESSERT / KAKANIN", time: "50M", yield: "16 PCS", origin: "PHILIPPINES", technique: "LYE STEAM",
+    ingredients: [
+      {name:"Cassava, grated",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"350 ml",imperial:"1 1/2 cups"},
+      {name:"Lye water (lihiya)",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Pandan leaves",metric:"2 leaves",imperial:"2 leaves"},
+      {name:"Grated coconut",metric:"200 g",imperial:"7 oz"}
+    ],
+    instructions: [
+      "Steep the pandan leaves in the hot water for 15 minutes, then remove them and let the water cool.",
+      "Squeeze the grated cassava lightly to remove excess liquid, but do not wring it dry.",
+      "Mix the cassava with the sugar and pandan water until the sugar dissolves.",
+      "Stir in the lye water.",
+      "Pour into greased moulds and steam over boiling water for 30 to 35 minutes, with a cloth under the lid to catch condensation.",
+      "The cakes are done when they turn translucent throughout and spring back when pressed.",
+      "Cool completely, then turn out and roll in grated coconut."
+    ],
+    notes: [
+      "Cassava must be cooked thoroughly. Undercooked pichi-pichi is both unpleasant and unsafe.",
+      "Cool fully before unmoulding, or the cakes tear."
+    ],
+    verification: "verified",
+    history: "Pichi-pichi is made from cassava rather than rice, but is grouped with kakanin all the same. Grated cheese has become a common alternative to the traditional coconut coating, another instance of the sweet-and-salty pairing Filipino desserts favour.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Pichi-pichi",
+      "https://www.yummy.ph/news-trends/kinds-of-kakanin-20160217-lfrm"
+    ]
+  },
+  {
+    slug: "puto", title: "Puto", subtitle: "Steamed Rice Cakes",
+    description: "Small steamed rice cakes, faintly sweet and cloud-light, usually crowned with cheese or salted egg. Eaten as merienda and served alongside dinuguan.",
+    category: "DESSERT / KAKANIN", time: "40M", yield: "18 PCS", origin: "PHILIPPINES", technique: "STEAM",
+    ingredients: [
+      {name:"Rice flour",metric:"300 g",imperial:"2 1/2 cups"},
+      {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Baking powder",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Coconut milk",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Water",metric:"150 ml",imperial:"2/3 cup"},
+      {name:"Eggs",metric:"2 large",imperial:"2 large"},
+      {name:"Cheese, sliced thin",metric:"120 g",imperial:"4 oz"},
+      {name:"Butter, melted",metric:"40 g",imperial:"1.4 oz"}
+    ],
+    instructions: [
+      "Whisk the rice flour, sugar, baking powder and salt together.",
+      "Beat the eggs with the coconut milk and water, then combine with the dry ingredients until smooth. Rest the batter 10 minutes.",
+      "Grease small puto moulds and fill each about three quarters full.",
+      "Bring the steamer to a hard boil and wrap the lid in a cloth; a single drip will pock the surface of a puto.",
+      "Steam for 12 to 15 minutes, until a toothpick comes out clean and the tops have domed.",
+      "Lay a slice of cheese on each and steam for 2 minutes more, just to soften it.",
+      "Brush with melted butter and serve warm or at room temperature."
+    ],
+    notes: [
+      "The cloth under the steamer lid is essential. Condensation ruins the smooth white surface that defines good puto.",
+      "Overfilling the moulds makes them dense; three quarters full is the right mark."
+    ],
+    verification: "verified",
+    history: "Puto is eaten as merienda but also, distinctively, as a savoury accompaniment: the classic pairing is with dinuguan, the pork blood stew, where the mild sweetness of the cake plays against the iron and vinegar of the stew.",
+    sources: [
+      "https://jeanelleats.com/puto-recipe/",
+      "https://www.simpol.ph/filipino-rice-cakes-that-nourish-the-soul/"
+    ]
+  },
+  {
+    slug: "biko", title: "Biko", subtitle: "Sticky Rice Cake with Latik",
+    description: "Glutinous rice cooked in coconut milk and brown sugar until dense and chewy, spread flat and finished with latik, the toasted curds left from reducing coconut cream.",
+    category: "DESSERT / KAKANIN", time: "1H 15M", yield: "10 PAX", origin: "PHILIPPINES", technique: "COCONUT REDUCTION",
+    ingredients: [
+      {name:"Glutinous rice",metric:"500 g",imperial:"2 1/2 cups"},
+      {name:"Coconut milk",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Coconut cream",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Brown sugar",metric:"350 g",imperial:"12 oz"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Water",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Banana leaves",metric:"3 sheets",imperial:"3 sheets"}
+    ],
+    instructions: [
+      "Rinse the glutinous rice and cook it with the water and half the coconut milk until just tender and most of the liquid is gone, about 20 minutes.",
+      "Meanwhile make the latik: simmer the coconut cream in a pan over medium heat, stirring, until the oil separates and the solids turn golden brown, 20 to 25 minutes. Strain out the curds and reserve both curds and oil.",
+      "In a wide heavy pan, bring the remaining coconut milk, brown sugar and salt to a simmer and cook for 8 minutes until slightly syrupy.",
+      "Add the cooked rice and stir constantly over medium-low heat for 15 to 20 minutes, until the mixture is dense, glossy and pulls away from the pan.",
+      "Line a tray with softened banana leaves brushed with a little of the reserved coconut oil.",
+      "Press the rice mixture into the tray in an even layer about 3 cm thick.",
+      "Scatter the latik curds over the top, press them in lightly, and cool before cutting into squares."
+    ],
+    notes: [
+      "Making latik properly takes patience; pull it off the heat the moment the curds are golden, since they go bitter quickly.",
+      "Stir constantly in step 4. Biko catches on the bottom of the pan in seconds."
+    ],
+    verification: "verified",
+    history: "Biko is among the most widespread kakanin in the country, cooked for fiestas and family occasions. Latik, the browned coconut curd on top, is a by-product of rendering coconut cream and is used across Filipino sweets rather than made for its own sake.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Biko_(food)",
+      "https://panlasangpinoy.com/filipino-asian-food-dessert-rice-cake-biko-recipe/"
+    ]
+  },
+  {
+    slug: "sapin-sapin", title: "Sapin-Sapin", subtitle: "Layered Glutinous Rice Cake",
+    description: "Three coloured layers of sweetened coconut and glutinous rice steamed one on top of another, topped with latik. The name means layers.",
+    category: "DESSERT / KAKANIN", time: "1H 30M", yield: "12 PAX", origin: "PHILIPPINES", technique: "LAYERED STEAM",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Coconut milk",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Purple yam (ube) paste",metric:"150 g",imperial:"5 oz"},
+      {name:"Jackfruit (langka), pureed",metric:"120 g",imperial:"4 oz"},
+      {name:"Coconut cream",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Banana leaves",metric:"2 sheets",imperial:"2 sheets"}
+    ],
+    instructions: [
+      "Make latik first: reduce the coconut cream until the solids brown and the oil separates. Strain and reserve.",
+      "Whisk the glutinous rice flour, coconut milk, condensed milk, sugar and salt into a smooth batter and divide it into three equal portions.",
+      "Leave one plain white. Stir the ube paste into the second and the jackfruit puree into the third.",
+      "Line a steamer tray with banana leaf brushed with coconut oil. Pour in the ube layer and steam for 15 minutes, until set to the touch.",
+      "Pour the jackfruit layer gently over the set ube and steam 15 minutes more. Pour slowly against a spoon so the layers do not blend.",
+      "Add the white layer last and steam a final 15 to 20 minutes, until a toothpick comes out clean.",
+      "Cool completely, scatter with latik, and cut into diamonds with an oiled knife."
+    ],
+    notes: [
+      "Each layer must be set before the next goes on, or the colours bleed into one another.",
+      "An oiled knife and full cooling are what give clean edges."
+    ],
+    verification: "verified",
+    history: "Sapin-sapin is built on the flavours that recur throughout Filipino sweets: coconut as the base, purple yam, and jackfruit. The layers are traditionally white, purple and yellow, each naming its own flavour.",
+    sources: [
+      "https://www.kawalingpinoy.com/sapin-sapin/",
+      "https://www.foxyfolksy.com/sapin-sapin/"
+    ]
+  },
+  {
+    slug: "suman", title: "Suman", subtitle: "Glutinous Rice in Banana Leaf",
+    description: "Glutinous rice cooked in sweetened coconut milk, wrapped in banana or palm leaves and steamed. Eaten with sugar, mango, or tsokolate.",
+    category: "DESSERT / KAKANIN", time: "1H 30M", yield: "12 PCS", origin: "PHILIPPINES", technique: "BANANA-LEAF STEAM",
+    ingredients: [
+      {name:"Glutinous rice",metric:"500 g",imperial:"2 1/2 cups"},
+      {name:"Coconut milk",metric:"700 ml",imperial:"3 cups"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Salt",metric:"1 1/2 tsp",imperial:"1 1/2 tsp"},
+      {name:"Banana leaves",metric:"12 sheets",imperial:"12 sheets"},
+      {name:"Kitchen twine",metric:"1 pcs",imperial:"1 pcs"}
+    ],
+    instructions: [
+      "Soak the glutinous rice in water for 2 hours, then drain well.",
+      "Cook the rice with the coconut milk, sugar and salt over low heat, stirring often, for 15 to 20 minutes, until the liquid is absorbed and the rice is half cooked and sticky.",
+      "Soften the banana leaves over a flame until they turn glossy and flexible, then wipe them clean.",
+      "Spoon a portion of rice onto each leaf, fold the long sides over the filling and roll into a tight log, then fold the ends under.",
+      "Tie the parcels in pairs with twine.",
+      "Steam for 45 to 60 minutes, until the rice is fully translucent and cohesive.",
+      "Cool slightly and serve warm in the leaf, with sugar or ripe mango."
+    ],
+    notes: [
+      "Half-cook the rice before wrapping. Raw rice will not steam through evenly inside the leaf.",
+      "Pass the leaves over a flame first or they will split as you fold them."
+    ],
+    verification: "verified",
+    history: "Suman is one of the oldest forms of Filipino rice cookery, predating Spanish contact, and exists in dozens of regional variants distinguished by the leaf used, the shape of the parcel, and whether lye is added. Moron of Leyte is a chocolate version of the same idea.",
+    sources: [
+      "https://www.simpol.ph/filipino-rice-cakes-that-nourish-the-soul/",
+      "https://www.yummy.ph/news-trends/kinds-of-kakanin-20160217-lfrm"
+    ]
+  },
+  {
+    slug: "adobong-sitaw", title: "Adobong Sitaw", subtitle: "Yardlong Beans in Adobo Sauce",
+    description: "Yardlong beans cooked in the adobo manner with soy, vinegar and garlic, often with a little pork for fat. A quick everyday vegetable dish.",
+    category: "VEGETABLE / BRAISE", time: "25M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    ingredients: [
+      {name:"Yardlong beans (sitaw), cut",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Pork belly, small dice",metric:"150 g",imperial:"5 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Cane vinegar",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Yellow onion, sliced",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Water",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Bay leaves",metric:"2 leaves",imperial:"2 leaves"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Neutral oil",metric:"20 ml",imperial:"4 tsp"}
+    ],
+    instructions: [
+      "Cut the beans into lengths of about 5 cm.",
+      "Render the pork in the oil over medium-high heat until browned and its fat has run.",
+      "Add the garlic and onion and cook for 2 minutes until fragrant.",
+      "Pour in the vinegar and let it simmer for 2 minutes without stirring, to cook off the raw edge.",
+      "Add the soy sauce, water, bay leaves and pepper and bring to a simmer.",
+      "Add the beans and cook for 6 to 8 minutes, until tender but still with some snap.",
+      "Raise the heat briefly to reduce the sauce so it clings. Serve with rice."
+    ],
+    notes: [
+      "Take the beans off while they still have bite. Overcooked sitaw goes khaki and limp.",
+      "A handful of crushed pork crackling scattered over at the end is a common finish."
+    ],
+    verification: "verified",
+    history: "Adobo describes a method rather than a single dish, and it is applied to vegetables as readily as to meat. Adobong sitaw and adobong kangkong are among the most common vegetable applications, often cooked together.",
+    sources: [
+      "https://panlasangpinoy.com/adobong-sitaw-string-bean-recipe/",
+      "https://www.angsarap.net/2019/05/02/top-43-filipino-vegetable-recipes/amp/"
+    ]
+  },
+  {
+    slug: "adobong-kangkong", title: "Adobong Kangkong", subtitle: "Water Spinach in Adobo Sauce",
+    description: "Water spinach wilted quickly in garlic, soy and vinegar. Two minutes of cooking and almost no expense.",
+    category: "VEGETABLE / BRAISE", time: "15M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    ingredients: [
+      {name:"Water spinach (kangkong)",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Pork belly, small dice",metric:"120 g",imperial:"4 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Cane vinegar",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Yellow onion, sliced",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Water",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Neutral oil",metric:"20 ml",imperial:"4 tsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Separate the kangkong stems from the leaves. The stems need roughly twice as long as the leaves.",
+      "Render the pork in the oil until browned, then add the garlic and onion and cook 2 minutes.",
+      "Add the vinegar and simmer 1 minute without stirring.",
+      "Add the soy sauce, water and pepper and bring to a boil.",
+      "Add the stems and cook for 2 minutes.",
+      "Add the leaves, toss once, and cook for 1 minute only, until they collapse but stay green.",
+      "Serve immediately; it turns dull and watery if it sits."
+    ],
+    notes: [
+      "Cook the stems and leaves separately or you will have one component raw and the other dead.",
+      "Serve straight from the pan. This is not a dish that waits."
+    ],
+    verification: "verified",
+    history: "Kangkong grows readily in wet ground across the Philippines and is among the cheapest greens available, which is part of why adobong kangkong is so widespread. It is frequently cooked together with sitaw in one pan.",
+    sources: [
+      "https://www.kawalingpinoy.com/adobong-kangkong/",
+      "https://panlasangpinoy.com/adobong-kangkong/"
+    ]
+  },
+  {
+    slug: "ginataang-langka", title: "Ginataang Langka", subtitle: "Unripe Jackfruit in Coconut Milk",
+    description: "Green jackfruit simmered in coconut milk with shrimp paste and chilli until it turns silky and takes on the sauce. Meaty in texture without any meat.",
+    category: "VEGETABLE / GATA", time: "45M", yield: "4\u20136 PAX", origin: "PHILIPPINES", technique: "COCONUT REDUCTION",
+    ingredients: [
+      {name:"Unripe jackfruit (langka), cut",metric:"700 g",imperial:"1.5 lb"},
+      {name:"Coconut milk",metric:"500 ml",imperial:"2 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Pork belly, small dice",metric:"200 g",imperial:"7 oz"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Ginger, julienned",metric:"20 g",imperial:"0.7 oz"},
+      {name:"Shrimp paste (bagoong alamang)",metric:"30 g",imperial:"2 tbsp"},
+      {name:"Bird\u2019s eye chilies",metric:"5 pcs",imperial:"5 pcs"},
+      {name:"Neutral oil",metric:"20 ml",imperial:"4 tsp"}
+    ],
+    instructions: [
+      "Cut the unripe jackfruit into chunks. Oil your hands and the knife first, since the flesh gives off a sticky latex.",
+      "Render the pork in the oil until browned, then add the garlic, onion and ginger and cook 3 minutes.",
+      "Add the shrimp paste and fry for 1 minute.",
+      "Pour in the coconut milk and bring to a gentle simmer.",
+      "Add the jackfruit and chilies, cover, and simmer for 25 to 30 minutes, until the jackfruit is soft enough to shred under a fork.",
+      "Stir in the coconut cream and simmer uncovered for 8 minutes, until the sauce thickens and coats the jackfruit.",
+      "Taste and correct with more bagoong. Serve with rice."
+    ],
+    notes: [
+      "Only unripe jackfruit works. Ripe langka is a sweet fruit and behaves nothing like this.",
+      "Oil on the blade and your hands makes the latex manageable; without it the stickiness is hard to remove."
+    ],
+    verification: "verified",
+    history: "Ginataang langka belongs to the large family of Filipino coconut-milk stews. Its texture is why unripe jackfruit has travelled so widely as a meat substitute, though in Filipino cooking it is more often cooked with pork or seafood than instead of it.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ginataang_langka",
+      "https://www.angsarap.net/2019/05/02/top-43-filipino-vegetable-recipes/amp/"
+    ]
+  },
+  {
+    slug: "dinengdeng", title: "Dinengdeng", subtitle: "Ilocano Vegetable Broth with Bagoong",
+    description: "An Ilocano vegetable dish built on bagoong isda rather than oil: a thin fermented-fish broth carrying whatever vegetables are to hand, with grilled fish laid over the top.",
+    category: "VEGETABLE / ILOCANO", time: "35M", yield: "4\u20136 PAX", origin: "ILOCOS REGION", technique: "BAGOONG BROTH",
+    ingredients: [
+      {name:"Bagoong isda (fermented fish)",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Water",metric:"1.2 L",imperial:"5 cups"},
+      {name:"Grilled fish (tilapia or bangus)",metric:"400 g",imperial:"14 oz"},
+      {name:"Squash (kalabasa), cubed",metric:"250 g",imperial:"9 oz"},
+      {name:"Yardlong beans, cut",metric:"150 g",imperial:"5 oz"},
+      {name:"Okra",metric:"120 g",imperial:"4 oz"},
+      {name:"Bitter melon (ampalaya), sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Moringa leaves (malunggay)",metric:"80 g",imperial:"3 oz"},
+      {name:"Tomatoes, quartered",metric:"150 g",imperial:"5 oz"},
+      {name:"Yellow onion, sliced",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Ginger, sliced",metric:"20 g",imperial:"0.7 oz"}
+    ],
+    instructions: [
+      "Bring the water to a boil with the bagoong, onion, tomato and ginger. Simmer for 10 minutes, then strain if you prefer a clear broth.",
+      "Taste the broth now. Bagoong varies enormously in strength and this is the only seasoning the dish gets.",
+      "Add the squash and simmer for 8 minutes until it begins to soften.",
+      "Add the yardlong beans and okra and cook 4 minutes.",
+      "Add the bitter melon and cook 3 minutes; any longer and its bitterness turns harsh.",
+      "Lay the grilled fish on top and simmer for 2 minutes to warm through.",
+      "Turn off the heat, scatter the moringa leaves over, cover, and let them wilt for 1 minute before serving."
+    ],
+    notes: [
+      "Dinengdeng uses no oil and no sauteed base, which is what separates it from pinakbet.",
+      "The vegetables are not fixed. The dish is whatever the garden gave, carried by the bagoong."
+    ],
+    verification: "verified",
+    history: "Dinengdeng, also called inabraw, is an Ilocano staple and a close relative of pinakbet. The distinction is that pinakbet is sauteed and comparatively dry, while dinengdeng is a brothy dish where the bagoong is diluted rather than fried.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Dinengdeng",
+      "https://www.angsarap.net/2019/05/02/top-43-filipino-vegetable-recipes/amp/"
+    ]
+  },
+  {
+    slug: "tapa", title: "Tapa", subtitle: "Cured Beef for Tapsilog",
+    description: "Thin beef cured in soy, calamansi and garlic, then fried hard. Served with garlic rice and a fried egg, it becomes tapsilog.",
+    category: "BREAKFAST / CURED", time: "30M", yield: "4 PAX", origin: "PHILIPPINES", technique: "CURE + FRY",
+    ingredients: [
+      {name:"Beef sirloin, sliced 3 mm thick",metric:"700 g",imperial:"1.5 lb"},
+      {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
+      {name:"Calamansi juice",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Garlic, minced",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Brown sugar",metric:"30 g",imperial:"1 oz"},
+      {name:"Black pepper",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Neutral oil",metric:"45 ml",imperial:"3 tbsp"}
+    ],
+    instructions: [
+      "Slice the beef as thinly as you can across the grain. Freezing it for 30 minutes first makes this far easier.",
+      "Combine the soy sauce, calamansi juice, garlic, sugar, pepper and salt.",
+      "Marinate the beef in the mixture, covered, for at least 6 hours and preferably overnight.",
+      "Drain the beef well and pat it dry. Wet meat will steam and never take colour.",
+      "Heat the oil in a wide pan over high heat and fry the slices in a single layer for 1 to 2 minutes a side, until the edges caramelise and crisp.",
+      "Work in batches, wiping the pan if the sugar starts to burn between rounds.",
+      "Serve with sinangag and a fried egg, with spiced vinegar on the side."
+    ],
+    notes: [
+      "Thin slicing and a dry surface are the two things that decide whether tapa crisps or stews.",
+      "The sugar in the marinade burns readily; keep the pan moving and the batches small."
+    ],
+    verification: "verified",
+    history: "Tapa refers to the cured meat itself, a preservation technique older than the breakfast it now anchors. The name tapsilog, joining tapa with sinangag and itlog, was coined in the 1980s at a Marikina eatery and spawned an entire naming convention.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Silog",
+      "https://blog.studiotributes.com/post/what-is-tapsilog-filipino-cured-beef-breakfast"
+    ]
+  },
+  {
+    slug: "paksiw-na-isda", title: "Paksiw na Isda", subtitle: "Fish Poached in Vinegar",
+    description: "Fish poached in vinegar with ginger, garlic and long chilies until the broth turns sharp and clean. The pot is not stirred once the fish is in.",
+    category: "SEAFOOD / PAKSIW", time: "30M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR POACH",
+    ingredients: [
+      {name:"Whole fish, cleaned and cut",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Cane vinegar",metric:"240 ml",imperial:"1 cup"},
+      {name:"Water",metric:"240 ml",imperial:"1 cup"},
+      {name:"Ginger, sliced",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Yellow onion, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Long green chilies",metric:"3 pcs",imperial:"3 pcs"},
+      {name:"Eggplant, sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Bitter melon (ampalaya), sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Fish sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Black peppercorns",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Lay the ginger, garlic and onion across the bottom of a wide pot. They form a raft that keeps the fish off the metal.",
+      "Arrange the fish pieces on top in a single layer.",
+      "Tuck the eggplant and bitter melon around the fish and add the chilies and peppercorns.",
+      "Pour the vinegar and water over, and add the fish sauce. The liquid should come roughly halfway up the fish.",
+      "Bring to a boil uncovered and let it boil hard for 2 minutes without stirring, so the raw vinegar edge cooks off.",
+      "Lower the heat, cover, and simmer for 12 to 15 minutes, until the fish flakes and the vegetables are tender. Do not stir at any point; shake the pot if you must move things.",
+      "Taste the broth for salt and serve hot, with rice."
+    ],
+    notes: [
+      "Never stir paksiw. The fish breaks up and the dish turns to porridge.",
+      "Boiling the vinegar hard at the start is what stops the finished broth tasting raw and harsh."
+    ],
+    verification: "verified",
+    history: "Paksiw names a Filipino method rather than a dish: to cook and simmer in vinegar. The technique traces to the use of vinegar as a preservative in a hot climate and on long sea voyages, and it is applied to fish, pork, offal and vegetables alike.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Paksiw",
+      "https://panlasangpinoy.com/paksiw-na-isda-recipe/"
+    ]
+  },
+  {
+    slug: "paksiw-na-bangus", title: "Paksiw na Bangus", subtitle: "Milkfish Poached in Vinegar",
+    description: "The milkfish version of paksiw, cooked in one pot with eggplant and chilies until the vinegar broth reduces around the fish.",
+    category: "SEAFOOD / PAKSIW", time: "30M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR POACH",
+    ingredients: [
+      {name:"Milkfish (bangus), cut into steaks",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Cane vinegar",metric:"240 ml",imperial:"1 cup"},
+      {name:"Water",metric:"180 ml",imperial:"3/4 cup"},
+      {name:"Ginger, sliced",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Yellow onion, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Long green chilies",metric:"3 pcs",imperial:"3 pcs"},
+      {name:"Eggplant, sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Fish sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Black peppercorns",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Scale and clean the bangus well and cut it into thick steaks.",
+      "Line a wide pot with the ginger, garlic and onion.",
+      "Lay the fish steaks over the aromatics in one layer and tuck the eggplant and chilies around them.",
+      "Add the vinegar, water, fish sauce and peppercorns.",
+      "Bring to a boil uncovered and boil for 2 minutes without stirring.",
+      "Cover and simmer over low heat for 12 to 15 minutes, until the flesh flakes at the bone and the liquid has reduced by about a third.",
+      "Let it stand off the heat for 5 minutes before serving. Paksiw is often better the next day."
+    ],
+    notes: [
+      "Bangus is bony. Cutting thick steaks rather than thin ones keeps the flesh together in the pot.",
+      "This keeps for several days refrigerated, and the vinegar is the reason; that was the original point of the method."
+    ],
+    verification: "verified",
+    history: "Bangus is the standard fish for paksiw, and milkfish farming in Pangasinan and Iloilo is why it is so widely available. The Ilocano version of paksiw uses sukang Iloko and bagoong isda in place of plain vinegar and fish sauce.",
+    sources: [
+      "https://panlasangpinoy.com/paksiw-na-bangus-recipe/",
+      "https://www.kawalingpinoy.com/paksiw-na-bangus/"
+    ]
+  },
+  {
+    slug: "paksiw-na-lechon", title: "Paksiw na Lechon", subtitle: "Roast Pork in Liver Sauce and Vinegar",
+    description: "Leftover roast pork simmered down in its own liver sauce with vinegar, bay and sugar until the sauce turns dark and thick. The second life of every lechon.",
+    category: "PORK / PAKSIW", time: "1H", yield: "6 PAX", origin: "PHILIPPINES", technique: "VINEGAR BRAISE",
+    ingredients: [
+      {name:"Roast pork (lechon), chopped",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Lechon liver sauce",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Cane vinegar",metric:"180 ml",imperial:"3/4 cup"},
+      {name:"Water",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Garlic, crushed",metric:"10 cloves",imperial:"10 cloves"},
+      {name:"Yellow onion, sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Bay leaves",metric:"4 leaves",imperial:"4 leaves"},
+      {name:"Brown sugar",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Black peppercorns",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Neutral oil",metric:"20 ml",imperial:"4 tsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Chop the leftover lechon into large bite-sized pieces, skin and all.",
+      "Heat the oil in a heavy pot and cook the garlic and onion for 3 minutes until soft.",
+      "Add the pork and turn it through the aromatics for 2 minutes.",
+      "Pour in the vinegar and bring to a hard boil for 2 minutes without stirring.",
+      "Add the liver sauce, water, bay leaves, sugar and peppercorns. Stir to combine.",
+      "Simmer partly covered over low heat for 35 to 45 minutes, until the pork is tender enough to give under a spoon and the sauce has darkened and thickened.",
+      "Taste for salt and the balance of sour against sweet. Serve with rice."
+    ],
+    notes: [
+      "This is a dish designed for leftovers; the crackling softens into the sauce and that is intended.",
+      "The liver sauce is already sweet and salty, so hold back on sugar and salt until the end."
+    ],
+    verification: "verified",
+    history: "Paksiw na lechon exists because a whole roast pig is far more than one meal. It belongs to the thrifty end of Filipino cooking, where the second day of a fiesta dish is planned for rather than improvised.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Paksiw",
+      "https://www.yummy.ph/recipe/paksiw-na-isda-recipe"
+    ]
+  },
+  {
+    slug: "paksiw-na-pata", title: "Paksiw na Pata", subtitle: "Pork Leg Braised in Vinegar",
+    description: "Pork leg simmered slowly in vinegar and soy with banana blossoms and bay until the skin goes sticky and the meat falls from the bone.",
+    category: "PORK / PAKSIW", time: "2H 30M", yield: "6 PAX", origin: "PHILIPPINES", technique: "VINEGAR BRAISE",
+    ingredients: [
+      {name:"Pork leg (pata), cut into sections",metric:"1.5 kg",imperial:"3.3 lb"},
+      {name:"Cane vinegar",metric:"240 ml",imperial:"1 cup"},
+      {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
+      {name:"Water",metric:"1.0 L",imperial:"4 1/4 cups"},
+      {name:"Garlic, crushed",metric:"10 cloves",imperial:"10 cloves"},
+      {name:"Yellow onion, sliced",metric:"150 g",imperial:"5 oz"},
+      {name:"Dried banana blossoms",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Bay leaves",metric:"4 leaves",imperial:"4 leaves"},
+      {name:"Brown sugar",metric:"60 g",imperial:"2 oz"},
+      {name:"Black peppercorns",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Soak the dried banana blossoms in warm water for 20 minutes, then drain and cut into lengths.",
+      "Blanch the pata in boiling water for 5 minutes, then drain and rinse. This removes the scum that would otherwise cloud the braise.",
+      "Put the pork in a heavy pot with the water, garlic, onion, bay and peppercorns. Simmer for 1 hour.",
+      "Add the vinegar and let it boil for 2 minutes without stirring.",
+      "Add the soy sauce, sugar and banana blossoms. Simmer partly covered for a further 1 to 1 1/4 hours, until the meat pulls away from the bone.",
+      "Uncover and reduce the sauce for 10 to 15 minutes, until it is glossy and coats the pork.",
+      "Taste, correct the salt, and rest for 5 minutes before serving."
+    ],
+    notes: [
+      "Banana blossoms are traditional and add a faint tannic edge that keeps the dish from being merely sweet.",
+      "The collagen in the leg is what thickens the sauce. Do not rush the braise or you get neither tenderness nor body."
+    ],
+    verification: "verified",
+    history: "Paksiw na pata sits at the richer end of the paksiw family, closer to a braise than a poach. The sugar and banana blossoms distinguish it from the sharper fish versions, and it is common fiesta and celebration food.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Paksiw",
+      "https://panlasangpinoy.com/paksiw-na-isda-recipe/"
+    ]
+  },
+  {
+    slug: "daing-na-bangus", title: "Daing na Bangus", subtitle: "Vinegar-Marinated Split Milkfish",
+    description: "Milkfish split flat, marinated overnight in vinegar, garlic and pepper, then fried until the skin crisps. A breakfast staple.",
+    category: "SEAFOOD / CURED", time: "25M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR CURE",
+    ingredients: [
+      {name:"Milkfish (bangus), butterflied",metric:"900 g",imperial:"2 lb"},
+      {name:"Cane vinegar",metric:"240 ml",imperial:"1 cup"},
+      {name:"Garlic, crushed",metric:"10 cloves",imperial:"10 cloves"},
+      {name:"Black pepper",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Salt",metric:"20 g",imperial:"4 tsp"},
+      {name:"Bay leaves",metric:"2 leaves",imperial:"2 leaves"},
+      {name:"Neutral oil",metric:"60 ml",imperial:"1/4 cup"}
+    ],
+    instructions: [
+      "Have the bangus butterflied and deboned, split along the back and opened flat.",
+      "Combine the vinegar, garlic, pepper, salt and bay leaves in a shallow dish.",
+      "Lay the fish flesh-side down in the marinade, cover, and refrigerate for at least 6 hours or overnight.",
+      "Drain the fish and pat it thoroughly dry on both sides. Any surface moisture will spit violently in the oil and leave the skin soft.",
+      "Heat the oil in a wide pan over medium-high heat.",
+      "Fry skin-side down for 4 to 5 minutes until the skin is crisp and browned, then turn and cook 3 minutes more.",
+      "Serve with garlic rice, a fried egg and spiced vinegar for dipping."
+    ],
+    notes: [
+      "Drying the fish after marinating is what separates crisp skin from a soggy fillet.",
+      "Do not marinate beyond about 12 hours; the vinegar begins to cook the flesh and the texture goes chalky."
+    ],
+    verification: "verified",
+    history: "Daing describes splitting, salting or marinating and then drying fish, a preservation method that long predates refrigeration. The modern breakfast version shortens the process to an overnight vinegar marinade, keeping the flavour while dropping the sun-drying.",
+    sources: [
+      "https://www.kawalingpinoy.com/daing-na-bangus/",
+      "https://www.angsarap.net/2021/11/04/15-delicious-and-healthy-bangus-milkfish-recipes/"
+    ]
+  },
+  {
+    slug: "relyenong-bangus", title: "Relyenong Bangus", subtitle: "Stuffed Milkfish",
+    description: "Milkfish emptied through the neck, its flesh cooked with aromatics and returned to the intact skin, then fried whole. The showpiece way to serve a bony fish.",
+    category: "SEAFOOD / STUFFED", time: "1H 30M", yield: "6 PAX", origin: "PHILIPPINES", technique: "DEBONE + STUFF",
+    ingredients: [
+      {name:"Milkfish (bangus), whole",metric:"1.2 kg",imperial:"2.6 lb"},
+      {name:"Yellow onion, minced",metric:"150 g",imperial:"5 oz"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Carrot, finely minced",metric:"120 g",imperial:"4 oz"},
+      {name:"Potatoes, small dice",metric:"200 g",imperial:"7 oz"},
+      {name:"Green peas",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Raisins",metric:"60 g",imperial:"2 oz"},
+      {name:"Eggs",metric:"3 large",imperial:"3 large"},
+      {name:"Calamansi juice",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Soy sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Neutral oil",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Loosen the skin of the bangus by pounding the fish gently all over with the flat of a knife, then snap the backbone at the neck and tail and pull the flesh and bones out through the neck, keeping the skin whole.",
+      "Poach the extracted flesh in a little water for 10 minutes, then flake it and pick out every bone. This is tedious and cannot be skipped.",
+      "Marinate the empty skin in the calamansi juice and soy sauce for 20 minutes.",
+      "Saute the garlic, onion, carrot and potato in a little oil until soft, about 8 minutes. Add the peas and raisins.",
+      "Fold in the flaked fish and 2 beaten eggs, season well, and cook 2 minutes until it holds together. Cool slightly.",
+      "Pack the stuffing back into the skin, not too tightly, and close the neck with a toothpick. Brush with the remaining beaten egg.",
+      "Shallow-fry in the oil over medium heat for 8 to 10 minutes a side, turning once carefully, until golden. Slice crosswise to serve."
+    ],
+    notes: [
+      "Work slowly when removing the flesh. A torn skin cannot be stuffed and the dish is lost.",
+      "Do not overpack the skin, or it will split as the stuffing expands in the pan."
+    ],
+    verification: "verified",
+    history: "Relyenong bangus takes its name from the Spanish relleno, stuffed, and belongs to the fiesta end of Filipino cooking where labour signals occasion. Its practical appeal is that it delivers bangus with none of the bones the fish is notorious for.",
+    sources: [
+      "https://www.angsarap.net/2021/11/04/15-delicious-and-healthy-bangus-milkfish-recipes/",
+      "https://www.kawalingpinoy.com/daing-na-bangus/"
+    ]
+  },
+  {
+    slug: "pancit-habhab", title: "Pancit Habhab", subtitle: "Lucban Miki Noodles on Banana Leaf",
+    description: "Quezon miki noodles stir-fried with pork and vegetables, served on a rectangle of banana leaf and eaten without cutlery, slurped straight from the leaf.",
+    category: "NOODLES / STIR-FRY", time: "35M", yield: "6 PAX", origin: "LUCBAN, QUEZON", technique: "WOK TOSS",
+    ingredients: [
+      {name:"Miki noodles, fresh",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Pork belly, thinly sliced",metric:"250 g",imperial:"9 oz"},
+      {name:"Pork liver, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Chicken stock",metric:"500 ml",imperial:"2 cups"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Carrot, julienned",metric:"120 g",imperial:"4 oz"},
+      {name:"Cabbage, shredded",metric:"200 g",imperial:"7 oz"},
+      {name:"Snow peas",metric:"80 g",imperial:"3 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Banana leaves",metric:"6 sheets",imperial:"6 sheets"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"}
+    ],
+    instructions: [
+      "Cut the banana leaves into rectangles about 20 cm across, pass them over a flame to soften, and wipe clean.",
+      "Brown the pork belly in the oil over high heat, then add the liver and cook 2 minutes only; liver goes grainy if pushed further. Remove both.",
+      "Cook the garlic and onion for 1 minute, then the carrot for 2, the cabbage and snow peas for 2 more. Remove.",
+      "Pour the stock and soy sauce into the pan and bring to a boil.",
+      "Add the miki noodles and toss for 4 to 5 minutes, until they have absorbed nearly all the liquid.",
+      "Return the meat and vegetables and toss through for 1 minute.",
+      "Serve a portion on each banana leaf rectangle, with vinegar to sprinkle over. Eaten by holding the leaf to the mouth, no fork."
+    ],
+    notes: [
+      "Fresh miki are thick and soft and do not need soaking. They will turn to paste if overcooked.",
+      "The banana leaf is not a garnish; the dish is named for how it is eaten from one."
+    ],
+    verification: "verified",
+    history: "Pancit habhab comes from Lucban in Quezon. The name describes the act of eating it, slurping the noodles directly from a banana leaf held up to the mouth, without utensils.",
+    sources: [
+      "https://panlasangpinoy.com/pancit-habhab-recipe/",
+      "https://www.angsarap.net/2020/12/29/24-regional-varieties-of-pancit-in-the-philippines/"
+    ]
+  },
+  {
+    slug: "pancit-batil-patung", title: "Pancit Batil Patung", subtitle: "Tuguegarao Miki with Egg Soup",
+    description: "Tuguegarao miki topped with minced meat, vegetables, crackling and a poached egg, served with a separate bowl of beaten-egg broth. The two halves of the name describe exactly that.",
+    category: "NOODLES / REGIONAL", time: "50M", yield: "4 PAX", origin: "TUGUEGARAO, CAGAYAN", technique: "TOPPED NOODLES",
+    ingredients: [
+      {name:"Miki noodles, fresh",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Ground beef or carabao",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Pork liver, minced",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Beef stock",metric:"900 ml",imperial:"3 3/4 cups"},
+      {name:"Eggs",metric:"6 large",imperial:"6 large"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, minced",metric:"120 g",imperial:"4 oz"},
+      {name:"Carrot, julienned",metric:"120 g",imperial:"4 oz"},
+      {name:"Mung bean sprouts (togue)",metric:"150 g",imperial:"5 oz"},
+      {name:"Cabbage, shredded",metric:"150 g",imperial:"5 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Pork crackling, crushed",metric:"80 g",imperial:"3 oz"},
+      {name:"Scallions, sliced",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"}
+    ],
+    instructions: [
+      "Saute the garlic and onion in the oil, add the ground meat and brown it well. Add the liver and cook 2 minutes. Season with half the soy sauce and set aside.",
+      "In the same pan, cook the carrot, bean sprouts and cabbage quickly, 2 to 3 minutes, keeping them crisp. Set aside.",
+      "Bring 250 ml of the beef stock to a bare simmer and poach 2 eggs in it. Lift them out and reserve.",
+      "Add the miki noodles to that same stock with the remaining soy sauce and toss for 3 to 4 minutes until the liquid is absorbed. Plate the noodles.",
+      "Pile the meat over the noodles, then the vegetables, then the crackling and a poached egg. That layering is the patung.",
+      "For the batil, bring the remaining stock to a boil and beat 4 eggs into it in a thin stream so they set in ribbons.",
+      "Serve the noodles with the egg broth in a separate bowl alongside, with scallions and vinegar."
+    ],
+    notes: [
+      "The broth is served beside the noodles, never poured over them.",
+      "Carabao beef is traditional in Tuguegarao; ordinary beef is the usual substitute elsewhere."
+    ],
+    verification: "verified",
+    history: "Pancit batil patung is the signature dish of Tuguegarao in Cagayan. The name is literal: batil refers to the beaten egg in the accompanying broth, patung to the toppings placed on the noodles.",
+    sources: [
+      "https://panlasangpinoy.com/pancit-batil-patung-recipe/",
+      "https://www.angsarap.net/2020/12/29/24-regional-varieties-of-pancit-in-the-philippines/"
+    ]
+  },
+  {
+    slug: "pancit-miki", title: "Pancit Miki", subtitle: "Fresh Thick Egg Noodles in Broth",
+    description: "Soft fresh miki noodles cooked in a garlicky pork broth until the starch thickens the soup itself. Thicker and homelier than canton.",
+    category: "NOODLES / SOUP", time: "35M", yield: "4 PAX", origin: "PHILIPPINES", technique: "BROTH NOODLES",
+    ingredients: [
+      {name:"Miki noodles, fresh",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Pork shoulder, thinly sliced",metric:"250 g",imperial:"9 oz"},
+      {name:"Pork stock",metric:"1.2 L",imperial:"5 cups"},
+      {name:"Garlic, minced",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Yellow onion, sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Carrot, julienned",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Cabbage, shredded",metric:"150 g",imperial:"5 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Fish sauce",metric:"20 ml",imperial:"4 tsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Neutral oil",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Scallions, sliced",metric:"40 g",imperial:"1.4 oz"}
+    ],
+    instructions: [
+      "Fry half the garlic in the oil until golden and lift it out for the garnish.",
+      "Brown the pork in the same oil, then add the remaining garlic and the onion and cook 2 minutes.",
+      "Pour in the stock, soy sauce and fish sauce and bring to a boil. Simmer 10 minutes.",
+      "Add the carrot and cook 3 minutes.",
+      "Add the miki noodles and simmer for 4 to 5 minutes. Their starch will visibly thicken the broth, which is what distinguishes this from a clear noodle soup.",
+      "Add the cabbage and cook 2 minutes more.",
+      "Season with pepper and serve topped with scallions and the toasted garlic."
+    ],
+    notes: [
+      "Do not rinse fresh miki. The surface starch is what gives the broth its body.",
+      "It thickens as it stands, so serve it straight away or hold back some stock."
+    ],
+    verification: "verified",
+    history: "Miki are fresh thick egg noodles, made and sold locally rather than dried, and they anchor a whole set of regional pancit dishes, from Lucban's habhab to Tuguegarao's batil patung.",
+    sources: [
+      "https://www.angsarap.net/2020/12/29/24-regional-varieties-of-pancit-in-the-philippines/",
+      "https://panlasangpinoy.com/filipino-pancit/"
+    ]
+  },
+  {
+    slug: "lumpiang-sariwa", title: "Lumpiang Sariwa", subtitle: "Fresh Spring Rolls with Peanut Sauce",
+    description: "Soft crepe wrappers folded around stewed vegetables and served cold under a thick garlic-peanut sauce. Nothing about this lumpia is fried.",
+    category: "MERIENDA / FRESH", time: "1H", yield: "8 PCS", origin: "PHILIPPINES", technique: "FRESH ROLL",
+    ingredients: [
+      {name:"All-purpose flour",metric:"150 g",imperial:"1 1/4 cups"},
+      {name:"Eggs",metric:"3 large",imperial:"3 large"},
+      {name:"Water",metric:"350 ml",imperial:"1 1/2 cups"},
+      {name:"Pork belly, small dice",metric:"200 g",imperial:"7 oz"},
+      {name:"Sweet potato, julienned",metric:"150 g",imperial:"5 oz"},
+      {name:"Green beans, julienned",metric:"150 g",imperial:"5 oz"},
+      {name:"Cabbage, shredded",metric:"200 g",imperial:"7 oz"},
+      {name:"Carrot, julienned",metric:"120 g",imperial:"4 oz"},
+      {name:"Garlic, minced",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Peanuts, roasted and ground",metric:"120 g",imperial:"4 oz"},
+      {name:"Brown sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Cornstarch",metric:"30 g",imperial:"1/4 cup"},
+      {name:"Lettuce leaves",metric:"8 leaves",imperial:"8 leaves"}
+    ],
+    instructions: [
+      "For the wrappers, whisk the flour, eggs and water into a thin smooth batter and rest 20 minutes. Cook thin crepes in a dry non-stick pan, about 1 minute each, and stack them under a cloth.",
+      "Render the pork, then cook the sweet potato for 4 minutes, the carrot and beans for 3, and the cabbage for 2. The filling should stay distinct, not stewed to mush. Drain off any liquid and cool.",
+      "For the sauce, bring 400 ml water with the sugar and soy sauce to a boil, whisk in the cornstarch slaked in cold water, and cook 3 minutes until thick and glossy.",
+      "Stir the ground peanuts into the sauce and take it off the heat.",
+      "Lay a wrapper flat, place a lettuce leaf on it so the leaf shields the wrapper from the damp filling, then spoon on the cooled vegetables.",
+      "Fold the bottom up and the sides in, leaving the top open so the filling shows.",
+      "Pour the peanut sauce generously over each roll and scatter with minced raw garlic just before serving."
+    ],
+    notes: [
+      "Cool the filling completely. Warm filling steams the wrapper and tears it.",
+      "The lettuce leaf is a moisture barrier as much as an ingredient."
+    ],
+    verification: "verified",
+    history: "Lumpiang sariwa is the unfried branch of the Filipino lumpia family, eaten as merienda and at celebrations. The soft crepe and sweet peanut sauce set it apart from the fried, savoury lumpiang Shanghai.",
+    sources: [
+      "https://panlasangpinoy.com/filipino-lumpia-recipe/",
+      "https://en.wikipedia.org/wiki/Lumpiang_gulay"
+    ]
+  },
+  {
+    slug: "lumpiang-togue", title: "Lumpiang Togue", subtitle: "Fried Bean Sprout Spring Rolls",
+    description: "Bean sprouts, tofu and vegetables rolled in pastry and fried crisp. The cheapest and most everyday of the fried lumpia.",
+    category: "MERIENDA / FRIED", time: "45M", yield: "12 PCS", origin: "PHILIPPINES", technique: "STUFF + FRY",
+    ingredients: [
+      {name:"Mung bean sprouts (togue)",metric:"400 g",imperial:"14 oz"},
+      {name:"Firm tofu, small dice",metric:"250 g",imperial:"9 oz"},
+      {name:"Carrot, julienned",metric:"120 g",imperial:"4 oz"},
+      {name:"Green beans, julienned",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Pork belly, minced",metric:"150 g",imperial:"5 oz"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, minced",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Soy sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Black pepper",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Spring roll wrappers",metric:"12 sheets",imperial:"12 sheets"},
+      {name:"Neutral frying oil",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"}
+    ],
+    instructions: [
+      "Fry the diced tofu until golden on all sides, then drain and reserve.",
+      "Render the minced pork, then add the garlic and onion and cook 2 minutes.",
+      "Add the carrot and green beans and cook 3 minutes, then the bean sprouts for 2 minutes only. Season with the soy sauce and pepper.",
+      "Fold in the tofu, then tip the filling into a colander and let it drain and cool completely. Wet filling is the main cause of burst lumpia.",
+      "Spoon the filling onto each wrapper, fold in the sides and roll tightly, sealing the edge with water.",
+      "Heat the oil to 175\u00b0C (350\u00b0F) and fry the rolls for 3 to 4 minutes, until golden and blistered.",
+      "Drain on a rack and serve with spiced vinegar."
+    ],
+    notes: [
+      "Draining the filling is the single step that decides whether these stay crisp or go limp.",
+      "Bean sprouts release a lot of water as they cook. Two minutes is enough."
+    ],
+    verification: "verified",
+    history: "Lumpiang togue belongs to the vegetable branch of Filipino lumpia, alongside lumpiang gulay, and is everyday rather than celebration food. Lumpia itself descends from Hokkien popiah, brought by Chinese traders.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Lumpiang_gulay",
+      "https://panlasangpinoy.com/filipino-lumpia-recipe/"
+    ]
+  },
+  {
+    slug: "longganisa", title: "Longganisa", subtitle: "Filipino Pork Sausage",
+    description: "Coarse pork sausage seasoned sweet or garlicky depending on where it is made, fried until the sugar caramelises. The other great silog breakfast.",
+    category: "BREAKFAST / CURED", time: "40M", yield: "12 PCS", origin: "PHILIPPINES", technique: "CURE + FRY",
+    ingredients: [
+      {name:"Pork shoulder, coarsely minced",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Pork back fat, minced",metric:"200 g",imperial:"7 oz"},
+      {name:"Garlic, minced",metric:"12 cloves",imperial:"12 cloves"},
+      {name:"Brown sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Cane vinegar",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Salt",metric:"15 g",imperial:"1 tbsp"},
+      {name:"Black pepper",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Paprika",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Hog casings",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Water",metric:"120 ml",imperial:"1/2 cup"}
+    ],
+    instructions: [
+      "Mix the minced pork and back fat with the garlic, sugar, vinegar, soy sauce, salt, pepper and paprika until the mixture turns tacky.",
+      "Cover and cure in the refrigerator for at least 12 hours, or up to 2 days. The cure is what makes it longganisa rather than seasoned mince.",
+      "Rinse the hog casings well and soak them in water.",
+      "Stuff the casings loosely and twist into short links about 8 cm long. Loose packing prevents bursting as the sausages cook.",
+      "To cook, place the links in a pan with the water over medium heat, cover, and simmer until the water has evaporated, about 10 minutes.",
+      "Uncover and let the rendered fat fry the sausages, turning, for 4 to 6 minutes until browned and the sugars have caramelised.",
+      "Serve with garlic rice, a fried egg and spiced vinegar."
+    ],
+    notes: [
+      "Simmer first, then fry in the rendered fat. Frying from raw burns the sugar before the centre is cooked.",
+      "Filipino longganisa divides broadly into the sweet Pampanga style (hamonado) and the sour-garlicky Ilocano and Vigan styles."
+    ],
+    verification: "verified",
+    history: "Longganisa takes its name from the Spanish longaniza, and nearly every Filipino town has its own version, differing in sweetness, garlic, size and cure. Paired with sinangag and a fried egg it becomes longsilog, part of the silog breakfast family named in the 1980s.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Silog",
+      "https://urbanblisslife.com/longsilog-recipe/"
+    ]
+  },
 ];
 
 export function getRecipe(slug: string) { return recipes.find((recipe) => recipe.slug === slug); }
