@@ -5,13 +5,14 @@ import { StoreProvider } from "@/lib/store";
 import { TopBar } from "@/components/TopBar";
 import { GroceryDrawer } from "@/components/GroceryDrawer";
 import { InstallPrompt } from "@/components/InstallPrompt";
+import { recipes } from "@/data/recipes";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Hapag — Filipino Culinary Lab",
+  title: "Hapag · Filipino Culinary Lab",
   description:
-    "A living culinary archive of Filipino cuisine — 44 regional recipes, suspended in glass.",
+    `A living culinary archive of Filipino cuisine. ${recipes.length} regional recipes, suspended in glass.`,
   applicationName: "Hapag",
   manifest: "/manifest.webmanifest",
   appleWebApp: {

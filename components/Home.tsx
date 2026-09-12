@@ -26,7 +26,7 @@ export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recip
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
           <p className="rise text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-zest mb-5">
-            Translucent Gastronomy
+            A Living Culinary Archive
           </p>
           <h1
             className="rise text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] max-w-4xl text-balance"
@@ -38,8 +38,8 @@ export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recip
             className="rise mt-6 text-lg text-white/70 max-w-xl"
             style={{ animationDelay: "160ms" }}
           >
-            A crystalline lens on the soul of Filipino cooking — {recipes.length} regional recipes,
-            suspended in glass.
+            A crystalline lens on the soul of Filipino cooking. {recipes.length} regional
+            recipes, suspended in glass.
           </p>
 
           <div className="rise mt-10 w-full max-w-xl" style={{ animationDelay: "240ms" }}>

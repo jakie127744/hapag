@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Offline — Hapag" };
+export const metadata: Metadata = { title: "Offline · Hapag" };
 
 /**
  * Shown by the service worker when a page isn't cached and the network is gone.

@@ -14,8 +14,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const recipe = recipes.find((r) => r.slug === slug);
-  if (!recipe) return { title: "Recipe not found — Hapag" };
-  return { title: `${recipe.title} — Hapag`, description: recipe.description };
+  if (!recipe) return { title: "Recipe not found · Hapag" };
+  return { title: `${recipe.title} · Hapag`, description: recipe.description };
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
