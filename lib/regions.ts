@@ -53,5 +53,7 @@ export function prettyTime(raw: string): string {
 }
 
 export function prettyYield(raw: string): string {
-  return raw.replace(/\s*PAX/i, "").replace(/\s*PCS/i, " pcs").trim();
+  const pax = /^(.*?)\s*PAX$/i.exec(raw.trim());
+  if (pax) return `${pax[1].trim()} servings`;
+  return raw.replace(/\s*PCS/i, " pcs").replace(/\s*EMPANADAS/i, " empanadas").trim();
 }

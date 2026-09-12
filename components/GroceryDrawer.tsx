@@ -27,12 +27,12 @@ export function GroceryDrawer() {
     <>
       <div
         onClick={() => setDrawerOpen(false)}
-        className={`fixed inset-0 z-40 bg-black/60 transition-opacity duration-300 ${
+        className={`no-print fixed inset-0 z-40 bg-black/60 transition-opacity duration-300 ${
           drawerOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       />
       <aside
-        className={`fixed top-0 right-0 z-50 h-full w-full max-w-md p-4 transition-transform duration-300 ease-out ${
+        className={`no-print fixed top-0 right-0 z-50 h-full w-full max-w-md p-4 transition-transform duration-300 ease-out ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-hidden={!drawerOpen}

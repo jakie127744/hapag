@@ -4,12 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import {
   ArrowLeft, Clock, Users, ChefHat, Heart, Plus, Check, ShoppingBasket,
-  Maximize2, X, ChevronLeft, ChevronRight, MapPin,
+  Maximize2, X, ChevronLeft, ChevronRight, MapPin, Printer,
 } from "lucide-react";
 import type { Recipe } from "@/data/recipes";
 import { useStore } from "@/lib/store";
 import { prettyTime, prettyYield, regionOf } from "@/lib/regions";
 import { RecipeImage } from "./RecipeImage";
+import { RecipePostcard } from "./RecipePostcard";
 
 export function RecipeDetail({ recipe }: { recipe: Recipe }) {
   const { isFavorite, toggleFavorite, inGrocery, toggleGrocery, unit, setUnit, setDrawerOpen } =
@@ -22,7 +23,8 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
   const added = inGrocery(recipe.slug);
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <>
+    <div className="no-print min-h-screen bg-[#0A0A0A]">
       {/* Hero */}
       <div className="relative h-[52vh] min-h-[380px] w-full overflow-hidden">
         <RecipeImage src={recipe.image} alt={recipe.title} />
@@ -80,6 +82,12 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             >
               {added ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
               {added ? "In grocery list" : "Add to grocery list"}
+            </button>
+            <button
+              onClick={() => window.print()}
+              className="glass-dark rounded-full flex items-center gap-2 px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors"
+            >
+              <Printer className="w-4 h-4" /> Print postcard
             </button>
           </div>
         </div>
@@ -278,6 +286,9 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
         </div>
       )}
     </div>
+
+    <RecipePostcard recipe={recipe} unit={unit} />
+    </>
   );
 }
 

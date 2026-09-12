@@ -51,3 +51,207 @@ body {
   .rise { animation: none; }
   * { transition-duration: 0.01ms !important; }
 }
+
+/* ------------------------------------------------------------------ *
+ * Printed recipe postcard (5 x 7 in, front and back)
+ * ------------------------------------------------------------------ */
+
+.postcard { display: none; }
+
+@media print {
+  @page { size: A5; margin: 0; }
+
+  html, body {
+    background: #fff !important;
+    color: #14140f !important;
+  }
+
+  /* Hide the on-screen app; show only the card. */
+  .no-print { display: none !important; }
+  .postcard { display: block; }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .pc-page {
+    width: 5.83in;
+    box-sizing: border-box;
+    background: #fff;
+    color: #14140f;
+    font-family: var(--font-inter), system-ui, sans-serif;
+    page-break-after: always;
+    break-after: page;
+    overflow: hidden;
+  }
+  .pc-page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* ---- Front ---- */
+  .pc-front {
+    height: 8.27in;
+    display: flex;
+    flex-direction: column;
+  }
+  .pc-photo {
+    height: 4.1in;
+    position: relative;
+    overflow: hidden;
+    background: #14140f;
+  }
+  .pc-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .pc-photo-empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6pt;
+    background: #1d1d16;
+    color: #d9f99d;
+  }
+  .pc-photo-empty span { font-size: 46pt; font-weight: 700; opacity: 0.35; }
+  .pc-photo-empty em { font-size: 7pt; letter-spacing: 0.18em; text-transform: uppercase; font-style: normal; opacity: 0.6; }
+
+  .pc-front-body { padding: 20pt 26pt 0; flex: 1; }
+  .pc-eyebrow {
+    margin: 0;
+    font-size: 6.5pt;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #6c7a3d;
+  }
+  .pc-title {
+    margin: 6pt 0 0;
+    font-size: 23pt;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .pc-subtitle { margin: 4pt 0 0; font-size: 9.5pt; color: #55554a; font-style: italic; }
+  .pc-provenance {
+    margin: 10pt 0 0;
+    padding-top: 8pt;
+    border-top: 0.5pt solid #d3d3c4;
+    font-size: 7pt;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #14140f;
+  }
+  .pc-desc { margin: 9pt 0 0; font-size: 9pt; line-height: 1.5; color: #2f2f26; }
+  .pc-history { margin-top: 10pt; }
+  .pc-history p:last-child { margin: 3pt 0 0; font-size: 8.5pt; line-height: 1.5; color: #2f2f26; }
+
+  .pc-label {
+    margin: 0;
+    font-size: 6.5pt;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6c7a3d;
+  }
+
+  .pc-front-foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 10pt;
+    padding: 12pt 26pt 18pt;
+    font-size: 6.5pt;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #55554a;
+    border-top: 0.5pt solid #d3d3c4;
+    margin: 0 0 0;
+  }
+
+  /* ---- Back ---- */
+  .pc-back {
+    min-height: 8.27in;
+    overflow: visible;
+    padding: 20pt 26pt 16pt;
+    display: flex;
+    flex-direction: column;
+    gap: 9pt;
+  }
+  .pc-back-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14pt;
+    padding-bottom: 9pt;
+    border-bottom: 1pt solid #14140f;
+  }
+  .pc-back-title { margin: 3pt 0 0; font-size: 15pt; font-weight: 700; line-height: 1.1; }
+  .pc-meta { margin: 0; padding: 0; list-style: none; text-align: right; }
+  .pc-meta li { font-size: 7pt; color: #2f2f26; line-height: 1.6; }
+  .pc-meta b {
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #6c7a3d;
+    margin-right: 3pt;
+  }
+
+  .pc-section { break-inside: auto; }
+
+  .pc-ingredients { margin: 6pt 0 0; padding: 0; list-style: none; columns: 2; column-gap: 16pt; }
+  .pc-ingredients li {
+    display: flex;
+    gap: 5pt;
+    font-size: 7.4pt;
+    line-height: 1.38;
+    padding: 1pt 0;
+    break-inside: avoid;
+  }
+  .pc-qty { font-weight: 700; white-space: nowrap; }
+
+  .pc-steps { margin: 7pt 0 0; padding: 0; list-style: none; }
+  .pc-steps li {
+    display: flex;
+    gap: 7pt;
+    font-size: 7.8pt;
+    line-height: 1.42;
+    padding: 2.6pt 0;
+    border-bottom: 0.5pt solid #e7e7dc;
+    break-inside: avoid;
+  }
+  .pc-step-n {
+    flex: none;
+    width: 13pt;
+    height: 13pt;
+    border-radius: 50%;
+    background: #14140f;
+    color: #d9f99d;
+    font-size: 7pt;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pc-notes { margin: 6pt 0 0; padding-left: 11pt; }
+  .pc-notes li { font-size: 7pt; line-height: 1.38; color: #2f2f26; padding: 1.5pt 0; }
+
+  .pc-back-foot {
+    margin-top: auto;
+    padding-top: 9pt;
+    border-top: 0.5pt solid #d3d3c4;
+    display: flex;
+    justify-content: space-between;
+    font-size: 6pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #7a7a6c;
+  }
+}

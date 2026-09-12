@@ -2,6 +2,8 @@ export type Ingredient = { name: string; metric: string; imperial: string };
 export type Recipe = {
   slug: string; title: string; subtitle: string; description: string; category: string; time: string; yield: string;
   image?: string; imageSource?: string; origin: string; technique: string; ingredients: Ingredient[]; instructions: string[]; notes: string[];
+  /** Short documented background for the printed postcard front. Sourced, not improvised. */
+  history?: string;
 };
 
 // Images are mirrored locally from Wikimedia Commons (see `imageSource` for attribution).

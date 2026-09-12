@@ -15,7 +15,7 @@ export function TopBar() {
   ).size;
 
   return (
-    <div className="fixed top-6 right-6 z-50 flex items-center gap-2.5">
+    <div className="no-print fixed top-6 right-6 z-50 flex items-center gap-2.5">
       <Link
         href="/#archive"
         className="glass-dark rounded-full px-4 py-2 text-sm text-white/80 hover:text-white flex items-center gap-2 transition-colors"
