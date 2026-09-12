@@ -3042,6 +3042,526 @@ export const recipes: Recipe[] = [
       "https://urbanblisslife.com/longsilog-recipe/"
     ]
   },
+  {
+    slug: "maja-blanca", title: "Maja Blanca", subtitle: "Coconut and Corn Pudding",
+    description: "A white coconut pudding set with cornstarch, studded with sweetcorn and finished with latik. Soft enough to wobble, firm enough to slice.",
+    category: "DESSERT / PUDDING", time: "40M", yield: "10 PAX", origin: "PHILIPPINES", technique: "STARCH SET",
+    ingredients: [
+      {name:"Coconut milk",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Coconut cream",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Cornstarch",metric:"120 g",imperial:"1 cup"},
+      {name:"Sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Sweetcorn kernels",metric:"250 g",imperial:"9 oz"},
+      {name:"Condensed milk",metric:"200 g",imperial:"7 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"}
+    ],
+    instructions: [
+      "Make the latik first: simmer the coconut cream, stirring, for 20 to 25 minutes until the oil separates and the curds turn golden. Strain and keep both curds and oil.",
+      "Whisk the cornstarch into 200 ml of the cold coconut milk until completely smooth. Lumps formed now will never dissolve later.",
+      "Bring the remaining coconut milk, sugar, condensed milk and salt to a gentle simmer.",
+      "Add the sweetcorn and cook 3 minutes.",
+      "Pour in the slaked cornstarch in a steady stream, stirring constantly. Cook for 8 to 10 minutes over low heat until the mixture turns thick, glossy and pulls from the sides of the pan.",
+      "Brush a tray with the reserved coconut oil and pour in the mixture, smoothing the top.",
+      "Cool to room temperature, then chill for 2 hours. Scatter with latik and cut into squares."
+    ],
+    notes: [
+      "Keep stirring through step 5. Maja blanca scorches on the base and the burnt note carries through everything.",
+      "It sets firm only once fully cold; judging it warm will have you overcooking the starch."
+    ],
+    verification: "verified",
+    history: "Maja blanca is a coconut and corn pudding thickened with cornstarch, one of the simplest and most widespread Filipino desserts. Latik, the toasted curd left from rendering coconut cream, is the traditional topping rather than an optional garnish.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Maja_blanca",
+      "https://www.yummy.ph/news-trends/kinds-of-kakanin-20160217-lfrm"
+    ]
+  },
+  {
+    slug: "palitaw", title: "Palitaw", subtitle: "Boiled Rice Cakes in Coconut and Sesame",
+    description: "Flat discs of glutinous rice dough dropped into boiling water. They are ready the moment they float, which is what gives them their name.",
+    category: "DESSERT / KAKANIN", time: "35M", yield: "16 PCS", origin: "PHILIPPINES", technique: "BOIL",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"300 g",imperial:"2 1/2 cups"},
+      {name:"Water",metric:"220 ml",imperial:"1 cup"},
+      {name:"Grated coconut",metric:"200 g",imperial:"7 oz"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Sesame seeds, toasted",metric:"60 g",imperial:"2 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Mix the glutinous rice flour with the water a little at a time until you have a smooth, pliable dough that does not stick to the hands.",
+      "Pinch off walnut-sized pieces and flatten each into a thin oval about 5 mm thick.",
+      "Bring a wide pot of water to a rolling boil.",
+      "Drop the discs in a few at a time. They will sink, then rise; the moment they float to the surface they are cooked, which takes 2 to 3 minutes.",
+      "Lift them out with a slotted spoon and drain briefly.",
+      "While still damp, press each one into grated coconut so it adheres on both sides.",
+      "Toss the sugar with the toasted sesame seeds and salt, and dip the coated cakes into it before serving."
+    ],
+    notes: [
+      "Floating is the doneness test and it is reliable. Leaving them in longer makes them slack.",
+      "Coat them while still wet; once dry, nothing sticks."
+    ],
+    verification: "verified",
+    history: "Palitaw takes its name from the Tagalog litaw, to emerge, describing the moment the cake rises to the surface of the pot. Unlike puto or kutsinta it is boiled rather than steamed, which puts it in a small category of Filipino rice cakes.",
+    sources: [
+      "https://www.yummy.ph/news-trends/kinds-of-kakanin-20160217-lfrm",
+      "https://www.spot.ph/eatdrink/the-latest-eat-drink/71115/guide-philippine-rice-cakes-a00196-20170816-lfrm3"
+    ]
+  },
+  {
+    slug: "espasol", title: "Espasol", subtitle: "Toasted Rice Flour Logs",
+    description: "Glutinous rice flour cooked in sweetened coconut milk, rolled in more toasted rice flour and cut into short cylinders. Powdery outside, chewy within.",
+    category: "DESSERT / KAKANIN", time: "50M", yield: "16 PCS", origin: "LAGUNA", technique: "TOASTED FLOUR",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Coconut milk",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Grated coconut",metric:"150 g",imperial:"5 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"}
+    ],
+    instructions: [
+      "Toast 150 g of the glutinous rice flour in a dry pan over low heat, stirring constantly, for 8 to 10 minutes until it smells nutty and turns pale beige. Set aside for coating.",
+      "Simmer the coconut milk, coconut cream, sugar and salt with the grated coconut for 10 minutes, until slightly reduced.",
+      "Lower the heat and add the remaining untoasted rice flour in stages, stirring hard to keep it smooth.",
+      "Cook, stirring constantly, for 15 to 20 minutes. The mass will stiffen and begin to pull cleanly away from the pan.",
+      "Tip it onto a board dusted generously with the toasted flour and let it cool until it can be handled.",
+      "Roll into logs about 4 cm thick, coating well in the toasted flour.",
+      "Cut into lengths and wrap individually in paper."
+    ],
+    notes: [
+      "Toasting the coating flour is not optional; raw rice flour tastes chalky and green.",
+      "Work while the dough is warm. Once fully cold it cracks rather than rolls."
+    ],
+    verification: "verified",
+    history: "Espasol is closely associated with Laguna, where it is a standard pasalubong. It is unusual among kakanin in being coated in toasted rice flour rather than coconut or sugar, which gives it its characteristic dusty finish.",
+    sources: [
+      "https://www.yummy.ph/news-trends/kinds-of-kakanin-20160217-lfrm",
+      "https://hicaps.com.ph/kakanin-list/"
+    ]
+  },
+  {
+    slug: "puto-bumbong", title: "Puto Bumbong", subtitle: "Purple Rice Cakes Steamed in Bamboo",
+    description: "Purple heirloom rice steamed inside bamboo tubes, turned out onto banana leaf and served with butter, grated coconut and muscovado. Christmas food, sold outside churches before dawn.",
+    category: "DESSERT / KAKANIN", time: "1H", yield: "12 PCS", origin: "PHILIPPINES", technique: "BAMBOO STEAM",
+    ingredients: [
+      {name:"Glutinous rice",metric:"300 g",imperial:"1 1/2 cups"},
+      {name:"Pirurutong (purple rice)",metric:"150 g",imperial:"3/4 cup"},
+      {name:"Water",metric:"500 ml",imperial:"2 cups"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Butter",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Grated coconut",metric:"200 g",imperial:"7 oz"},
+      {name:"Muscovado sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Banana leaves",metric:"12 sheets",imperial:"12 sheets"}
+    ],
+    instructions: [
+      "Soak the glutinous rice and pirurutong together in water overnight. The purple colour comes from the pirurutong and not from ube, despite the common assumption.",
+      "Drain and grind the soaked rice coarsely, then leave it to dry slightly until crumbly rather than wet.",
+      "Season the ground rice with the salt and work it loosely with your fingers so it stays airy.",
+      "Fill bamboo tubes loosely, about three quarters full. Packing them tightly gives a dense, heavy cake.",
+      "Stand the tubes in a steamer over rapidly boiling water for 8 to 12 minutes, until the rice is cooked through and steam rises from the open end.",
+      "Push each cake out onto a rectangle of softened banana leaf.",
+      "Brush with butter and serve with grated coconut and muscovado sugar alongside."
+    ],
+    notes: [
+      "Fill the tubes loosely. Puto bumbong should be light and open, not compressed.",
+      "Without bamboo tubes, small moulds in a steamer approximate the shape but lose the faint bamboo scent."
+    ],
+    verification: "verified",
+    history: "Puto bumbong is named for the bumbong, the bamboo tube it is steamed in. It is eaten during Simbang Gabi, the nine dawn Masses before Christmas, and is sold with bibingka from stalls set up outside churches.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Puto_bumbong",
+      "https://panlasangpinoy.com/puto-bumbong-recipe/"
+    ]
+  },
+  {
+    slug: "kalamay", title: "Kalamay", subtitle: "Sticky Coconut and Muscovado Sweet",
+    description: "Ground glutinous rice cooked down with coconut milk and brown sugar into a dense, glossy, intensely sticky paste. Best known from Jagna in Bohol.",
+    category: "DESSERT / KAKANIN", time: "1H 30M", yield: "10 PAX", origin: "BOHOL", technique: "SLOW REDUCTION",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Coconut milk",metric:"1.0 L",imperial:"4 1/4 cups"},
+      {name:"Coconut cream",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Brown sugar",metric:"400 g",imperial:"14 oz"},
+      {name:"Muscovado sugar",metric:"150 g",imperial:"5 oz"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Render the coconut cream over medium heat for 20 to 25 minutes until the oil separates and the curds brown. Strain; keep the latik curds and the oil.",
+      "Whisk the glutinous rice flour into the coconut milk until completely smooth, then strain to remove lumps.",
+      "Add both sugars and the salt and bring to a simmer over low heat.",
+      "Stir constantly with a wooden spoon for 45 to 60 minutes. The mixture will thicken, darken and eventually pull away from the pan in one mass.",
+      "It is ready when a spoon drawn through the centre leaves a clean channel that holds its shape.",
+      "Brush a tray or coconut shells with the reserved coconut oil and press the kalamay in.",
+      "Scatter with latik, cool completely, and cut with an oiled knife."
+    ],
+    notes: [
+      "This is an hour of continuous stirring and there is no shortcut. Stop and it catches; slow down and it seizes.",
+      "Traditionally set in half coconut shells, which is where kalamay sa bao takes its name."
+    ],
+    verification: "verified",
+    history: "Kalamay is made across the Philippines in many forms and is particularly associated with Jagna in Bohol. Food historians have struggled to pin down its origin given the variety of preparations, though some consider it an adaptation of the Chinese nian gao.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Kalamay",
+      "http://www.pinaycookingcorner.com/2011/09/kalamay-with-pinipig.html"
+    ]
+  },
+  {
+    slug: "nilupak", title: "Nilupak", subtitle: "Pounded Cassava with Coconut and Butter",
+    description: "Boiled cassava pounded smooth with coconut milk, butter and sugar, then pressed flat and cut. The name describes the pounding.",
+    category: "DESSERT / KAKANIN", time: "1H", yield: "8 PAX", origin: "PHILIPPINES", technique: "POUND + PRESS",
+    ingredients: [
+      {name:"Cassava, peeled",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Coconut milk",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Condensed milk",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Butter",metric:"120 g",imperial:"4 oz"},
+      {name:"Sugar",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Grated coconut",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Cheese, grated",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Peel the cassava and remove the woody central cord running through each root.",
+      "Boil for 25 to 30 minutes, until completely soft. Cassava must be thoroughly cooked; undercooked it is both unpleasant and unsafe.",
+      "Drain well and pound while hot, traditionally in a wooden mortar, until no fibres or lumps remain.",
+      "Work in the coconut milk, condensed milk, sugar and salt, then the butter a little at a time.",
+      "Keep pounding or beating until the mass turns smooth, glossy and elastic.",
+      "Press into a buttered tray or shape into a flat round, smoothing the top with a buttered spoon.",
+      "Top with grated coconut and cheese, cool, and cut into wedges."
+    ],
+    notes: [
+      "Remove the fibrous core before boiling; it never softens and ruins the texture.",
+      "Pound while hot. Cold cassava will not come together smoothly however long you work it."
+    ],
+    verification: "verified",
+    history: "Nilupak comes from the Tagalog lupak, to pound, and names a whole class of delicacies rather than a single recipe. Cassava and saba banana are the usual bases, and Binagol of Leyte is a variant made with giant taro.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Nilupak",
+      "https://www.angsarap.net/2025/09/05/special-nilupak/"
+    ]
+  },
+  {
+    slug: "binagol", title: "Binagol", subtitle: "Taro Pudding in a Coconut Shell",
+    description: "Mashed giant taro cooked with coconut milk, condensed milk and egg yolk, packed into half a coconut shell, wrapped in banana leaf and steamed.",
+    category: "DESSERT / KAKANIN", time: "1H 45M", yield: "6 PCS", origin: "LEYTE / EASTERN VISAYAS", technique: "SHELL STEAM",
+    ingredients: [
+      {name:"Giant taro (talyan) corm, grated",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Egg yolks",metric:"4 pcs",imperial:"4 pcs"},
+      {name:"Butter",metric:"60 g",imperial:"2 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Coconut shells, halved",metric:"6 pcs",imperial:"6 pcs"},
+      {name:"Banana leaves",metric:"6 sheets",imperial:"6 sheets"}
+    ],
+    instructions: [
+      "Peel and grate the giant taro corm. Wear gloves; the raw corm irritates skin.",
+      "Combine the grated taro with the coconut milk, condensed milk, sugar and salt in a heavy pan.",
+      "Cook over low heat, stirring constantly, for 25 to 30 minutes until thick and pulling from the pan.",
+      "Take it off the heat and beat in the butter and egg yolks quickly, so the yolks thicken rather than scramble.",
+      "Pack the mixture into cleaned coconut shell halves, mounding slightly.",
+      "Cover each shell with softened banana leaf and tie firmly with twine.",
+      "Steam for 45 to 60 minutes. Cool before unwrapping; it firms as it cools."
+    ],
+    notes: [
+      "Giant taro must be cooked through. Raw or undercooked taro is acrid and irritating.",
+      "The coconut shell is the container the dish is named for and it also moderates the heat during steaming."
+    ],
+    verification: "verified",
+    history: "Binagol is a Waray delicacy of Leyte, its name meaning placed in a coconut shell. It belongs to the nilupak family of pounded, starchy sweets, and is a standard pasalubong from the province.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Binagol",
+      "https://www.kawalingpinoyrecipe.com/native_delicacies/binagol.htm"
+    ]
+  },
+  {
+    slug: "tupig", title: "Tupig", subtitle: "Grilled Rice Cake in Banana Leaf",
+    description: "Ground glutinous rice with coconut and muscovado, wrapped in banana leaf and grilled directly over coals until the leaf blackens and the inside sets chewy and smoky.",
+    category: "DESSERT / KAKANIN", time: "1H", yield: "12 PCS", origin: "ILOCOS / PANGASINAN", technique: "CHARCOAL GRILL",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Muscovado sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Young coconut meat, stripped",metric:"200 g",imperial:"7 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Banana leaves",metric:"12 sheets",imperial:"12 sheets"}
+    ],
+    instructions: [
+      "Soften the banana leaves over a flame until pliable and cut into rectangles about 20 cm long.",
+      "Mix the glutinous rice flour, coconut milk, muscovado and salt into a thick, pourable batter.",
+      "Fold in the stripped young coconut meat.",
+      "Spoon a portion onto each leaf, spread it into a narrow strip, and roll into a flat packet. Fold the ends under rather than tying them.",
+      "Grill over medium charcoal for 15 to 20 minutes, turning frequently. The leaf will char; that is expected and the smoke is part of the flavour.",
+      "The tupig is done when it feels firm through the leaf and no longer squashes under the tongs.",
+      "Cool slightly and serve in the wrapper."
+    ],
+    notes: [
+      "Charcoal is the point. An oven version sets the batter but loses the smoke that defines tupig.",
+      "Keep the packets flat and thin so they cook through before the leaf burns away entirely."
+    ],
+    verification: "verified",
+    history: "Tupig, also called kangkanen or intemtem, comes from northwestern Luzon, particularly Ilocos, Pangasinan and Tarlac. It is sold by the roadside, grilled to order over coals, and is among the few kakanin cooked over direct fire rather than steamed.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Tupig",
+      "https://www.angsarap.net/2012/11/26/tupig/"
+    ]
+  },
+  {
+    slug: "polvoron", title: "Polvoron", subtitle: "Toasted Milk Shortbread",
+    description: "Toasted flour, powdered milk, sugar and butter pressed into moulds and wrapped in coloured paper. It does not bake; it simply sets as the butter cools.",
+    category: "CONFECTION / PRESSED", time: "35M", yield: "24 PCS", origin: "PHILIPPINES", technique: "TOASTED FLOUR",
+    ingredients: [
+      {name:"All-purpose flour",metric:"250 g",imperial:"2 cups"},
+      {name:"Powdered milk",metric:"200 g",imperial:"7 oz"},
+      {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Butter, melted",metric:"220 g",imperial:"7.8 oz"},
+      {name:"Toasted pinipig",metric:"60 g",imperial:"2 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Toast the flour in a dry pan over low heat, stirring constantly, for 10 to 12 minutes until it turns light beige and smells nutty. This is the whole flavour of polvoron.",
+      "Let the flour cool completely. Hot flour will melt the butter unevenly and the mixture will not hold.",
+      "Combine the cooled flour with the powdered milk, sugar, salt and toasted pinipig.",
+      "Pour in the melted butter and mix until the texture resembles damp sand that holds when squeezed.",
+      "Pack firmly into polvoron moulds, pressing hard so the shape holds.",
+      "Turn each one out carefully onto a tray and chill for 20 minutes to set.",
+      "Wrap individually in cellophane or paper; they are fragile and crumble if handled loose."
+    ],
+    notes: [
+      "Cool the toasted flour fully before adding butter, or the polvoron will be greasy rather than sandy.",
+      "Press hard in the mould. Under-pressed polvoron falls apart the moment it is unmoulded."
+    ],
+    verification: "verified",
+    history: "Polvoron is the Filipino descendant of the Spanish polvoron, both names built on the root for powder or dust. The Filipino version drops the baking of its Spanish ancestor and relies on toasted flour and powdered milk, set by chilling rather than by an oven.",
+    sources: [
+      "https://www.kawalingpinoy.com/polvoron/",
+      "https://www.thelittleepicurean.com/filipino-polvoron/"
+    ]
+  },
+  {
+    slug: "pastillas-de-leche", title: "Pastillas de Leche", subtitle: "Milk Candy",
+    description: "Milk cooked down with sugar until stiff, rolled into short logs and dusted in sugar. Traditionally made with carabao milk.",
+    category: "CONFECTION / MILK", time: "1H", yield: "30 PCS", origin: "SAN MIGUEL, BULACAN", technique: "SLOW REDUCTION",
+    ingredients: [
+      {name:"Carabao or full-cream milk",metric:"1.0 L",imperial:"4 1/4 cups"},
+      {name:"Sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Butter",metric:"30 g",imperial:"1 oz"},
+      {name:"Powdered milk",metric:"80 g",imperial:"3 oz"},
+      {name:"Caster sugar for coating",metric:"150 g",imperial:"5 oz"}
+    ],
+    instructions: [
+      "Bring the milk to a simmer in a wide heavy pan and reduce it over low heat for 35 to 45 minutes, stirring often, until it has thickened to about a third of its volume.",
+      "Add the sugar and stir until fully dissolved.",
+      "Continue cooking, stirring constantly now, until the mass thickens enough to pull away from the sides of the pan, another 15 to 20 minutes.",
+      "Stir in the butter, then the powdered milk, which gives the candy body and makes it workable.",
+      "Cool until it can be handled comfortably.",
+      "Roll into short cylinders about the thickness of a finger.",
+      "Roll each in caster sugar and wrap in cellophane or papel de hapon."
+    ],
+    notes: [
+      "A wide pan reduces faster and more evenly than a deep one.",
+      "Carabao milk gives the traditional richness; cow's milk works but yields a paler, milder candy."
+    ],
+    verification: "verified",
+    history: "Pastillas de leche originated in San Miguel, Bulacan, where carabao-rearing families made it at home from surplus milk. The elaborate cut-paper wrappers, papel de hapon, became a craft in their own right and are still associated with the town.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Pastillas",
+      "https://www.foxyfolksy.com/pastillas-de-leche/"
+    ]
+  },
+  {
+    slug: "yema", title: "Yema", subtitle: "Egg Yolk Custard Candy",
+    description: "Egg yolks cooked down with condensed milk into a thick custard, rolled into balls and wrapped in cellophane. Sometimes coated in hard caramel.",
+    category: "CONFECTION / CUSTARD", time: "45M", yield: "24 PCS", origin: "PHILIPPINES", technique: "CUSTARD REDUCTION",
+    ingredients: [
+      {name:"Egg yolks",metric:"10 pcs",imperial:"10 pcs"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Butter",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Sugar",metric:"60 g",imperial:"2 oz"},
+      {name:"Lime zest",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Chopped cashews",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Beat the egg yolks with the condensed milk until completely smooth, then strain to remove any chalazae.",
+      "Cook over the lowest possible heat, stirring without pause, for 20 to 25 minutes. If the heat rises the yolks will scramble and the batch is finished.",
+      "Add the butter, sugar, lime zest and salt as it thickens.",
+      "It is ready when the mixture pulls cleanly from the base of the pan and holds a ridge.",
+      "Fold in the chopped cashews and cool completely.",
+      "Roll into balls or the traditional pyramids with buttered hands.",
+      "Wrap each in cellophane with twisted ends."
+    ],
+    notes: [
+      "Low heat and constant stirring. Yema is a custard and behaves like one.",
+      "Straining the yolk mixture before cooking is what keeps the finished candy smooth."
+    ],
+    verification: "verified",
+    history: "Yema is made from egg yolks, and its existence is commonly traced to the Spanish colonial practice of using egg whites in mortar for church construction, leaving quantities of yolks to be used up. Whether or not the story is exact, the surplus-yolk logic runs through many Filipino and Spanish sweets.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Yema_(candy)",
+      "https://www.kawalingpinoy.com/yema/"
+    ]
+  },
+  {
+    slug: "bukayo", title: "Bukayo", subtitle: "Caramelised Young Coconut Sweet",
+    description: "Strips of young coconut simmered in melted muscovado until the sugar turns to chewy caramel and coats every strand.",
+    category: "CONFECTION / COCONUT", time: "45M", yield: "20 PCS", origin: "LINGAYEN, PANGASINAN", technique: "SUGAR CARAMEL",
+    ingredients: [
+      {name:"Young coconut meat, stripped",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Muscovado sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Water",metric:"150 ml",imperial:"2/3 cup"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"}
+    ],
+    instructions: [
+      "Strip the young coconut meat into thin ribbons. It should be gelatinous rather than hard.",
+      "Melt the muscovado with the water and pandan leaf in a heavy pan over medium heat, stirring until dissolved.",
+      "Simmer the syrup for 8 minutes until it thickens and darkens.",
+      "Add the coconut strips and the salt.",
+      "Cook, stirring frequently, for 20 to 25 minutes, until the liquid has gone and the mixture is dark, sticky and pulls together in a mass.",
+      "Remove the pandan leaf. Drop spoonfuls onto a greased tray or banana leaf squares.",
+      "Cool completely until firm and chewy before wrapping."
+    ],
+    notes: [
+      "Young coconut only. Mature coconut stays tough and will not take on the caramel the same way.",
+      "Stop while the mass is still glossy; cooked too far it sets hard rather than chewy."
+    ],
+    verification: "verified",
+    history: "Bukayo is traditionally made by simmering young coconut in sinuklob, sugarcane muscovado melted to a caramel. It is believed to have originated in Lingayen, Pangasinan, though it is now made and sold throughout the country.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Bukayo",
+      "https://www.foxyfolksy.com/bukayo/"
+    ]
+  },
+  {
+    slug: "otap", title: "Otap", subtitle: "Cebuano Puff Pastry Biscuit",
+    description: "A flat oval of layered pastry rolled thin, dusted heavily in sugar and baked until it shatters. Cebu's best known pasalubong.",
+    category: "PASTRY / BISCUIT", time: "2H", yield: "24 PCS", origin: "CEBU", technique: "LAMINATED PASTRY",
+    ingredients: [
+      {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Shortening",metric:"200 g",imperial:"7 oz"},
+      {name:"Butter",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Water, iced",metric:"150 ml",imperial:"2/3 cup"},
+      {name:"Sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Grated coconut, toasted",metric:"60 g",imperial:"2 oz"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Rub half the shortening into the flour and salt, then bring together with the iced water into a firm dough. Rest 30 minutes.",
+      "Roll the dough into a rectangle, spread with the remaining shortening and butter, fold in three, and rest 20 minutes.",
+      "Repeat the roll-and-fold three more times, resting between each. These layers are what make otap flaky rather than merely crisp.",
+      "Roll the finished dough very thin, about 2 mm.",
+      "Cut into ovals roughly 10 cm long.",
+      "Press both sides firmly into the sugar mixed with toasted coconut.",
+      "Bake at 180\u00b0C (355\u00b0F) for 15 to 18 minutes, until deeply golden and the sugar has caramelised. Cool completely; they crisp as they cool."
+    ],
+    notes: [
+      "Rest the dough between folds or the layers tear and the pastry will not rise into leaves.",
+      "Roll thinner than feels right. Thick otap is chewy, and otap should shatter."
+    ],
+    verification: "verified",
+    history: "Otap is an oval puff-pastry biscuit from Cebu, traditionally made through a lengthy multi-stage baking process. It resembles the French palmier, but is thinner, more tightly layered and crisper, and is among the most recognisable Cebuano pasalubong.",
+    sources: [
+      "https://yoorekka.com/magazine/cebu-bohol/2018/05/22/5-must-try-cebu-native-delicacies/",
+      "https://digilamon.com/destinations/philippines/cebu/cebu-delicacies-guide/"
+    ]
+  },
+  {
+    slug: "piaya", title: "Piaya", subtitle: "Muscovado-Filled Flatbread",
+    description: "A thin unleavened flatbread stuffed with muscovado, pressed flat, sprinkled with sesame and cooked dry on a griddle until the filling melts and bubbles through.",
+    category: "PASTRY / FLATBREAD", time: "1H 30M", yield: "12 PCS", origin: "NEGROS OCCIDENTAL", technique: "GRIDDLE BAKE",
+    ingredients: [
+      {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Water",metric:"180 ml",imperial:"3/4 cup"},
+      {name:"Neutral oil",metric:"80 ml",imperial:"1/3 cup"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Muscovado sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Glutinous rice flour",metric:"40 g",imperial:"1/3 cup"},
+      {name:"Sesame seeds",metric:"60 g",imperial:"2 oz"}
+    ],
+    instructions: [
+      "Make a soft dough from the flour, water, half the oil and the salt. Knead until smooth and rest 30 minutes.",
+      "For the filling, mix the muscovado with the glutinous rice flour and a spoonful of water into a thick paste. The rice flour stops the sugar running out as it melts.",
+      "Divide the dough into balls and flatten each into a disc.",
+      "Place a spoonful of filling in the centre, gather the edges over it and seal well, then press gently flat.",
+      "Roll each out to about 12 cm across, working carefully so the filling does not break through.",
+      "Brush one side with water and press into the sesame seeds.",
+      "Cook on a dry griddle over medium heat for 3 to 4 minutes a side, until browned in patches and the filling bubbles inside."
+    ],
+    notes: [
+      "Sealing the filling properly is the whole trick. A leak means burnt sugar welded to the pan.",
+      "Cook dry, with no oil in the pan; piaya is griddled, not fried."
+    ],
+    verification: "verified",
+    history: "Piaya is a muscovado-filled flatbread associated above all with Negros Occidental, the centre of the Philippine sugar industry, which is why muscovado rather than refined sugar is the traditional filling.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Piaya_(food)",
+      "https://yoorekka.com/magazine/cebu-bohol/2018/05/22/local-delicacies-in-cebu-city"
+    ]
+  },
+  {
+    slug: "rosquillos", title: "Rosquillos", subtitle: "Cebuano Ring Cookies",
+    description: "Small scalloped ring cookies, crisp and faintly salty-sweet, created in Liloan, Cebu in 1907 and still made there.",
+    category: "PASTRY / BISCUIT", time: "1H", yield: "36 PCS", origin: "LILOAN, CEBU", technique: "BAKED COOKIE",
+    ingredients: [
+      {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Butter",metric:"200 g",imperial:"7 oz"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Egg yolks",metric:"4 pcs",imperial:"4 pcs"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Sugar for dusting",metric:"60 g",imperial:"2 oz"}
+    ],
+    instructions: [
+      "Cream the butter and sugar until pale and light.",
+      "Beat in the egg yolks one at a time.",
+      "Fold in the flour, baking powder and salt until a firm dough forms. Do not overwork it or the cookies will be tough.",
+      "Chill the dough for 30 minutes.",
+      "Roll out to about 5 mm thick and cut into rings with a scalloped cutter, removing a small circle from the centre of each.",
+      "Arrange on lined trays and dust the tops with sugar.",
+      "Bake at 170\u00b0C (340\u00b0F) for 15 to 18 minutes, until pale gold at the edges. They firm up considerably as they cool."
+    ],
+    notes: [
+      "Chilling the dough keeps the scalloped edge sharp instead of spreading in the oven.",
+      "Take them out while still pale; they continue colouring on the hot tray."
+    ],
+    verification: "verified",
+    history: "Rosquillos were created in 1907 by Margarita Titay Frasco in Liloan, Cebu. The name comes from the Spanish rosca, meaning ring, and was reputedly coined by President Sergio Osmena. The bakery she founded still trades on the cookie.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Rosquillo",
+      "https://cebuinsights.com/food/filipino-food/queen-of-cebuano-delicacies-titays/"
+    ]
+  },
+  {
+    slug: "masareal", title: "Masareal", subtitle: "Peanut and Sugar Bars",
+    description: "Boiled peanuts ground fine with sugar, dried and cut into rectangular bars. Dense, sweet and faintly sandy, wrapped in plain white paper.",
+    category: "CONFECTION / PEANUT", time: "50M", yield: "20 PCS", origin: "MANDAUE, CEBU", technique: "GRIND + PRESS",
+    ingredients: [
+      {name:"Peanuts, roasted and skinned",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Water",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"}
+    ],
+    instructions: [
+      "Grind the roasted peanuts to a coarse paste. Stop before it becomes peanut butter; masareal needs some grain.",
+      "Dissolve the sugar in the water with the salt and bring to a boil.",
+      "Cook the syrup to the soft-ball stage, about 115\u00b0C (240\u00b0F), roughly 8 minutes.",
+      "Take off the heat and stir in the ground peanuts quickly and thoroughly, before the syrup sets.",
+      "Tip onto a board or tray lined with paper and press into a slab about 1.5 cm thick.",
+      "While still warm, score into rectangular bars.",
+      "Cool completely, snap along the scores, and wrap each bar in white paper."
+    ],
+    notes: [
+      "Score while warm and break when cold; cutting cold masareal shatters it.",
+      "The syrup stage matters. Undercooked it stays tacky; overcooked it turns to brittle."
+    ],
+    verification: "verified",
+    history: "Masareal, or masa real, originates in Mandaue, Cebu. The original recipe is credited to Juliana Didang Perez Suico in 1912, though the sweet only became widely popular from the 1960s. It is still traditionally sold wrapped in plain white paper.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Masareal",
+      "https://yoorekka.com/magazine/cebu-bohol/2018/05/22/local-delicacies-in-cebu-city"
+    ]
+  },
 ];
 
 export function getRecipe(slug: string) { return recipes.find((recipe) => recipe.slug === slug); }
