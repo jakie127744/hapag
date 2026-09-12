@@ -177,6 +177,44 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
           <div className="glass rounded-3xl p-6">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-zest mb-2">Origin</p>
             <p className="text-white/80 text-sm">{recipe.origin}</p>
+
+            {recipe.verification && (
+              <div className="mt-4 pt-4 border-t border-white/10">
+                <span
+                  className={`inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-widest uppercase ${
+                    recipe.verification === "verified" ? "text-zest" : "text-amber-300"
+                  }`}
+                >
+                  <span
+                    className={`w-1.5 h-1.5 rounded-full ${
+                      recipe.verification === "verified" ? "bg-zest" : "bg-amber-300"
+                    }`}
+                  />
+                  {recipe.verification === "verified" ? "Sourced" : "Unverified"}
+                </span>
+                {recipe.verificationNote && (
+                  <p className="mt-2 text-xs text-white/50 leading-relaxed">
+                    {recipe.verificationNote}
+                  </p>
+                )}
+                {recipe.sources && recipe.sources.length > 0 && (
+                  <ul className="mt-3 space-y-1">
+                    {recipe.sources.map((src) => (
+                      <li key={src}>
+                        <a
+                          href={src}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          className="text-xs text-white/45 hover:text-zest transition-colors break-all"
+                        >
+                          {new URL(src).hostname.replace(/^www\./, "")} ↗
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
             {recipe.imageSource && (
               <a
                 href={recipe.imageSource}
@@ -191,7 +229,16 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
         </div>
 
         <div>
-          <p className="text-white/70 leading-relaxed text-lg mb-10">{recipe.description}</p>
+          <p className="text-white/70 leading-relaxed text-lg mb-8">{recipe.description}</p>
+
+          {recipe.history && (
+            <div className="glass rounded-2xl p-6 mb-10">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-zest mb-3">
+                Background
+              </p>
+              <p className="text-white/75 text-sm leading-relaxed">{recipe.history}</p>
+            </div>
+          )}
 
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-white">Instructions</h2>

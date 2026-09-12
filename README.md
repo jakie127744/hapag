@@ -3,7 +3,7 @@
 A Filipino-cuisine recipe site built in the "translucent gastronomy" glass aesthetic:
 a dark `#0A0A0A` ground, frosted-glass surfaces, and a zest-green (`#d9f99d`) accent.
 
-44 regional recipes — Luzon classics, Ilocano, Kapampangan, Bicolano, Visayan and
+49 regional recipes — Luzon classics, Ilocano, Kapampangan, Bicolano, Visayan and
 Mindanaoan dishes — each with metric/imperial ingredients, numbered method, and lab notes.
 
 ## Features
@@ -17,7 +17,7 @@ Mindanaoan dishes — each with metric/imperial ingredients, numbered method, an
 
 ## Stack
 
-Next.js 15 (App Router, static export of all 44 recipe pages) · React 19 · Tailwind CSS v4 · lucide-react.
+Next.js 15 (App Router, static export of all 49 recipe pages) · React 19 · Tailwind CSS v4 · lucide-react.
 
 ## Running locally
 
@@ -36,7 +36,7 @@ npm run build && npm start   # production
 
 | Path | Purpose |
 | --- | --- |
-| `data/recipes.ts` | All 44 recipes — the single source of truth. |
+| `data/recipes.ts` | All 49 recipes — the single source of truth. |
 | `lib/regions.ts` | Region classification, time and yield formatting. |
 | `lib/store.tsx` | Client store for favorites, grocery list and units. |
 | `components/` | Home, Archive, cards, recipe detail, grocery drawer. |
@@ -50,5 +50,19 @@ resized for the web. Each recipe page links back to its source file via the "Pho
 Wikimedia Commons" link — check the individual file page for its licence and attribution
 requirements before reusing an image elsewhere.
 
-14 of the 44 recipes have no Commons photograph available; those cards render a typographic
-placeholder tile instead.
+20 of the 49 recipes have no photograph yet; those cards render a typographic placeholder
+tile instead of borrowing a picture of a similar-looking dish.
+
+## Sourcing
+
+Recipes carry a `verification` field:
+
+| Value | Meaning |
+| --- | --- |
+| `verified` | Dish, region and method corroborated by at least two listed sources. |
+| `unverified` | No source found. The entry is provisional and is labelled as such on the site. |
+| *absent* | Not yet through the verification pass. |
+
+`npm run verify` enforces the rule that anything marked `verified` carries two or more
+distinct sources and a history note. It runs automatically before `npm run build`, so an
+unsourced entry cannot ship claiming otherwise.

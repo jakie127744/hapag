@@ -4,6 +4,16 @@ export type Recipe = {
   image?: string; imageSource?: string; origin: string; technique: string; ingredients: Ingredient[]; instructions: string[]; notes: string[];
   /** Short documented background for the printed postcard front. Sourced, not improvised. */
   history?: string;
+  /** URLs consulted when verifying this entry. */
+  sources?: string[];
+  /**
+   * "verified"   - dish, region and method corroborated by the listed sources.
+   * "unverified" - no source found; treat the entry as provisional.
+   * Absent means this entry has not been through the verification pass yet.
+   */
+  verification?: "verified" | "unverified";
+  /** Why an entry is flagged, or what a verification pass corrected. */
+  verificationNote?: string;
 };
 
 // Images are mirrored locally from Wikimedia Commons (see `imageSource` for attribution).
@@ -653,8 +663,8 @@ export const recipes: Recipe[] = [
   },
   {
     slug: "satti", title: "Satti", subtitle: "Zamboanga Grilled Skewers with Spiced Sauce",
-    description: "Small marinated meat skewers grilled over charcoal and served with a sweet-hot, peanut-enriched sauce. Satti is strongly associated with Zamboanga and the Tausug culinary tradition.",
-    category: "MINDANAO / GRILL", time: "60M", yield: "4 PAX", origin: "ZAMBOANGA", technique: "CHARCOAL GRILL",
+    description: "Small marinated skewers grilled over charcoal and flooded with a sweet-hot red sauce built on turmeric, chilli and warm spices — not the peanut sauce of satay. Eaten at breakfast with ta’mu, rice steamed in woven pouches.",
+    category: "MINDANAO / GRILL", time: "60M", yield: "4 PAX", origin: "ZAMBOANGA / TAUSUG", technique: "CHARCOAL GRILL",
     ingredients: [
       {name:"Chicken thigh",metric:"500 g",imperial:"1.1 lb"},{name:"Beef sirloin",metric:"300 g",imperial:"10.5 oz"},
       {name:"Garlic",metric:"6 cloves",imperial:"6 cloves"},{name:"Turmeric",metric:"10 g",imperial:"2 tsp"},
@@ -670,12 +680,19 @@ export const recipes: Recipe[] = [
       "Brush with a little sauce during the final minute if desired, taking care not to burn the sugar.",
       "Serve the skewers with the warm spiced sauce and rice or puso."
     ],
-    notes: ["Satti is a signature food of Zamboanga with strong Tausug influence and is commonly eaten for breakfast as well as later in the day."]
+    notes: ["Satti is a signature food of Zamboanga with strong Tausug influence and is commonly eaten for breakfast as well as later in the day."],
+    verification: "verified",
+    verificationNote: "Corrected: this entry previously described the sauce as peanut-enriched. Sources consistently distinguish satti's thickened turmeric-and-chilli red sauce from the peanut sauce of Malay and Indonesian satay.",
+    history: "Satti is the Tausug breakfast of Zamboanga and the Sulu archipelago — skewers of marinated beef, chicken or liver grilled over charcoal, served with ta’mu and a sweet, fiery red sauce. It shares an ancestor with the satay of maritime Southeast Asia, carried by centuries of trade, but its sauce sets it apart.",
+    sources: [
+      "https://www.angsarap.net/2024/01/19/satti/",
+      "https://www.philstar.com/lifestyle/food-and-leisure/2024/08/24/2374108/recipe-sampling-tausugs-breakfast-staple-satti"
+    ]
   },
   {
-    slug: "pyanggang-manok", title: "Pyanggang Manok", subtitle: "Maguindanaon Charred Coconut Chicken",
-    description: "Chicken cooked with a deeply charred coconut paste, turmeric, lemongrass, and aromatics. The dark exterior and smoky coconut flavor are the defining elements.",
-    category: "MINDANAO / CHICKEN", time: "90M", yield: "5 PAX", origin: "MAGUINDANAO", technique: "CHARRED COCONUT",
+    slug: "pyanggang-manok", title: "Pyanggang Manok", subtitle: "Tausug Blackened Coconut Chicken",
+    description: "Chicken braised in spiced coconut milk with turmeric, lemongrass, and aromatics, blackened with a paste of burnt coconut, then finished over fire. The near-black colour and smoky-sweet coconut flavour are the defining elements.",
+    category: "MINDANAO / CHICKEN", time: "90M", yield: "5 PAX", origin: "SULU / TAUSUG", technique: "CHARRED COCONUT",
     ingredients: [
       {name:"Chicken leg quarters",metric:"1.2 kg",imperial:"2.6 lb"},{name:"Grated coconut",metric:"200 g",imperial:"7 oz"},
       {name:"Turmeric",metric:"25 g",imperial:"0.9 oz"},{name:"Ginger",metric:"40 g",imperial:"1.4 oz"},
@@ -691,12 +708,20 @@ export const recipes: Recipe[] = [
       "Uncover and reduce until the sauce clings to the chicken. Continue until the coconut paste darkens and becomes almost dry.",
       "Serve with rice, keeping the charred coconut coating attached to the chicken."
     ],
-    notes: ["Pyanggang is a southern Filipino preparation in which coconut is intentionally charred to create a dark, smoky paste."]
+    notes: ["Pyanggang is a southern Filipino preparation in which coconut is intentionally charred to create a dark, smoky paste."],
+    verification: "verified",
+    verificationNote: "Corrected: this entry previously gave the origin as Maguindanao. Piyanggang manok is Tausug, from Sulu and the wider Zamboanga peninsula, Basilan and Tawi-Tawi.",
+    history: "Piyanggang manok is a Tausug celebration dish from Sulu, also cooked across Basilan, Tawi-Tawi and the Zamboanga peninsula. Its blackness comes from pamapa itum, coconut toasted until dark and ground to a paste. In Tausug, piyanggang describes marinating and then grilling: the chicken is braised in spiced coconut milk before it meets the fire.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Piyanggang_manok",
+      "https://www.pepper.ph/recipes/chicken-pyanggang-tausug-coconut-chicken",
+      "https://theodehlicious.com/piyanggang-manok/"
+    ]
   },
   {
     slug: "beef-kulma", title: "Beef Kulma", subtitle: "Mindanao Beef & Coconut Stew",
     description: "A southern Filipino beef stew influenced by the region's spice traditions, combining tender beef, coconut milk, aromatics, and warm spices into a rich sauce.",
-    category: "MINDANAO / STEW", time: "2H 30M", yield: "6 PAX", origin: "MINDANAO", technique: "SPICED BRAISE",
+    category: "MINDANAO / STEW", time: "2H 30M", yield: "6 PAX", origin: "ZAMBOANGA / TAUSUG", technique: "SPICED BRAISE",
     ingredients: [
       {name:"Beef chuck",metric:"1 kg",imperial:"2.2 lb"},{name:"Coconut milk",metric:"600 ml",imperial:"2 1/2 cups"},
       {name:"Tomatoes, diced",metric:"250 g",imperial:"9 oz"},{name:"Potatoes, cubed",metric:"400 g",imperial:"14 oz"},
@@ -713,7 +738,13 @@ export const recipes: Recipe[] = [
       "Reduce the sauce until it lightly coats the beef. Taste and adjust salt and chili.",
       "Serve hot with steamed rice."
     ],
-    notes: ["Mindanao's southern cuisines reflect centuries of maritime and Muslim trading connections; spice and coconut combinations vary by community."]
+    notes: ["Mindanao's southern cuisines reflect centuries of maritime and Muslim trading connections; spice and coconut combinations vary by community."],
+    verification: "verified",
+    history: "Kulma — also written kurma — is the Tausug reading of the korma that travelled the Indian Ocean and the Malay world: beef simmered in coconut milk with ground peanuts, tomato and warm spices, sitting somewhere between a curry and kare-kare. It is cooked for Ramadan and other occasions, and is often eaten with palapa, the Maranao condiment of scallion and chilli.",
+    sources: [
+      "https://www.angsarap.net/2018/02/28/tausug-beef-kulma/",
+      "https://www.pepper.ph/recipes/cheat-tausug-beef-kulma"
+    ]
   },
   {
     slug: "kinilaw-na-tanigue", title: "Kinilaw na Tanigue", subtitle: "Visayan Vinegar-Cured Fish",
@@ -883,7 +914,14 @@ export const recipes: Recipe[] = [
       "Steam over actively simmering water for 60–75 minutes. The rice dough should be firm, tender, and fully cooked through.",
       "Rest for 10 minutes before unwrapping. Serve warm, with additional thick peanut sauce if desired."
     ],
-    notes: ["Catbalogan Tamalos is documented by the Provincial Government of Samar as an heirloom dish associated with family and barangay kitchens.","The dish is substantially different from the corn-husk tamales familiar in Mexico: its Philippine identity is expressed through rice dough, banana leaves, pork, peanut sauce, and local aromatics."]
+    notes: ["Catbalogan Tamalos is documented by the Provincial Government of Samar as an heirloom dish associated with family and barangay kitchens.","The dish is substantially different from the corn-husk tamales familiar in Mexico: its Philippine identity is expressed through rice dough, banana leaves, pork, peanut sauce, and local aromatics."],
+    verification: "verified",
+    history: "Tamalos descends from the Mexican tamal, carried across the Pacific on the Manila–Acapulco galleons (1565–1815) and remade in Catbalogan as a Waray dish. Rice dough is spread on banana leaves and filled with slow-braised pork and pipi-an — ground glutinous rice worked with chillies and pasotes leaves for its piquancy — then blanketed in a thick annatto-tinted peanut sauce and steamed for hours. It remains a dish for fiestas and a common gift.",
+    sources: [
+      "https://www.rappler.com/life-and-style/food-drinks/have-you-tried-tamalos-samar-saucy-delicacy/",
+      "https://pia.gov.ph/features/samars-kitchen-hero-captivates-terra-madre-crowd-with-heritage-tamalos-demo/",
+      "http://dude4food.blogspot.com/2017/04/flavors-of-catbalogan-tasty-encounter.html"
+    ]
   },
   {
     slug: "kinakulob-na-manok", title: "Kinakulob na Manok", subtitle: "Eastern Samar Covered-Pot Chicken",
@@ -902,7 +940,9 @@ export const recipes: Recipe[] = [
       "Remove the lid and increase the heat slightly. Reduce the braising liquid until it lightly coats the chicken and the vinegar tastes integrated rather than raw.",
       "Rest for 5 minutes and serve with steamed rice."
     ],
-    notes: ["The defining technique is the covered, one-pot cooking method: the ingredients are combined rather than separately browned or built into a complex sauce.","Eastern Samar sources describe this preparation with coconut vinegar, soy sauce, ginger, garlic, bay leaves, pepper, and water."]
+    notes: ["The defining technique is the covered, one-pot cooking method: the ingredients are combined rather than separately browned or built into a complex sauce.","Eastern Samar sources describe this preparation with coconut vinegar, soy sauce, ginger, garlic, bay leaves, pepper, and water."],
+    verification: "unverified",
+    verificationNote: "No source found. Repeated searches for a Waray or Eastern Samar dish by this name returned nothing; the closest documented dish is the Tagalog kinulob/pinaupong manok, which is not the same claim. Treat the regional attribution as provisional until a source is found."
   },
   {
     slug: "kinarabu-palo", title: "Kinarabu", subtitle: "Pako Salad with Charred Coconut",
@@ -921,7 +961,13 @@ export const recipes: Recipe[] = [
       "Add vinegar, salt, and black pepper. Toss gently, then fold in the charred coconut.",
       "Rest for 5 minutes before serving so the vinegar can season the vegetables without making them limp."
     ],
-    notes: ["The Eastern Visayas food-mapping project documents kinarabu or kerabu in Palo, Leyte as a salad using pako, dilis, onion, tomato, vinegar, and grated charred coconut.","Use properly identified edible fiddlehead fern from a reliable source; not all fern species are safe to eat."]
+    notes: ["The Eastern Visayas food-mapping project documents kinarabu or kerabu in Palo, Leyte as a salad using pako, dilis, onion, tomato, vinegar, and grated charred coconut.","Use properly identified edible fiddlehead fern from a reliable source; not all fern species are safe to eat."],
+    verification: "verified",
+    history: "Kinarabu is a rare salad documented in the town of Palo, Leyte: young pako fronds tossed with toasted dilis, onion, tomato, vinegar and grated charred coconut. The name is also written kerabu, linking it to the herb salads of the same name found across maritime Southeast Asia.",
+    sources: [
+      "https://pia.gov.ph/mapping-waray-culinary-heritage-flavors-of-the-past-bites-into-the-future/",
+      "https://www.rappler.com/philippines/visayas/palo-leytes-historic-town-showcases-rich-gastronomy-culture/"
+    ]
   },
   {
     slug: "inutok-na-hipon", title: "Inutok", subtitle: "Carigara Freshwater Shrimp in Young Coconut",
@@ -942,7 +988,13 @@ export const recipes: Recipe[] = [
       "Steam for 20–25 minutes until the shrimp is opaque and the mixture is firm.",
       "Rest briefly before opening. Serve hot with rice and a small vinegar dipping sauce."
     ],
-    notes: ["Eastern Visayas food mapping identifies inutok of Carigara as a preparation made from small freshwater shrimp, young coconut, and local spices, wrapped in banana leaves and steamed.","Because shrimp cooks quickly, avoid extended steaming, which can make the filling dry and rubbery."]
+    notes: ["Eastern Visayas food mapping identifies inutok of Carigara as a preparation made from small freshwater shrimp, young coconut, and local spices, wrapped in banana leaves and steamed.","Because shrimp cooks quickly, avoid extended steaming, which can make the filling dry and rubbery."],
+    verification: "verified",
+    history: "Inutok is an heirloom dish of Carigara, Leyte. Small freshwater shrimp are minced with young coconut and local aromatics, pressed tightly into banana-leaf parcels and steamed until firm. Where most banana-leaf parcels in Eastern Visayas are sweet rice cakes, inutok is savoury — nutty from the coconut, deeply of shrimp.",
+    sources: [
+      "https://opinyon.net/national/inutok-of-carigara-a-heritage-dish-wrapped-in-flavor",
+      "https://pia.gov.ph/mapping-waray-culinary-heritage-flavors-of-the-past-bites-into-the-future/"
+    ]
   },
   {
     slug: "moron-leyte", title: "Moron", subtitle: "Leyte Chocolate Glutinous Rice Cake",
@@ -963,7 +1015,187 @@ export const recipes: Recipe[] = [
       "Steam for 35–45 minutes until the rice cake is fully tender and cohesive. Cool for 10 minutes before unwrapping and slicing."
     ],
     notes: ["Moron is a traditional Eastern Visayan rice cake similar in form to suman, distinguished by coconut milk and chocolate or cocoa.","Regional spelling varies between moron and muron; the food should not be confused with the unrelated English word."]
-  }
+  },
+  {
+    slug: "adobong-baboy", title: "Adobong Baboy", subtitle: "Pork Adobo",
+    description: "Pork belly simmered in soy sauce, vinegar, garlic, bay and peppercorns until tender, then reduced until the sauce turns glossy and clings. The pork renders enough fat to fry itself at the end.",
+    category: "MAIN / BRAISE", time: "75M", yield: "4\u20136 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    ingredients: [
+      {name:"Pork belly, 2.5 cm cubes",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Water",metric:"240 ml",imperial:"1 cup"},
+      {name:"Garlic, crushed",metric:"10 cloves",imperial:"10 cloves"},
+      {name:"Bay leaves",metric:"3 leaves",imperial:"3 leaves"},
+      {name:"Black peppercorns",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Brown sugar",metric:"10 g",imperial:"2 tsp"},
+      {name:"Neutral oil",metric:"15 ml",imperial:"1 tbsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Combine the pork, soy sauce, half the garlic and the peppercorns in a bowl. Marinate for at least 1 hour, or overnight in the refrigerator for a deeper cure.",
+      "Drain the pork, reserving the marinade. Pat the pieces dry \u2014 wet pork will steam rather than brown.",
+      "Heat the oil in a heavy pot over medium-high heat. Brown the pork in batches, in a single layer, until well coloured on two sides. Crowding the pot will stall the browning.",
+      "Lower the heat to medium, add the remaining garlic and cook for 45 seconds until aromatic. Pour in the vinegar and bring it to a vigorous simmer. Do not stir for the first 2 minutes; let the raw acidity cook off.",
+      "Add the reserved marinade, water, bay leaves and sugar. Bring to a boil, then reduce to a steady simmer, cover partially, and cook for 40\u201350 minutes until the pork yields easily to a fork.",
+      "Uncover, raise the heat and reduce the liquid for 8\u201312 minutes until it darkens and coats the back of a spoon. The rendered fat will begin to fry the pork in the pan \u2014 this is the point of the dish.",
+      "Taste and correct with salt. Rest for 5 minutes and serve with steamed rice, spooning the reduced sauce over the meat."
+    ],
+    notes: [
+      "Adobo has no single canonical recipe; the soy-to-vinegar ratio, the sugar, and the presence of coconut milk all vary by household and region.",
+      "The sauce should read savoury and sharply acidic first, with sweetness only in the background."
+    ],
+    verification: "verified",
+    history: "Adobo takes its name from the Spanish adobar, to marinate, but preserving meat in vinegar and salt predates Spanish contact in the islands. What the Spanish supplied was the word. Soy sauce arrived later through Chinese trade, which is why older and more rural versions are pale rather than dark.",
+    sources: [
+      "https://panlasangpinoy.com/filipino-food-pork-adobo-recipe/",
+      "https://www.kawalingpinoy.com/pork-adobo/"
+    ]
+  },
+  {
+    slug: "adobong-manok", title: "Adobong Manok", subtitle: "Chicken Adobo",
+    description: "Chicken braised in vinegar, soy sauce, garlic and peppercorns, then reduced until the sauce glazes the skin. Faster and lighter than the pork version, and more dependent on rendering the skin properly.",
+    category: "MAIN / BRAISE", time: "55M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
+    ingredients: [
+      {name:"Chicken thighs, bone-in",metric:"1.2 kg",imperial:"2.6 lb"},
+      {name:"Soy sauce",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Cane vinegar",metric:"100 ml",imperial:"1/2 cup"},
+      {name:"Water",metric:"180 ml",imperial:"3/4 cup"},
+      {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Bay leaves",metric:"2 leaves",imperial:"2 leaves"},
+      {name:"Black peppercorns",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Brown sugar",metric:"8 g",imperial:"1 1/2 tsp"},
+      {name:"Neutral oil",metric:"15 ml",imperial:"1 tbsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Marinate the chicken in the soy sauce, half the garlic and the peppercorns for 30 minutes to 2 hours.",
+      "Drain, reserving the marinade, and pat the skin thoroughly dry.",
+      "Heat the oil over medium-high heat. Lay the chicken skin-side down and render undisturbed for 5\u20137 minutes, until the skin is deeply golden. Turn, brown briefly, and remove.",
+      "Add the remaining garlic to the rendered fat and cook for 45 seconds. Add the vinegar and simmer hard for 2 minutes without stirring.",
+      "Add the reserved marinade, water, bay leaves and sugar. Return the chicken skin-side up. Simmer uncovered for 20\u201325 minutes, until cooked through.",
+      "Lift out the chicken. Reduce the sauce for 5\u20138 minutes until syrupy, then return the chicken and turn once to glaze.",
+      "Rest for 5 minutes and serve with rice. Spoon the sauce over at the table rather than before, so the skin stays taut."
+    ],
+    notes: [
+      "Keeping the chicken skin-side up while it simmers protects the crust built in step 3.",
+      "Thighs hold up to the acid far better than breast, which dries out before the sauce has reduced."
+    ],
+    verification: "verified",
+    history: "Chicken adobo is the form best known outside the Philippines, though within the country pork, or a combination of the two, is at least as common. Regional practice varies widely: Cavite versions add liver, Batangas keeps it pale without soy, and Bicol and Laguna finish it with coconut milk.",
+    sources: [
+      "https://www.kawalingpinoy.com/chicken-adobo/",
+      "https://panlasangpinoy.com/filipino-food-chicken-adobo-recipe/"
+    ]
+  },
+  {
+    slug: "bulalo", title: "Bulalo", subtitle: "Batangas Beef Shank & Marrow Soup",
+    description: "Beef shank and marrow bones simmered for hours until the collagen melts into a clear, beefy broth, finished with corn and green vegetables. The marrow is the prize and is eaten straight from the bone.",
+    category: "SOUP / BEEF", time: "3H", yield: "6 PAX", origin: "BATANGAS / CAVITE", technique: "MARROW SIMMER",
+    ingredients: [
+      {name:"Beef shank, cross-cut with marrow bone",metric:"1.5 kg",imperial:"3.3 lb"},
+      {name:"Water",metric:"3.0 L",imperial:"12 1/2 cups"},
+      {name:"Yellow onion, quartered",metric:"200 g",imperial:"7 oz"},
+      {name:"Garlic, crushed",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Black peppercorns",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Fish sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Sweet corn, cut into rounds",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Cabbage, wedged",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Bok choy",metric:"200 g",imperial:"7 oz"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Cover the shank with cold water in a large pot and bring slowly to a boil. Boil for 5 minutes, then drain and rinse both the meat and the pot. This one step is what keeps the finished broth clear.",
+      "Return the shank to the clean pot with the measured water, onion, garlic and peppercorns. Bring to a boil, then drop to the barest simmer.",
+      "Simmer uncovered for 2 to 2 1/2 hours, skimming occasionally, until the meat pulls from the bone and the marrow is soft. Never let it reach a rolling boil, which emulsifies the fat and clouds the broth.",
+      "Season with the fish sauce and taste for salt. The broth should read plainly beefy rather than aggressively seasoned.",
+      "Add the corn and simmer for 8 minutes.",
+      "Add the cabbage and cook for 3 minutes, then the bok choy for a final minute, until just wilted.",
+      "Serve in deep bowls, giving each person a section of bone. Offer fish sauce, calamansi and crushed chilli at the table."
+    ],
+    notes: [
+      "Blanching and rinsing in step 1 is not optional if you want the pale, clean broth Batangas bulalo is known for.",
+      "Ask the butcher for cross-cut shank with the bone left whole, so the marrow does not leak out during the simmer."
+    ],
+    verification: "verified",
+    history: "Bulalo comes from the cattle country of southern Luzon, above all Batangas and Cavite, where beef was plentiful. The name is the Tagalog word for the knee, meaning the shank and shinbone the dish is built on. It is shared-table food, cooked for gatherings and eaten slowly.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Bulalo",
+      "https://www.foxyfolksy.com/bulalo/"
+    ]
+  },
+  {
+    slug: "bistek-tagalog", title: "Bistek Tagalog", subtitle: "Filipino Beef Steak with Onions",
+    description: "Thinly sliced beef marinated in soy sauce and calamansi, seared hard, and served under a heap of onion rings softened in the pan juices. Sour and salty, and built around the onions as much as the beef.",
+    category: "MAIN / PAN-FRY", time: "40M", yield: "4 PAX", origin: "TAGALOG REGION", technique: "CITRUS-SOY MARINADE",
+    ingredients: [
+      {name:"Beef sirloin, sliced 5 mm thick",metric:"700 g",imperial:"1.5 lb"},
+      {name:"Soy sauce",metric:"80 ml",imperial:"1/3 cup"},
+      {name:"Calamansi juice",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Black pepper",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Yellow onion, sliced",metric:"400 g",imperial:"14 oz"},
+      {name:"Neutral oil",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Water",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Brown sugar",metric:"8 g",imperial:"1 1/2 tsp"},
+      {name:"Salt",metric:"to taste",imperial:"to taste"}
+    ],
+    instructions: [
+      "Pound the beef slices lightly to an even thickness. Marinate with the soy sauce, calamansi juice, garlic and pepper for 1 hour; do not exceed 2 hours, or the citrus will begin to break the meat down.",
+      "Separate the onion into rings. Heat 2 tablespoons of the oil in a wide pan over medium heat and cook the onions for 3\u20134 minutes, until softened but still holding their shape. Remove and reserve.",
+      "Drain the beef, reserving the marinade, and pat dry.",
+      "Raise the heat to high, add the remaining oil, and sear the beef in a single uncrowded layer for 1\u20132 minutes a side. Work in batches; a crowded pan stews the meat grey. Remove each batch as it colours.",
+      "Pour the reserved marinade and the water into the hot pan, scraping up the fond. Add the sugar and simmer for 3\u20135 minutes until slightly thickened.",
+      "Return the beef and any resting juices. Simmer for 2\u20133 minutes to finish cooking through.",
+      "Pile the onions over the top, cover, and let stand off the heat for 2 minutes before serving with rice."
+    ],
+    notes: [
+      "Calamansi is the defining acid here; lemon reads differently, and lime is the closer substitute if calamansi is unavailable.",
+      "The onions should stay soft but distinct, not cooked down into caramelised sweetness."
+    ],
+    verification: "verified",
+    history: "Bistek descends from the Spanish bistec encebollado, beef steak with onions, itself borrowed from the English beefsteak. The Filipino version swapped wine and Spanish vinegar for calamansi, leaned on soy sauce for salt, and multiplied the onions. In Western Visayas a close relative is called karne frita.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Bistek",
+      "https://panlasangpinoy.com/bistek-tagalog-beefsteak-recipe/"
+    ]
+  },
+  {
+    slug: "crispy-pata", title: "Crispy Pata", subtitle: "Deep-Fried Pork Knuckle",
+    description: "A whole pork leg simmered with aromatics until tender, dried thoroughly, then deep-fried until the skin blisters into glass. Served with a sharp vinegar dip that cuts the fat.",
+    category: "PORK / FRIED", time: "2H 30M", yield: "4\u20136 PAX", origin: "MANILA", technique: "BOIL + DEEP FRY",
+    ingredients: [
+      {name:"Pork leg (pata), whole",metric:"1.5 kg",imperial:"3.3 lb"},
+      {name:"Water",metric:"3.0 L",imperial:"12 1/2 cups"},
+      {name:"Salt",metric:"30 g",imperial:"2 tbsp"},
+      {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Bay leaves",metric:"3 leaves",imperial:"3 leaves"},
+      {name:"Black peppercorns",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Neutral frying oil",metric:"2.0 L",imperial:"8 1/2 cups"},
+      {name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Red onion, minced",metric:"60 g",imperial:"2 oz"},
+      {name:"Bird\u2019s eye chilies, minced",metric:"3 pcs",imperial:"3 pcs"}
+    ],
+    instructions: [
+      "Clean the pork leg thoroughly, scraping the skin and removing any remaining hair.",
+      "Place it in a deep pot with the water, salt, garlic, bay leaves and peppercorns. Bring to a boil, lower to a simmer, and cook for 1 1/2 hours, until a skewer passes easily through the thickest part.",
+      "Lift the leg out and drain. Pat it completely dry, then refrigerate uncovered for at least 3 hours, or overnight. Drying the skin is the whole difference between crackling and leather.",
+      "Heat the oil in a deep pot to 175\u00b0C (350\u00b0F). Work near a lid: a wet pork leg will spit violently.",
+      "Lower the leg in carefully and fry for 12\u201318 minutes, turning, until the skin is blistered, deep amber and audibly crisp.",
+      "Drain upright on a rack for 5 minutes, so the skin does not steam soft against a plate.",
+      "Combine the vinegar, onion and chilies for the dip. Chop the pata through the joint and serve at once, while the skin is still loud."
+    ],
+    notes: [
+      "Overnight uncovered refrigeration is the single most important step; a same-day pata will never blister properly.",
+      "Frying a leg carrying any surface moisture is genuinely dangerous. Dry it thoroughly and keep a lid within reach."
+    ],
+    verification: "verified",
+    history: "Crispy pata is unusually well documented for a Filipino dish: it was devised in the 1950s by Rodolfo Ongpauco at his family\u2019s Barrio Fiesta restaurant in Caloocan, who deep-fried pork legs that were otherwise being discarded. It spread quickly and is now among the dishes most associated with Filipino cooking abroad. Pata is the Spanish word for an animal\u2019s leg.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Crispy_pata",
+      "https://panlasangpinoy.com/crispy-pata-pulutan-recipe/"
+    ]
+  },
 ];
 
 export function getRecipe(slug: string) { return recipes.find((recipe) => recipe.slug === slug); }
