@@ -34,7 +34,7 @@ export const recipes: Recipe[] = [
     slug: "adobong-manok-at-baboy", title: "Adobong Manok at Baboy", subtitle: "Chicken & Pork Adobo",
     description: "A classic Filipino adobo built around the deliberate reduction of vinegar, soy sauce, garlic, and rendered pork fat. The meat is braised until tender, then returned to the reduced sauce for a glossy, concentrated finish.",
     category: "MAIN / BRAISE", time: "90M", yield: "4–6 PAX", origin: "LUZON / PHILIPPINES", technique: "VINEGAR REDUCTION",
-    image: commons("Pork adobo.jpg"), imageSource: commonsPage("Pork adobo.jpg"),
+    image: local("adobong-manok-at-baboy.jpg"),
     ingredients: [
       {name:"Chicken thighs, bone-in",metric:"900 g",imperial:"2 lb"},{name:"Pork shoulder",metric:"450 g",imperial:"1 lb"},
       {name:"Datu Puti Soy Sauce",metric:"60 ml",imperial:"1/4 cup"},{name:"Cane vinegar",metric:"120 ml",imperial:"1/2 cup"},
@@ -81,7 +81,7 @@ export const recipes: Recipe[] = [
     slug: "kare-kare", title: "Kare-Kare", subtitle: "Oxtail Peanut Stew with Bagoong",
     description: "A luxurious Filipino stew of oxtail and vegetables in a thick, savory peanut sauce. Annatto provides its characteristic color while toasted rice thickens the sauce with a distinctly Filipino texture.",
     category: "STEW / PEANUT", time: "3H 15M", yield: "6 PAX", origin: "TAGALOG CUISINE", technique: "PEANUT + ANNATTO",
-    image: commons("Kare-kare.jpg"), imageSource: commonsPage("Kare-kare.jpg"),
+    image: local("kare-kare.jpg"),
     ingredients: [
       {name:"Oxtail, cross-cut",metric:"1.5 kg",imperial:"3.3 lb"},{name:"Water",metric:"2.5 L",imperial:"10 1/2 cups"},
       {name:"Peanut butter, unsweetened",metric:"240 g",imperial:"1 cup"},{name:"Peanuts, roasted and ground",metric:"120 g",imperial:"1 cup"},
@@ -4109,6 +4109,709 @@ export const recipes: Recipe[] = [
     sources: [
       "https://en.wikipedia.org/wiki/Atchara",
       "https://www.pepper.ph/recipes/atchara-filipino-papaya-pickle"
+    ]
+  },
+  {
+    slug: "buko-pie", title: "Buko Pie", subtitle: "Young Coconut Pie",
+    description: "Tender young coconut strips bound in a thickened milk custard under a double crust, baked until the pastry is pale gold. Laguna's pasalubong.",
+    category: "DESSERT / PIE", time: "1H 30M", yield: "10 PAX", origin: "LAGUNA", technique: "BAKED PIE",
+    ingredients: [
+      {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Butter, cold and cubed",metric:"250 g",imperial:"9 oz"},
+      {name:"Iced water",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Young coconut meat, stripped",metric:"600 g",imperial:"1.3 lb"},
+      {name:"Young coconut water",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Condensed milk",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Cornstarch",metric:"60 g",imperial:"1/2 cup"},
+      {name:"Sugar",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"}
+    ],
+    instructions: [
+      "Rub the cold butter into the flour and salt until the mixture looks like coarse crumbs with some butter still visible. Bring together with the iced water, wrap and chill 30 minutes.",
+      "Strip the young coconut meat into ribbons. It should be soft and gelatinous, not the hard mature flesh.",
+      "Slake the cornstarch in the coconut water until smooth, then cook with the condensed milk and sugar over medium heat, stirring, for 6 to 8 minutes until very thick.",
+      "Fold in the coconut strips and cool completely. A warm filling will melt the pastry as you line the tin.",
+      "Roll out two thirds of the pastry and line a 23 cm pie dish. Fill, then top with the remaining pastry, seal the edge and cut steam vents.",
+      "Brush with beaten egg.",
+      "Bake at 190\u00b0C (375\u00b0F) for 40 to 45 minutes, until the crust is set and pale gold. Cool fully before slicing or the filling runs."
+    ],
+    notes: [
+      "Young coconut only. Mature coconut is fibrous and will not soften in the filling.",
+      "Cool completely before cutting. Buko pie sets as it cools and a warm slice collapses."
+    ],
+    verification: "verified",
+    history: "Buko pie is the defining pasalubong of Laguna, particularly Los Banos, where roadside bakeries sell it to travellers heading south from Manila. It is one of the few Filipino sweets built around a Western pastry crust rather than rice or coconut flour.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Buko_pie",
+      "https://www.kawalingpinoy.com/buko-pie/"
+    ]
+  },
+  {
+    slug: "ginataang-bilo-bilo", title: "Ginataang Bilo-Bilo", subtitle: "Rice Balls in Sweet Coconut Milk",
+    description: "Chewy glutinous rice balls simmered with saba, sweet potato, sago and jackfruit in sweetened coconut milk. Afternoon merienda, eaten warm.",
+    category: "DESSERT / GATA", time: "45M", yield: "6 PAX", origin: "PHILIPPINES", technique: "COCONUT SIMMER",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"250 g",imperial:"2 cups"},
+      {name:"Water",metric:"160 ml",imperial:"2/3 cup"},
+      {name:"Coconut milk",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Saba bananas, sliced",metric:"3 pcs",imperial:"3 pcs"},
+      {name:"Sweet potato, cubed",metric:"250 g",imperial:"9 oz"},
+      {name:"Taro (gabi), cubed",metric:"200 g",imperial:"7 oz"},
+      {name:"Tapioca pearls, cooked",metric:"150 g",imperial:"5 oz"},
+      {name:"Jackfruit (langka), sliced",metric:"120 g",imperial:"4 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"}
+    ],
+    instructions: [
+      "Mix the glutinous rice flour with the water into a firm dough and roll into balls about 2 cm across. These are the bilo-bilo.",
+      "Bring the coconut milk to a gentle simmer with the salt. Do not let it boil hard or it will split.",
+      "Add the sweet potato and taro and simmer for 10 minutes, until they begin to soften.",
+      "Add the rice balls and cook for 8 to 10 minutes. They are done when they float and are chewy through.",
+      "Add the saba and cook 3 minutes.",
+      "Stir in the sugar, tapioca pearls, jackfruit and coconut cream and simmer 5 minutes more.",
+      "Serve warm in bowls. It thickens considerably as it stands, so loosen with a little coconut milk if reheating."
+    ],
+    notes: [
+      "Add the root vegetables first and the banana late, or the saba disintegrates into the pot.",
+      "The starch from the rice balls thickens the whole pot; keep it looser than you want it."
+    ],
+    verification: "verified",
+    history: "Ginataang bilo-bilo belongs to the large ginataan family of coconut-milk dishes, and is the sweet, mixed version eaten as merienda. What goes in varies by household and season, but the rice balls and coconut milk are constant.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Bilo-bilo",
+      "https://www.kawalingpinoy.com/ginataang-bilo-bilo/"
+    ]
+  },
+  {
+    slug: "panutsa", title: "Panutsa", subtitle: "Peanut Brittle",
+    description: "Whole peanuts set in muscovado caramel and poured into flat rounds. Snaps clean and tastes of raw sugar rather than refined syrup.",
+    category: "CONFECTION / BRITTLE", time: "30M", yield: "16 PCS", origin: "BATANGAS", technique: "SUGAR CARAMEL",
+    ingredients: [
+      {name:"Peanuts, roasted and skinned",metric:"400 g",imperial:"14 oz"},
+      {name:"Muscovado sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Butter",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Water",metric:"80 ml",imperial:"1/3 cup"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"}
+    ],
+    instructions: [
+      "Warm the roasted peanuts in a low oven so they do not chill the caramel when added.",
+      "Melt the muscovado with the water and salt over medium heat, stirring only until dissolved.",
+      "Cook without stirring for 8 to 10 minutes, to the hard-crack stage, about 150\u00b0C (300\u00b0F). Below this the brittle will be chewy rather than snappy.",
+      "Take off the heat and stir in the butter.",
+      "Add the warm peanuts and fold quickly to coat.",
+      "Spoon flat rounds onto a greased tray or onto squares of banana leaf, spreading each thin.",
+      "Cool completely until hard, then lift away and wrap."
+    ],
+    notes: [
+      "Take the sugar to hard crack. Anything less sets tacky and pulls at the teeth.",
+      "Molten sugar at this temperature burns badly. Use a spoon, never fingers, and work away from children."
+    ],
+    verification: "verified",
+    history: "Panutsa, also called panutsang mani, is built on muscovado or sangkaka, the raw cake sugar of Philippine sugar country, which is what gives it a darker, more mineral taste than a syrup-based brittle. It is particularly associated with Batangas, and a pili-nut version is made in Bicol.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Panutsang_mani",
+      "https://www.yummy.ph/recipe/panutsa-peanut-brittle-recipe-a1517-20161122"
+    ]
+  },
+  {
+    slug: "biscocho", title: "Biscocho", subtitle: "Twice-Baked Buttered Sugar Toast",
+    description: "Day-old bread sliced, buttered, dusted with sugar and baked again until dry and crisp all the way through. Iloilo's answer to leftover pandesal.",
+    category: "PASTRY / BISCUIT", time: "45M", yield: "24 PCS", origin: "ILOILO", technique: "TWICE BAKED",
+    ingredients: [
+      {name:"Day-old pandesal or loaf bread",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Butter, softened",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Slice the day-old bread about 1 cm thick. Stale bread is the point; fresh bread steams instead of drying.",
+      "Cream the butter with the salt until spreadable.",
+      "Spread butter generously on one side of each slice.",
+      "Dust the buttered side heavily with sugar.",
+      "Arrange on trays in a single layer and bake at 150\u00b0C (300\u00b0F) for 20 minutes.",
+      "Turn the slices and bake a further 12 to 18 minutes, until dry through and pale gold. They crisp further as they cool.",
+      "Cool completely and store airtight; properly dried biscocho keeps for weeks."
+    ],
+    notes: [
+      "Low and slow. High heat browns the sugar before the bread dries, leaving a soft centre.",
+      "A garlic version, made with butter and garlic instead of sugar, is eaten with soup."
+    ],
+    verification: "verified",
+    history: "Biscocho in the Philippines means twice-baked bread, buttered and sugared, rather than the Spanish sponge the name descends from. It is strongly associated with Iloilo, where bakeries built a pasalubong trade on it, and began as a way of using unsold bread.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Biscocho",
+      "https://foodphilippines.com/story/biskwit-101/"
+    ]
+  },
+  {
+    slug: "barquillos", title: "Barquillos", subtitle: "Rolled Wafer Sticks",
+    description: "A thin batter griddled on a hot plate and rolled around a rod while still soft, setting into a brittle hollow tube.",
+    category: "PASTRY / BISCUIT", time: "1H", yield: "24 PCS", origin: "ILOILO", technique: "GRIDDLED WAFER",
+    ingredients: [
+      {name:"All-purpose flour",metric:"200 g",imperial:"1 2/3 cups"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Butter, melted",metric:"120 g",imperial:"4 oz"},
+      {name:"Eggs",metric:"3 large",imperial:"3 large"},
+      {name:"Milk",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Beat the eggs and sugar until pale, then whisk in the melted butter, milk, vanilla and salt.",
+      "Fold in the flour until the batter is smooth and thin, about the consistency of double cream. Rest 15 minutes.",
+      "Heat a barquillos iron or a flat griddle over medium heat and grease lightly.",
+      "Spoon a thin round of batter and cook for 60 to 90 seconds a side, until pale gold and set.",
+      "Lift the wafer off and immediately roll it tightly around a wooden rod or the handle of a spoon. You have only a few seconds before it hardens.",
+      "Slide the rolled tube off and cool on a rack.",
+      "Store airtight the moment they are cold; barquillos go soft in humid air within hours."
+    ],
+    notes: [
+      "Roll while the wafer is still hot and pliable. Once it cools it shatters rather than bends.",
+      "Work one wafer at a time. Two on the griddle at once and the second will set flat."
+    ],
+    verification: "verified",
+    history: "Barquillos are made by cooking a thin flour, sugar, butter and egg batter on a hot plate and wrapping each wafer around a rod. They are a fixture of Iloilo pasalubong counters, often sold alongside biscocho and stuffed with a sweet filling as barquiron.",
+    sources: [
+      "https://foodphilippines.com/story/biskwit-101/",
+      "https://featrmedia.com/nostalgic-filipino-cookies-minasa-lengua-de-gato-barquillos/"
+    ]
+  },
+  {
+    slug: "broas", title: "Broas", subtitle: "Filipino Ladyfingers",
+    description: "Light finger-shaped sponge biscuits of nothing but egg, sugar and flour, dried in a slow oven until crisp.",
+    category: "PASTRY / BISCUIT", time: "50M", yield: "30 PCS", origin: "PHILIPPINES", technique: "BAKED SPONGE",
+    ingredients: [
+      {name:"Eggs, separated",metric:"5 large",imperial:"5 large"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"All-purpose flour",metric:"150 g",imperial:"1 1/4 cups"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Icing sugar for dusting",metric:"40 g",imperial:"1.4 oz"}
+    ],
+    instructions: [
+      "Beat the egg whites with the salt to soft peaks, then add half the sugar and beat to stiff, glossy peaks.",
+      "In a separate bowl beat the yolks with the remaining sugar until thick and pale.",
+      "Fold the yolks into the whites gently, keeping as much air as possible. The air is the only leavening broas get.",
+      "Sift the flour over in two additions and fold through lightly.",
+      "Pipe fingers about 8 cm long onto lined trays, spaced well apart.",
+      "Dust with icing sugar and bake at 160\u00b0C (320\u00b0F) for 15 minutes, until just coloured.",
+      "Drop the oven to 120\u00b0C (250\u00b0F) and dry for a further 15 to 20 minutes until crisp through. Cool on the tray."
+    ],
+    notes: [
+      "Folding is where broas are won or lost; stir and the batter collapses into a flat biscuit.",
+      "The second low-temperature stage dries rather than bakes, and is what makes them keep."
+    ],
+    verification: "verified",
+    history: "Broas are the Filipino ladyfinger, traditionally just flour, eggs and sugar baked in a charcoal oven. They are eaten on their own, dunked in hot chocolate, and used as the base layer in Filipino refrigerator cakes.",
+    sources: [
+      "https://foodphilippines.com/story/biskwit-101/",
+      "https://www.pepper.ph/posts/17-types-of-cookies-philippines"
+    ]
+  },
+  {
+    slug: "lengua-de-gato", title: "Lengua de Gato", subtitle: "Cat's Tongue Butter Cookies",
+    description: "Wafer-thin tongues of butter cookie, crisp enough to shatter. Baked flat and pale, never browned.",
+    category: "PASTRY / BISCUIT", time: "40M", yield: "40 PCS", origin: "PHILIPPINES", technique: "PIPED COOKIE",
+    ingredients: [
+      {name:"Butter, softened",metric:"200 g",imperial:"7 oz"},
+      {name:"Icing sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Egg whites",metric:"4 pcs",imperial:"4 pcs"},
+      {name:"All-purpose flour",metric:"160 g",imperial:"1 1/3 cups"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Cream the butter and icing sugar until very light and almost white.",
+      "Beat in the egg whites a little at a time, with the vanilla and salt. Add them slowly or the mixture splits.",
+      "Fold in the flour until smooth. The batter should be soft enough to pipe easily.",
+      "Pipe thin strips about 6 cm long onto lined trays, leaving wide gaps; they spread a great deal.",
+      "Bake at 170\u00b0C (340\u00b0F) for 8 to 11 minutes, until the edges are golden but the centres still pale.",
+      "Leave on the tray for 2 minutes to firm, then move to a rack.",
+      "Cool completely and store airtight."
+    ],
+    notes: [
+      "Pipe them thin. Thick lengua de gato bakes chewy in the middle rather than crisp.",
+      "They colour from the edge inward, so pull them when the rims are gold and the centres still blond."
+    ],
+    verification: "verified",
+    history: "Lengua de gato takes its name and shape from the Spanish and French cat's tongue biscuit. In the Philippines it is a standard tin-and-ribbon pasalubong, and is closely associated with Baguio, where several long-established bakeries sell it.",
+    sources: [
+      "https://www.kawalingpinoy.com/lengua-de-gato/",
+      "https://www.pepper.ph/posts/17-types-of-cookies-philippines"
+    ]
+  },
+  {
+    slug: "uraro", title: "Uraro", subtitle: "Arrowroot Cookies",
+    description: "Dry, pale, flower-shaped cookies of arrowroot flour that dissolve on the tongue rather than crumble.",
+    category: "PASTRY / BISCUIT", time: "50M", yield: "36 PCS", origin: "QUEZON", technique: "PRESSED COOKIE",
+    ingredients: [
+      {name:"Arrowroot flour",metric:"300 g",imperial:"2 1/2 cups"},
+      {name:"All-purpose flour",metric:"80 g",imperial:"2/3 cup"},
+      {name:"Butter, softened",metric:"200 g",imperial:"7 oz"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Egg yolks",metric:"3 pcs",imperial:"3 pcs"},
+      {name:"Milk",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Toast the arrowroot flour in a dry pan over low heat for 6 to 8 minutes, stirring, until it smells faintly nutty. Cool completely.",
+      "Cream the butter and sugar until light, then beat in the yolks and milk.",
+      "Fold in the toasted arrowroot, the plain flour and the salt until a soft dough forms.",
+      "Chill 20 minutes.",
+      "Press the dough into flower-shaped moulds, or roll and cut, keeping the cookies about 8 mm thick.",
+      "Bake at 160\u00b0C (320\u00b0F) for 18 to 22 minutes, until set but barely coloured. Uraro should stay pale.",
+      "Cool completely on the tray; they are fragile while warm."
+    ],
+    notes: [
+      "Toasting the arrowroot removes its raw, chalky edge and is worth the extra ten minutes.",
+      "Do not brown them. Colour means the texture has gone from melting to hard."
+    ],
+    verification: "verified",
+    history: "Uraro is made from arrowroot starch, laboriously extracted from the root, and is a speciality of southern Luzon, particularly Quezon province. Its melting, dry texture comes from the starch rather than from wheat, which is why it cannot be made with flour alone.",
+    sources: [
+      "https://foodphilippines.com/story/biskwit-101/",
+      "https://www.pepper.ph/posts/17-types-of-cookies-philippines"
+    ]
+  },
+  {
+    slug: "pacencia", title: "Pacencia", subtitle: "Egg White Drop Cookies",
+    description: "Small airy buttons of whipped egg white and sugar, baked dry. Named for the patience the whisking takes.",
+    category: "PASTRY / BISCUIT", time: "1H", yield: "50 PCS", origin: "PHILIPPINES", technique: "MERINGUE DROP",
+    ingredients: [
+      {name:"Egg whites",metric:"4 pcs",imperial:"4 pcs"},
+      {name:"Sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"All-purpose flour",metric:"120 g",imperial:"1 cup"},
+      {name:"Calamansi zest",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Beat the egg whites with the salt until foaming, then add the sugar a spoonful at a time, beating until the meringue is stiff and glossy. This is the slow part the cookie is named for.",
+      "Fold in the calamansi zest and vanilla.",
+      "Sift the flour over and fold through gently until just combined.",
+      "Drop small rounds, about a teaspoon each, onto lined trays.",
+      "Bake at 150\u00b0C (300\u00b0F) for 15 minutes.",
+      "Lower to 120\u00b0C (250\u00b0F) and dry for 20 to 25 minutes more, until crisp through and still pale.",
+      "Cool in the switched-off oven with the door ajar, then store airtight immediately."
+    ],
+    notes: [
+      "Any grease on the bowl or beaters will stop the whites stiffening. Wipe both with calamansi first.",
+      "They draw moisture from the air fast; get them into a sealed tin as soon as they are cold."
+    ],
+    verification: "verified",
+    history: "Pacencia is a button-shaped drop cookie of whipped egg white, sometimes scented with calamansi, lemon or vanilla. It is named after patience, for the amount of whisking required before electric beaters were common.",
+    sources: [
+      "https://foodphilippines.com/story/biskwit-101/",
+      "https://www.pepper.ph/posts/17-types-of-cookies-philippines"
+    ]
+  },
+  {
+    slug: "roscas", title: "Roscas", subtitle: "Twisted Sugar Cookies",
+    description: "Short, sandy cookies of flour, butter and egg, twisted into rings or coils and rolled in sugar before baking.",
+    category: "PASTRY / BISCUIT", time: "50M", yield: "30 PCS", origin: "PHILIPPINES", technique: "BAKED COOKIE",
+    ingredients: [
+      {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Butter, softened",metric:"200 g",imperial:"7 oz"},
+      {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Eggs",metric:"2 large",imperial:"2 large"},
+      {name:"Baking powder",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Sugar for rolling",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Cream the butter and sugar until pale, then beat in the eggs one at a time with the vanilla.",
+      "Fold in the flour, baking powder and salt to a firm dough. Do not overwork it.",
+      "Chill for 30 minutes so the dough can be rolled without sticking.",
+      "Take small pieces and roll each into a rope about 12 cm long, then twist and join the ends into a ring.",
+      "Roll each ring in sugar.",
+      "Arrange on lined trays and bake at 170\u00b0C (340\u00b0F) for 15 to 18 minutes, until lightly golden at the edges.",
+      "Cool on the tray for 5 minutes before moving; they firm as they cool."
+    ],
+    notes: [
+      "Chilling matters. A warm dough will not hold the twist and the rings bake out flat.",
+      "Roscas are meant to be short and sandy rather than snapping crisp."
+    ],
+    verification: "verified",
+    history: "Roscas take their name from the Spanish rosca, a ring or coil, the same root as Cebu's rosquillos. They belong to the large family of Spanish-descended Filipino biscuits that bakeries adapted to local butter, sugar and ovens.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Roscas_(Filipino_cuisine)",
+      "https://www.pepper.ph/posts/17-types-of-cookies-philippines"
+    ]
+  },
+  {
+    slug: "pilipit", title: "Pilipit", subtitle: "Twisted Fried Doughnut",
+    description: "A compact twisted dough fried until hard and lacquered in syrup. Denser and crunchier than its soft cousin shakoy.",
+    category: "MERIENDA / FRIED", time: "1H", yield: "20 PCS", origin: "PHILIPPINES", technique: "TWIST + FRY",
+    ingredients: [
+      {name:"All-purpose flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Eggs",metric:"2 large",imperial:"2 large"},
+      {name:"Milk",metric:"160 ml",imperial:"2/3 cup"},
+      {name:"Butter, melted",metric:"60 g",imperial:"2 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Neutral frying oil",metric:"700 ml",imperial:"3 cups"},
+      {name:"Brown sugar",metric:"150 g",imperial:"5 oz"},
+      {name:"Water",metric:"60 ml",imperial:"1/4 cup"}
+    ],
+    instructions: [
+      "Mix the flour, sugar, baking powder and salt. Add the eggs, milk and melted butter and knead into a firm, smooth dough.",
+      "Rest for 20 minutes.",
+      "Take small pieces and roll each into a thin rope about 20 cm long.",
+      "Fold each rope in half and twist the two strands around each other, pinching the ends.",
+      "Heat the oil to 165\u00b0C (330\u00b0F) and fry the twists for 4 to 6 minutes, turning, until deep golden and hard.",
+      "Boil the brown sugar with the water for 5 minutes into a thick syrup.",
+      "Turn the drained twists through the syrup and set on a rack until the glaze hardens."
+    ],
+    notes: [
+      "Fry at a moderate temperature so the inside cooks through; pilipit is meant to be hard rather than fluffy.",
+      "Twist tightly. A loose twist unwinds in the oil."
+    ],
+    verification: "verified",
+    history: "Pilipit means twisted in Tagalog, describing the shape. It is closely related to shakoy and bicho-bicho, the difference being texture: pilipit is compact and hard, while shakoy is a softer, yeasted dough.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Pilipit",
+      "https://honestcooking.com/sweet-filipino-pilipit/"
+    ]
+  },
+  {
+    slug: "shakoy", title: "Shakoy", subtitle: "Soft Twisted Sugar Doughnut",
+    description: "A yeasted dough twisted and fried until puffed and golden, rolled hot in sugar. Soft where pilipit is hard.",
+    category: "MERIENDA / FRIED", time: "2H 30M", yield: "16 PCS", origin: "VISAYAS", technique: "YEASTED FRY",
+    ingredients: [
+      {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Instant yeast",metric:"7 g",imperial:"2 1/4 tsp"},
+      {name:"Salt",metric:"8 g",imperial:"1 1/2 tsp"},
+      {name:"Milk, warm",metric:"220 ml",imperial:"1 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Butter, softened",metric:"60 g",imperial:"2 oz"},
+      {name:"Neutral frying oil",metric:"800 ml",imperial:"3 1/3 cups"},
+      {name:"Sugar for rolling",metric:"150 g",imperial:"5 oz"}
+    ],
+    instructions: [
+      "Mix the flour, sugar, yeast and salt, add the milk and egg and knead 5 minutes, then work in the butter and knead 8 minutes more.",
+      "Prove for 1 to 1 1/2 hours, until doubled.",
+      "Divide into 16 pieces and roll each into a rope about 25 cm long.",
+      "Fold in half and twist the strands together, pinching the ends to seal.",
+      "Prove the shaped twists for 30 minutes, until visibly puffed.",
+      "Heat the oil to 170\u00b0C (340\u00b0F) and fry for 2 to 3 minutes a side, until deep golden.",
+      "Drain briefly and roll in sugar while still hot, so it clings."
+    ],
+    notes: [
+      "Prove the twists after shaping as well as before, or they fry up dense.",
+      "Sugar them hot. Once cool nothing sticks."
+    ],
+    verification: "verified",
+    history: "Shakoy, also sold as bicho-bicho, is the soft yeasted member of the Filipino twisted-doughnut family. It is a staple of Visayan bakeries and market stalls, and the same dough fried without the twist becomes a plain bicho.",
+    sources: [
+      "https://www.foxyfolksy.com/bicho-bicho-shakoy/",
+      "https://en.wikipedia.org/wiki/Pilipit"
+    ]
+  },
+  {
+    slug: "torta-cebuana", title: "Torta Cebuana", subtitle: "Cebuano Butter Sponge Cake",
+    description: "A dense, buttery sponge from Cebu, traditionally leavened in part with tuba, the local coconut toddy, and baked in a round tin.",
+    category: "PASTRY / CAKE", time: "1H", yield: "10 PAX", origin: "CEBU", technique: "BUTTER SPONGE",
+    ingredients: [
+      {name:"All-purpose flour",metric:"300 g",imperial:"2 1/2 cups"},
+      {name:"Sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Butter, softened",metric:"220 g",imperial:"7.8 oz"},
+      {name:"Eggs",metric:"6 large",imperial:"6 large"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Evaporated milk",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Cheese, grated",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Separate the eggs. Beat the whites to stiff peaks with a third of the sugar.",
+      "Cream the butter with the remaining sugar until pale and light, then beat in the yolks one at a time.",
+      "Fold in the flour, baking powder and salt alternately with the evaporated milk.",
+      "Fold a third of the meringue in to loosen the batter, then fold in the rest gently.",
+      "Pour into a lined round tin and scatter the grated cheese over the top.",
+      "Bake at 170\u00b0C (340\u00b0F) for 35 to 45 minutes, until a skewer comes out clean and the top is deep gold.",
+      "Cool in the tin for 10 minutes before turning out."
+    ],
+    notes: [
+      "The meringue is what keeps a cake this buttery from turning heavy; fold it in, never stir.",
+      "Traditional versions use tuba, coconut toddy, as part of the leavening, which gives a faint sourness."
+    ],
+    verification: "verified",
+    history: "In the Visayas, mamon is commonly called torta or torta mamon, and the Cebuano torta is its best known form. It is a fiesta and pasalubong cake, richer and denser than the airy chiffon mamon sold in Manila.",
+    sources: [
+      "https://www.kawalingpinoy.com/cebuana-torta-cake/",
+      "https://www.pinoycookingrecipes.com/recipe/cebu-torta-cake"
+    ]
+  },
+  {
+    slug: "pianono", title: "Pianono", subtitle: "Rolled Sponge Cake",
+    description: "A thin sheet of sponge spread with butter and sugar and rolled into a spiral, sliced into short lengths.",
+    category: "PASTRY / CAKE", time: "50M", yield: "12 PCS", origin: "PHILIPPINES", technique: "ROLLED SPONGE",
+    ingredients: [
+      {name:"Eggs, separated",metric:"5 large",imperial:"5 large"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Cake flour",metric:"120 g",imperial:"1 cup"},
+      {name:"Neutral oil",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Milk",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Baking powder",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Butter, softened",metric:"120 g",imperial:"4 oz"},
+      {name:"Caster sugar for filling",metric:"100 g",imperial:"3.5 oz"}
+    ],
+    instructions: [
+      "Whisk the yolks with the oil, milk and half the sugar, then fold in the flour, baking powder and salt.",
+      "Beat the whites with the salt and remaining sugar to stiff, glossy peaks and fold into the yolk batter in three additions.",
+      "Spread evenly into a lined shallow tray about 25 by 35 cm.",
+      "Bake at 175\u00b0C (345\u00b0F) for 12 to 15 minutes, until springy and just golden. Do not overbake or it will crack when rolled.",
+      "Turn out onto a sugared sheet of baking paper while still warm.",
+      "Spread with softened butter and dust heavily with caster sugar.",
+      "Roll up firmly from the long edge using the paper, wrap, and cool before slicing."
+    ],
+    notes: [
+      "Roll while warm. A cooled sheet cracks along the spiral.",
+      "Bake it thin and briefly; the sponge needs to stay flexible."
+    ],
+    verification: "verified",
+    history: "Pianono is the rolled member of the Filipino mamon family, which also includes the loaf-shaped taisan and the finger-shaped broas. The name comes from the Spanish pionono, itself named after Pope Pius IX.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Mam%C3%B3n",
+      "https://www.pepper.ph/posts/17-types-of-cookies-philippines"
+    ]
+  },
+  {
+    slug: "kinalas", title: "Kinalas", subtitle: "Naga Noodle Soup with Scraped Meat",
+    description: "Noodles under meat scraped from a slow-cooked pig or cow head, in broth thickened to a deep brown sauce. Naga City's own.",
+    category: "NOODLES / SOUP", time: "3H 30M", yield: "6 PAX", origin: "NAGA, CAMARINES SUR", technique: "LONG SIMMER",
+    ingredients: [
+      {name:"Pork or beef head parts",metric:"1.5 kg",imperial:"3.3 lb"},
+      {name:"Water",metric:"3.0 L",imperial:"12 1/2 cups"},
+      {name:"Yellow onion, quartered",metric:"180 g",imperial:"6 oz"},
+      {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Black peppercorns",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Miki noodles, fresh",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Cornstarch",metric:"40 g",imperial:"1/3 cup"},
+      {name:"Soy sauce",metric:"45 ml",imperial:"3 tbsp"},
+      {name:"Fish sauce",metric:"30 ml",imperial:"2 tbsp"},
+      {name:"Eggs",metric:"6 large",imperial:"6 large"},
+      {name:"Scallions, sliced",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Toasted garlic",metric:"40 g",imperial:"1.4 oz"}
+    ],
+    instructions: [
+      "Simmer the head parts in the water with the onion, garlic and peppercorns for 2 1/2 to 3 hours, until the meat falls away.",
+      "Lift the meat out and scrape it from the bones in shreds. This scraping is what the dish is named for.",
+      "Strain the broth and return it to the pot. Season with the soy sauce and fish sauce.",
+      "Slake the cornstarch in cold water and whisk it in, simmering 5 minutes until the broth thickens into a brown sauce that coats a spoon.",
+      "Hard-boil the eggs, peel and halve them.",
+      "Blanch the miki noodles briefly and divide between bowls.",
+      "Ladle the thickened broth over, top with the scraped meat, egg, scallion and toasted garlic, and serve very hot."
+    ],
+    notes: [
+      "The thickened brown sauce is the signature; a thin clear broth is a different dish.",
+      "Traditional versions thicken the sauce with brain rather than cornstarch, which is where the colour and body come from."
+    ],
+    verification: "verified",
+    history: "Kinalas is the street food of Naga City in Camarines Sur. Its name comes from the Bicolano kalas, to remove meat from the bones, describing how the topping is prepared. Vendors have sold it in the city since at least the 1970s.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Kinalas",
+      "https://www.angsarap.net/2017/04/21/kinalas/"
+    ]
+  },
+  {
+    slug: "biniribid", title: "Biniribid", subtitle: "Twisted Coconut Rice Doughnut",
+    description: "A rope of coconut and rice-flour dough twisted and fried, chewy inside rather than cakey. Bicol's own twisted doughnut.",
+    category: "MERIENDA / FRIED", time: "50M", yield: "18 PCS", origin: "BICOL REGION", technique: "TWIST + FRY",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"300 g",imperial:"2 1/2 cups"},
+      {name:"All-purpose flour",metric:"150 g",imperial:"1 1/4 cups"},
+      {name:"Coconut milk",metric:"240 ml",imperial:"1 cup"},
+      {name:"Sugar",metric:"120 g",imperial:"4 oz"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Neutral frying oil",metric:"700 ml",imperial:"3 cups"},
+      {name:"Brown sugar",metric:"150 g",imperial:"5 oz"},
+      {name:"Water",metric:"60 ml",imperial:"1/4 cup"}
+    ],
+    instructions: [
+      "Mix both flours with the sugar, baking powder and salt.",
+      "Work in the coconut milk until you have a firm, pliable dough. The coconut milk, not water, is what gives biniribid its chew.",
+      "Rest the dough for 15 minutes.",
+      "Roll pieces into ropes about 18 cm long, fold each in half and twist the strands together.",
+      "Heat the oil to 165\u00b0C (330\u00b0F) and fry for 4 to 6 minutes, turning, until golden and cooked through.",
+      "Boil the brown sugar with the water for 5 minutes into a syrup.",
+      "Turn the drained twists through the syrup and set aside until the glaze sets."
+    ],
+    notes: [
+      "Glutinous rice flour is what makes it chewy; an all-wheat dough gives an ordinary doughnut.",
+      "Fry at a moderate heat so the dense centre cooks before the outside darkens."
+    ],
+    verification: "verified",
+    history: "Biniribid means twisted in Bicolano, describing the rope-like shape. Its dough of coconut milk and rice flour sets it apart from the wheat-based pilipit and shakoy of other regions.",
+    sources: [
+      "https://lifestyle.inquirer.net/340192/a-foodie-tour-of-bicol-discovering-kinalas-biniribid-tinuktok-palusag/",
+      "https://www.rappler.com/life-and-style/food-drinks/best-of-bicol-must-try-dishes-delicacies/"
+    ]
+  },
+  {
+    slug: "sinapot", title: "Sinapot", subtitle: "Bicol Banana Fritters",
+    description: "Saba sliced, fanned and dipped in a thin batter, fried until the edges go lacy. Lighter than maruya.",
+    category: "MERIENDA / FRIED", time: "25M", yield: "10 PCS", origin: "BICOL REGION", technique: "BATTER FRY",
+    ingredients: [
+      {name:"Saba bananas",metric:"6 pcs",imperial:"6 pcs"},
+      {name:"All-purpose flour",metric:"180 g",imperial:"1 1/2 cups"},
+      {name:"Rice flour",metric:"60 g",imperial:"1/2 cup"},
+      {name:"Sugar",metric:"60 g",imperial:"2 oz"},
+      {name:"Baking powder",metric:"1 1/2 tsp",imperial:"1 1/2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Water",metric:"280 ml",imperial:"1 1/4 cups"},
+      {name:"Neutral frying oil",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Sugar for dusting",metric:"60 g",imperial:"2 oz"}
+    ],
+    instructions: [
+      "Peel the saba and slice each lengthwise almost through, then press flat into a fan.",
+      "Whisk the flours, sugar, baking powder and salt with the water into a thin batter. Sinapot batter is looser than maruya batter, which is what gives the lacy edge.",
+      "Heat the oil to 175\u00b0C (350\u00b0F).",
+      "Dip each fanned banana in the batter, letting the excess run off.",
+      "Slide into the oil and fry for 2 to 3 minutes a side until golden and crisp at the edges.",
+      "Drain on a rack.",
+      "Dust with sugar and eat hot."
+    ],
+    notes: [
+      "Keep the batter thin. A thick coat turns sinapot into maruya.",
+      "Fan the banana before battering so the slices fry through evenly."
+    ],
+    verification: "verified",
+    history: "Sinapot is the Bicolano reading of the banana fritter, close to maruya but fried in a thinner, lighter batter. Saba, the cooking banana used throughout Filipino cookery, holds its shape under the heat.",
+    sources: [
+      "https://www.rappler.com/life-and-style/food-drinks/best-of-bicol-must-try-dishes-delicacies/",
+      "https://www.angsarap.net/2023/12/31/19-fiery-bicolano-dishes-that-ignite-the-palate/"
+    ]
+  },
+  {
+    slug: "coconut-jam", title: "Matamis na Bao", subtitle: "Coconut Jam",
+    description: "Coconut cream cooked slowly with muscovado until it darkens into a thick spreadable jam. Two ingredients and an hour of stirring.",
+    category: "CONFECTION / SPREAD", time: "1H 15M", yield: "2 JARS", origin: "PHILIPPINES", technique: "SLOW REDUCTION",
+    ingredients: [
+      {name:"Coconut cream",metric:"1.0 L",imperial:"4 1/4 cups"},
+      {name:"Muscovado sugar",metric:"400 g",imperial:"14 oz"},
+      {name:"Brown sugar",metric:"150 g",imperial:"5 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"}
+    ],
+    instructions: [
+      "Combine the coconut cream, both sugars, salt and pandan leaf in a heavy pan.",
+      "Bring to a gentle simmer over medium heat, stirring until the sugar dissolves.",
+      "Lower the heat and cook, stirring often at first and then constantly, for 50 to 70 minutes.",
+      "The mixture will pass through pourable, then thick, then finally darken to a deep caramel brown and pull away from the pan as you stir.",
+      "Remove the pandan leaf.",
+      "Test by dropping a little onto a cold plate: it should hold its shape without running.",
+      "Pour into sterilised jars while hot and seal. It thickens further as it cools."
+    ],
+    notes: [
+      "Do not leave it. Coconut jam catches on the base the moment the stirring stops, and a scorched batch tastes burnt throughout.",
+      "Stop while it still falls slowly from the spoon; cooked too far it sets hard in the jar."
+    ],
+    verification: "verified",
+    history: "Matamis na bao is the Filipino coconut jam, made from coconut cream and sugar with no egg, unlike the Malay and Indonesian kaya it is often compared to. It is spread on bread, spooned into kakanin and eaten straight from the jar.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Coconut_jam",
+      "https://www.kawalingpinoy.com/minatamis-na-bao-coconut-jam/"
+    ]
+  },
+  {
+    slug: "latik", title: "Latik", subtitle: "Toasted Coconut Curds and Syrup",
+    description: "Coconut cream reduced until the oil breaks out and the solids toast to golden curds. The topping half of Filipino sweets, and the syrup version beneath it.",
+    category: "COMPONENT / COCONUT", time: "35M", yield: "1 CUP", origin: "PHILIPPINES", technique: "COCONUT REDUCTION",
+    ingredients: [
+      {name:"Coconut cream",metric:"500 ml",imperial:"2 cups"},
+      {name:"Brown sugar",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "For curd latik, pour the coconut cream into a wide pan and bring to a simmer over medium heat.",
+      "Cook, stirring occasionally, for 15 to 20 minutes as the cream reduces and thickens.",
+      "The oil will separate and small solids will form. Keep stirring now so they colour evenly.",
+      "Cook 5 to 8 minutes more, until the curds turn golden brown and smell nutty. Take them off the moment they colour; a few seconds further and they turn bitter.",
+      "Strain, keeping both the curds and the clear coconut oil, which is used for greasing moulds.",
+      "For syrup latik, instead simmer the coconut cream with the brown sugar and salt for 12 to 15 minutes until it thickens into a pourable caramel.",
+      "Cool and store; curds keep for a week, syrup for a fortnight refrigerated."
+    ],
+    notes: [
+      "Curd latik goes from golden to burnt in seconds. Stay at the pan for the last five minutes.",
+      "The strained oil is not waste. It is what traditional recipes brush banana leaves and moulds with."
+    ],
+    verification: "verified",
+    history: "Latik names two different things in Filipino cooking: in Luzon it is the toasted coconut curd scattered over biko and sapin-sapin, while in the Visayas it means the syrupy coconut caramel poured over rice cakes. Both come from reducing coconut cream, just stopped at different points.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Latik",
+      "https://www.foxyfolksy.com/coconut-jam/"
+    ]
+  },
+  {
+    slug: "taho", title: "Taho", subtitle: "Silken Tofu with Syrup and Sago",
+    description: "Warm silken tofu spooned into a cup with dark arnibal syrup and chewy sago pearls. Sold from buckets on the street at dawn.",
+    category: "MERIENDA / SWEET", time: "40M", yield: "6 PAX", origin: "PHILIPPINES", technique: "ASSEMBLED",
+    ingredients: [
+      {name:"Silken tofu",metric:"900 g",imperial:"2 lb"},
+      {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"240 ml",imperial:"1 cup"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Tapioca or sago pearls",metric:"150 g",imperial:"5 oz"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"}
+    ],
+    instructions: [
+      "Boil the sago pearls in plenty of water for 20 to 25 minutes, until translucent through with no white centre. Drain and rinse.",
+      "For the arnibal, simmer the brown sugar, water and pandan leaf for 10 to 12 minutes until syrupy. Stir in the vanilla and remove the leaf.",
+      "Warm the silken tofu gently, either by steaming it for 8 minutes or heating it in its liquid. It must stay in soft sheets, not break into curds.",
+      "Spoon the warm tofu into cups in broad, flat scoops rather than chunks.",
+      "Add a generous spoonful of sago.",
+      "Pour the arnibal over.",
+      "Serve immediately, while the tofu is still warm and the syrup runs."
+    ],
+    notes: [
+      "Scoop the tofu flat and wide with a shallow spoon; the texture is the whole point and stirring destroys it.",
+      "Cook the sago until no opaque centre remains, or it stays hard in the middle."
+    ],
+    verification: "verified",
+    history: "Taho is sold from covered buckets by vendors calling through the streets in the early morning, a trade that has changed very little in a century. Its base is soft tofu of Chinese origin, dressed with local muscovado syrup and sago.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Taho",
+      "https://theunlikelybaker.com/coconut-jam-filipino-minatamis-na-bao/"
+    ]
+  },
+  {
+    slug: "ginataang-mais", title: "Ginataang Mais", subtitle: "Sweet Corn and Rice in Coconut Milk",
+    description: "Glutinous rice and sweetcorn simmered in sweetened coconut milk into a loose warm porridge. Rainy-afternoon food.",
+    category: "DESSERT / GATA", time: "45M", yield: "6 PAX", origin: "PHILIPPINES", technique: "COCONUT SIMMER",
+    ingredients: [
+      {name:"Glutinous rice",metric:"200 g",imperial:"1 cup"},
+      {name:"Water",metric:"700 ml",imperial:"3 cups"},
+      {name:"Coconut milk",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Sweetcorn kernels",metric:"400 g",imperial:"14 oz"},
+      {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"}
+    ],
+    instructions: [
+      "Rinse the glutinous rice and simmer it in the water with the pandan leaf for 15 minutes, stirring often, until the grains swell and soften.",
+      "Add the coconut milk and bring back to a gentle simmer. Do not let it boil hard.",
+      "Add the sweetcorn and cook for 10 minutes.",
+      "Stir in the sugar and salt and simmer 5 minutes more, until the porridge thickens enough to coat the spoon.",
+      "Remove the pandan leaf.",
+      "Stir in the coconut cream and take off the heat.",
+      "Serve warm. It thickens as it stands, so loosen with coconut milk if it sits."
+    ],
+    notes: [
+      "Half the corn blitzed and half left whole gives both body and bite.",
+      "Add the coconut cream off the heat so it stays smooth rather than splitting."
+    ],
+    verification: "verified",
+    history: "Ginataang mais is one of the simplest members of the ginataan family, corn and glutinous rice in sweetened coconut milk. It is eaten warm as merienda, and is close kin to champorado and ginataang bilo-bilo in both method and role.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ginataang_mais",
+      "https://www.kawalingpinoy.com/ginataang-bilo-bilo/"
     ]
   },
 ];
