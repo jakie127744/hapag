@@ -1064,7 +1064,7 @@ export const recipes: Recipe[] = [
     slug: "adobong-manok", title: "Adobong Manok", subtitle: "Chicken Adobo",
     description: "Chicken braised in vinegar, soy sauce, garlic and peppercorns, then reduced until the sauce glazes the skin. Faster and lighter than the pork version, and more dependent on rendering the skin properly.",
     category: "MAIN / BRAISE", time: "55M", yield: "4 PAX", origin: "PHILIPPINES", technique: "VINEGAR REDUCTION",
-    image: local("adobong-manok-sa-sarsa.jpg"), imageSource: commonsPage("ADOBONG MANOK SA SARSA.jpg"),
+    image: local("adobong-manok.jpg"),
     ingredients: [
       {name:"Chicken thighs, bone-in",metric:"1.2 kg",imperial:"2.6 lb"},
       {name:"Soy sauce",metric:"60 ml",imperial:"1/4 cup"},
@@ -5306,6 +5306,664 @@ export const recipes: Recipe[] = [
     sources: [
       "https://en.wikipedia.org/wiki/Yema_(candy)",
       "https://en.wikipedia.org/wiki/Ube_cake"
+    ]
+  },
+  {
+    slug: "kiping", title: "Kiping", subtitle: "Coloured Rice Wafers",
+    description: "Rice paste pressed onto a leaf, steamed and dried into a thin translucent wafer that takes the leaf's shape and veins. Hung as decoration, then grilled and eaten.",
+    category: "MERIENDA / WAFER", time: "2D", yield: "30 PCS", origin: "LUCBAN, QUEZON", technique: "LEAF-PRESSED STEAM",
+    ingredients: [
+      {name:"Glutinous rice",metric:"500 g",imperial:"2 1/2 cups"},
+      {name:"Water",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Rock salt",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Food colouring",metric:"4 tsp",imperial:"4 tsp"},
+      {name:"Kabal or talisay leaves",metric:"30 sheets",imperial:"30 sheets"},
+      {name:"Neutral oil",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Sugar for dipping",metric:"100 g",imperial:"3.5 oz"}
+    ],
+    instructions: [
+      "Soak the glutinous rice for 2 hours, then grind it with the water into a smooth paste.",
+      "Stir in the rock salt, then divide the paste and colour each portion separately.",
+      "Wipe the leaves and oil them lightly so the wafer will peel away later.",
+      "Spread a thin, even layer of paste over each leaf, using the leaf as the mould. Thin is essential; a thick layer will never dry properly.",
+      "Steam the coated leaves for about 30 minutes, until the paste is set and translucent.",
+      "Hang the leaves in the shade to dry, out of direct sun, for a day or more until the wafer stiffens.",
+      "Peel the kiping from the leaf. Grill or fry it briefly before eating, with sugar or vinegar to dip."
+    ],
+    notes: [
+      "Dry in shade, not sun. Direct sun makes the wafers curl and crack before they set.",
+      "The leaf is the mould and the pattern; kabal leaves are traditional because they release cleanly."
+    ],
+    verification: "verified",
+    history: "Kiping comes from kinipi, meaning pressed, describing how the water is squeezed from the rice dough. It is made in Lucban, Quezon for the Pahiyas Festival each 15 May, when houses are decorated with it in honour of San Isidro Labrador, and eaten afterwards.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Kiping",
+      "https://www.yummy.ph/news-trends/what-to-eat-lucban-quezon-pahiyas-a1757-20190515-lfrm2"
+    ]
+  },
+  {
+    slug: "alupi", title: "Alupi", subtitle: "Cassava Cake in Banana Leaf",
+    description: "Grated cassava mixed with coconut and sugar, wrapped in banana leaf and steamed into a dense chewy bar. The Western Visayan cassava suman.",
+    category: "DESSERT / KAKANIN", time: "1H 15M", yield: "14 PCS", origin: "WESTERN VISAYAS", technique: "BANANA-LEAF STEAM",
+    ingredients: [
+      {name:"Cassava, grated",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Coconut milk",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Young coconut meat, stripped",metric:"150 g",imperial:"5 oz"},
+      {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Banana leaves",metric:"14 sheets",imperial:"14 sheets"}
+    ],
+    instructions: [
+      "Peel the cassava and remove the woody cord that runs through the centre of each root.",
+      "Grate finely and squeeze out a little of the liquid, but do not wring it dry.",
+      "Mix with the coconut milk, young coconut strips, brown sugar and salt.",
+      "Soften the banana leaves over a flame and cut into rectangles.",
+      "Spoon the mixture onto each leaf, fold the sides in and roll into a flat parcel, tucking the ends under.",
+      "Steam for 45 to 55 minutes, until the cassava is fully translucent and firm. Cassava must be cooked through.",
+      "Cool slightly and serve in the wrapper, with sugar or latik."
+    ],
+    notes: [
+      "Take out the fibrous core before grating; it never softens.",
+      "Test a parcel before pulling the batch: undercooked cassava is both unpleasant and unsafe."
+    ],
+    verification: "verified",
+    history: "Alupi, also spelled alupe, is what much of Western Visayas calls its cassava suman. It uses balinghoy, the local name for cassava, in place of the glutinous rice used elsewhere, and is steamed in banana leaf like its rice-based relatives.",
+    sources: [
+      "https://iloilofoodtrip.blogspot.com/2019/02/alupi-favorite-cassava-kakanin.html",
+      "https://flavoursofiloilo.blogspot.com/2016/01/bingka-kutsinta-ibos-kag-alupi.html"
+    ]
+  },
+  {
+    slug: "binalay", title: "Binalay", subtitle: "Cagayan Valley Rice Cake with Latik",
+    description: "Pounded glutinous rice shaped into flat cakes, wrapped in banana leaf and steamed, then eaten under a thick sweet coconut sauce. Lenten food in Cagayan and Isabela.",
+    category: "DESSERT / KAKANIN", time: "2H", yield: "12 PCS", origin: "CAGAYAN VALLEY", technique: "BANANA-LEAF STEAM",
+    ingredients: [
+      {name:"Glutinous rice",metric:"600 g",imperial:"3 cups"},
+      {name:"Water",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Salt",metric:"1 1/2 tsp",imperial:"1 1/2 tsp"},
+      {name:"Coconut cream",metric:"500 ml",imperial:"2 cups"},
+      {name:"Muscovado sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Banana leaves",metric:"12 sheets",imperial:"12 sheets"}
+    ],
+    instructions: [
+      "Soak the glutinous rice overnight, then drain and grind it into a thick paste.",
+      "Work the paste with the salt and just enough water to make a dough that holds together without cracking.",
+      "Soften the banana leaves over a flame.",
+      "Shape the dough into flat oval cakes and wrap each in leaf.",
+      "Steam for 40 to 50 minutes, until the cakes are firm and cooked through.",
+      "For the laro, simmer the coconut cream with the muscovado for 20 to 25 minutes, stirring, until thick and glossy.",
+      "Unwrap the cakes and pour the sauce generously over before serving."
+    ],
+    notes: [
+      "Grind the soaked rice rather than using packaged flour if you can; the texture is coarser and better.",
+      "The sauce should be thick enough to sit on the cake rather than run off it."
+    ],
+    verification: "verified",
+    history: "Binalay is associated with Lent in Cagayan and Isabela, where it is made during Holy Week and shared among neighbours. It is served with laro or latik, a sweet coconut sauce poured over the steamed cakes.",
+    sources: [
+      "https://pia.gov.ph/features/binalay-delicacy-sacred-taste-of-lent-in-cagayan-valley/",
+      "https://en.wikipedia.org/wiki/Suman_(food)"
+    ]
+  },
+  {
+    slug: "peanut-kisses", title: "Peanut Kisses", subtitle: "Bohol Peanut Meringue Cookies",
+    description: "Ground toasted peanuts folded into meringue and piped into small peaks, baked dry. Shaped deliberately like the Chocolate Hills.",
+    category: "CONFECTION / COOKIE", time: "1H", yield: "40 PCS", origin: "BOHOL", technique: "MERINGUE DROP",
+    ingredients: [
+      {name:"Peanuts, toasted and ground",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Egg whites",metric:"4 pcs",imperial:"4 pcs"},
+      {name:"Sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Cornstarch",metric:"30 g",imperial:"1/4 cup"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Toast the peanuts, rub off the skins and grind them, leaving some pieces coarse so there is something to chew.",
+      "Toss the ground peanuts with the cornstarch. This draws off residual oil and moisture, which would otherwise collapse the meringue.",
+      "Beat the egg whites with the salt until foaming, then add the sugar gradually and beat to stiff, glossy peaks.",
+      "Fold in the vanilla, then the peanut mixture, in three additions and as gently as possible.",
+      "Pipe or spoon small tall peaks onto lined trays, leaving space between them.",
+      "Bake at 150\u00b0C (300\u00b0F) for 20 minutes, then lower to 120\u00b0C (250\u00b0F) and dry for a further 25 to 30 minutes.",
+      "Cool in the switched-off oven with the door ajar, then store airtight at once."
+    ],
+    notes: [
+      "Tossing the peanuts in cornstarch first is the trick that keeps the meringue standing.",
+      "The peaks are the point. Piped flat, they are just peanut biscuits."
+    ],
+    verification: "verified",
+    history: "Peanut kisses are Bohol's best known pasalubong, shaped into small peaks in imitation of the Chocolate Hills. They belong to a family of Boholano peanut sweets that also includes caycay and the province's peanut kisses variants flavoured with ube kinampay.",
+    sources: [
+      "https://theskinnypot.com/peanut-kisses-recipe/",
+      "https://bohol-philippines.com/bohol-peanut-kisses/"
+    ]
+  },
+  {
+    slug: "caycay", title: "Caycay", subtitle: "Layered Peanut Cookie",
+    description: "Thin layered pastry fried crisp, brushed with syrup and rolled in coarsely ground toasted peanuts.",
+    category: "CONFECTION / COOKIE", time: "1H 15M", yield: "24 PCS", origin: "BOHOL / CEBU", technique: "LAMINATED FRY",
+    ingredients: [
+      {name:"All-purpose flour",metric:"350 g",imperial:"3 cups"},
+      {name:"Shortening",metric:"150 g",imperial:"5 oz"},
+      {name:"Water, iced",metric:"140 ml",imperial:"2/3 cup"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Neutral frying oil",metric:"700 ml",imperial:"3 cups"},
+      {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Water for syrup",metric:"100 ml",imperial:"scant 1/2 cup"},
+      {name:"Peanuts, toasted and coarsely ground",metric:"250 g",imperial:"9 oz"}
+    ],
+    instructions: [
+      "Rub half the shortening into the flour and salt, then bring together with the iced water into a firm dough. Rest 20 minutes.",
+      "Roll into a rectangle, spread with the remaining shortening, fold in three and rest 15 minutes. Repeat twice more. These folds are what give caycay its layers.",
+      "Roll thin, about 2 mm, and cut into rectangles.",
+      "Heat the oil to 170\u00b0C (340\u00b0F) and fry the pieces for 2 to 3 minutes a side, until puffed, golden and crisp. Drain.",
+      "Boil the brown sugar with the water for 5 to 6 minutes into a thick syrup.",
+      "Dip or brush each fried piece with syrup.",
+      "Roll immediately in the coarsely ground peanuts and set aside until the coating firms."
+    ],
+    notes: [
+      "Coat while the syrup is still hot and tacky; once it cools the peanuts will not stick.",
+      "Grind the peanuts coarse. Fine peanut powder turns pasty against the syrup."
+    ],
+    verification: "verified",
+    history: "Caycay is a layered fried cookie from Bohol and Cebu, finished in syrup and toasted peanuts. It sits alongside peanut kisses and masareal in the Visayan tradition of peanut-based pasalubong.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Caycay",
+      "https://bohol-philippines.com/bohol-peanut-kisses/"
+    ]
+  },
+  {
+    slug: "macapuno-balls", title: "Macapuno Balls", subtitle: "Coconut Sport Candy",
+    description: "Macapuno preserve cooked down with condensed milk until stiff, rolled into balls and coated in desiccated coconut.",
+    category: "CONFECTION / COCONUT", time: "45M", yield: "30 PCS", origin: "PHILIPPINES", technique: "SLOW REDUCTION",
+    ingredients: [
+      {name:"Macapuno preserve, drained",metric:"400 g",imperial:"14 oz"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Cornstarch",metric:"40 g",imperial:"1/3 cup"},
+      {name:"Butter",metric:"30 g",imperial:"1 oz"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Desiccated coconut",metric:"150 g",imperial:"5 oz"}
+    ],
+    instructions: [
+      "Drain the macapuno thoroughly and press out the syrup. Excess syrup will keep the mixture from ever setting.",
+      "Cook the macapuno with the condensed milk, butter and salt over low heat, stirring constantly, for 20 to 25 minutes.",
+      "Slake the cornstarch in a little water and stir it in, cooking 5 minutes more until the mass pulls cleanly from the pan.",
+      "Cool until it can be handled comfortably.",
+      "Roll into balls about 2.5 cm across with lightly greased hands.",
+      "Roll each ball in desiccated coconut until fully coated.",
+      "Chill for an hour to firm, then wrap individually."
+    ],
+    notes: [
+      "Draining the macapuno properly is the whole difference between a candy and a sticky paste.",
+      "Grease your hands rather than flouring them; flour dulls the coconut flavour."
+    ],
+    verification: "verified",
+    history: "Macapuno is a naturally occurring coconut mutation whose flesh is soft, translucent and jelly-like rather than firm. Sold as a sweet preserve in jars, it is used across Filipino desserts, and these condensed-milk balls are its simplest confection.",
+    sources: [
+      "https://www.foxyfolksy.com/macapuno-balls/",
+      "https://theunlikelybaker.com/macapuno-balls/"
+    ]
+  },
+  {
+    slug: "ginataang-saging", title: "Ginataang Saging", subtitle: "Saba in Sweet Coconut Milk",
+    description: "Ripe saba stewed gently in sweetened coconut milk with sago, until the fruit softens and the milk thickens around it.",
+    category: "DESSERT / GATA", time: "35M", yield: "6 PAX", origin: "PHILIPPINES", technique: "COCONUT SIMMER",
+    ingredients: [
+      {name:"Saba bananas, thickly sliced",metric:"8 pcs",imperial:"8 pcs"},
+      {name:"Coconut milk",metric:"700 ml",imperial:"3 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Brown sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Tapioca or sago pearls, cooked",metric:"150 g",imperial:"5 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"}
+    ],
+    instructions: [
+      "Peel the saba and cut into thick diagonal slices. They should be ripe but still firm enough to hold shape.",
+      "Bring the coconut milk to a gentle simmer with the pandan leaf and salt. Do not boil it hard.",
+      "Add the banana and simmer for 10 to 12 minutes, until tender but not collapsing. Move the pan rather than stirring.",
+      "Stir in the brown sugar and simmer 5 minutes more.",
+      "Add the cooked sago and warm through.",
+      "Remove the pandan leaf and stir in the coconut cream off the heat.",
+      "Serve warm. It thickens as it cools."
+    ],
+    notes: [
+      "Stirring breaks the banana down into the milk; tilt and swirl the pan instead.",
+      "Sweet potato or jackfruit are common additions, at which point it shades into ginataang halo-halo."
+    ],
+    verification: "verified",
+    history: "Ginataang saba is the plainest member of the ginataan family, ripe cooking banana stewed in sweetened coconut milk. Adding rice balls turns it into ginataang bilo-bilo, and adding a wider mix of roots and fruit makes it ginataang halo-halo.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ginataang_saba",
+      "https://pilipinasrecipes.com/ginataang-bilo-bilo-recipe/"
+    ]
+  },
+  {
+    slug: "binatog", title: "Binatog", subtitle: "Boiled White Corn with Coconut",
+    description: "Hominy corn boiled until the kernels bloom open, served warm under grated coconut with sugar or salt. Sold from carts in the afternoon.",
+    category: "MERIENDA / BOILED", time: "1H 30M", yield: "6 PAX", origin: "PHILIPPINES", technique: "BOILED CORN",
+    ingredients: [
+      {name:"Dried white corn (hominy)",metric:"400 g",imperial:"14 oz"},
+      {name:"Water",metric:"2.5 L",imperial:"10 1/2 cups"},
+      {name:"Baking soda",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Salt",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Grated coconut",metric:"250 g",imperial:"9 oz"},
+      {name:"Sugar",metric:"120 g",imperial:"4 oz"},
+      {name:"Butter",metric:"40 g",imperial:"1.4 oz"}
+    ],
+    instructions: [
+      "Soak the dried white corn overnight in plenty of water.",
+      "Drain, then boil in fresh water with the baking soda for 1 to 1 1/2 hours, until the kernels swell and burst open. The soda is what helps the hulls loosen.",
+      "Rub the cooked kernels between your hands under running water to slip off the loosened hulls, and drain.",
+      "Return the kernels to the pan with the salt and a little fresh water and warm through.",
+      "Stir in the butter until it melts over the hot corn.",
+      "Serve warm in bowls, heaped with freshly grated coconut.",
+      "Offer sugar and salt separately; binatog is eaten sweet or savoury according to taste."
+    ],
+    notes: [
+      "Only dried white corn will bloom like this. Sweetcorn simply softens and stays closed.",
+      "Freshly grated coconut matters here; desiccated coconut is dry and misses the point."
+    ],
+    verification: "verified",
+    history: "Binatog is boiled hominy corn topped with grated coconut, sold from pushcarts by vendors ringing a bell through neighbourhoods in the afternoon. It is eaten either sweet or salted, which is unusual among Filipino merienda.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Binatog",
+      "https://www.aboutfilipinofood.com/filipino-snacks/"
+    ]
+  },
+  {
+    slug: "nilupak-na-saging", title: "Nilupak na Saging", subtitle: "Pounded Saba with Coconut and Butter",
+    description: "Boiled saba pounded smooth with butter, milk and sugar, pressed flat and topped with coconut and cheese. The banana version of nilupak.",
+    category: "DESSERT / KAKANIN", time: "45M", yield: "8 PAX", origin: "PHILIPPINES", technique: "POUND + PRESS",
+    ingredients: [
+      {name:"Saba bananas",metric:"1.2 kg",imperial:"2.6 lb"},
+      {name:"Butter",metric:"120 g",imperial:"4 oz"},
+      {name:"Condensed milk",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Coconut milk",metric:"150 ml",imperial:"2/3 cup"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Grated coconut",metric:"120 g",imperial:"4 oz"},
+      {name:"Cheese, grated",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Boil the unpeeled saba for 20 to 25 minutes, until soft right through. Peel while still warm.",
+      "Pound the warm bananas in a mortar, or mash hard with a heavy spoon, until completely smooth and elastic.",
+      "Work in the butter a little at a time, then the condensed milk, coconut milk, sugar and salt.",
+      "Keep working the mass until it turns glossy and pulls together.",
+      "Press into a buttered dish or shape into a flat round on a banana leaf.",
+      "Top with grated coconut and cheese.",
+      "Cool to room temperature before cutting into wedges."
+    ],
+    notes: [
+      "Pound while hot. Cold saba will not come together however long you work it.",
+      "Use saba, the cooking banana; dessert bananas are too wet and turn to paste."
+    ],
+    verification: "verified",
+    history: "Nilupak is a whole class of pounded starchy sweets rather than one recipe, taking its name from lupak, to pound. The saba version sits alongside cassava nilupak and the sweet-potato camote halaya, all finished with coconut milk, butter and sugar.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Nilupak",
+      "https://panlasangpinoy.com/nilupak-recipe/"
+    ]
+  },
+  {
+    slug: "nilupak-na-kamote", title: "Nilupak na Kamote", subtitle: "Pounded Sweet Potato with Coconut",
+    description: "Boiled sweet potato pounded with coconut milk, butter and sugar into a dense sweet paste. Also called camote halaya.",
+    category: "DESSERT / KAKANIN", time: "50M", yield: "8 PAX", origin: "PHILIPPINES", technique: "POUND + PRESS",
+    ingredients: [
+      {name:"Sweet potato (kamote)",metric:"1.2 kg",imperial:"2.6 lb"},
+      {name:"Coconut milk",metric:"250 ml",imperial:"1 cup"},
+      {name:"Condensed milk",metric:"250 g",imperial:"9 oz"},
+      {name:"Butter",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Grated coconut",metric:"120 g",imperial:"4 oz"}
+    ],
+    instructions: [
+      "Boil the sweet potato in its skin for 25 to 30 minutes, until a knife slides through easily.",
+      "Peel while warm and pound or mash until completely smooth.",
+      "Work in the butter, then the coconut milk, condensed milk, sugar and salt.",
+      "Cook the mixture in a pan over low heat for 8 to 10 minutes, stirring, to drive off excess moisture and bring it together.",
+      "Press into a buttered dish and smooth the top.",
+      "Scatter with grated coconut.",
+      "Cool completely before cutting; it firms as it cools."
+    ],
+    notes: [
+      "Boil the kamote whole and in its skin so it does not take on water.",
+      "Purple-fleshed varieties work and look striking, but are drier and need a little more coconut milk."
+    ],
+    verification: "verified",
+    history: "Nilupak na kamote, also called camote halaya, is the sweet-potato member of the nilupak family. Sweet potato is among the cheapest and most widely grown root crops in the country, which is why so many Filipino sweets are built on it.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Nilupak",
+      "https://www.kawalingpinoy.com/nilupak/"
+    ]
+  },
+  {
+    slug: "tinumok", title: "Tinumok", subtitle: "Taro Leaves Stuffed with Shrimp in Coconut Milk",
+    description: "Shrimp, flaked fish and young coconut wrapped in taro leaves and simmered in coconut milk until the parcels soften into the sauce. Bicol's stuffed laing.",
+    category: "BICOL / GATA", time: "1H", yield: "6 PAX", origin: "BICOL REGION", technique: "COCONUT SIMMER",
+    ingredients: [
+      {name:"Taro (gabi) leaves, fresh",metric:"30 sheets",imperial:"30 sheets"},
+      {name:"Shrimp, peeled and chopped",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Flaked cooked fish",metric:"150 g",imperial:"5 oz"},
+      {name:"Young coconut meat, chopped",metric:"150 g",imperial:"5 oz"},
+      {name:"Coconut milk",metric:"700 ml",imperial:"3 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Garlic, minced",metric:"6 cloves",imperial:"6 cloves"},
+      {name:"Yellow onion, minced",metric:"120 g",imperial:"4 oz"},
+      {name:"Ginger, minced",metric:"25 g",imperial:"0.9 oz"},
+      {name:"Shrimp paste (bagoong alamang)",metric:"30 g",imperial:"2 tbsp"},
+      {name:"Bird\u2019s eye chilies",metric:"6 pcs",imperial:"6 pcs"}
+    ],
+    instructions: [
+      "Wilt the taro leaves briefly over steam or in the sun so they can be folded without tearing.",
+      "Mix the chopped shrimp, flaked fish and young coconut with half the garlic, onion, ginger and the shrimp paste.",
+      "Place a spoonful of filling on each leaf and fold into a tight parcel, tucking the edges under.",
+      "Lay the parcels seam-side down in a wide pot, packed in a single layer.",
+      "Pour the coconut milk over with the remaining aromatics and the chilies.",
+      "Simmer uncovered over low heat for 35 to 45 minutes. Do not stir at any point; taro leaves stirred while cooking turn itchy and sharp on the throat.",
+      "Add the coconut cream and simmer 8 minutes more, until the sauce is thick. Serve with rice."
+    ],
+    notes: [
+      "Never stir a pot of taro leaves. The calcium oxalate needs unbroken cooking to break down, and stirring is what makes laing and tinumok scratch the throat.",
+      "The leaves must be properly wilted first or they split as you fold them."
+    ],
+    verification: "verified",
+    history: "Tinumok is the stuffed cousin of laing: where laing shreds the taro leaves into the coconut milk, tinumok keeps them whole and wraps a filling of shrimp, fish and young coconut inside. It is Bicolano, and like most Bicol cooking it is built on gata and chilli.",
+    sources: [
+      "https://www.panlasangpinoymeatrecipes.com/tinumok.htm",
+      "https://www.rappler.com/life-and-style/food-drinks/best-of-bicol-must-try-dishes-delicacies/"
+    ]
+  },
+  {
+    slug: "sampalok-candy", title: "Sampalok Candy", subtitle: "Tamarind Balls",
+    description: "Tamarind pulp cooked down with sugar and salt into a sticky paste, rolled into balls and coated in salted sugar. Sour, sweet and salty at once.",
+    category: "CONFECTION / FRUIT", time: "40M", yield: "30 PCS", origin: "PHILIPPINES", technique: "FRUIT REDUCTION",
+    ingredients: [
+      {name:"Tamarind pulp, seedless",metric:"400 g",imperial:"14 oz"},
+      {name:"Water",metric:"120 ml",imperial:"1/2 cup"},
+      {name:"Sugar",metric:"350 g",imperial:"12 oz"},
+      {name:"Salt",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Sugar for coating",metric:"150 g",imperial:"5 oz"},
+      {name:"Salt for coating",metric:"2 tsp",imperial:"2 tsp"}
+    ],
+    instructions: [
+      "Work the tamarind pulp with the water until smooth, picking out any remaining seeds and fibre.",
+      "Cook the pulp with the sugar and salt over medium-low heat, stirring constantly.",
+      "Continue for 15 to 20 minutes, until the mixture darkens and becomes very thick and sticky, pulling away from the pan as you stir.",
+      "Cool until it can be handled. It will still be tacky; oil your hands lightly.",
+      "Roll into balls about 2 cm across.",
+      "Mix the coating sugar with the coating salt and roll each ball until fully covered.",
+      "Leave uncovered for an hour to dry slightly, then wrap individually in cellophane."
+    ],
+    notes: [
+      "The salt is not optional. Without it the candy is merely sweet and loses the sour-salty balance that defines it.",
+      "Cook it further than looks necessary; underdone, the balls slump out of shape."
+    ],
+    verification: "verified",
+    history: "Sampalok candy is made from tamarind, which grows throughout the Philippines and is better known as the souring agent in sinigang. In Bicol a related preserved-fruit sweet is called champoy, a term that has widened to cover tamarind balls as well.",
+    sources: [
+      "https://ulamdaily.com/recipe/sampalok-candy",
+      "https://www.aboutfilipinofood.com/filipino-candy/"
+    ]
+  },
+  {
+    slug: "coconut-candy", title: "Bukayo Toffee", subtitle: "Coconut Milk Toffee",
+    description: "Coconut milk and muscovado boiled hard until the mixture darkens and sets chewy, then cut into squares.",
+    category: "CONFECTION / COCONUT", time: "50M", yield: "30 PCS", origin: "PHILIPPINES", technique: "SUGAR CARAMEL",
+    ingredients: [
+      {name:"Coconut milk",metric:"500 ml",imperial:"2 cups"},
+      {name:"Muscovado sugar",metric:"400 g",imperial:"14 oz"},
+      {name:"Butter",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Combine the coconut milk, muscovado and salt in a heavy pan and bring to a boil, stirring until dissolved.",
+      "Boil steadily, stirring often, for 25 to 35 minutes. The mixture will reduce, darken and thicken considerably.",
+      "Test by dropping a little into cold water: it should form a firm, pliable ball. That is the soft-crack stage the toffee needs.",
+      "Stir in the butter and vanilla.",
+      "Pour into a greased and lined tray to a depth of about 1.5 cm.",
+      "Score into squares while still warm and pliable.",
+      "Cool completely, then snap along the scores and wrap each piece."
+    ],
+    notes: [
+      "Judge it by the cold-water test rather than by time; coconut milk varies in fat and water.",
+      "Score warm, break cold. Cutting it cold shatters the slab."
+    ],
+    verification: "verified",
+    history: "Coconut toffee is a chewy Philippine candy of muscovado and coconut milk boiled until it sets. It belongs to the same family as bukayo and kalamay, all of them built by reducing coconut and raw sugar until they hold a shape.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Coconut_toffee",
+      "https://www.aboutfilipinofood.com/filipino-candy/"
+    ]
+  },
+  {
+    slug: "camote-fritters", title: "Camote Fritters", subtitle: "Battered Sweet Potato Slices",
+    description: "Sweet potato sliced thin, dipped in a light sweet batter and fried until the edges crisp. Merienda made from whatever root is cheapest.",
+    category: "MERIENDA / FRIED", time: "30M", yield: "12 PCS", origin: "PHILIPPINES", technique: "BATTER FRY",
+    ingredients: [
+      {name:"Sweet potato (kamote)",metric:"700 g",imperial:"1.5 lb"},
+      {name:"All-purpose flour",metric:"180 g",imperial:"1 1/2 cups"},
+      {name:"Rice flour",metric:"60 g",imperial:"1/2 cup"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Water",metric:"280 ml",imperial:"1 1/4 cups"},
+      {name:"Neutral frying oil",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Brown sugar for dusting",metric:"60 g",imperial:"2 oz"}
+    ],
+    instructions: [
+      "Peel the sweet potato and slice into rounds about 5 mm thick.",
+      "Whisk the flours, sugar, baking powder and salt with the water into a batter the thickness of pouring cream.",
+      "Heat the oil to 170\u00b0C (340\u00b0F).",
+      "Dip each slice in batter, letting the excess run off.",
+      "Fry for 3 to 4 minutes a side, until golden and the sweet potato is tender when pierced.",
+      "Drain on a rack rather than paper so the underside stays crisp.",
+      "Dust with brown sugar while still hot."
+    ],
+    notes: [
+      "Slice evenly. Thick pieces stay raw inside while the batter browns.",
+      "Rice flour in the batter is what keeps the coating crisp rather than bready."
+    ],
+    verification: "verified",
+    history: "Camote fritters belong to the same family of battered merienda as maruya and sinapot, built on whatever cheap starch is at hand. Sweet potato is among the most widely grown root crops in the Philippines and appears throughout its snack cooking.",
+    sources: [
+      "https://www.angsarap.net/2023/07/27/indulge-in-filipino-snack-culture-a-comprehensive-compilation-of-22-filipino-meryenda-recipes-for-every-taste/",
+      "https://en.wikipedia.org/wiki/Camote_cue"
+    ]
+  },
+  {
+    slug: "pili-nut-brittle", title: "Pili Nut Brittle", subtitle: "Bicol Pili Nut Candy",
+    description: "Coarsely ground pili nuts set in a light caramel and spread thin. Richer and softer than peanut brittle, because pili is an oilier nut.",
+    category: "CONFECTION / BRITTLE", time: "35M", yield: "24 PCS", origin: "BICOL REGION", technique: "SUGAR CARAMEL",
+    ingredients: [
+      {name:"Pili nuts, shelled and skinned",metric:"400 g",imperial:"14 oz"},
+      {name:"Sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Glucose or corn syrup",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Butter",metric:"30 g",imperial:"1 oz"},
+      {name:"Water",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Baking soda",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"}
+    ],
+    instructions: [
+      "Rub the skins from the pili nuts and grind them coarsely, keeping plenty of texture.",
+      "Warm the ground nuts gently so they do not chill the caramel.",
+      "Combine the sugar, water, syrup and salt in a heavy pan and cook over medium heat without stirring for 8 to 10 minutes, until the syrup turns light amber.",
+      "Stir in the warmed pili nuts and mix thoroughly.",
+      "Add the butter, then the baking soda, and stir hard. The soda will foam the mixture and lighten the texture.",
+      "Pour immediately onto a greased tray and spread thin with a greased spatula before it sets.",
+      "Score into pieces while still warm, then cool completely and break apart."
+    ],
+    notes: [
+      "Pili is much oilier than peanut, so the brittle sets softer; do not overcook trying to harden it.",
+      "The baking soda goes in last and off the heat. It aerates the caramel, and stirring it in slowly wastes the effect."
+    ],
+    verification: "verified",
+    history: "Pili grows almost exclusively in the Bicol region, and its nut supports a whole local confectionery trade. Beyond brittle, pili appears in mazapan, yema, polvoron, tarts and even mooncakes, and pili nut candy is among the standard pasalubong of Albay and Sorsogon.",
+    sources: [
+      "https://www.marketmanila.com/archives/pili-nut-delicacies",
+      "https://blauearth.wordpress.com/2014/11/30/piling-pili-from-bicol/"
+    ]
+  },
+  {
+    slug: "mazapan-de-pili", title: "Mazapan de Pili", subtitle: "Pili Nut Marzipan",
+    description: "Ground pili nuts bound with sugar, egg yolk and milk, shaped and baked briefly like a macaroon. Dense, rich and faintly citrus from dayap.",
+    category: "CONFECTION / NUT", time: "1H", yield: "28 PCS", origin: "BICOL REGION", technique: "BAKED PASTE",
+    ingredients: [
+      {name:"Pili nuts, shelled and ground",metric:"450 g",imperial:"1 lb"},
+      {name:"Sugar",metric:"350 g",imperial:"12 oz"},
+      {name:"Evaporated milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Egg yolks",metric:"3 pcs",imperial:"3 pcs"},
+      {name:"Butter",metric:"60 g",imperial:"2 oz"},
+      {name:"Fine breadcrumbs",metric:"80 g",imperial:"3 oz"},
+      {name:"Dayap or lime zest",metric:"1 tbsp",imperial:"1 tbsp"},
+      {name:"Dayap or lime juice",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Grind the skinned pili nuts as finely as you can; the paste should be smooth rather than chunky.",
+      "Cook the ground pili with the sugar and evaporated milk over low heat, stirring constantly, for 25 to 30 minutes until very thick.",
+      "Take off the heat and beat in the butter, then the egg yolks one at a time, working quickly so they thicken rather than scramble.",
+      "Stir in the breadcrumbs, dayap zest and juice. The crumbs give the paste enough body to shape.",
+      "Cool until firm enough to handle, then roll into short logs or press into small moulds.",
+      "Arrange on a lined tray and bake at 160\u00b0C (320\u00b0F) for 10 to 12 minutes, just to set and lightly colour the surface.",
+      "Cool completely and wrap individually in paper."
+    ],
+    notes: [
+      "Dayap, the local lime, cuts the richness; without it the sweet is cloying.",
+      "Low heat and constant stirring. Milk and sugar at this ratio catch quickly."
+    ],
+    verification: "verified",
+    history: "Mazapan de pili is ground pili nut worked with sugar, butter and egg yolk and baked like a macaroon, and is among the most common sweets of Bicol. It is the Filipino reading of Spanish marzipan, with pili standing in for almond.",
+    sources: [
+      "https://www.kawalingpinoyrecipe.com/native_delicacies/masapan_de_pili.htm",
+      "https://www.marketmanila.com/archives/pili-nut-delicacies"
+    ]
+  },
+  {
+    slug: "minatamis-na-langka", title: "Minatamis na Langka", subtitle: "Sweetened Jackfruit",
+    description: "Ripe jackfruit strips simmered briefly in syrup until glossy and translucent. Three ingredients, and the base of half the desserts in the archive.",
+    category: "DESSERT / PRESERVE", time: "30M", yield: "2 JARS", origin: "PHILIPPINES", technique: "SYRUP POACH",
+    ingredients: [
+      {name:"Ripe jackfruit (langka), sliced",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Water",metric:"350 ml",imperial:"1 1/2 cups"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"}
+    ],
+    instructions: [
+      "Remove the seeds and slice the jackfruit flesh into strips.",
+      "Dissolve the sugar in the water with the salt and pandan leaf and bring to a boil, stirring until clear.",
+      "Simmer the syrup alone for 5 minutes to thicken slightly.",
+      "Add the jackfruit strips.",
+      "Simmer gently for 7 to 10 minutes, until the syrup thickens and the fruit turns translucent and glossy. Longer and it goes stringy.",
+      "Remove the pandan leaf and cool in the syrup.",
+      "Transfer to sterilised jars. It keeps refrigerated for about a week, or longer if properly canned."
+    ],
+    notes: [
+      "Stop while the strips still hold their shape; overcooked jackfruit shreds into the syrup.",
+      "The syrup is as useful as the fruit and is worth keeping for halo-halo and ginataan."
+    ],
+    verification: "verified",
+    history: "Minatamis simply means sweetened, and the technique is applied across Philippine fruit: saba, jackfruit, kamias, pineapple and mango all get the same treatment. Sweetened jackfruit is a standard component of halo-halo, ginataan and buko salad.",
+    sources: [
+      "https://www.kawalingpinoy.com/minatamis-na-langka/",
+      "https://www.aboutfilipinofood.com/minatamis/"
+    ]
+  },
+  {
+    slug: "minatamis-na-kamias", title: "Minatamis na Kamias", subtitle: "Candied Bilimbi",
+    description: "Sharp green kamias brined in salt to draw out its acid, then candied in heavy syrup until translucent.",
+    category: "DESSERT / PRESERVE", time: "1D", yield: "2 JARS", origin: "PHILIPPINES", technique: "BRINE + CANDY",
+    ingredients: [
+      {name:"Kamias (bilimbi), sliced",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Coarse salt",metric:"200 g",imperial:"7 oz"},
+      {name:"Water",metric:"1.0 L",imperial:"4 1/4 cups"},
+      {name:"Sugar",metric:"600 g",imperial:"1.3 lb"},
+      {name:"Water for syrup",metric:"400 ml",imperial:"1 2/3 cups"}
+    ],
+    instructions: [
+      "Wash the kamias and slice into discs about 5 mm thick.",
+      "Dissolve the coarse salt in the water and soak the slices for at least an hour, and up to overnight. This draws off the fierce acidity that makes raw kamias almost inedible.",
+      "Drain and rinse thoroughly, then press gently to remove excess water.",
+      "Boil the sugar with the second measure of water until dissolved, then simmer 5 minutes.",
+      "Add the drained kamias and simmer over low heat for 30 to 40 minutes, until the fruit turns translucent and the syrup is heavy.",
+      "Cool completely in the syrup.",
+      "Pack into sterilised jars, submerged in the syrup."
+    ],
+    notes: [
+      "The salt soak is not optional. Unbrined kamias stays punishingly sour no matter how much sugar goes in.",
+      "Keep the heat low; boiled hard, the slices fall apart."
+    ],
+    verification: "verified",
+    history: "Kamias, or bilimbi, is so sour it is normally used as a souring agent in sinigang rather than eaten as fruit. Candying it in heavy syrup after a salt brine is one of the few ways it is turned into a sweet, and it belongs to the same minatamis tradition as sweetened banana and jackfruit.",
+    sources: [
+      "https://allaboutfood.occasionalramblings.org/2019/02/recipe-minatamis-na-kamias-candied.html",
+      "https://www.aboutfilipinofood.com/minatamis/"
+    ]
+  },
+  {
+    slug: "minatamis-na-kamote", title: "Minatamis na Kamote", subtitle: "Sweet Potato in Syrup",
+    description: "Sweet potato simmered in muscovado syrup until it takes on the colour and gloss of the syrup. Eaten warm or folded into ginataan.",
+    category: "DESSERT / PRESERVE", time: "40M", yield: "6 PAX", origin: "PHILIPPINES", technique: "SYRUP POACH",
+    ingredients: [
+      {name:"Sweet potato (kamote), cubed",metric:"800 g",imperial:"1.8 lb"},
+      {name:"Muscovado sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Water",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"},
+      {name:"Salt",metric:"1/4 tsp",imperial:"1/4 tsp"},
+      {name:"Ginger, sliced",metric:"20 g",imperial:"0.7 oz"}
+    ],
+    instructions: [
+      "Peel the sweet potato and cut into even cubes about 3 cm across.",
+      "Dissolve the muscovado in the water with the pandan, ginger and salt and bring to a boil.",
+      "Simmer the syrup for 8 minutes, until it darkens and thickens a little.",
+      "Add the sweet potato in a single layer.",
+      "Simmer gently for 20 to 25 minutes, until a knife enters easily but the cubes still hold their shape. Do not stir; move the pan instead.",
+      "Remove the pandan and ginger.",
+      "Cool in the syrup and serve warm or at room temperature."
+    ],
+    notes: [
+      "Even-sized cubes cook evenly; ragged pieces give you some raw and some collapsed.",
+      "A little ginger in the syrup keeps the sweetness from being flat."
+    ],
+    verification: "verified",
+    history: "Minatamis na kamote is the sweet-potato member of the minatamis family, made the same way as sweetened banana and jackfruit. It is eaten on its own and used as a component in ginataan and halo-halo.",
+    sources: [
+      "https://www.aboutfilipinofood.com/minatamis/",
+      "https://www.kawalingpinoy.com/minatamis-na-langka/"
+    ]
+  },
+  {
+    slug: "ginataang-munggo", title: "Ginataang Munggo", subtitle: "Sweet Mung Beans in Coconut Milk",
+    description: "Mung beans boiled soft then sweetened and finished in coconut milk with glutinous rice. The dessert reading of a bean normally cooked savoury.",
+    category: "DESSERT / GATA", time: "1H", yield: "6 PAX", origin: "PHILIPPINES", technique: "COCONUT SIMMER",
+    ingredients: [
+      {name:"Dried mung beans",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"1.2 L",imperial:"5 cups"},
+      {name:"Glutinous rice",metric:"100 g",imperial:"1/2 cup"},
+      {name:"Coconut milk",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Coconut cream",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Brown sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Pandan leaves",metric:"1 leaves",imperial:"1 leaves"}
+    ],
+    instructions: [
+      "Toast the dried mung beans in a dry pan for 4 to 5 minutes, until they smell nutty. This is what separates the dessert version from the savoury one.",
+      "Boil the toasted beans in the water for 30 to 40 minutes, until soft and beginning to burst.",
+      "Add the glutinous rice and the pandan leaf and simmer 15 minutes more, stirring often, until the rice is tender and the mixture thickens.",
+      "Pour in the coconut milk and bring back to a gentle simmer.",
+      "Stir in the brown sugar and salt and cook 8 minutes.",
+      "Remove the pandan leaf and stir in the coconut cream off the heat.",
+      "Serve warm. It thickens considerably as it stands."
+    ],
+    notes: [
+      "Toasting the beans first gives the dish its characteristic aroma and is worth the five minutes.",
+      "Stir often once the rice is in, or it catches on the base."
+    ],
+    verification: "verified",
+    history: "Ginataang munggo is the sweet counterpart to ginisang munggo, the savoury sauteed mung bean stew. The same bean is toasted, sweetened and cooked in coconut milk, and the dish sits with champorado and ginataang mais among warm Filipino rice-and-bean desserts.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Ginataan",
+      "https://panlasangpinoy.com/ginisang-monggo-with-kalabasa/"
     ]
   },
 ];
