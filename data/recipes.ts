@@ -3562,6 +3562,494 @@ export const recipes: Recipe[] = [
       "https://yoorekka.com/magazine/cebu-bohol/2018/05/22/local-delicacies-in-cebu-city"
     ]
   },
+  {
+    slug: "pandesal", title: "Pandesal", subtitle: "Salt Bread Rolls",
+    description: "Soft enriched rolls proofed, cut, and rolled in breadcrumbs before baking. The Philippine breakfast bread, bought hot from the panaderia at dawn.",
+    category: "BREAD / PANADERIA", time: "3H", yield: "16 PCS", origin: "PHILIPPINES", technique: "ENRICHED DOUGH",
+    ingredients: [
+      {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Instant yeast",metric:"7 g",imperial:"2 1/4 tsp"},
+      {name:"Salt",metric:"10 g",imperial:"2 tsp"},
+      {name:"Milk, warm",metric:"250 ml",imperial:"1 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Butter, softened",metric:"60 g",imperial:"2 oz"},
+      {name:"Fine breadcrumbs",metric:"120 g",imperial:"4 oz"}
+    ],
+    instructions: [
+      "Whisk the flour, sugar, yeast and salt together, keeping the salt away from the yeast until mixed.",
+      "Add the warm milk and egg and knead for 5 minutes, then work in the butter a little at a time.",
+      "Knead for a further 8 to 10 minutes, until the dough is smooth and passes the windowpane test.",
+      "Cover and prove for 1 to 1 1/2 hours, until doubled.",
+      "Knock back, roll into a log, and cut into 16 pieces with a scraper. Cut sides up is traditional.",
+      "Roll each piece in breadcrumbs and set on a lined tray, cut side up, spaced so they will touch as they rise. Prove again for 45 minutes.",
+      "Bake at 190\u00b0C (375\u00b0F) for 14 to 16 minutes, until just golden. Pandesal should stay pale and soft, never crusty."
+    ],
+    notes: [
+      "The breadcrumb coating is the defining feature; without it the roll is just a soft bun.",
+      "Bake briefly and pull them while pale. Overbaked pandesal goes dry within the hour."
+    ],
+    verification: "verified",
+    history: "Pandesal comes from the Spanish pan de sal, bread of salt, though the modern roll is slightly sweet rather than salty. It is the standard Filipino breakfast bread, eaten with coffee, cheese or dunked straight into hot chocolate.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Pandesal",
+      "https://www.yummy.ph/lessons/baking/pandesal-recipe-panaderia-recipes-a00261-20190606-lfrm"
+    ]
+  },
+  {
+    slug: "ensaymada", title: "Ensaymada", subtitle: "Buttered Brioche with Cheese and Sugar",
+    description: "A soft coiled brioche brushed with butter and finished with sugar and grated cheese. The salt of the cheese against the sugar is the whole idea.",
+    category: "BREAD / PANADERIA", time: "4H", yield: "12 PCS", origin: "PHILIPPINES", technique: "ENRICHED DOUGH",
+    ingredients: [
+      {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
+      {name:"Sugar",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Instant yeast",metric:"7 g",imperial:"2 1/4 tsp"},
+      {name:"Salt",metric:"8 g",imperial:"1 1/2 tsp"},
+      {name:"Milk, warm",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Egg yolks",metric:"5 pcs",imperial:"5 pcs"},
+      {name:"Butter, softened",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Butter for brushing",metric:"80 g",imperial:"3 oz"},
+      {name:"Caster sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Queso de bola, grated",metric:"120 g",imperial:"4 oz"}
+    ],
+    instructions: [
+      "Mix the flour, sugar, yeast and salt. Add the warm milk and egg yolks and knead 5 minutes.",
+      "Work in the softened butter in stages, kneading 10 to 12 minutes until the dough is glossy and very soft. It will be slack; that is correct.",
+      "Prove for 1 1/2 hours until doubled, then chill for 1 hour to firm the butter enough to handle.",
+      "Divide into 12 pieces. Roll each into a long thin rope, then coil it into a spiral in a buttered brioche or muffin mould.",
+      "Prove again for 1 hour, until visibly puffed.",
+      "Bake at 175\u00b0C (345\u00b0F) for 15 to 18 minutes, until golden but still soft.",
+      "Brush generously with melted butter while warm, then dust heavily with caster sugar and grated queso de bola."
+    ],
+    notes: [
+      "The dough is meant to be soft and sticky. Adding flour to make it manageable gives a bready, dry ensaymada.",
+      "Chilling before shaping is the difference between a clean coil and a greasy mess."
+    ],
+    verification: "verified",
+    history: "Ensaymada descends from the Mallorcan ensaimada, whose name comes from saim, Catalan for pork lard. The Filipino version is built on butter instead, and grated queso de bola was added before the Second World War. Versions from Malolos and Barasoain in Bulacan later paired the cheese with salted duck egg.",
+    sources: [
+      "https://panlasangpinoy.com/filipino-pastry-bread-baking-ensemada-ensaimada-ensaymada-recipe/",
+      "https://kitchenconfidante.com/filipino-ensaymada-recipe"
+    ]
+  },
+  {
+    slug: "monay", title: "Monay", subtitle: "Dense Milk Bread Roll",
+    description: "A firm, faintly sweet roll with a deep crease down the middle, denser and chewier than pandesal. Keeps far better than the rest of the panaderia shelf.",
+    category: "BREAD / PANADERIA", time: "3H", yield: "12 PCS", origin: "PHILIPPINES", technique: "ENRICHED DOUGH",
+    ingredients: [
+      {name:"All-purpose flour",metric:"500 g",imperial:"4 cups"},
+      {name:"Sugar",metric:"60 g",imperial:"2 oz"},
+      {name:"Instant yeast",metric:"7 g",imperial:"2 1/4 tsp"},
+      {name:"Salt",metric:"10 g",imperial:"2 tsp"},
+      {name:"Milk, warm",metric:"220 ml",imperial:"1 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Shortening",metric:"60 g",imperial:"2 oz"},
+      {name:"Butter, melted",metric:"30 g",imperial:"1 oz"}
+    ],
+    instructions: [
+      "Combine the flour, sugar, yeast and salt.",
+      "Add the milk and egg and knead 5 minutes, then work in the shortening.",
+      "Knead a further 8 minutes into a firm, smooth dough. Monay dough is stiffer than pandesal dough by design.",
+      "Prove for 1 hour until doubled.",
+      "Divide into 12 pieces and shape each into a tight round.",
+      "Press a chopstick or the back of a knife firmly across the centre of each ball to make the deep crease. Prove 45 minutes.",
+      "Bake at 180\u00b0C (355\u00b0F) for 18 to 22 minutes, until golden. Brush with melted butter on coming out of the oven."
+    ],
+    notes: [
+      "Press the crease hard and deep, or it closes up as the roll rises.",
+      "The stiffer dough is the point; a soft dough gives you pandesal in a monay shape."
+    ],
+    verification: "verified",
+    history: "Monay was originally called pan de monja, nun's bread, a name that shifted over time into the blunter monay. It sits at the plain, keeping end of the Filipino panaderia range, alongside pandesal and pan de coco.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Monay_(bread)",
+      "https://www.pepper.ph/posts/panaderya-bread-history"
+    ]
+  },
+  {
+    slug: "pan-de-coco", title: "Pan de Coco", subtitle: "Coconut-Filled Sweet Rolls",
+    description: "Soft rolls filled with grated coconut cooked down in brown sugar until dark and sticky. A panaderia staple and a lunchbox standby.",
+    category: "BREAD / PANADERIA", time: "3H", yield: "12 PCS", origin: "PHILIPPINES", technique: "FILLED DOUGH",
+    ingredients: [
+      {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Instant yeast",metric:"7 g",imperial:"2 1/4 tsp"},
+      {name:"Salt",metric:"8 g",imperial:"1 1/2 tsp"},
+      {name:"Milk, warm",metric:"240 ml",imperial:"1 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Butter, softened",metric:"70 g",imperial:"2.5 oz"},
+      {name:"Grated coconut",metric:"250 g",imperial:"9 oz"},
+      {name:"Brown sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Coconut milk",metric:"100 ml",imperial:"scant 1/2 cup"}
+    ],
+    instructions: [
+      "Make the filling first: cook the grated coconut, brown sugar and coconut milk over medium heat for 12 to 15 minutes, until dark, thick and no longer wet. Cool completely.",
+      "Mix the flour, sugar, yeast and salt, add the milk and egg, and knead 5 minutes.",
+      "Work in the butter and knead 8 to 10 minutes until smooth. Prove 1 hour until doubled.",
+      "Divide into 12 pieces and flatten each into a disc.",
+      "Spoon cooled filling into the centre, gather the edges over it and seal firmly, then place seam-side down.",
+      "Prove for 45 minutes.",
+      "Bake at 180\u00b0C (355\u00b0F) for 16 to 18 minutes, until golden."
+    ],
+    notes: [
+      "Cool the filling fully. Warm filling makes the dough slack and the rolls split in the oven.",
+      "Cook the filling until it holds together in the pan, or it will leak out as the bread bakes."
+    ],
+    verification: "verified",
+    history: "Pan de coco belongs to the everyday Filipino panaderia range, where sweet filled rolls sit beside the plainer pandesal and monay. Its filling, coconut cooked down with muscovado, is the same bukayo-style preparation used across Filipino sweets.",
+    sources: [
+      "https://www.spot.ph/eatdrink/44900/local-bread-10-best-panaderia-finds-in-manila",
+      "https://www.yummy.ph/lessons/baking/pandesal-recipe-panaderia-recipes-a00261-20190606-lfrm"
+    ]
+  },
+  {
+    slug: "spanish-bread", title: "Spanish Bread", subtitle: "Butter and Sugar Rolled Bread",
+    description: "A soft roll wrapped around a paste of butter, sugar and breadcrumbs, baked so the filling half melts into the crumb. Nothing about it is Spanish.",
+    category: "BREAD / PANADERIA", time: "3H", yield: "16 PCS", origin: "PHILIPPINES", technique: "FILLED DOUGH",
+    ingredients: [
+      {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Instant yeast",metric:"7 g",imperial:"2 1/4 tsp"},
+      {name:"Salt",metric:"8 g",imperial:"1 1/2 tsp"},
+      {name:"Milk, warm",metric:"240 ml",imperial:"1 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Butter, softened",metric:"60 g",imperial:"2 oz"},
+      {name:"Butter for filling",metric:"120 g",imperial:"4 oz"},
+      {name:"Brown sugar",metric:"150 g",imperial:"5 oz"},
+      {name:"Fine breadcrumbs",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Milk powder",metric:"30 g",imperial:"1 oz"}
+    ],
+    instructions: [
+      "Make the filling by creaming the butter with the brown sugar, breadcrumbs and milk powder into a thick spreadable paste. Chill it.",
+      "Mix the flour, sugar, yeast and salt, add the milk and egg, and knead 5 minutes. Work in the softened butter and knead 8 minutes more.",
+      "Prove 1 hour until doubled.",
+      "Divide into 16 pieces and roll each into a triangle about 12 cm long.",
+      "Spread a spoonful of filling over each triangle, then roll up from the wide end to the point, like a croissant.",
+      "Roll the outside lightly in breadcrumbs and set point-side down. Prove 45 minutes.",
+      "Bake at 180\u00b0C (355\u00b0F) for 15 to 17 minutes, until golden. Some filling will leak and caramelise; that is normal."
+    ],
+    notes: [
+      "Chill the filling before rolling or it runs straight out during shaping.",
+      "Roll from the wide end so the point seals underneath and holds the shape."
+    ],
+    verification: "verified",
+    history: "Spanish bread has no Spanish original and the name's origin is unclear; it is a Filipino panaderia invention. Like pan de regla and kalihim, it belongs to a set of neighbourhood bakery breads whose names are far older than any written record of them.",
+    sources: [
+      "https://www.pepper.ph/posts/panaderya-bread-history",
+      "https://www.spot.ph/eatdrink/44900/local-bread-10-best-panaderia-finds-in-manila"
+    ]
+  },
+  {
+    slug: "pan-de-regla", title: "Pan de Regla", subtitle: "Mung Bean Custard Bread",
+    description: "A soft bread filled with a dark red-brown paste of sweetened mung bean. Also sold as kalihim, and the blunt nickname refers to the colour of the filling.",
+    category: "BREAD / PANADERIA", time: "3H 30M", yield: "12 PCS", origin: "PHILIPPINES", technique: "FILLED DOUGH",
+    ingredients: [
+      {name:"Bread flour",metric:"500 g",imperial:"4 cups"},
+      {name:"Sugar",metric:"80 g",imperial:"3 oz"},
+      {name:"Instant yeast",metric:"7 g",imperial:"2 1/4 tsp"},
+      {name:"Salt",metric:"8 g",imperial:"1 1/2 tsp"},
+      {name:"Milk, warm",metric:"240 ml",imperial:"1 cup"},
+      {name:"Eggs",metric:"1 large",imperial:"1 large"},
+      {name:"Butter, softened",metric:"70 g",imperial:"2.5 oz"},
+      {name:"Dried mung beans",metric:"200 g",imperial:"7 oz"},
+      {name:"Brown sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Coconut milk",metric:"150 ml",imperial:"2/3 cup"},
+      {name:"Fine breadcrumbs",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Boil the mung beans until completely soft, about 40 minutes, then drain and mash smooth.",
+      "Cook the mashed beans with the brown sugar and coconut milk over low heat for 15 minutes, stirring, until thick and dark. Cool completely.",
+      "Mix the flour, sugar, yeast and salt, add the milk and egg, knead 5 minutes, then work in the butter and knead 8 minutes more.",
+      "Prove 1 hour until doubled.",
+      "Divide into 12 pieces, flatten each, and spoon the cooled filling into the centre. Seal well.",
+      "Roll the filled rolls in breadcrumbs and prove 45 minutes.",
+      "Bake at 180\u00b0C (355\u00b0F) for 16 to 18 minutes, until golden."
+    ],
+    notes: [
+      "The filling must be cooked down until it holds its shape, or it bleeds through the crumb.",
+      "Day-old bread filling and leftover bread are both traditional bulking agents in commercial versions."
+    ],
+    verification: "verified",
+    history: "Pan de regla is also sold as kalihim, meaning secretary or keeper of secrets, a reference to the mystery of what is in the filling. The mung bean paste is the traditional version, and bakeries have long used it as a way to use up unsold bread.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Monggo_bread",
+      "https://www.pepper.ph/posts/panaderya-bread-history"
+    ]
+  },
+  {
+    slug: "kababayan", title: "Kababayan", subtitle: "Filipino Muffin Bread",
+    description: "A small dense sweet bread baked in shallow moulds, with a domed top and a wide brim that gives it its salakot shape.",
+    category: "BREAD / PANADERIA", time: "45M", yield: "12 PCS", origin: "PHILIPPINES", technique: "BAKED BATTER",
+    ingredients: [
+      {name:"All-purpose flour",metric:"250 g",imperial:"2 cups"},
+      {name:"Sugar",metric:"180 g",imperial:"6.3 oz"},
+      {name:"Eggs",metric:"4 large",imperial:"4 large"},
+      {name:"Evaporated milk",metric:"150 ml",imperial:"2/3 cup"},
+      {name:"Neutral oil",metric:"100 ml",imperial:"scant 1/2 cup"},
+      {name:"Baking powder",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"}
+    ],
+    instructions: [
+      "Beat the eggs with the sugar until thick, pale and roughly tripled in volume. This aeration is the only lift kababayan gets beyond the baking powder.",
+      "Whisk the flour, baking powder and salt together.",
+      "Fold the dry ingredients into the eggs in three additions, keeping as much air as possible.",
+      "Stir the milk, oil and vanilla together and fold in gently until just combined.",
+      "Grease shallow kababayan or mini brioche moulds well and fill each about three quarters.",
+      "Bake at 175\u00b0C (345\u00b0F) for 18 to 22 minutes, until risen with a domed centre and a distinct brim.",
+      "Cool in the moulds for 5 minutes before turning out."
+    ],
+    notes: [
+      "Beat the eggs properly in step 1. Undermixed, kababayan comes out flat and heavy.",
+      "The shallow wide mould is what produces the brim; a deep muffin tin gives you a muffin."
+    ],
+    verification: "verified",
+    history: "Kababayan is named for the salakot, the wide-brimmed Filipino hat its shape resembles, and the word itself means fellow countryman. It is a fixture of the neighbourhood panaderia rather than a celebration bake.",
+    sources: [
+      "https://www.spot.ph/eatdrink/44900/local-bread-10-best-panaderia-finds-in-manila",
+      "https://www.yummy.ph/lessons/baking/pandesal-recipe-panaderia-recipes-a00261-20190606-lfrm"
+    ]
+  },
+  {
+    slug: "napoleones", title: "Napoleones", subtitle: "Negros Custard Mille-Feuille",
+    description: "Squares of flaky puff pastry layered with thick custard and finished with a white sugar glaze. Silay and Bacolod's signature pasalubong.",
+    category: "PASTRY / LAYERED", time: "2H 30M", yield: "12 PCS", origin: "NEGROS OCCIDENTAL", technique: "LAMINATED PASTRY",
+    ingredients: [
+      {name:"Puff pastry",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Milk",metric:"500 ml",imperial:"2 cups"},
+      {name:"Egg yolks",metric:"5 pcs",imperial:"5 pcs"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Cornstarch",metric:"50 g",imperial:"1/3 cup"},
+      {name:"Butter",metric:"40 g",imperial:"1.4 oz"},
+      {name:"Vanilla",metric:"1 tsp",imperial:"1 tsp"},
+      {name:"Icing sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Water",metric:"30 ml",imperial:"2 tbsp"}
+    ],
+    instructions: [
+      "Roll the puff pastry to about 3 mm and cut into squares roughly 7 cm across.",
+      "Bake at 200\u00b0C (390\u00b0F) for 12 to 15 minutes until risen and deeply golden. Press them flat under a tray while still warm so they layer neatly.",
+      "For the custard, whisk the egg yolks, sugar and cornstarch together until smooth.",
+      "Heat the milk to a bare simmer and pour it slowly into the yolks, whisking constantly so they do not scramble.",
+      "Return to the pan and cook over low heat, whisking, for 5 to 7 minutes until very thick. Beat in the butter and vanilla, then cool with cling film on the surface.",
+      "Split each pastry square horizontally and pipe a thick layer of custard inside.",
+      "Mix the icing sugar with the water into a stiff glaze, spread it over the tops, and let it set before serving."
+    ],
+    notes: [
+      "Press the baked pastry flat while warm. Left to puff freely it will not hold custard evenly.",
+      "Assemble close to serving; the pastry softens within a few hours of meeting the custard."
+    ],
+    verification: "verified",
+    history: "Napoleones is a Negros Occidental pastry, invented by Conchita Conlu-Cuenca, from a family of sugar plantation owners. Its home in Silay and Bacolod is fitting: Negros is the centre of the Philippine sugar industry, and the pastry leans on that sugar heavily.",
+    sources: [
+      "https://www.angsarap.net/2021/09/24/napoleones/",
+      "https://rezelkealoha.com/napoleones-with-maja-blanca-pastry-cream/"
+    ]
+  },
+  {
+    slug: "pinasugbo", title: "Pinasugbo", subtitle: "Caramelised Banana Chips with Sesame",
+    description: "Thin lengthwise slices of saba banana fried crisp and turned through caramelised sugar with sesame seeds, then sold in paper cones.",
+    category: "MERIENDA / FRIED", time: "40M", yield: "8 PAX", origin: "WESTERN VISAYAS", technique: "CARAMEL FRY",
+    ingredients: [
+      {name:"Saba bananas, thinly sliced lengthwise",metric:"8 pcs",imperial:"8 pcs"},
+      {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Sesame seeds",metric:"60 g",imperial:"2 oz"},
+      {name:"Neutral frying oil",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Water",metric:"60 ml",imperial:"1/4 cup"}
+    ],
+    instructions: [
+      "Peel the saba and slice them lengthwise as thinly as you can, about 3 mm.",
+      "Heat the oil to 170\u00b0C (340\u00b0F) and fry the slices in batches for 3 to 4 minutes, until golden and rigid. Drain on a rack.",
+      "In a separate wide pan, melt the brown sugar with the water over medium heat.",
+      "Cook the syrup for 5 to 7 minutes until it thickens and darkens to a deep amber.",
+      "Add the sesame seeds and stir once.",
+      "Turn the fried banana slices through the caramel quickly, coating each piece before the sugar seizes.",
+      "Spread on a greased tray to set hard, then break apart and serve in paper cones."
+    ],
+    notes: [
+      "Fry the bananas to genuine crispness first. Any softness left will go limp under the caramel.",
+      "Work fast once the sesame goes in; the caramel sets within a minute or two."
+    ],
+    verification: "verified",
+    history: "Pinasugbo comes from the Hiligaynon-speaking Western Visayas, and its roots are commonly traced to techniques introduced by Japanese immigrants, the imin, in the region in the early twentieth century. It is a standard pasalubong from Iloilo and Negros.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Pinasugbo",
+      "https://www.gmanetwork.com/news/newstv/pinassarap/632103/negros-specialties-ihahain-sa-pinas-sarap/story/"
+    ]
+  },
+  {
+    slug: "suman-sa-lihiya", title: "Suman sa Lihiya", subtitle: "Lye-Treated Rice Cake in Banana Leaf",
+    description: "Glutinous rice treated with lye water, wrapped in banana leaf and boiled until it turns amber, dense and springy. Eaten with sugar or latik.",
+    category: "DESSERT / KAKANIN", time: "2H 30M", yield: "12 PCS", origin: "PHILIPPINES", technique: "LYE BOIL",
+    ingredients: [
+      {name:"Glutinous rice",metric:"600 g",imperial:"3 cups"},
+      {name:"Coconut milk",metric:"300 ml",imperial:"1 1/4 cups"},
+      {name:"Lye water (lihiya)",metric:"2 tsp",imperial:"2 tsp"},
+      {name:"Salt",metric:"1 1/2 tsp",imperial:"1 1/2 tsp"},
+      {name:"Banana leaves",metric:"12 sheets",imperial:"12 sheets"},
+      {name:"Brown sugar",metric:"200 g",imperial:"7 oz"},
+      {name:"Coconut cream",metric:"300 ml",imperial:"1 1/4 cups"}
+    ],
+    instructions: [
+      "Soak the glutinous rice in water for at least 4 hours, then drain well.",
+      "Toss the drained rice with the coconut milk, salt and lye water. The rice will take on a faint yellow tint.",
+      "Soften the banana leaves over a flame and cut into rectangles.",
+      "Spoon rice onto each leaf, fold the sides over and roll into a log, then fold the ends under. Leave room; the rice swells considerably.",
+      "Tie the parcels in pairs and boil them fully submerged for 1 1/2 to 2 hours.",
+      "Meanwhile reduce the coconut cream with the brown sugar into a latik syrup, about 20 minutes.",
+      "Unwrap and serve warm with the syrup poured over."
+    ],
+    notes: [
+      "Lye water gives suman sa lihiya its amber colour and springy chew. Use exactly the measured amount; more turns it bitter and soapy.",
+      "Wrap loosely. Tightly packed parcels burst as the rice expands."
+    ],
+    verification: "verified",
+    history: "Suman names a broad family of Filipino rice cakes steamed or boiled in leaves, with dozens of regional forms. The lihiya version is strongly associated with Quezon province, and the lye both colours the rice and gives it its distinctive texture.",
+    sources: [
+      "https://panlasangpinoy.com/suman-sa-lihiya/",
+      "https://www.pinoyrecipe.net/suman-sa-lihiya-recipe/"
+    ]
+  },
+  {
+    slug: "karioka", title: "Karioka", subtitle: "Fried Glutinous Rice Balls in Caramel",
+    description: "Balls of glutinous rice and grated coconut deep-fried, then skewered and coated in dark caramel. Known by a different name in nearly every region.",
+    category: "MERIENDA / FRIED", time: "45M", yield: "20 PCS", origin: "PHILIPPINES", technique: "FRY + CARAMEL",
+    ingredients: [
+      {name:"Glutinous rice flour",metric:"400 g",imperial:"3 1/3 cups"},
+      {name:"Grated coconut",metric:"200 g",imperial:"7 oz"},
+      {name:"Coconut milk",metric:"180 ml",imperial:"3/4 cup"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Neutral frying oil",metric:"600 ml",imperial:"2 1/2 cups"},
+      {name:"Brown sugar",metric:"250 g",imperial:"9 oz"},
+      {name:"Water",metric:"60 ml",imperial:"1/4 cup"},
+      {name:"Bamboo skewers",metric:"10 pcs",imperial:"10 pcs"}
+    ],
+    instructions: [
+      "Mix the glutinous rice flour, grated coconut, salt and coconut milk into a stiff dough that holds together when squeezed.",
+      "Roll into balls about 3 cm across.",
+      "Heat the oil to 165\u00b0C (330\u00b0F). Frying too hot colours the outside before the centre cooks.",
+      "Fry the balls in batches for 5 to 7 minutes, turning, until golden and firm. Drain on a rack.",
+      "In a separate pan, melt the brown sugar with the water and cook for 5 minutes until thick and syrupy.",
+      "Turn the fried balls through the caramel until well coated.",
+      "Thread two or three onto each skewer and leave to set before serving."
+    ],
+    notes: [
+      "Fry at a moderate temperature. These are dense and need time for the middle to cook through.",
+      "The dough should be stiff enough to hold a ball cleanly; slack dough spreads and splits in the oil."
+    ],
+    verification: "verified",
+    history: "The same sweet carries a different name almost everywhere: karioka or carioca in Tagalog areas, cascaron in Ilocos, bitsu-bitsu in the Visayas, tinudok elsewhere, tungi-tungi in Kapampangan. It contains no wheat, egg or dairy, only rice, coconut and sugar.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Cascaron",
+      "https://panlasangpinoy.com/karioka-carioca-recipe/"
+    ]
+  },
+  {
+    slug: "cassava-cake", title: "Cassava Cake", subtitle: "Grated Cassava Bake with Custard Top",
+    description: "Grated cassava baked with coconut and condensed milk, finished with a custard layer browned under heat. Merienda, not dessert, in practice.",
+    category: "DESSERT / CASSAVA", time: "1H 15M", yield: "12 PAX", origin: "PHILIPPINES", technique: "BAKED CUSTARD",
+    ingredients: [
+      {name:"Cassava, grated",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Coconut milk",metric:"400 ml",imperial:"1 2/3 cups"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Evaporated milk",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Eggs",metric:"3 large",imperial:"3 large"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"Butter, melted",metric:"80 g",imperial:"3 oz"},
+      {name:"Salt",metric:"1/2 tsp",imperial:"1/2 tsp"},
+      {name:"Coconut cream for topping",metric:"200 ml",imperial:"3/4 cup"},
+      {name:"Egg yolks for topping",metric:"2 pcs",imperial:"2 pcs"},
+      {name:"Cheese, grated",metric:"80 g",imperial:"3 oz"}
+    ],
+    instructions: [
+      "Squeeze the grated cassava lightly to remove excess liquid, but do not wring it dry.",
+      "Mix it with the coconut milk, condensed milk, evaporated milk, eggs, sugar, melted butter and salt.",
+      "Pour into a buttered baking dish and bake at 180\u00b0C (355\u00b0F) for 40 to 45 minutes, until set and firm to the touch.",
+      "For the topping, whisk the coconut cream with the egg yolks and a spoonful of condensed milk.",
+      "Spread the topping over the baked cake and scatter with grated cheese.",
+      "Return to the oven for 12 to 15 minutes, or finish under a grill, until the top is browned and blistered.",
+      "Cool completely before cutting; warm cassava cake will not hold a clean edge."
+    ],
+    notes: [
+      "Cassava must be fully cooked through. Test the centre, not the edges.",
+      "Cool it properly. Cut warm, it collapses."
+    ],
+    verification: "verified",
+    history: "Cassava cake, sometimes called cassava bibingka, is one of the most common Filipino merienda bakes, built on a root crop that grows readily across the islands. The custard topping and grated cheese are standard rather than embellishment.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Cassava_cake",
+      "https://www.hungryhuy.com/cassava-cake/"
+    ]
+  },
+  {
+    slug: "buko-pandan", title: "Buko Pandan", subtitle: "Young Coconut and Pandan Dessert",
+    description: "Strips of young coconut and pandan-scented jelly folded through sweetened cream. Cold, pale green, and on every party table.",
+    category: "DESSERT / COLD", time: "1H", yield: "10 PAX", origin: "PHILIPPINES", technique: "GELATIN SET",
+    ingredients: [
+      {name:"Young coconut meat, stripped",metric:"500 g",imperial:"1.1 lb"},
+      {name:"Pandan leaves",metric:"6 leaves",imperial:"6 leaves"},
+      {name:"Water",metric:"1.0 L",imperial:"4 1/4 cups"},
+      {name:"Gelatin powder",metric:"20 g",imperial:"2 1/2 tbsp"},
+      {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
+      {name:"All-purpose cream",metric:"500 ml",imperial:"2 cups"},
+      {name:"Condensed milk",metric:"390 g",imperial:"14 oz"},
+      {name:"Tapioca pearls, cooked",metric:"200 g",imperial:"7 oz"}
+    ],
+    instructions: [
+      "Simmer the pandan leaves in the water for 20 minutes, until the water is fragrant and pale green. Strain and discard the leaves.",
+      "Dissolve the gelatin and half the sugar in the hot pandan water, stirring until completely clear.",
+      "Pour into a shallow tray and chill until fully set, about 1 hour, then cut into small cubes.",
+      "Whip the cream lightly with the condensed milk and remaining sugar until thickened but still pourable.",
+      "Fold in the young coconut strips, the pandan jelly cubes and the cooked tapioca pearls.",
+      "Chill for at least 2 hours before serving. The flavours need the time to come together.",
+      "Serve very cold."
+    ],
+    notes: [
+      "Use real pandan leaves rather than extract if you can; the colour is paler and the flavour rounder.",
+      "Fold gently at the end or the jelly cubes break down and cloud the cream."
+    ],
+    verification: "verified",
+    history: "Buko pandan pairs the two flavours that define Filipino dessert cooking: young coconut and pandan. It exists as a chilled salad, as a cake, and as a gelatin dessert, and is standard at fiestas and Christmas tables.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Buko_pandan_cake",
+      "http://pinoyamericanrecipes.blogspot.com/2011/06/304buko-pandan-cake.html"
+    ]
+  },
+  {
+    slug: "atchara", title: "Atchara", subtitle: "Pickled Green Papaya",
+    description: "Grated unripe papaya salted, pressed, and packed into a sweet-sour brine with carrot, ginger and peppercorns. Served beside anything grilled or fried.",
+    category: "CONDIMENT / PICKLE", time: "1H", yield: "6 JARS", origin: "PHILIPPINES", technique: "SWEET PICKLE",
+    ingredients: [
+      {name:"Green papaya, grated",metric:"1 kg",imperial:"2.2 lb"},
+      {name:"Salt",metric:"30 g",imperial:"2 tbsp"},
+      {name:"Cane vinegar",metric:"500 ml",imperial:"2 cups"},
+      {name:"Sugar",metric:"300 g",imperial:"10.5 oz"},
+      {name:"Carrot, julienned",metric:"150 g",imperial:"5 oz"},
+      {name:"Ginger, julienned",metric:"50 g",imperial:"1.8 oz"},
+      {name:"Garlic, sliced",metric:"8 cloves",imperial:"8 cloves"},
+      {name:"Red bell pepper, julienned",metric:"100 g",imperial:"3.5 oz"},
+      {name:"Raisins",metric:"60 g",imperial:"2 oz"},
+      {name:"Black peppercorns",metric:"1 tbsp",imperial:"1 tbsp"}
+    ],
+    instructions: [
+      "Peel and grate the green papaya. Toss it with the salt and leave for 1 hour.",
+      "Squeeze the papaya hard in a cloth to drive out as much liquid as possible, then rinse and squeeze again. This step is what keeps the pickle crisp rather than soggy.",
+      "Bring the vinegar, sugar and peppercorns to a boil, stirring until the sugar dissolves. Simmer 5 minutes, then cool slightly.",
+      "Combine the pressed papaya with the carrot, ginger, garlic, bell pepper and raisins.",
+      "Pack the vegetables into clean sterilised jars.",
+      "Pour the warm brine over, making sure everything is submerged.",
+      "Seal and refrigerate for at least 3 days before eating. It improves over several weeks."
+    ],
+    notes: [
+      "Squeezing the salted papaya dry is the single step that decides the texture.",
+      "Give it three days minimum. Fresh from the jar it tastes only of raw vinegar."
+    ],
+    verification: "verified",
+    history: "Atchara takes its name and method from the achar pickles of India and maritime Southeast Asia, carried along the same trade routes as much of Filipino cooking. The Filipino version is distinctive for its green papaya base and its markedly sweet brine.",
+    sources: [
+      "https://en.wikipedia.org/wiki/Atchara",
+      "https://www.pepper.ph/recipes/atchara-filipino-papaya-pickle"
+    ]
+  },
 ];
 
 export function getRecipe(slug: string) { return recipes.find((recipe) => recipe.slug === slug); }
