@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "verify": "node --experimental-strip-types scripts/verify-sources.mjs",
-    "prebuild": "npm run verify"
+    "prebuild": "npm run verify",
+    "add-images": "python scripts/add-images.py",
+    "add-images:check": "python scripts/add-images.py --dry-run"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",

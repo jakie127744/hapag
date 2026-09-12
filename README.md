@@ -50,8 +50,25 @@ resized for the web. Each recipe page links back to its source file via the "Pho
 Wikimedia Commons" link — check the individual file page for its licence and attribution
 requirements before reusing an image elsewhere.
 
-101 of the 130 recipes have no photograph yet; those cards render a typographic placeholder
-tile instead of borrowing a picture of a similar-looking dish.
+43 of the 130 recipes have no photograph yet; those cards render an "image pending"
+placeholder rather than borrowing a picture of a similar-looking dish.
+
+## Adding your own photographs
+
+Drop image files into `images-inbox/`, named after the dish, then run:
+
+```bash
+npm run add-images
+```
+
+Case, spaces and hyphens do not matter, so `beef-kulma.jpg`, `Beef kulma.jpg` and
+`Beef Kulma.jpeg` all work. Each image is turned upright, resized to 1600px wide, saved
+to `public/images/recipes/<slug>.jpg` and wired into `data/recipes.ts`. Adding a photo
+replaces whatever was there and drops any Wikimedia credit, since the photo is then
+yours. `npm run add-images:check` shows what would happen without changing anything.
+
+`images-inbox/README.md` lists every recipe still waiting for a photo, with the exact
+filename to use.
 
 ## Sourcing
 

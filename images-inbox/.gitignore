@@ -1,0 +1,4 @@
+# Keep the folder in git, ignore the photos dropped into it.
+*
+!README.md
+!.gitignore
