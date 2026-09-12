@@ -258,7 +258,7 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
 
           <div className="space-y-4">
             {recipe.instructions.map((text, i) => (
-              <div key={i} className="glass rounded-2xl p-6">
+              <div key={i} id={`step-${i + 1}`} className="glass rounded-2xl p-6 scroll-mt-24">
                 <div className="flex gap-5">
                   <span className="shrink-0 w-10 h-10 rounded-full bg-zest text-black font-bold flex items-center justify-center">
                     {i + 1}

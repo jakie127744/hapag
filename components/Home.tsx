@@ -20,6 +20,10 @@ export function Home({ recipes, featured }: { recipes: Recipe[]; featured: Recip
             src="/images/recipes/philippine-sisig.jpg"
             alt="A Filipino feast"
             className="hero-img w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+            width={1600}
+            height={1200}
           />
           <div className="absolute inset-0 bg-black/60" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#0A0A0A]" />

@@ -78,3 +78,24 @@ export function prettyYield(raw: string): string {
   if (pax) return `${pax[1].trim()} servings`;
   return raw.replace(/\s*PCS/i, " pcs").replace(/\s*EMPANADAS/i, " empanadas").trim();
 }
+
+/**
+ * The archive's shorthand as an ISO 8601 duration, which is what
+ * schema.org's cookTime and totalTime require. "2H 30M" -> "PT2H30M".
+ */
+export function isoDuration(raw: string): string | null {
+  const hours = /(\d+)\s*H/i.exec(raw);
+  const mins = /(\d+)\s*M(?![A-Z])/i.exec(raw);
+  if (!hours && !mins) return null;
+  const total = (hours ? parseInt(hours[1], 10) : 0) * 60 + (mins ? parseInt(mins[1], 10) : 0);
+  if (!total) return null;
+  const h = Math.floor(total / 60);
+  const m = total % 60;
+  return `PT${h ? `${h}H` : ""}${m ? `${m}M` : ""}`;
+}
+
+/** Numeric servings for structured data, where the yield gives one. */
+export function yieldServings(raw: string): string | null {
+  const m = /(\d+)/.exec(raw);
+  return m ? m[1] : null;
+}

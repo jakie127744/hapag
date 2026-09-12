@@ -58,7 +58,7 @@ export const recipes: Recipe[] = [
     slug: "sinigang-na-baboy", title: "Sinigang na Baboy", subtitle: "Pork Tamarind Soup",
     description: "A deeply savory Filipino sour soup with tender pork, tomatoes, radish, long beans, water spinach, and tamarind. The sourness is layered gradually so the broth stays bright rather than harsh.",
     category: "SOUP / SOUR", time: "75M", yield: "6 PAX", origin: "PHILIPPINES", technique: "TAMARIND BROTH",
-    image: commons("Sinigang na Baboy.jpg"), imageSource: commonsPage("Sinigang na Baboy.jpg"),
+    image: local("sinigang-na-baboy.jpg"),
     ingredients: [
       {name:"Pork belly or shoulder",metric:"900 g",imperial:"2 lb"},{name:"Water",metric:"2.0 L",imperial:"8 1/2 cups"},
       {name:"Tomatoes, quartered",metric:"300 g",imperial:"10.5 oz"},{name:"Yellow onion, quartered",metric:"180 g",imperial:"6.3 oz"},
