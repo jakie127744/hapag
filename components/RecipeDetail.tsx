@@ -70,7 +70,7 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             </button>
             <button
               onClick={() => {
-                toggleGrocery(recipe, unit);
+                toggleGrocery(recipe);
                 if (!added) setDrawerOpen(true);
               }}
               aria-pressed={added}
@@ -156,7 +156,7 @@ export function RecipeDetail({ recipe }: { recipe: Recipe }) {
             </ul>
             <button
               onClick={() => {
-                toggleGrocery(recipe, unit);
+                toggleGrocery(recipe);
                 if (!added) setDrawerOpen(true);
               }}
               className="mt-5 w-full glass-dark rounded-full py-3 text-sm text-white/85 hover:text-white flex items-center justify-center gap-2 transition-colors"

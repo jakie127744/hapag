@@ -1,9 +1,12 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useState, useCallback } from "react";
-import type { Recipe } from "@/data/recipes";
+import type { Recipe, Ingredient } from "@/data/recipes";
 
-type GroceryEntry = { slug: string; title: string; items: string[] };
+/** Ingredients are stored structured, so the grocery list can sum them. */
+type GroceryEntry = { slug: string; title: string; ingredients: Ingredient[] };
+
+export type Unit = "metric" | "imperial";
 
 type Store = {
   favorites: string[];
@@ -13,7 +16,7 @@ type Store = {
   grocery: GroceryEntry[];
   checked: string[];
   inGrocery: (slug: string) => boolean;
-  toggleGrocery: (recipe: Recipe, unit: Unit) => void;
+  toggleGrocery: (recipe: Recipe) => void;
   removeGrocery: (slug: string) => void;
   toggleChecked: (key: string) => void;
   clearGrocery: () => void;
@@ -24,8 +27,6 @@ type Store = {
   drawerOpen: boolean;
   setDrawerOpen: (b: boolean) => void;
 };
-
-export type Unit = "metric" | "imperial";
 
 const Ctx = createContext<Store | null>(null);
 
@@ -43,7 +44,7 @@ function save(key: string, value: unknown) {
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
   } catch {
-    /* storage unavailable — state stays in memory */
+    /* storage unavailable — state stays in memory for this session */
   }
 }
 
@@ -57,28 +58,26 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setFavorites(load("hapag:favorites", [] as string[]));
-    setGrocery(load("hapag:grocery", [] as GroceryEntry[]));
-    setChecked(load("hapag:checked", [] as string[]));
+    // v2 stores structured ingredients; v1's flat strings can't be summed.
+    setGrocery(load("hapag:grocery:v2", [] as GroceryEntry[]));
+    setChecked(load("hapag:checked:v2", [] as string[]));
     setUnitState(load("hapag:unit", "metric" as Unit));
     setHydrated(true);
   }, []);
 
   useEffect(() => { if (hydrated) save("hapag:favorites", favorites); }, [favorites, hydrated]);
-  useEffect(() => { if (hydrated) save("hapag:grocery", grocery); }, [grocery, hydrated]);
-  useEffect(() => { if (hydrated) save("hapag:checked", checked); }, [checked, hydrated]);
+  useEffect(() => { if (hydrated) save("hapag:grocery:v2", grocery); }, [grocery, hydrated]);
+  useEffect(() => { if (hydrated) save("hapag:checked:v2", checked); }, [checked, hydrated]);
   useEffect(() => { if (hydrated) save("hapag:unit", unit); }, [unit, hydrated]);
 
   const toggleFavorite = useCallback((slug: string) => {
     setFavorites((f) => (f.includes(slug) ? f.filter((s) => s !== slug) : [...f, slug]));
   }, []);
 
-  const toggleGrocery = useCallback((recipe: Recipe, u: Unit) => {
+  const toggleGrocery = useCallback((recipe: Recipe) => {
     setGrocery((g) => {
       if (g.some((e) => e.slug === recipe.slug)) return g.filter((e) => e.slug !== recipe.slug);
-      const items = recipe.ingredients.map(
-        (i) => `${u === "metric" ? i.metric : i.imperial} ${i.name}`.trim()
-      );
-      return [...g, { slug: recipe.slug, title: recipe.title, items }];
+      return [...g, { slug: recipe.slug, title: recipe.title, ingredients: recipe.ingredients }];
     });
   }, []);
 

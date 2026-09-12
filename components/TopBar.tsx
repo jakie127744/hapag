@@ -3,10 +3,16 @@
 import Link from "next/link";
 import { ShoppingBasket, Heart } from "lucide-react";
 import { useStore } from "@/lib/store";
+import { canonicalKey, isShoppable } from "@/lib/pantry";
 
 export function TopBar() {
   const { grocery, favorites, setDrawerOpen } = useStore();
-  const count = grocery.reduce((n, e) => n + e.items.length, 0);
+  // Distinct things to buy, not raw ingredient rows — duplicates are merged.
+  const count = new Set(
+    grocery.flatMap((e) =>
+      e.ingredients.filter((i) => isShoppable(i.name)).map((i) => canonicalKey(i.name))
+    )
+  ).size;
 
   return (
     <div className="fixed top-6 right-6 z-50 flex items-center gap-2.5">

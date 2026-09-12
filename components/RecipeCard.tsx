@@ -37,7 +37,7 @@ export function FeaturedCard({ recipe }: { recipe: Recipe }) {
 }
 
 export function ArchiveCard({ recipe, index = 0 }: { recipe: Recipe; index?: number }) {
-  const { isFavorite, toggleFavorite, inGrocery, toggleGrocery, unit } = useStore();
+  const { isFavorite, toggleFavorite, inGrocery, toggleGrocery } = useStore();
   const fav = isFavorite(recipe.slug);
   const added = inGrocery(recipe.slug);
 
@@ -70,7 +70,7 @@ export function ArchiveCard({ recipe, index = 0 }: { recipe: Recipe; index?: num
 
       <div className="absolute top-3 right-3 flex flex-col gap-2">
         <button
-          onClick={() => toggleGrocery(recipe, unit)}
+          onClick={() => toggleGrocery(recipe)}
           aria-label={
             added
               ? `Remove ${recipe.title} from grocery list`
