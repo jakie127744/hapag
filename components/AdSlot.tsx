@@ -37,7 +37,7 @@ export function AdSlot({ name, className = "" }: { name: AdSlotName; className?:
 
   return (
     <aside
-      className={`no-print w-full ${className}`}
+      className={`no-print ad-slot w-full ${className}`}
       aria-label={label}
       style={{ minHeight: unit.minHeight + 22 }}
     >

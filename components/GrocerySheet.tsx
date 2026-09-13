@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import { useStore } from "@/lib/store";
 import { consolidate, type SourcedIngredient } from "@/lib/pantry";
+import { PrintPortal } from "./PrintPortal";
 
 /**
  * Print-only grocery checklist.
@@ -31,6 +32,7 @@ export function GrocerySheet() {
   });
 
   return (
+    <PrintPortal>
     <div className="grocery-sheet" aria-hidden="true">
       <header className="gs-head">
         <div>
@@ -75,5 +77,6 @@ export function GrocerySheet() {
         Quantities are rounded up to the nearest size sold in shops.
       </footer>
     </div>
+    </PrintPortal>
   );
 }

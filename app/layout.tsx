@@ -110,14 +110,20 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           dangerouslySetInnerHTML={{ __html: jsonLd(siteSchema(recipes.length)) }}
         />
         <StoreProvider>
-          <TopBar />
-          {children}
-          <Footer />
-          <ConsentBanner />
-          <AdsBootstrap />
-          <GroceryDrawer />
+          {/* Everything on screen lives in one wrapper, which print hides
+              wholesale. Print surfaces portal into #print-root below, outside
+              it, so a new page cannot forget to opt out of printing. */}
+          <div className="app-shell">
+            <TopBar />
+            {children}
+            <Footer />
+            <ConsentBanner />
+            <AdsBootstrap />
+            <GroceryDrawer />
+            <InstallPrompt />
+          </div>
+          <div id="print-root" />
           <GrocerySheet />
-          <InstallPrompt />
         </StoreProvider>
       </body>
     </html>

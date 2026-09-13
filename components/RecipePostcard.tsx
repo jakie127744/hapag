@@ -1,6 +1,9 @@
+"use client";
+
 import type { Recipe } from "@/data/recipes";
 import type { Unit } from "@/lib/store";
 import { prettyTime, prettyYield, primaryRegion } from "@/lib/regions";
+import { PrintPortal } from "./PrintPortal";
 
 /**
  * Print-only rendering of a recipe as a two-sided postcard.
@@ -15,6 +18,7 @@ export function RecipePostcard({ recipe, unit }: { recipe: Recipe; unit: Unit })
   const province = provinceOf(recipe.origin, region);
 
   return (
+    <PrintPortal>
     <div className="postcard" aria-hidden="true">
       {/* ---------------- FRONT ---------------- */}
       <section className="pc-page pc-front">
@@ -120,6 +124,7 @@ export function RecipePostcard({ recipe, unit }: { recipe: Recipe; unit: Unit })
         </footer>
       </section>
     </div>
+    </PrintPortal>
   );
 }
 

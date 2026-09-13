@@ -142,8 +142,12 @@ body {
     color: #14140f !important;
   }
 
-  /* Hide the on-screen app; show only the card. */
+  /* The on-screen app is one wrapper and is hidden wholesale, so no page has
+     to remember to opt out. Print surfaces live in #print-root, outside it. */
+  .app-shell { display: none !important; }
   .no-print { display: none !important; }
+
+  /* Default print target is the recipe card; the grocery list opts in below. */
   .postcard { display: block; }
 
   * {
@@ -343,6 +347,9 @@ body {
   body.printing-grocery .postcard { display: none !important; }
   body.printing-grocery .grocery-sheet { display: block; }
 
+  /* Nothing to print on a page that has neither surface. */
+  #print-root:empty { display: none; }
+
   .grocery-sheet {
     padding: 14mm 12mm;
     background: #fff;
@@ -435,3 +442,19 @@ body {
     color: #7a7a6c;
   }
 }
+
+/* ------------------------------------------------------------------ *
+ * Ad slots
+ * ------------------------------------------------------------------ */
+
+/* AdSense sets data-ad-status="unfilled" when it has nothing to serve.
+   Left alone that leaves a blank white block on a dark page, so collapse it
+   along with its label. */
+ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
+.ad-slot:has(> ins.adsbygoogle[data-ad-status="unfilled"]) {
+  display: none !important;
+  min-height: 0 !important;
+}
+
+/* The unit itself should never flash white while it loads. */
+ins.adsbygoogle { background: transparent; }

@@ -5083,6 +5083,7 @@ export const recipes: Recipe[] = [
     slug: "banana-chips", title: "Banana Chips", subtitle: "Crisp Fried Saba Slices",
     description: "Saba sliced thin and fried until it snaps, then lightly sweetened. Firm cooking bananas only; dessert bananas turn to mush.",
     category: "MERIENDA / FRIED", time: "40M", yield: "6 PAX", origin: "PHILIPPINES", technique: "DEEP FRY",
+    image: local("banana-chips.jpg"),
     ingredients: [
       {name:"Saba or cardava bananas, firm",metric:"8 pcs",imperial:"8 pcs"},
       {name:"Neutral frying oil",metric:"800 ml",imperial:"3 1/3 cups"},
