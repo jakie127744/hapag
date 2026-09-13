@@ -65,6 +65,29 @@ def find_inputs():
     return files
 
 
+def prune_orphans(src):
+    """Delete photographs nothing points at any more.
+
+    Replacing a Wikimedia photo with your own leaves the old file behind, and
+    those add up. Both reference styles are resolved: local() names the file
+    directly, commons() slugifies the Commons filename the same way the data
+    file does.
+    """
+    used = set(re.findall(r'local\("([^"]+)"\)', src))
+    for f in re.findall(r'commons\("([^"]+)"\)', src):
+        stem = os.path.splitext(f)[0].lower()
+        used.add(re.sub(r'[^a-z0-9]+', '-', stem).strip('-')[:60] + '.jpg')
+
+    if not os.path.isdir(DEST):
+        return 0
+    removed = 0
+    for name in os.listdir(DEST):
+        if name not in used:
+            os.remove(os.path.join(DEST, name))
+            removed += 1
+    return removed
+
+
 def main():
     if not os.path.isdir(INBOX) and not DRY:
         os.makedirs(INBOX, exist_ok=True)
@@ -123,6 +146,9 @@ def main():
 
     if not DRY and added:
         io.open(DATA, 'w', encoding='utf-8').write(src)
+        removed = prune_orphans(src)
+        if removed:
+            print('removed %d image%s no longer referenced' % (removed, '' if removed == 1 else 's'))
 
     print('\n%s %d image%s' % ('would add' if DRY else 'added', added, '' if added == 1 else 's'))
     if skipped:

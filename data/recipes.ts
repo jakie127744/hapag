@@ -326,7 +326,7 @@ export const recipes: Recipe[] = [
     slug: "bagnet", title: "Bagnet", subtitle: "Ilocano Crispy Pork Belly",
     description: "Ilocos-style pork belly cooked until tender, dried thoroughly, and fried until the skin becomes rigid and blistered. It is traditionally paired with a sharp sukang Iloko-style dipping sauce.",
     category: "ILOCOS / FRIED", time: "3H 30M", yield: "6 PAX", origin: "ILOCOS REGION", technique: "DOUBLE-FRY",
-    image: commons("Bagnet in Boracay.jpg"), imageSource: commonsPage("Bagnet in Boracay.jpg"),
+    image: local("bagnet.jpg"),
     ingredients: [
       {name:"Pork belly, skin on",metric:"1.5 kg",imperial:"3.3 lb"},{name:"Water",metric:"2 L",imperial:"8 1/2 cups"},
       {name:"Garlic, crushed",metric:"8 cloves",imperial:"8 cloves"},{name:"Bay leaves",metric:"3 leaves",imperial:"3 leaves"},

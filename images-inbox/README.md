@@ -25,14 +25,10 @@ without changing anything.
 
 ---
 
-## Recipes still without a photo (98 of 186)
+## Recipes still without a photo (94 of 186)
 
 Name a file after any of these:
 
-    adobong-sitaw.jpg                       # Adobong Sitaw
-    alupi.jpg                               # Alupi
-    ampaw.jpg                               # Ampaw
-    arroz-caldo.jpg                         # Arroz Caldo
     banana-chips.jpg                        # Banana Chips
     barquillos.jpg                          # Barquillos
     betamax.jpg                             # Betamax
@@ -128,4 +124,4 @@ Name a file after any of these:
     uraro.jpg                               # Uraro
     yema-cake.jpg                           # Yema Cake
 
-(88 recipes already have one.)
+(92 recipes already have one.)

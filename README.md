@@ -52,7 +52,7 @@ resized for the web. Each recipe page links back to its source file via the "Pho
 Wikimedia Commons" link — check the individual file page for its licence and attribution
 requirements before reusing an image elsewhere.
 
-99 of the 186 recipes have no photograph yet; those cards render an "image pending"
+94 of the 186 recipes have no photograph yet; those cards render an "image pending"
 placeholder rather than borrowing a picture of a similar-looking dish.
 
 ## Adding your own photographs
