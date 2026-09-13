@@ -1811,7 +1811,7 @@ export const recipes: Recipe[] = [
     slug: "banana-cue", title: "Banana Cue", subtitle: "Caramelised Skewered Saba Banana",
     description: "Whole saba bananas deep-fried and coated in brown sugar that hardens into a glassy shell, then threaded onto bamboo skewers. Sold on every street corner in the afternoon.",
     category: "MERIENDA / FRIED", time: "20M", yield: "6 PCS", origin: "PHILIPPINES", technique: "CARAMEL FRY",
-    image: local("1130banana-cue-street-vendors-02.jpg"), imageSource: commonsPage("1130Banana_cue_Street_vendors_02.jpg"),
+    image: local("banana-cue.jpg"),
     ingredients: [
       {name:"Saba bananas, peeled",metric:"6 pcs",imperial:"6 pcs"},
       {name:"Brown sugar",metric:"200 g",imperial:"7 oz"},
@@ -4252,6 +4252,7 @@ export const recipes: Recipe[] = [
     slug: "barquillos", title: "Barquillos", subtitle: "Rolled Wafer Sticks",
     description: "A thin batter griddled on a hot plate and rolled around a rod while still soft, setting into a brittle hollow tube.",
     category: "PASTRY / BISCUIT", time: "1H", yield: "24 PCS", origin: "ILOILO", technique: "GRIDDLED WAFER",
+    image: local("barquillos.jpg"),
     ingredients: [
       {name:"All-purpose flour",metric:"200 g",imperial:"1 2/3 cups"},
       {name:"Sugar",metric:"150 g",imperial:"5.3 oz"},
