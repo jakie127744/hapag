@@ -8,6 +8,7 @@ import { InstallPrompt } from "@/components/InstallPrompt";
 import { GrocerySheet } from "@/components/GrocerySheet";
 import { Footer } from "@/components/Footer";
 import { ConsentBanner } from "@/components/ConsentBanner";
+import { AdsBootstrap } from "@/components/AdsBootstrap";
 import { ADSENSE_CLIENT } from "@/lib/ads";
 import { recipes } from "@/data/recipes";
 import { SITE_URL, SITE_TITLE, SITE_NAME, SITE_DESCRIPTION, SITE_LOCALE, PUBLISHER, PUBLISHER_URL, absoluteUrl } from "@/lib/site";
@@ -102,26 +103,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
 
-        {/*
-          React hoists async <script> tags, so load order cannot be expressed in
-          JSX. This single inline script sets the non-personalised flag and then
-          injects the library itself, which makes the order unambiguous: once
-          adsbygoogle.js has processed a slot, the flag no longer affects it.
-        */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "(function(){try{" +
-              "if(localStorage.getItem('hapag:ad-consent')==='denied'){" +
-              "(window.adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1;}" +
-              "}catch(e){}" +
-              "var s=document.createElement('script');" +
-              "s.async=true;s.crossOrigin='anonymous';" +
-              "s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
-              ADSENSE_CLIENT +
-              "';document.head.appendChild(s);})();",
-          }}
-        />
       </head>
       <body className="bg-[#0A0A0A] text-white">
         <script
@@ -133,6 +114,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {children}
           <Footer />
           <ConsentBanner />
+          <AdsBootstrap />
           <GroceryDrawer />
           <GrocerySheet />
           <InstallPrompt />

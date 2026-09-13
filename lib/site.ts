@@ -27,11 +27,10 @@ export const PUBLISHER_URL = process.env.NEXT_PUBLIC_PUBLISHER_URL || "";
 
 /**
  * Shown on the contact page and in the privacy policy, both of which AdSense
- * requires. Set NEXT_PUBLIC_CONTACT_EMAIL before going live; the placeholder
- * is deliberately obvious so it cannot ship unnoticed.
+ * requires. Override with NEXT_PUBLIC_CONTACT_EMAIL if it ever changes.
  */
 export const CONTACT_EMAIL =
-  process.env.NEXT_PUBLIC_CONTACT_EMAIL || "set-NEXT_PUBLIC_CONTACT_EMAIL@example.com";
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL || "molavelabsapps@gmail.com";
 
 export const LAST_UPDATED = "12 September 2026";
 

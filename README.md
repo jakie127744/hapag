@@ -78,7 +78,7 @@ Set these so canonical URLs, contact details and attribution are correct:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
-NEXT_PUBLIC_CONTACT_EMAIL=you@your-domain.com
+NEXT_PUBLIC_CONTACT_EMAIL=molavelabsapps@gmail.com   # already the default
 NEXT_PUBLIC_PUBLISHER_URL=https://molavelabs.example   # optional
 ```
 

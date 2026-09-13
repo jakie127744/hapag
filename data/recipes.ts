@@ -1634,6 +1634,7 @@ export const recipes: Recipe[] = [
     slug: "arroz-caldo", title: "Arroz Caldo", subtitle: "Chicken and Ginger Rice Porridge",
     description: "Rice cooked down with chicken and a great deal of ginger into a thick savoury porridge, finished with toasted garlic, scallion and calamansi. Sickbed food and rainy-day food.",
     category: "PORRIDGE / CHICKEN", time: "1H", yield: "6 PAX", origin: "PHILIPPINES", technique: "SLOW PORRIDGE",
+    image: local("arroz-caldo.jpg"),
     ingredients: [
       {name:"Glutinous rice",metric:"200 g",imperial:"1 cup"},
       {name:"Jasmine rice",metric:"100 g",imperial:"1/2 cup"},
@@ -4080,7 +4081,7 @@ export const recipes: Recipe[] = [
     slug: "atchara", title: "Atchara", subtitle: "Pickled Green Papaya",
     description: "Grated unripe papaya salted, pressed, and packed into a sweet-sour brine with carrot, ginger and peppercorns. Served beside anything grilled or fried.",
     category: "CONDIMENT / PICKLE", time: "1H", yield: "6 JARS", origin: "PHILIPPINES", technique: "SWEET PICKLE",
-    image: local("achara.jpg"), imageSource: commonsPage("Achara.jpg"),
+    image: local("atchara.jpg"),
     ingredients: [
       {name:"Green papaya, grated",metric:"1 kg",imperial:"2.2 lb"},
       {name:"Salt",metric:"30 g",imperial:"2 tbsp"},

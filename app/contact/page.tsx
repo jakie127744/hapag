@@ -30,12 +30,6 @@ export default function ContactPage() {
         should say. Corrections with a source attached are applied fastest.
       </P>
 
-      <H2>Photographs</H2>
-      <P>
-        Many recipes are still waiting for a photograph. If you have shot a dish yourself and are
-        happy for it to be used, we would like to hear from you.
-      </P>
-
       <H2>Advertising and privacy</H2>
       <P>
         Questions about the ads shown here, or about what the site stores, are answered on the
